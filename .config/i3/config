@@ -1,20 +1,12 @@
-#To do list
-#fix up bar
-#
-# See http://i3wm.org/docs/userguide.html for a complete reference!
-
 set $mod Mod4
 
-#default keyboard repeat is too slow for me
-exec xset r rate 175 25
-
 #AUTOSTART STUFF
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.*
-exec_always --no-startup-id  python3 ~/.i3/i3-autoname-workspaces.py
+exec_always --no-startup-id feh --bg-scale ~/Pictures/1920x1080.png
+exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec --no-startup-id redshift
 
-#Font for window titles.
-font pango:Fira Mono Medium 12
+#Font for window titles
+font pango:System San Francisco Display 12
 
 #Colors
 set $back               #383C4A
@@ -40,22 +32,13 @@ bindsym $mod+Return exec termite
 mouse_warping none
 
 for_window [class="^.*"] border pixel 2
-# Float Guake to the top of the screen
-# for_window [class="Main.py"] floating enable, border none, move position 0 25
-
-# Scratchpad stuff
-# Make the currently focused window a scratchpad
-bindsym $mod+Shift+s move scratchpad
-# Show the first scratchpad window
-bindsym $mod+s scratchpad show
 
 # i3-gaps stuff :)
-gaps inner 25
+gaps inner 10
 gaps outer 0
 smart_borders on
 new_window none
 
-bindsym $mod+g exec ~/dotfiles/scripts/toggle_gaps.sh
 #edit gaps mode
 #########################################################################
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -98,12 +81,8 @@ mode "$mode_gaps_outer" {
 #custom app commands (?i) just means case insenitive..
 for_window [class="(?i)pavucontrol"] floating enable
 for_window [class="(?i)qemu-system-x86_64"] floating enable
-#for_window [class="VirtualBox"] floating enable
-#for_window [window_role="pop-up"] floating enable
 for_window [window_role="bubble"] floating enable
 for_window [window_role="task_dialog"] floating enable
-for_window [title="About Mozilla Firefox"] floating enable
-for_window [title="About Nightly"] floating enable
 for_window [title="Library"] floating enable
 for_window [window_role="Preferences"] floating enable
 for_window [window_type="dialog"] floating enable
@@ -112,13 +91,12 @@ for_window [window_type="menu"] floating enable
 # kill focused window
 bindsym $mod+Shift+q kill
 
+bindsym $mod+Tab move workspace to output left
+
 # start rofi (program launcher)
-bindsym $mod+d exec --no-startup-id rofi -monitor -1 -show run
+bindsym $mod+d exec --no-startup-id rofi -monitor -1 -show drun
 # start rofi (window switcher)
 bindsym $mod+Shift+d exec --no-startup-id rofi -monitor -1 -show window
-
-#use "xmodmap -pke" to get list of special keys
-#custom special key fixes
 
 #audio controls
 bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
@@ -128,34 +106,19 @@ bindsym $mod+equal exec pulseaudio-ctl up
 bindsym $mod+minus exec pulseaudio-ctl down
 bindsym $mod+0 exec pulseaudio-ctl mute
 
-#backlight controls (laptop monitor)
-bindsym $mod+Shift+minus exec light -U 5
-bindsym $mod+Shift+plus exec light -A 5
-
-bindsym $mod+Ctrl+Escape exec i3lock-wrapper -l
-bindsym XF86Sleep exec i3lock-wrapper -l && echo mem > /sys/power/state
-bindsym XF86TouchpadToggle exec synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')
-bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots/'
-bindsym $mod+Print exec scrot -u -e 'mv $f ~/Pictures/screenshots/'
-bindsym $mod+Shift+Print exec termite -e "scrot -s -e 'mv \$f ~/Pictures/screenshots/'"
-
-# vi keybindings
-set $vi_left h
-set $vi_down j
-set $vi_up k
-set $vi_right l
+bindsym $mod+Escape exec i3-msg exit
 
 # change focus
-bindsym $mod+$vi_left focus left
-bindsym $mod+$vi_down focus down
-bindsym $mod+$vi_up focus up
-bindsym $mod+$vi_right focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+$vi_left move left
-bindsym $mod+Shift+$vi_down move down
-bindsym $mod+Shift+$vi_up move up
-bindsym $mod+Shift+$vi_right move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
 # split in burger (horizontal) orientation
 bindsym $mod+b split h
@@ -191,10 +154,6 @@ bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 
-bindsym $mod+bracketleft workspace prev
-bindsym $mod+bracketright workspace next
-bindsym $mod+Tab workspace back_and_forth
-
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
@@ -206,8 +165,6 @@ bindsym $mod+Shift+7 move container to workspace number 7
 bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 
-# adjust displays
-bindsym $mod+Shift+m exec bash ~/dotfiles/scripts/configure_xrandr.sh
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -233,14 +190,14 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
-    status_command i3blocks -c ~/.i3/i3blocks.conf 2> ~/.i3/.i3blocks.err
+    status_command i3blocks -c ~/.config/i3/i3blocks.conf 2> ~/.config/i3/.i3blocks.err
     strip_workspace_numbers no
-    output eDP-1
-    tray_output eDP-1
+    #output DVI-I-1
+    tray_output DVI-I-1
     mode dock
     position top
     height 25
-    font pango: Fira Mono Medium 16
+    font pango: Meslo S 12
     colors {
         background $back
         separator $primary

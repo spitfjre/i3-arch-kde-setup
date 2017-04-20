@@ -66,41 +66,18 @@ FA_PAINTBRUSH = '\uf1fc'
 FA_FILM = '\uf008'
 FA_MAP_O = '\uf278'
 FA_DATABASE = '\uf1c0'
+FA_SLACK = '\uf198'
 WINDOW_ICONS = {
-    'Gnome-terminal': FA_TERMINAL,
     'termite': FA_TERMINAL,
-    'guake': FA_TERMINAL,
-    'Galculator': FA_CALCULATOR,
-    'Franz': FA_COMMENTS_O,
-    'hipchat4': FA_COMMENTS_O,
-    'google-chrome': FA_CHROME,
     'chromium': FA_CHROME,
-    'vivaldi-stable': FA_CHROME,
-    'gvim': FA_CODE,
+    'Chromium': FA_CHROME,
     'subl3': FA_CODE,
-    'spotify': FA_SPOTIFY,
-    'Firefox': FA_FIREFOX,
+    'jetbrains-webstorm': FA_CODE,
     'Thunderbird': FA_ENVELOPE_O,
-    'libreoffice': FA_FILE_TEXT_O,
     'feh': FA_PICTURE_O,
-    'eog': FA_PICTURE_O,
-    'gcolor2': FA_EYEDROPPER,
-    'evince': FA_FILE_PDF_O,
-    'Nautilus': FA_FILES_O,
     'gimp': FA_PAINTBRUSH,
-    'gimp-2.8': FA_PAINTBRUSH,
-    'inkscape': FA_PAINTBRUSH,
-    'VirtualBox': FA_CUBE,
     'mpv': FA_PLAY_CIRCLE,
-    'Kodi': FA_PLAY_CIRCLE,
-    'transmission-gtk': FA_DOWNLOAD,
-    'pavucontrol': FA_VOLUME_UP,
-    'Photoscan': FA_FILM,
-    'qgis': FA_MAP_O,
-    'Steam': FA_STEAM,
-    'SWT': FA_DATABASE, #DBeaver changed its wm_class name?
-    'DBeaver': FA_DATABASE,
-    'KeeWeb': FA_KEY,
+    'slack': FA_SLACK 
 }
 
 

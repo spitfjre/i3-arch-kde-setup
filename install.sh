@@ -1,8 +1,7 @@
 yaourt -S --noconfirm --needed i3-gaps 
 yaourt -S --noconfirm --needed i3status
-yaourt -S --noconfirm --needed i3bar
 yaourt -S --noconfirm --needed i3blocks
-yaourt -S --noconfirm --needed i3-lock-wrapper
+yaourt -S --noconfirm --needed i3lock-wrapper
 yaourt -S --noconfirm --needed termite
 yaourt -S --noconfirm --needed rofi
 yaourt -S --noconfirm --needed compton
@@ -36,6 +35,7 @@ yaourt -S --noconfirm --needed nodejs
 yaourt -S --noconfirm --needed npm
 yaourt -S --noconfirm --needed gimp
 
+yaourt -S --noconfirm --needed nerd-fonts-complete
 yaourt -S --noconfirm --needed ttf-meslo
 cd ~
 git clone https://github.com/powerline/fonts.git
