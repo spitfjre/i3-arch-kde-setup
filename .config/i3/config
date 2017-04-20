@@ -4,6 +4,8 @@ set $mod Mod4
 exec_always --no-startup-id feh --bg-scale ~/Pictures/1920x1080.png
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec --no-startup-id redshift
+exec --no-startup-id xrandr --output VIRTUAL1 --off --output DP3 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP2 --off --output DP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI3 --off --output HDMI2 --off --output HDMI1 --off --output LVDS1 --off --output VGA1 --off
+
 
 #Font for window titles
 font pango:System San Francisco Display 12
@@ -87,6 +89,9 @@ for_window [title="Library"] floating enable
 for_window [window_role="Preferences"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
+
+bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots/'
+bindsym $mod+Print exec scrot -u -e 'mv $f ~/Pictures/screenshots/'
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -193,7 +198,7 @@ bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf 2> ~/.config/i3/.i3blocks.err
     strip_workspace_numbers no
     #output DVI-I-1
-    tray_output DVI-I-1
+    tray_output DP1
     mode dock
     position top
     height 25
@@ -208,5 +213,3 @@ bar {
         urgent_workspace #CC241D #CC241D #EBDBB2
     }
 }
-
-# vim:filetype=i3

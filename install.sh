@@ -35,6 +35,7 @@ yaourt -S --noconfirm --needed nodejs
 yaourt -S --noconfirm --needed npm
 yaourt -S --noconfirm --needed gimp
 
+yaourt -S --noconfirm --needed ttf-font-awesome
 yaourt -S --noconfirm --needed nerd-fonts-complete
 yaourt -S --noconfirm --needed ttf-meslo
 cd ~
