@@ -1,15 +1,14 @@
 #!/bin/bash
-SSID=$(iwgetid -r)
+SSID=$(nmcli device wifi | grep -e '*' | awk '{ if (! /SSID/) print $2 }')
 ENABLED=$(nmcli radio wifi | grep enabled)
-CONNECTED=$(nmcli connection show --active | grep wlp3s0)
+CONNECTED=$(nmcli connection show --active | grep wlp2s0)
 
 if [ $ENABLED ]
 then
     if [[ $CONNECTED ]]
     then
-        STRENGTH=$(awk 'NR==3 {print $3}' /proc/net/wireless | sed -e 's/\.//')
-        PERCENTAGE=$(echo "$STRENGTH"*100/70 | bc)
-        echo "  $PERCENTAGE% @$SSID"
+        STRENGTH=$(nmcli device wifi | grep -e '*' | awk '{ if (! /SSID/) print $7 }')
+        echo "  $STRENGTH% @$SSID"
     else
         echo "   No Wifi"
     fi

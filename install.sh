@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 yaourt -S --noconfirm --needed i3-gaps 
 yaourt -S --noconfirm --needed i3status
 yaourt -S --noconfirm --needed i3blocks
@@ -6,11 +8,14 @@ yaourt -S --noconfirm --needed termite
 yaourt -S --noconfirm --needed rofi
 yaourt -S --noconfirm --needed compton
 yaourt -S --noconfirm --needed ranger
+ranger --copy-config=scope
 yaourt -S --noconfirm --needed feh
 yaourt -S --noconfirm --needed zsh
 yaourt -S --noconfirm --needed zsh-completions
 yaourt -S --noconfirm --needed ssh
 yaourt -S --noconfirm --needed light
+yaourt -S --noconfirm --needed arandr
+yaourt -S --noconfirm --needed numlockx
 
 yaourt -S --noconfirm --needed jdk
 yaourt -S --noconfirm --needed ipe
@@ -54,6 +59,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo gpasswd -a spitfjre docker
 sudo newgrp docker
+exit
 
 yaourt -R --noconfirm antergos-kde-setup
 yaourt -R --noconfirm digikam

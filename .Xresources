@@ -9,14 +9,7 @@ rofi.terminal:	termite
 rofi.lines:		10
 rofi.eh:		1
 rofi.hide-scrollbar: true
-rofi.font:      Fira Mono Medium 40
-
-!! Rofi Colorsheme
-!! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
-!rofi.color-window: argb:aa263238, argb:aa263238, #26a69a
-!rofi.color-normal: argb:0263238, #eceff1, argb:0263238, #f4246b, #eceff1
-!rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
-!rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
+rofi.font:      System San Fracisco Display 20
 
 ! gruvbox-rofi
 !-------------------------------------------------------------------------------

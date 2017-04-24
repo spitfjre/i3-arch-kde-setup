@@ -1,13 +1,14 @@
 set $mod Mod4
 
 #AUTOSTART STUFF
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/polyscapes/xBAENam.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/polyscapes/LLGmIfM.jpg
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
+exec_always --no-startup-id numlockx on
 exec --no-startup-id redshift
 exec --no-startup-id compton -b
 
 #Font for window titles
-font pango:System San Francisco Display 12
+font pango:System San Francisco Display 14
 
 #Colors
 set $back               #383C4A
@@ -107,6 +108,9 @@ bindsym $mod+equal exec pulseaudio-ctl up
 bindsym $mod+minus exec pulseaudio-ctl down
 bindsym $mod+0 exec pulseaudio-ctl mute
 
+bindsym $mod+Print exec scrot -u -e 'mv $f ~/Pictures/screenshots/'
+bindsym $mod+Shift+Return exec termite -e ranger
+
 bindsym $mod+Escape exec i3-msg exit
 
 # change focus
@@ -198,7 +202,7 @@ bar {
     mode dock
     position top
     height 25
-    font pango: Meslo S 12
+    font pango: System San Fracisco Display 14
     colors {
         background $back
         separator $primary
