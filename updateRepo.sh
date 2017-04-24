@@ -1,33 +1,35 @@
 #!/usr/bin/env bash
 
-cp -r ~/.config/feh/* ~/Workspace/i3-arch-kde-setup/.config/feh/
-cp -r ~/.config/gtk-3.0/* ~/Workspace/i3-arch-kde-setup/.config/gtk-3.0/
-cp -r ~/.config/htop/* ~/Workspace/i3-arch-kde-setup/.config/htop/
-cp -r ~/.config/i3/* ~/Workspace/i3-arch-kde-setup/.config/i3/
-cp -r ~/.config/mupen64plus/* ~/Workspace/i3-arch-kde-setup/.config/mupen64plus/
-cp -r ~/.config/ranger/rc.conf ~/Workspace/i3-arch-kde-setup/.config/ranger/
-cp -r ~/.config/termite/* ~/Workspace/i3-arch-kde-setup/.config/termite/
+repoDir="$repoDir"
 
-if [ -e ~/.config/compton.conf ]
- then cp ~/.config/compton.conf ~/Workspace/i3-arch-kde-setup/.config/
+cp -r $HOME/.config/feh/* $repoDir/.config/feh/
+cp -r $HOME/.config/gtk-3.0/* $repoDir/.config/gtk-3.0/
+cp -r $HOME/.config/htop/* $repoDir/.config/htop/
+cp -r $HOME/.config/i3/* $repoDir/.config/i3/
+cp -r $HOME/.config/mupen64plus/* $repoDir/.config/mupen64plus/
+cp -r $HOME/.config/ranger/rc.conf $repoDir/.config/ranger/
+cp -r $HOME/.config/termite/* $repoDir/.config/termite/
+
+if [ -e $HOME/.config/compton.conf ]
+ then cp $HOME/.config/compton.conf $repoDir/.config/
 fi
 
-cp -r ~/.fonts/*.ttf ~/Workspace/i3-arch-kde-setup/fonts/
-cp -r ~/scripts/* ~/Workspace/i3-arch-kde-setup/scripts/
-cp -r ~/Pictures/wallpaper/* ~/Workspace/i3-arch-kde-setup/wallpaper/
+cp -r $HOME/.fonts/*.ttf $repoDir/fonts/
+cp -r $HOME/scripts/* $repoDir/scripts/
+cp -r $HOME/Pictures/wallpaper/* $repoDir/wallpaper/
 
-if [ -e ~/.gtkrc-2.0 ]
- then cp ~/.gtkrc-2.0 ~/Workspace/i3-arch-kde-setup/
+if [ -e $HOME/.gtkrc-2.0 ]
+ then cp $HOME/.gtkrc-2.0 $repoDir/
 fi
-if [ -e ~/.tmux.conf ]
- then cp ~/.tmux.conf ~/Workspace/i3-arch-kde-setup/
+if [ -e $HOME/.tmux.conf ]
+ then cp $HOME/.tmux.conf $repoDir/
 fi
-if [ -e ~/.xprofile ]
- then cp ~/.xprofile ~/Workspace/i3-arch-kde-setup/
+if [ -e $HOME/.xprofile ]
+ then cp $HOME/.xprofile $repoDir/
 fi
-if [ -e ~/.Xresources ]
- then cp ~/.Xresources ~/Workspace/i3-arch-kde-setup/
+if [ -e $HOME/.Xresources ]
+ then cp $HOME/.Xresources $repoDir/
 fi
-if [ -e ~/.zshrc ]
- then cp ~/.zshrc ~/Workspace/i3-arch-kde-setup/
+if [ -e $HOME/.zshrc ]
+ then cp $HOME/.zshrc $repoDir/
 fi
