@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
-cp -r --parents ~/Workspace/i3-arch-kde-setup/.config/* ~/.config/
-cp -r --parents ~/Workspace/i3-arch-kde-setup/fonts/* ~/.fonts/
-cp -r --parents ~/Workspace/i3-arch-kde-setup/scripts/* ~/scripts/
-cp -r --parents ~/Workspace/i3-arch-kde-setup/wallpaper/* ~/Pictures/wallpaper/
+repoDir="$HOME/Workspace/i3-arch-kde-setup"
 
-cp ~/Workspace/i3-arch-kde-setup/.gtkrc-2.0 ~
-cp ~/Workspace/i3-arch-kde-setup/.tmux.conf ~
-cp ~/Workspace/i3-arch-kde-setup/.xprofile ~
-cp ~/Workspace/i3-arch-kde-setup/.Xresources ~
-cp ~/Workspace/i3-arch-kde-setup/.zshrc ~
+cp -rv $repoDir/.config/* $HOME/.config/
+cp -rv $repoDir/fonts/* $HOME/.fonts/
+cp -rv $repoDir/scripts/* $HOME/scripts/
+cp -rv $repoDir/wallpaper/* $HOME/Pictures/wallpaper/
+
+cp $repoDir/.gtkrc-2.0 $HOME
+cp $repoDir/.tmux.conf $HOME
+cp $repoDir/.xprofile $HOME
+cp $repoDir/.Xresources $HOME
+cp $repoDir/.zshrc $HOME
