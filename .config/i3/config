@@ -207,8 +207,8 @@ bar {
         background $back
         separator $primary
         statusline $primary
-        focused_workspace $primary $primary $back
-        active_workspace #1D2021 #1D2021 $primary
+        focused_workspace #d81765 #d81765 $back
+        active_workspace $primary $primary $back
         inactive_workspace $back $back $primary
         urgent_workspace #CC241D #CC241D #EBDBB2
     }
