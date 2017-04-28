@@ -9,7 +9,7 @@ rofi.terminal:	termite
 rofi.lines:		10
 rofi.eh:		1
 rofi.hide-scrollbar: true
-rofi.font:      System San Fracisco Display 20
+rofi.font:      System San Fracisco Display 14
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme

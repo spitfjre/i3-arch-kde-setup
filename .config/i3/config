@@ -1,25 +1,27 @@
 set $mod Mod4
 
 #AUTOSTART STUFF
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/polyscapes/LLGmIfM.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/CuQSAKD.png
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec_always --no-startup-id numlockx on
 exec --no-startup-id redshift
 exec --no-startup-id compton -b
 
 #Font for window titles
-font pango:System San Francisco Display 14
+font pango:System San Francisco Display 12
 
 #Colors
-set $back               #383C4A
-set $primary            #D0D0D0
-set $secondary          #0FE0C9
-set $black              #282A2E
+set $back               #272822
+set $primary            #f8f8f2
+set $secondary          #f8f8f2
+set $black              #272822
 set $grey               #303030
-set $white              #C5C8C6
+set $white              #f8f8f2
+set $blue               #66d9ef
+set $red                #f92672
 
 # class                 border   backgr.  text    indicator child_border
-client.focused          $primary $primary $black  #2e9ef4   $primary
+client.focused          $blue    $primary $black  #2e9ef4   $blue
 client.focused_inactive $black   $primary $black  #484e50   $black
 client.unfocused        $black   $back    $white  #292d2e   $black
 client.urgent           #2f343a  #900000  $white  #900000   #900000
@@ -33,10 +35,10 @@ bindsym $mod+t exec termite
 bindsym $mod+Return exec termite
 mouse_warping none
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 3
 
 # i3-gaps stuff :)
-gaps inner 10
+gaps inner 7
 gaps outer 0
 smart_borders on
 new_window none
@@ -202,15 +204,15 @@ bar {
     mode dock
     position top
     height 25
-    font pango: System San Fracisco Display 14
+    font pango: System San Fracisco Display 12
     colors {
         background $back
         separator $primary
-        statusline $primary
-        focused_workspace #d81765 #d81765 $back
-        active_workspace $primary $primary $back
+        statusline $blue
+        focused_workspace $blue $back $blue
+        active_workspace $back $back $blue
         inactive_workspace $back $back $primary
-        urgent_workspace #CC241D #CC241D #EBDBB2
+        urgent_workspace $back $back $red
     }
 }
 
