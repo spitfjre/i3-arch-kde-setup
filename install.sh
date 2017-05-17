@@ -6,7 +6,6 @@ yaourt -S --noconfirm --needed i3blocks
 yaourt -S --noconfirm --needed i3lock-wrapper
 yaourt -S --noconfirm --needed termite
 yaourt -S --noconfirm --needed rofi
-yaourt -S --noconfirm --needed compton
 yaourt -S --noconfirm --needed ranger
 ranger --copy-config=scope
 yaourt -S --noconfirm --needed feh
@@ -16,12 +15,7 @@ yaourt -S --noconfirm --needed ssh
 yaourt -S --noconfirm --needed light
 yaourt -S --noconfirm --needed arandr
 yaourt -S --noconfirm --needed numlockx
-
-git clone https://aur.archlinux.org/alacritty-git.git
-cd alacritty-git
-makepkg -isr
-cd ..
-sudo rm -R alacritty-git
+yaourt -S --noconfirm --needed i3ipc-python-git
 
 yaourt -S --noconfirm --needed jdk
 yaourt -S --noconfirm --needed ipe
@@ -30,7 +24,6 @@ yaourt -S --noconfirm --needed jdownloader2
 yaourt -S --noconfirm --needed slack-desktop
 yaourt -S --noconfirm --needed kdeplasma-addons
 yaourt -S --noconfirm --needed htop
-yaourt -S --noconfirm --needed bash-completion
 yaourt -S --noconfirm --needed keepassx2
 yaourt -S --noconfirm --needed audacious
 yaourt -S --noconfirm --needed mpv
@@ -45,6 +38,7 @@ yaourt -S --noconfirm --needed gradle
 yaourt -S --noconfirm --needed nodejs
 yaourt -S --noconfirm --needed npm
 yaourt -S --noconfirm --needed gimp
+yaourt -S --noconfirm --needed ttf-font-awesome
 yaourt -S --noconfirm --needed nerd-fonts-complete
 
 yaourt -Rcns --noconfirm --needed lightdm
