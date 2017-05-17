@@ -2,6 +2,10 @@
 
 repoDir="$HOME/Workspace/i3-arch-kde-setup"
 
+mkdir $HOME/.fonts
+mkdir $HOME/scripts
+mkdir $HOME/Pictures/wallpaper
+
 cp -rv $repoDir/.config/* $HOME/.config/
 cp -rv $repoDir/fonts/* $HOME/.fonts/
 cp -rv $repoDir/scripts/* $HOME/scripts/

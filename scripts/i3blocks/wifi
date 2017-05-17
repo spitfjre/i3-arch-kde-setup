@@ -9,9 +9,9 @@ then
     then
         STRENGTH=$(awk 'NR==3 {print $3}' /proc/net/wireless | sed -e 's/\.//')
         PERCENTAGE=$(echo "$STRENGTH"*100/70 | bc)
-        echo "  $PERCENTAGE% @$SSID"
+        echo "  $PERCENTAGE%"
     else
-        echo "   No Wifi"
+        echo "  No Wifi"
     fi
 elif [ ! $ENABLED ]
 then

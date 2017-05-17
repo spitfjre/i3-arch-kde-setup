@@ -17,6 +17,12 @@ yaourt -S --noconfirm --needed light
 yaourt -S --noconfirm --needed arandr
 yaourt -S --noconfirm --needed numlockx
 
+git clone https://aur.archlinux.org/alacritty-git.git
+cd alacritty-git
+makepkg -isr
+cd ..
+sudo rm -R alacritty-git
+
 yaourt -S --noconfirm --needed jdk
 yaourt -S --noconfirm --needed ipe
 yaourt -S --noconfirm --needed sublime-text-dev
@@ -39,16 +45,7 @@ yaourt -S --noconfirm --needed gradle
 yaourt -S --noconfirm --needed nodejs
 yaourt -S --noconfirm --needed npm
 yaourt -S --noconfirm --needed gimp
-
-yaourt -S --noconfirm --needed ttf-font-awesome
 yaourt -S --noconfirm --needed nerd-fonts-complete
-yaourt -S --noconfirm --needed ttf-meslo
-cd ~
-git clone https://github.com/powerline/fonts.git
-cd fonts
-./install.sh
-cd ..
-rm -rf fonts
 
 yaourt -Rcns --noconfirm --needed lightdm
 yaourt -S --noconfirm --needed sddm-kcm

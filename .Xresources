@@ -1,27 +1,23 @@
 ! Rofi Settings
-rofi.width:		52
-rofi.padding:	300
-rofi.fullscreen: true
+rofi.width:		50
+rofi.padding:	5
+rofi.fullscreen: false
 rofi.fixed-num-lines: true
 rofi.bw:		0
 rofi.location:	0
 rofi.terminal:	termite
-rofi.lines:		10
+rofi.lines:		5
 rofi.eh:		1
 rofi.hide-scrollbar: true
-rofi.font:      System San Fracisco Display 14
+rofi.font:      SFNS Display 12
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
-! Copyright: Étienne Deparis
+! Based on Adapta-Nokto GTK theme (https://github.com/adapta-project/adapta-gtk-theme)  
+! Copyright: PyGeek03
 ! ------------------------------------------------------------------------------
-! "Color scheme for normal row" Set from: File
-rofi.color-normal:                   argb:00272822, #f8f8f2, argb:00272822, #141411, #f8f8f2
-! "Color scheme for urgent row" Set from: File
-rofi.color-urgent:                   argb:00272822, #f92672, argb:00272822, #f92672, #f8f8f2
-! "Color scheme for active row" Set from: File
-rofi.color-active:                   argb:00272822, #a6e22a, argb:00272822, #141411, #a6e22a
-! "Color scheme window" Set from: File
-rofi.color-window:                   argb:ee272822, #002b36, #e6db74
-! "Separator style (none, dash, solid)" Set from: File
-rofi.separator-style:                solid
+rofi.color-enabled: true
+rofi.color-window: #3a4c54, #2a373e, #c3c6c8
+rofi.color-normal: #455a64, #fafbfc, #455a64, #00bcd4, #fafbfc
+rofi.color-active: #455a64, #00bcd4, #455a64, #009688, #fdf6e3
+rofi.color-urgent: #455a64, #ff5252, #455a64, #ff5252, #fdf6e3

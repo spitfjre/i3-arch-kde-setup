@@ -69,15 +69,19 @@ FA_DATABASE = '\uf1c0'
 FA_SLACK = '\uf198'
 WINDOW_ICONS = {
     'termite': FA_TERMINAL,
+    'Alacritty': FA_TERMINAL,
     'chromium': FA_CHROME,
     'Chromium': FA_CHROME,
     'subl3': FA_CODE,
     'jetbrains-webstorm': FA_CODE,
+    'jetbrains-idea': FA_CODE,
     'Thunderbird': FA_ENVELOPE_O,
     'feh': FA_PICTURE_O,
     'gimp': FA_PAINTBRUSH,
     'mpv': FA_PLAY_CIRCLE,
-    'slack': FA_SLACK 
+    'slack': FA_SLACK,
+    'Audacious': FA_MUSIC,
+    'audacious': FA_MUSIC
 }
 
 
