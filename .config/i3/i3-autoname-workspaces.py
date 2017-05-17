@@ -68,6 +68,7 @@ FA_MAP_O = '\uf278'
 FA_DATABASE = '\uf1c0'
 FA_SLACK = '\uf198'
 WINDOW_ICONS = {
+    'dolphin': FA_FILES_O,
     'termite': FA_TERMINAL,
     'Alacritty': FA_TERMINAL,
     'chromium': FA_CHROME,
