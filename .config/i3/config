@@ -1,23 +1,27 @@
 set $mod Mod4
 
 #AUTOSTART STUFF
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/DYm1aqo.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/polyscapes/6sh6DxJ.jpg
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec_always --no-startup-id numlockx on
+exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --off --output DVI-I-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-I-0 --off --output DP-1 --off --output DP-0 --off
+
 exec --no-startup-id redshift
+exec --no-startup-id slack
+exec --no-startup-id dropbox
 
 #Font for window titles
-font pango:SFNS Display, FontAwesome, DejaVu Sans 12
+font pango: DejaVu Sans, FontAwesome 10
 
 #Colors
-set $back               #222D32
-set $primary            #CFD8DC
-set $secondary          #CFD8DC
-set $black              #222D32
-set $grey               #303030
-set $white              #CFD8DC
-set $blue               #00BCD4
-set $red                #F77669
+set $back               #1d2021
+set $primary            #ebdbb2
+set $secondary          #ebdbb2
+set $black              #1d2021
+set $grey               #282828
+set $white              #a89984
+set $blue               #458588
+set $red                #cc241d
 
 # class                 border   backgr.  text    indicator child_border
 client.focused          $blue    $primary $black  #2e9ef4   $blue
@@ -203,7 +207,7 @@ bar {
     mode dock
     position top
     height 25
-    font pango: SFNS Display, FontAwesome, DejaVu Sans 12
+    font pango: DejaVu Sans, FontAwesome 10
     colors {
         background $back
         separator $primary

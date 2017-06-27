@@ -9,15 +9,28 @@ rofi.terminal:	termite
 rofi.lines:		5
 rofi.eh:		1
 rofi.hide-scrollbar: true
-rofi.font:      SFNS Display 12
+rofi.font:      DejaVu Sans 10
 
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! Based on Adapta-Nokto GTK theme (https://github.com/adapta-project/adapta-gtk-theme)  
-! Copyright: PyGeek03
-! ------------------------------------------------------------------------------
+!-------------------------------------------------------------------------------
+! Rofi color theme
+!
+! Based on the Gruvbox color scheme for Vim by morhetz
+! https://github.com/morhetz/gruvbox
+!
+! File: gruvbox-dark-hard.theme
+! Desc: Gruvbox dark (hard contrast) color theme for Rofi
+! Author: bardisty <b@bah.im>
+! Source: https://github.com/bardisty/gruvbox-rofi
+! Modified: Sat Oct 22 2016 03:12:10 PDT -0700
+!-------------------------------------------------------------------------------
+
+! Enable the extended coloring options
 rofi.color-enabled: true
-rofi.color-window: #3a4c54, #2a373e, #c3c6c8
-rofi.color-normal: #455a64, #fafbfc, #455a64, #00bcd4, #fafbfc
-rofi.color-active: #455a64, #00bcd4, #455a64, #009688, #fdf6e3
-rofi.color-urgent: #455a64, #ff5252, #455a64, #ff5252, #fdf6e3
+
+!                  bg       border   separator
+rofi.color-window: #1d2021, #a89984, #a89984
+
+!                  bg       fg       bg-alt   hl-bg    hl-fg
+rofi.color-normal: #1d2021, #ebdbb2, #282828, #504945, #fbf1c7
+rofi.color-active: #d79921, #1d2021, #d79921, #fabd2f, #1d2021
+rofi.color-urgent: #cc241d, #1d2021, #cc241d, #fb4934, #1d2021
