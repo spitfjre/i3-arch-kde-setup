@@ -7,47 +7,48 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = DejaVu Sans Mono for Powerline 10
-scrollback_lines = 1000
+font = Meslo LG S for Powerline 9
+scrollback_lines = 10000
 search_wrap = true
 cursor_blink = system
 cursor_shape = block
 
 [colors]
-background = #1d2021
-foreground = #ebdbb2
-foreground_bold = #ebdbb2
-
-# dark0 + gray
-color0 = #282828
-color8 = #928374
-
-# neutral_red + bright_red
-color1 = #cc241d
-color9 = #fb4934
-
-# neutral_green + bright_green
-color2 = #98971a
-color10 = #b8bb26
-
-# neutral_yellow + bright_yellow
-color3 = #d79921
-color11 = #fabd2f
-
-# neutral_blue + bright_blue
-color4 = #458588
-color12 = #83a598
-
-# neutral_purple + bright_purple
-color5 = #b16286
-color13 = #d3869b
-
-# neutral_aqua + faded_aqua
-color6 = #689d6a
-color14 = #8ec07c
-
-# light4 + light1
-color7 = #a89984
-color15 = #ebdbb2
+background= #131522
+foreground= #FFFAF4
+foreground_bold= #9E9C9A
+cursor = #FFFAF4
+#black
+color0= #222222
+#red
+color1= #FF000F
+#green
+color2= #8CE10A
+#yellow
+color3= #FFB900
+#blue
+color4= #008EF9
+#purple
+color5= #6C43A6
+#cyan
+color6= #00D8EC
+#white
+color7= #FFFFFF
+#grey
+color8= #444444
+#red
+color9= #FF273F
+#green
+color10= #ABE15B
+#yellow
+color11= #FFD242
+#blue
+color12= #0092FF
+#purple
+color13= #9A5FEC
+#cyan
+color14= #67FFF0
+#white
+color15= #FFFFFF
 
 # vim: ft=dosini cms=#%s
