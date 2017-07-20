@@ -9,7 +9,7 @@ rofi.terminal:	termite
 rofi.lines:		10
 rofi.eh:		1
 rofi.hide-scrollbar: true
-rofi.font:      SFNS Display 11
+rofi.font:      SFNS Display 9
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
