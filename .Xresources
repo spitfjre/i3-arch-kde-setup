@@ -9,7 +9,7 @@ rofi.terminal:	termite
 rofi.lines:		10
 rofi.eh:		1
 rofi.hide-scrollbar: true
-rofi.font:      SFNS Display 9
+rofi.font:      San Francisco Display 11
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme

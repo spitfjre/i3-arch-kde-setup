@@ -4,14 +4,14 @@ set $mod Mod4
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/PpgMdkJ.png
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec_always --no-startup-id numlockx on
-exec_always --no-startup-id xrandr --output VIRTUAL1 --off --output DP3 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP2 --off --output DP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI3 --off --output HDMI2 --off --output HDMI1 --off --output LVDS1 --off --output VGA1 --off
+exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --off --output DVI-I-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-I-0 --off --output DP-1 --off --output DP-0 --off
 
 exec --no-startup-id redshift
 exec --no-startup-id slack
 exec --no-startup-id dropbox
 
 #Font for window titles
-font pango: SFNS Display, FontAwesome 9
+font pango: San Francisco Display, FontAwesome 11
 
 #Colors
 set $back               #131522
@@ -206,8 +206,8 @@ bar {
     tray_output DP1
     mode dock
     position top
-    height 21
-    font pango: SFNS Display, FontAwesome 9
+    height 22
+    font pango: San Francisco Display, FontAwesome 11
     colors {
         background $back
         separator $primary
