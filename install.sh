@@ -4,8 +4,8 @@ yaourt -S --noconfirm --needed i3-gaps
 yaourt -S --noconfirm --needed i3status
 yaourt -S --noconfirm --needed i3blocks
 yaourt -S --noconfirm --needed i3lock-wrapper
-yaourt -S --noconfirm --needed termite
 yaourt -S --noconfirm --needed rofi
+yaourt -S --noconfirm --needed alacritty-git
 yaourt -S --noconfirm --needed ranger
 ranger --copy-config=scope
 yaourt -S --noconfirm --needed feh
@@ -40,7 +40,6 @@ yaourt -S --noconfirm --needed npm
 yaourt -S --noconfirm --needed gimp
 yaourt -S --noconfirm --needed ttf-font-awesome
 yaourt -S --noconfirm --needed nerd-fonts-complete
-yaourt -S --noconfirm --needed ttf-google-fonts-git
 
 yaourt -Rcns --noconfirm --needed lightdm
 yaourt -S --noconfirm --needed sddm-kcm
