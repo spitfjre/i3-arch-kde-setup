@@ -1,7 +1,7 @@
 set $mod Mod4
 
 #AUTOSTART STUFF
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/PpgMdkJ.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/polyscapes/xBAENam.png
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec_always --no-startup-id numlockx on
 exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --off --output DVI-I-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-I-0 --off --output DP-1 --off --output DP-0 --off
@@ -35,14 +35,14 @@ client.background       $white
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 popup_during_fullscreen smart
-bindsym $mod+t exec termite
-bindsym $mod+Return exec termite
+bindsym $mod+t exec alacritty
+bindsym $mod+Return exec alacritty
 mouse_warping none
 
 for_window [class="^.*"] border pixel 5
 
 # i3-gaps stuff :)
-gaps inner 5
+gaps inner 10
 gaps outer 0
 smart_borders on
 new_window none
@@ -107,17 +107,18 @@ bindsym $mod+d exec --no-startup-id rofi -monitor -1 -show drun
 bindsym $mod+Shift+d exec --no-startup-id rofi -monitor -1 -show window
 
 #audio controls
-bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
-bindsym XF86AudioLowerVolume exec pulseaudio-ctl down
-bindsym XF86AudioMute exec pulseaudio-ctl mute
-bindsym $mod+equal exec pulseaudio-ctl up
-bindsym $mod+minus exec pulseaudio-ctl down
-bindsym $mod+0 exec pulseaudio-ctl mute
+bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up
+bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down
+bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
+bindsym $mod+equal exec --no-startup-id pulseaudio-ctl up
+bindsym $mod+minus exec --no-startup-id pulseaudio-ctl down
+bindsym $mod+0 exec --no-startup-id pulseaudio-ctl mute
 
-bindsym $mod+Print exec scrot -u -e 'mv $f ~/Pictures/screenshots/'
-bindsym $mod+Shift+Return exec termite -e ranger
+bindsym $mod+Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/screenshots/'
+bindsym $mod+Shift+Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/screenshots/'
+bindsym $mod+Shift+Return exec --no-startup-id alacritty -e ranger
 
-bindsym $mod+Escape exec i3-msg exit
+bindsym $mod+Escape exec --no-startup-id i3-msg exit
 
 # change focus
 bindsym $mod+Left focus left
@@ -203,7 +204,7 @@ bindsym $mod+r mode "resize"
 bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf 2> ~/.config/i3/.i3blocks.err
     strip_workspace_numbers no
-    tray_output DP1
+    tray_output DVI-I-1
     mode dock
     position top
     height 22
