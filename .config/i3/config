@@ -11,7 +11,7 @@ exec --no-startup-id slack
 exec --no-startup-id dropbox
 
 #Font for window titles
-font pango: San Francisco Display, FontAwesome 11
+font pango: San Francisco Display Medium 11
 
 #Colors
 set $back               #131522
@@ -39,52 +39,13 @@ bindsym $mod+t exec alacritty
 bindsym $mod+Return exec alacritty
 mouse_warping none
 
-for_window [class="^.*"] border pixel 5
+for_window [class="^.*"] border pixel 3
 
 # i3-gaps stuff :)
-gaps inner 10
-gaps outer 0
+gaps inner 4
+gaps outer 3
 smart_borders on
 new_window none
-
-#edit gaps mode
-#########################################################################
-set $mode_gaps Gaps: (o) outer, (i) inner
-set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
-set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
-bindsym $mod+Shift+g mode "$mode_gaps"
-mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
-        bindsym i      mode "$mode_gaps_inner"
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-
-mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
-        bindsym 0     gaps inner current set 0
-
-        bindsym Shift+plus  gaps inner all plus 5
-        bindsym Shift+minus gaps inner all minus 5
-        bindsym Shift+0     gaps inner all set 0
-
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym 0     gaps outer current set 0
-
-        bindsym Shift+plus  gaps outer all plus 5
-        bindsym Shift+minus gaps outer all minus 5
-        bindsym Shift+0     gaps outer all set 0
-
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-##########################################################################
 
 #custom app commands (?i) just means case insenitive..
 for_window [class="(?i)pavucontrol"] floating enable
@@ -208,13 +169,13 @@ bar {
     mode dock
     position top
     height 22
-    font pango: San Francisco Display, FontAwesome 11
+    font pango: San Francisco Display Medium 11
     colors {
         background $back
-        separator $primary
-        statusline $blue
-        focused_workspace $green $green $back
-        active_workspace $back $back $green
+        separator $secondary
+        statusline $secondary
+        focused_workspace $blue $blue $primary
+        active_workspace $primary $back $primary
         inactive_workspace $back $back $primary
         urgent_workspace $back $back $red
     }
