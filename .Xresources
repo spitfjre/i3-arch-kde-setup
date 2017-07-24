@@ -3,19 +3,19 @@ rofi.width:		50
 rofi.padding:	5
 rofi.fullscreen: false
 rofi.fixed-num-lines: true
-rofi.bw:		0
+rofi.bw:		1
 rofi.location:	0
 rofi.terminal:	termite
 rofi.lines:		10
 rofi.eh:		1
 rofi.hide-scrollbar: true
-rofi.font:      San Francisco Display 11
+rofi.font:      San Francisco Display Medium 11
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: #131522, #131522, #008EF9
+rofi.color-window: #131522, #008EF9, #008EF9
 rofi.color-normal: #131522, #FFFAF4, #131522, #008EF9, #FFFAF4
 rofi.color-active: #131522, #008EF9, #131522, #008EF9, #008EF9
 rofi.color-urgent: #131522, #FF273F, #131522, #008EF9, #FF273F
