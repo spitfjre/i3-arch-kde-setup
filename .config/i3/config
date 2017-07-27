@@ -11,7 +11,7 @@ exec --no-startup-id slack
 exec --no-startup-id dropbox
 
 #Font for window titles
-font pango: San Francisco Display Medium, Font Awesome 11
+font pango: San Francisco Text Medium, Font Awesome 9
 
 #Colors
 set $back               #131522
@@ -168,14 +168,14 @@ bar {
     tray_output DVI-I-1
     mode dock
     position top
-    font pango: San Francisco Display Medium, Font Awesome 11
+    font pango: San Francisco Text Medium, Font Awesome 9
     colors {
         background $back
         separator $secondary
         statusline $secondary
         focused_workspace $blue $blue $primary
-        active_workspace $primary $back $primary
-        inactive_workspace $back $back $primary
+        active_workspace $back $back $primary
+        inactive_workspace $back $back $secondary
         urgent_workspace $back $back $red
     }
 }
