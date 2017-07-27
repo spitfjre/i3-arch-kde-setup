@@ -11,7 +11,7 @@ exec --no-startup-id slack
 exec --no-startup-id dropbox
 
 #Font for window titles
-font pango: San Francisco Display Medium 11
+font pango: San Francisco Display Medium, Font Awesome 11
 
 #Colors
 set $back               #131522
@@ -35,8 +35,8 @@ client.background       $white
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 popup_during_fullscreen smart
-bindsym $mod+t exec alacritty
-bindsym $mod+Return exec alacritty
+bindsym $mod+t exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id alacritty
 mouse_warping none
 
 for_window [class="^.*"] border pixel 3
@@ -168,8 +168,7 @@ bar {
     tray_output DVI-I-1
     mode dock
     position top
-    height 22
-    font pango: San Francisco Display Medium 11
+    font pango: San Francisco Display Medium, Font Awesome 11
     colors {
         background $back
         separator $secondary
