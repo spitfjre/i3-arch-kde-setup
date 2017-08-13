@@ -14,6 +14,7 @@ yaourt -S --noconfirm --needed zsh-completions
 yaourt -S --noconfirm --needed ssh
 yaourt -S --noconfirm --needed light
 yaourt -S --noconfirm --needed arandr
+yaourt -S --noconfirm --needed lxappearance
 yaourt -S --noconfirm --needed numlockx
 yaourt -S --noconfirm --needed i3ipc-python-git
 
@@ -39,7 +40,6 @@ yaourt -S --noconfirm --needed nodejs
 yaourt -S --noconfirm --needed npm
 yaourt -S --noconfirm --needed gimp
 yaourt -S --noconfirm --needed ttf-font-awesome
-yaourt -S --noconfirm --needed nerd-fonts-complete
 
 yaourt -Rcns --noconfirm --needed lightdm
 yaourt -S --noconfirm --needed sddm-kcm

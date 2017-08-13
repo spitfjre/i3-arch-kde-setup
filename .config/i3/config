@@ -4,7 +4,6 @@ set $mod Mod4
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/polyscapes/xBAENam.png
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec_always --no-startup-id numlockx on
-exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --off --output DVI-I-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-I-0 --off --output DP-1 --off --output DP-0 --off
 
 exec --no-startup-id redshift
 exec --no-startup-id slack
@@ -67,13 +66,17 @@ bindsym $mod+d exec --no-startup-id rofi -monitor -1 -show drun
 # start rofi (window switcher)
 bindsym $mod+Shift+d exec --no-startup-id rofi -monitor -1 -show window
 
-#audio controls
+# audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up
 bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down
 bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
 bindsym $mod+equal exec --no-startup-id pulseaudio-ctl up
 bindsym $mod+minus exec --no-startup-id pulseaudio-ctl down
 bindsym $mod+0 exec --no-startup-id pulseaudio-ctl mute
+
+# brightness controls
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 # decrease screen brightness
 
 bindsym $mod+Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/screenshots/'
 bindsym $mod+Shift+Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/screenshots/'
@@ -165,7 +168,7 @@ bindsym $mod+r mode "resize"
 bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf 2> ~/.config/i3/.i3blocks.err
     strip_workspace_numbers no
-    tray_output DVI-I-1
+    tray_output LVDS-1
     mode dock
     position top
     font pango: San Francisco Text Medium, Font Awesome 10
@@ -173,7 +176,7 @@ bar {
         background $back
         separator $secondary
         statusline $secondary
-        focused_workspace $blue $blue $primary
+        focused_workspace $back $back $blue
         active_workspace $back $back $primary
         inactive_workspace $back $back $secondary
         urgent_workspace $back $back $red
