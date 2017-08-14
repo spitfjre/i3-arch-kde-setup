@@ -2,8 +2,8 @@
 
 yaourt -S --noconfirm --needed i3-gaps 
 yaourt -S --noconfirm --needed i3status
-yaourt -S --noconfirm --needed i3blocks
 yaourt -S --noconfirm --needed i3lock-wrapper
+yaourt -S --noconfirm --needed polybar-git
 yaourt -S --noconfirm --needed rofi
 yaourt -S --noconfirm --needed alacritty-git
 yaourt -S --noconfirm --needed ranger
@@ -40,6 +40,12 @@ yaourt -S --noconfirm --needed nodejs
 yaourt -S --noconfirm --needed npm
 yaourt -S --noconfirm --needed gimp
 yaourt -S --noconfirm --needed ttf-font-awesome
+
+git clone https://github.com/justbuchanan/fontawesome-python.git
+cd fontawesome-python
+pip install fontawesome
+cd ..
+rm -R fontawesome-python
 
 yaourt -Rcns --noconfirm --needed lightdm
 yaourt -S --noconfirm --needed sddm-kcm

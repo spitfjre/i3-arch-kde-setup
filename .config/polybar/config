@@ -1,0 +1,273 @@
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;=====================================================
+
+[colors]
+background_brighter = #353744
+background = #131522
+foreground = #FFFAF4
+primary = #FFFAF4
+secondary = #9E9C9A
+
+black = #222222
+red = #FF000F
+green = #8CE10A
+yellow = #FFB900
+blue = #008EF9
+magenta = #6C43A6
+cyan = #00D8EC
+white = #FFFFFF
+
+[bar/test]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 25
+;offset-x = 1%
+;offset-y = 1%
+radius = 0.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = ${colors.background}
+
+border-size = 2
+border-color = ${colors.background}
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = Font Awesome:size=10
+font-1 = San Francisco Text Medium:size=10
+
+modules-left = i3
+modules-center = 
+modules-right = volume xkeyboard memory cpu wlan eth battery temperature date time
+
+tray-position = right
+tray-padding = 2
+;tray-transparent = true
+tray-background = ${colors.background}
+
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix = " "
+format-prefix-foreground = ${colors.secondary}
+
+label-layout = %layout%
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+label-indicator-underline = ${colors.secondary}
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+pin-workspaces = true
+
+label-mode-padding = 2
+label-mode-foreground = ${colors.background}
+label-mode-background = ${colors.background}
+
+; focused = Active workspace on focused monitor
+label-focused = %name%
+label-focused-foreground = ${colors.primary}
+label-focused-background = ${colors.background_brighter}
+label-focused-underline = ${colors.blue}
+label-focused-padding = 2
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %name%
+label-unfocused-foreground = ${colors.secondary}
+label-unfocused-background = ${colors.background}
+label-unfocused-underline = ${colors.background}
+label-unfocused-padding = 2
+
+; visible = Active workspace on unfocused monitor
+label-visible = %name%
+label-visible-foreground = ${colors.primary}
+label-visible-background = ${colors.background_brighter}
+label-visible-underline = ${colors.primary}
+label-visible-padding = 2
+
+; urgent = Workspace with urgency hint set
+label-urgent = %name%
+label-urgent-foreground = ${colors.red}
+label-urgent-background = ${colors.background}
+label-urgent-underline = ${colors.red}
+label-urgent-padding = 2
+
+[module/audacious]
+type = internal/audacious
+format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+
+icon-prev = ""
+icon-stop = ""
+icon-play = ""
+icon-pause = ""
+icon-next = ""
+
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+format-prefix = " "
+format-prefix-foreground = ${colors.secondary}
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 1
+format-prefix = " "
+format-prefix-foreground = ${colors.secondary}
+label = %percentage_used:2%%
+
+[module/wlan]
+type = internal/network
+interface = wlp3s0
+interval = 1.0
+
+format-connected =  <label-connected>
+format-connected-foreground = ${colors.secondary}
+label-connected = %signal:2%%
+label-connected-foreground = ${colors.primary}
+
+format-disconnected =
+
+[module/eth]
+type = internal/network
+interface = enp0s25
+interval = 1.0
+
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.secondary}
+label-connected = %local_ip%
+
+format-disconnected =
+
+[module/date]
+type = internal/date
+interval = 5
+
+date = %d-%m-%Y
+date-alt = %d-%m-%Y
+
+format-prefix = " "
+format-prefix-foreground = ${colors.secondary}
+
+label = %date%
+
+[module/time]
+type = internal/date
+interval = 1
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+format-prefix = " "
+format-prefix-foreground = ${colors.secondary}
+
+label = %time%
+
+[module/volume]
+type = internal/volume
+
+format-volume =  <label-volume>
+format-volume-foreground = ${colors.secondary}
+label-volume = %percentage:2%%
+label-volume-foreground = ${colors.primary}
+
+format-muted-prefix = " "
+format-muted-foreground = ${colors.red}
+label-muted = muted
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+label-charging = %percentage:2%%
+
+format-discharging = <ramp-capacity> <label-discharging>
+label-discharging = %percentage:2%%
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.secondary}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = ${colors.secondary}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = ${colors.secondary}
+animation-charging-framerate = 750
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = <ramp> <label>
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${colors.red}
+
+label = %temperature:2%
+label-warn = %temperature:2%
+label-warn-foreground = ${colors.foreground}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-foreground = ${colors.secondary}
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0

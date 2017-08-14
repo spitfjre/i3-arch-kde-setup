@@ -10,7 +10,7 @@ exec --no-startup-id slack
 exec --no-startup-id dropbox
 
 #Font for window titles
-font pango: San Francisco Text Medium, Font Awesome 10
+font pango: Font Awesome, San Francisco Text Medium 10
 
 #Colors
 set $back               #131522
@@ -67,11 +67,11 @@ bindsym $mod+d exec --no-startup-id rofi -monitor -1 -show drun
 bindsym $mod+Shift+d exec --no-startup-id rofi -monitor -1 -show window
 
 # audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up
-bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down
+bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up 1
+bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down 1
 bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
-bindsym $mod+equal exec --no-startup-id pulseaudio-ctl up
-bindsym $mod+minus exec --no-startup-id pulseaudio-ctl down
+bindsym $mod+equal exec --no-startup-id pulseaudio-ctl up 1
+bindsym $mod+minus exec --no-startup-id pulseaudio-ctl down 1
 bindsym $mod+0 exec --no-startup-id pulseaudio-ctl mute
 
 # brightness controls
@@ -83,6 +83,7 @@ bindsym $mod+Shift+Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/screens
 bindsym $mod+Shift+Return exec --no-startup-id alacritty -e ranger
 
 bindsym $mod+Escape exec --no-startup-id i3-msg exit
+bindsym $mod+Shift+Escape exec --no-startup-id sudo poweroff
 
 # change focus
 bindsym $mod+Left focus left
@@ -155,7 +156,7 @@ mode "resize" {
     # same bindings, but for the arrow keys
     bindsym Left resize shrink width 2 px or 2 ppt
     bindsym Down resize grow height 2 px or 2 ppt
-    bindsym Up resize shrink height 2 px or 2 ppt
+    bindsym Up resize shrink heighrename_workspacest 2 px or 2 ppt
     bindsym Right resize grow width 2 px or 2 ppt
 
     # back to normal: Enter or Escape
@@ -165,22 +166,4 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bar {
-    status_command i3blocks -c ~/.config/i3/i3blocks.conf 2> ~/.config/i3/.i3blocks.err
-    strip_workspace_numbers no
-    tray_output LVDS-1
-    mode dock
-    position top
-    font pango: San Francisco Text Medium, Font Awesome 10
-    colors {
-        background $back
-        separator $secondary
-        statusline $secondary
-        focused_workspace $back $back $blue
-        active_workspace $back $back $primary
-        inactive_workspace $back $back $secondary
-        urgent_workspace $back $back $red
-    }
-}
-
-# vim:filetype=i3
+exec_always --no-startup-id sh ~/.config/polybar/launch.sh

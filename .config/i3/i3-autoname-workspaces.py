@@ -2,144 +2,137 @@
 
 # This script listens for i3 events and updates workspace names to show icons
 # for running programs.  It contains icons for a few programs, but more can
-# easily be added by inserting them into WINDOW_ICONS below.
+# easily be added by adding them to WINDOW_ICONS below.
+#
+# It also re-numbers workspaces in ascending order with one skipped number
+# between monitors (leaving a gap for a new workspace to be created). By
+# default, i3 workspace numbers are sticky, so they quickly get out of order.
 #
 # Dependencies
-# * xorg-xprop - install through system package manager
-# * i3ipc - install with pip or through the AUR
+# * xorg-xprop  - install through system package manager
+# * i3ipc       - install with pip
+# * fontawesome - install with pip
 #
 # Installation:
 # * Download this script and place it in ~/.config/i3/ (or anywhere you want)
-# * Add "exec_always python3 ~/.i3/i3-autoname-workspaces.py" to your i3 config
-# * Restart i3: "$ i3-msg restart"
+# * Add "exec_always ~/.config/i3/i3-autoname-workspaces.py &" to your i3 config
+# * Restart i3: $ i3-msg restart
 #
 # Configuration:
-# The default i3 config's keybingings reference workspaces by name, which is an
-# issue when using this script because the names are constantaly changing to
-# show window icons.  Instead, you'll need to change the keybindings to
+# The default i3 config's keybindings reference workspaces by name, which is an
+# issue when using this script because the "names" are constantaly changing to
+# include window icons.  Instead, you'll need to change the keybindings to
 # reference workspaces by number.  Change lines like:
 #   bindsym $mod+1 workspace 1
 # To:
 #   bindsym $mod+1 workspace number 1
-#
-# Forked from Justin Buchanan
-# https://gist.github.com/justbuchanan/70fdae0d5182f6039aa8383c06a3f4ad
-#
-# Todo list:
-# Additional Features:
-#  Integrated Terminal app icons
-#  Integrated multi monitor setup
-
 
 import i3ipc
-import subprocess as proc
-import re
+import logging
 import signal
 import sys
+import fontawesome as fa
 
+from util import *
 
 # Add icons here for common programs you use.  The keys are the X window class
-# (WM_CLASS) names and the icons can be any text you want to display. However
-# most of these are character codes for font awesome:
+# (WM_CLASS) names (lower-cased) and the icons can be any text you want to
+# display.
+#
+# Most of these are character codes for font awesome:
 #   http://fortawesome.github.io/Font-Awesome/icons/
-FA_CALCULATOR = '\uf1ec'
-FA_CHROME = '\uf268'
-FA_COMMENTS_O = '\uf0e6'
-FA_CODE = '\uf121'
-FA_FILE_PDF_O = '\uf1c1'
-FA_FILE_TEXT_O = '\uf0f6'
-FA_FILES_O = '\uf0c5'
-FA_FIREFOX = '\uf269'
-FA_ENVELOPE_O = '\uf0e0'
-FA_EYEDROPPER = '\uf1fb'
-FA_MUSIC = '\uf001'
-FA_PICTURE_O = '\uf03e'
-FA_KEY = '\uf084'
-FA_SPOTIFY = '\uf1bc'
-FA_TERMINAL = '\uf120'
-FA_CUBE = '\uf1b2'
-FA_PLAY_CIRCLE = '\uf144'
-FA_DOWNLOAD = '\uf019'
-FA_VOLUME_UP = '\uf028'
-FA_STEAM = '\uf1b6'
-FA_PAINTBRUSH = '\uf1fc'
-FA_FILM = '\uf008'
-FA_MAP_O = '\uf278'
-FA_DATABASE = '\uf1c0'
-FA_SLACK = '\uf198'
+#
+# If you're not sure what the WM_CLASS is for your application, you can use
+# xprop (https://linux.die.net/man/1/xprop). Run `xprop | grep WM_CLASS`
+# then click on the application you want to inspect.
 WINDOW_ICONS = {
-    'dolphin': FA_FILES_O,
-    'termite': FA_TERMINAL,
-    'Alacritty': FA_TERMINAL,
-    'chromium': FA_CHROME,
-    'Chromium': FA_CHROME,
-    'subl3': FA_CODE,
-    'jetbrains-webstorm': FA_CODE,
-    'jetbrains-idea': FA_CODE,
-    'Thunderbird': FA_ENVELOPE_O,
-    'feh': FA_PICTURE_O,
-    'gimp': FA_PAINTBRUSH,
-    'mpv': FA_PLAY_CIRCLE,
-    'slack': FA_SLACK,
-    'Audacious': FA_MUSIC,
-    'audacious': FA_MUSIC
+    'Alacritty': fa.icons['terminal'],
+    'Audacious': fa.icons['music'],
+    'audacious': fa.icons['music'],
+    'chromium': fa.icons['chrome'],
+    'Chromium': fa.icons['chrome'],
+    'dolphin': fa.icons['files-o'],
+    'feh': fa.icons['picture-o'],
+    'gimp': fa.icons['paint-brush'],
+    'jetbrains-webstorm': fa.icons['code'],
+    'jetbrains-idea': fa.icons['code'],
+    'mpv': fa.icons['play-circle'],
+    'slack': fa.icons['slack'],
+    'subl3': fa.icons['file-text-o'],
+    'Thunderbird': fa.icons['envelope'],
 }
 
+# This icon is used for any application not in the list above
+DEFAULT_ICON = '*'
 
-i3 = i3ipc.Connection()
-
-# Returns an array of the values for the given property from xprop.  This
-# requires xorg-xprop to be installed.
-def xprop(win_id, property):
-    try:
-        prop = proc.check_output(['xprop', '-id', str(win_id), property], stderr=proc.DEVNULL)
-        prop = prop.decode('utf-8')
-        return re.findall('"([^"]+)"', prop)
-    except proc.CalledProcessError as e:
-        print("Unable to get property for window '%s'" % str(win_id))
-        return None
-
-def icon_for_terminal_app(window):
-    names = xprop(window.window, 'WM_NAME')
-    print(names)
-    if names != None and len(names) > 0:
-        for name in names:
-            if name in WINDOW_ICONS:
-                return WINDOW_ICONS[name]
 
 def icon_for_window(window):
+    # Try all window classes and use the first one we have an icon for
     classes = xprop(window.window, 'WM_CLASS')
     if classes != None and len(classes) > 0:
         for cls in classes:
+            cls = cls.lower()  # case-insensitive matching
             if cls in WINDOW_ICONS:
-                return WINDOW_ICONS[cls] + ' '
-        print('No icon available for window with classes: %s' % str(classes))
-    return '*'
+                return WINDOW_ICONS[cls]
+    logging.info('No icon available for window with classes: %s' % str(classes))
+    return DEFAULT_ICON
+
 
 # renames all workspaces based on the windows present
-def rename():
-    for workspace in i3.get_tree().workspaces():
-        icons = [icon_for_window(w) for w in workspace.leaves()]
-        icon_str = ': ' + ' '.join(icons) if len(icons) else ''
-        new_name = str(workspace.num) + icon_str
+# also renumbers them in ascending order, with one gap left between monitors
+# for example: workspace numbering on two monitors: [1, 2, 3], [5, 6]
+def rename_workspaces(i3):
+    ws_infos = i3.get_workspaces()
+    prev_output = None
+    n = 1
+    for ws_index, workspace in enumerate(i3.get_tree().workspaces()):
+        ws_info = ws_infos[ws_index]
+
+        name_parts = parse_workspace_name(workspace.name)
+        name_parts['icons'] = ' '.join([icon_for_window(w)
+                                        for w in workspace.leaves()])
+
+        # As we enuconstruct_workspace_namemerate, leave one gap in workspace numbers between each monitor.
+        # This leaves a space to insert a new one later.
+        if ws_info.output != prev_output and prev_output != None:
+            n += 1
+        prev_output = ws_info.output
+
+        # renumber workspace
+        name_parts['num'] = n
+        n += 1
+
+        new_name = construct_workspace_name(name_parts)
+        logging.info('rename workspace "%s" to "%s"' % (workspace.name, new_name))
         i3.command('rename workspace "%s" to "%s"' % (workspace.name, new_name))
 
-rename()
 
-# exit gracefully when ctrl+c is pressed
-def signal_handler(signal, frame):
-    # rename workspaces to just numbers on exit to indicate that this script is
-    # no longer running
+# Rename workspaces to just numbers and shortnames, removing the icons.
+def on_exit(i3):
     for workspace in i3.get_tree().workspaces():
-        i3.command('rename workspace "%s" to "%d"' % (workspace.name, workspace.num))
+        name_parts = parse_workspace_name(workspace.name)
+        name_parts['icons'] = None
+        new_name = construct_workspace_name(name_parts)
+        i3.command('rename workspace "%s" to "%s"' % (workspace.name, new_name))
     i3.main_quit()
     sys.exit(0)
-signal.signal(signal.SIGINT, signal_handler)
-signal.signal(signal.SIGTERM, signal_handler)
 
-# call rename() for relevant window events
-def on_change(i3, e):
-    if e.change in ['new', 'close', 'move']:
-        rename()
-i3.on('window', on_change)
-i3.main()
+
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)
+
+    i3 = i3ipc.Connection()
+
+    # Exit gracefully when ctrl+c is pressed
+    for sig in [signal.SIGINT, signal.SIGTERM]:
+        signal.signal(sig, lambda signal, frame: on_exit(i3))
+
+    rename_workspaces(i3)
+
+    # Call rename_workspaces() for relevant window events
+    def window_event_handler(i3, e):
+        if e.change in ['new', 'close', 'move']:
+            rename_workspaces(i3)
+
+    i3.on('window', window_event_handler)
+    i3.main()
