@@ -17,6 +17,9 @@ yaourt -S --noconfirm --needed arandr
 yaourt -S --noconfirm --needed lxappearance
 yaourt -S --noconfirm --needed numlockx
 yaourt -S --noconfirm --needed i3ipc-python-git
+yaourt -S --noconfirm --needed mpd
+yaourt -S --noconfirm --needed mpc
+yaourt -S --noconfirm --needed ncmpc
 
 yaourt -S --noconfirm --needed jdk
 yaourt -S --noconfirm --needed ipe
@@ -26,7 +29,6 @@ yaourt -S --noconfirm --needed slack-desktop
 yaourt -S --noconfirm --needed kdeplasma-addons
 yaourt -S --noconfirm --needed htop
 yaourt -S --noconfirm --needed keepassx2
-yaourt -S --noconfirm --needed audacious
 yaourt -S --noconfirm --needed mpv
 yaourt -S --noconfirm --needed dropbox
 yaourt -S --noconfirm --needed chromium

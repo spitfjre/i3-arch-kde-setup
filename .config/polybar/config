@@ -27,9 +27,6 @@ white = #FFFFFF
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 25
-;offset-x = 1%
-;offset-y = 1%
-radius = 0.0
 fixed-center = false
 
 background = ${colors.background}
@@ -48,41 +45,18 @@ module-margin-left = 2
 module-margin-right = 2
 
 font-0 = Font Awesome:size=10
-font-1 = San Francisco Text Medium:size=10
+font-1 = System San Francisco Regular:size=10
 
-modules-left = i3
-modules-center = 
-modules-right = volume xkeyboard memory cpu wlan eth battery temperature date time
+modules-left = i3 mpd
+modules-center =
+modules-right = memory cpu wlan wlan_down wlan_up eth eth_down eth_up battery temperature volume date time
 
 tray-position = right
-tray-padding = 2
-;tray-transparent = true
+tray-padding-left = 2
+tray-padding-right = 2
 tray-background = ${colors.background}
 
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix = " "
-format-prefix-foreground = ${colors.secondary}
-
-label-layout = %layout%
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
+wm-restack = i3
 
 [module/i3]
 type = internal/i3
@@ -99,7 +73,7 @@ label-mode-background = ${colors.background}
 
 ; focused = Active workspace on focused monitor
 label-focused = %name%
-label-focused-foreground = ${colors.primary}
+label-focused-foreground = ${colors.blue}
 label-focused-background = ${colors.background_brighter}
 label-focused-underline = ${colors.blue}
 label-focused-padding = 2
@@ -125,42 +99,91 @@ label-urgent-background = ${colors.background}
 label-urgent-underline = ${colors.red}
 label-urgent-padding = 2
 
-[module/audacious]
-type = internal/audacious
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+[module/mpd]
+type = internal/mpd
 
-icon-prev = ""
-icon-stop = ""
-icon-play = ""
-icon-pause = ""
-icon-next = ""
+format-playing = <icon-prev> <icon-stop> <toggle> <icon-next>   <label-song>
+format-paused = <icon-prev> <icon-stop> <toggle> <icon-next>   <label-song>
+format-stopped =
 
-label-song-maxlen = 25
+icon-prev = "  "
+icon-prev-foreground = ${colors.green}
+icon-stop = "  "
+icon-stop-foreground = ${colors.green}
+icon-play = "  "
+icon-play-foreground = ${colors.green}
+icon-pause = "  "
+icon-pause-foreground = ${colors.green}
+icon-next = "  "
+icon-next-foreground = ${colors.green}
+
+label-song-maxlen = 75
 label-song-ellipsis = true
+label-song-foreground = ${colors.green}
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label> <bar>
+label = BL
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = #ff
+bar-indicator-font = 2
+bar-fill = ─
+bar-fill-font = 2
+bar-fill-foreground = #9f78e1
+bar-empty = ─
+bar-empty-font = 2
+bar-empty-foreground = ${colors.foreground-alt}
+
+
 
 [module/cpu]
 type = internal/cpu
 interval = 1
 format-prefix = " "
 format-prefix-foreground = ${colors.secondary}
-label = %percentage:2%%
+label = %percentage:2:2%%
 
 [module/memory]
 type = internal/memory
 interval = 1
 format-prefix = " "
 format-prefix-foreground = ${colors.secondary}
-label = %percentage_used:2%%
+label = %percentage_used:2:2%%
 
 [module/wlan]
 type = internal/network
 interface = wlp3s0
 interval = 1.0
 
-format-connected =  <label-connected>
-format-connected-foreground = ${colors.secondary}
-label-connected = %signal:2%%
-label-connected-foreground = ${colors.primary}
+format-connected-prefix = " " 
+format-connected-prefix-foreground = ${colors.secondary}
+label-connected = %signal:2:2%%
+
+format-disconnected =
+
+[module/wlan_down]
+type = internal/network
+interface = wlp3s0
+interval = 1.0
+
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.secondary}
+label-connected = %downspeed:9%
+
+format-disconnected =
+
+[module/wlan_up]
+type = internal/network
+interface = wlp3s0
+interval = 1.0
+
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.secondary}
+label-connected = %upspeed:9%
 
 format-disconnected =
 
@@ -172,8 +195,31 @@ interval = 1.0
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.secondary}
 label-connected = %local_ip%
+label-connected-foreground = ${colors.primary}
 
 format-disconnected =
+
+[module/eth_down]
+type = internal/network
+interface = enp0s25
+interval = 1.0
+
+format-connected =  <label-connected>
+format-connected-foreground = ${colors.secondary}
+label-connected = %downspeed:12:12%
+label-connected-foreground = ${colors.primary}
+
+format-disconnected =
+
+[module/eth_up]
+type = internal/network
+interface = enp0s25
+interval = 1.0
+
+format-connected =  <label-connected>
+format-connected-foreground = ${colors.secondary}
+label-connected = %upspeed:12:12%
+label-connected-foreground = ${colors.primary}
 
 [module/date]
 type = internal/date
@@ -204,7 +250,7 @@ type = internal/volume
 
 format-volume =  <label-volume>
 format-volume-foreground = ${colors.secondary}
-label-volume = %percentage:2%%
+label-volume = %percentage:2:2%%
 label-volume-foreground = ${colors.primary}
 
 format-muted-prefix = " "
@@ -218,10 +264,10 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-label-charging = %percentage:2%%
+label-charging = %percentage:2:2%%
 
 format-discharging = <ramp-capacity> <label-discharging>
-label-discharging = %percentage:2%%
+label-discharging = %percentage:2:2%%
 
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.secondary}
@@ -250,8 +296,8 @@ format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${colors.red}
 
-label = %temperature:2%
-label-warn = %temperature:2%
+label = %temperature:5:5%
+label-warn = %temperature:5:5%
 label-warn-foreground = ${colors.foreground}
 
 ramp-0 = 

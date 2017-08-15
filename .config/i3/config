@@ -8,6 +8,7 @@ exec_always --no-startup-id numlockx on
 exec --no-startup-id redshift
 exec --no-startup-id slack
 exec --no-startup-id dropbox
+exec --no-startup-id mpd
 
 #Font for window titles
 font pango: Font Awesome, San Francisco Text Medium 10
@@ -74,16 +75,22 @@ bindsym $mod+equal exec --no-startup-id pulseaudio-ctl up 1
 bindsym $mod+minus exec --no-startup-id pulseaudio-ctl down 1
 bindsym $mod+0 exec --no-startup-id pulseaudio-ctl mute
 
+# media player controls
+bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+bindsym XF86AudioStop exec --no-startup-id mpc stop
+bindsym XF86AudioNext exec --no-startup-id mpc next
+bindsym XF86AudioPrev exec --no-startup-id mpc prev
+
 # brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 1 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1 # decrease screen brightness
 
 bindsym $mod+Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/screenshots/'
 bindsym $mod+Shift+Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/screenshots/'
 bindsym $mod+Shift+Return exec --no-startup-id alacritty -e ranger
 
 bindsym $mod+Escape exec --no-startup-id i3-msg exit
-bindsym $mod+Shift+Escape exec --no-startup-id sudo poweroff
+bindsym $mod+Shift+Escape exec --no-startup-id poweroff
 
 # change focus
 bindsym $mod+Left focus left

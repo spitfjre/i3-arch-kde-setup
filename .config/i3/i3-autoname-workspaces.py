@@ -47,10 +47,14 @@ from util import *
 # then click on the application you want to inspect.
 WINDOW_ICONS = {
     'Alacritty': fa.icons['terminal'],
+    'alacritty': fa.icons['terminal'],
     'Audacious': fa.icons['music'],
     'audacious': fa.icons['music'],
-    'chromium': fa.icons['chrome'],
     'Chromium': fa.icons['chrome'],
+    'chromium': fa.icons['chrome'],
+    'Code': fa.icons['code'],
+    'code': fa.icons['code'],
+    'discord': fa.icons['comments'],
     'dolphin': fa.icons['files-o'],
     'feh': fa.icons['picture-o'],
     'gimp': fa.icons['paint-brush'],
