@@ -86,11 +86,11 @@ def icon_for_window(window):
 # also renumbers them in ascending order, with one gap left between monitors
 # for example: workspace numbering on two monitors: [1, 2, 3], [5, 6]
 def rename_workspaces(i3):
-    ws_infos = i3.get_workspaces()
-    prev_output = None
-    n = 1
+    #ws_infos = i3.get_workspaces()
+    #prev_output = None
+    #n = 1
     for ws_index, workspace in enumerate(i3.get_tree().workspaces()):
-        ws_info = ws_infos[ws_index]
+        #ws_info = ws_infos[ws_index]
 
         name_parts = parse_workspace_name(workspace.name)
         name_parts['icons'] = ' '.join([icon_for_window(w)
@@ -98,13 +98,13 @@ def rename_workspaces(i3):
 
         # As we enuconstruct_workspace_namemerate, leave one gap in workspace numbers between each monitor.
         # This leaves a space to insert a new one later.
-        if ws_info.output != prev_output and prev_output != None:
-            n += 1
-        prev_output = ws_info.output
+        #if ws_info.output != prev_output and prev_output != None:
+        #    n += 1
+        #prev_output = ws_info.output
 
         # renumber workspace
-        name_parts['num'] = n
-        n += 1
+        #name_parts['num'] = n
+        #n += 1
 
         new_name = construct_workspace_name(name_parts)
         logging.info('rename workspace "%s" to "%s"' % (workspace.name, new_name))

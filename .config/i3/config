@@ -14,15 +14,15 @@ exec --no-startup-id mpd
 font pango: Font Awesome, San Francisco Text Medium 10
 
 #Colors
-set $back               #131522
-set $primary            #FFFAF4
-set $secondary          #9E9C9A
-set $black              #222222
+set $back               #121212
+set $primary            #FFFFFF
+set $secondary          #BBBBBB
+set $black              #121212
 set $grey               #444444
-set $white              #FFFFFF
-set $blue               #008EF9
-set $red                #FF273F
-set $green              #8CE10A
+set $white              #BBBBBB
+set $blue               #1080D0
+set $red                #FA2573
+set $green              #98E123
 
 # class                 border   backgr.  text    indicator child_border
 client.focused          $blue    $primary $black  #2e9ef4   $blue

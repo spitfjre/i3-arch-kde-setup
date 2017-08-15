@@ -87,38 +87,140 @@ render_timer: false
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: true
 
-# Colors (Tomorrow Night Bright)
+# # Colors (Dark Pastel)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x000000'
+#     foreground: '0xffffff'
+
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '0xffffff'
+#     cursor: '0xbbbbbb'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x000000'
+#     red:     '0xFF5555'
+#     green:   '0x55FF55'
+#     yellow:  '0xFFFF55'
+#     blue:    '0x5555FF'
+#     magenta: '0xFF55FF'
+#     cyan:    '0x55FFFF'
+#     white:   '0xBBBBBB'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x555555'
+#     red:     '0xFF5555'
+#     green:   '0x55FF55'
+#     yellow:  '0xFFFF55'
+#     blue:    '0x5555FF'
+#     magenta: '0xFF55FF'
+#     cyan:    '0x55FFFF'
+#     white:   '0xFFFFFF'
+
+# # Colors (Elementary)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x181818'
+#     foreground: '0xEFEFEF'
+
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '0xEFEFEF'
+#     cursor: '0xBBBBBB'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x242424'
+#     red:     '0xD71C15'
+#     green:   '0x5AA513'
+#     yellow:  '0xFDB40C'
+#     blue:    '0x0955FF'
+#     magenta: '0xE40038'
+#     cyan:    '0x2595E1'
+#     white:   '0xEFEFEF'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x4B4B4B'
+#     red:     '0xFC1C18'
+#     green:   '0x6BC219'
+#     yellow:  '0xFEC80E'
+#     blue:    '0x0955FF'
+#     magenta: '0xFB0050'
+#     cyan:    '0x3EA8FC'
+#     white:   '0x8C88EC'
+
+# # Colors (Monokai Vivid)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x121212'
+#     foreground: '0xF9F9F9'
+
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '0xF9F9F9'
+#     cursor: '0xFB0007'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x121212'
+#     red:     '0xFA2934'
+#     green:   '0x98E123'
+#     yellow:  '0xFFF30A'
+#     blue:    '0x0443FF'
+#     magenta: '0xF800F8'
+#     cyan:    '0x01B6ED'
+#     white:   '0xFFFFFF'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x838383'
+#     red:     '0xF6669D'
+#     green:   '0xB1E05F'
+#     yellow:  '0xFFF26D'
+#     blue:    '0x0443FF'
+#     magenta: '0xF200F6'
+#     cyan:    '0x51CEFF'
+#     white:   '0xFFFFFF'
+
+# Colors (Molokai)
 colors:
   # Default colors
   primary:
-    background: '0x131522'
-    foreground: '0xFFFAF4'
+    background: '0x121212'
+    foreground: '0xBBBBBB'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x9E9C9A'
-    cursor: '0xFFFAF4'
+    text: '0xBBBBBB'
+    cursor: '0xBBBBBB'
 
   # Normal colors
   normal:
-    black:   '0x222222'
-    red:     '0xFF000F'
-    green:   '0x8CE10A'
-    yellow:  '0xFFB900'
-    blue:    '0x008EF9'
-    magenta: '0x6C43A6'
-    cyan:    '0x00D8EC'
-    white:   '0xFFFFFF'
+    black:   '0x121212'
+    red:     '0xFA2573'
+    green:   '0x98E123'
+    yellow:  '0xDFD460'
+    blue:    '0x1080D0'
+    magenta: '0x8700FF'
+    cyan:    '0x43A8D0'
+    white:   '0xBBBBBB'
 
   # Bright colors
   bright:
-    black:   '0x444444'
-    red:     '0xFF273F'
-    green:   '0xABE15B'
-    yellow:  '0xFFD242'
-    blue:    '0x0092FF'
-    magenta: '0x9A5FEC'
-    cyan:    '0x67FFF0'
+    black:   '0x555555'
+    red:     '0xF6669D'
+    green:   '0xB1E05F'
+    yellow:  '0xFFF26D'
+    blue:    '0x00AFFF'
+    magenta: '0xAF87FF'
+    cyan:    '0x51CEFF'
     white:   '0xFFFFFF'
 
 # Visual Bell

@@ -8,25 +8,24 @@
 ;=====================================================
 
 [colors]
-background_brighter = #353744
-background = #131522
-foreground = #FFFAF4
-primary = #FFFAF4
-secondary = #9E9C9A
+background = #121212
+foreground = #FFFFFF
+primary = #FFFFFF
+secondary = #BBBBBB
 
-black = #222222
-red = #FF000F
-green = #8CE10A
-yellow = #FFB900
-blue = #008EF9
-magenta = #6C43A6
-cyan = #00D8EC
-white = #FFFFFF
+black = #121212
+red = #FA2573
+green = #98E123
+yellow = #DFD460
+blue = #1080D0
+magenta = #8700FF
+cyan = #43A8D0
+white = #BBBBBB
 
 [bar/test]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 25
+height = 24
 fixed-center = false
 
 background = ${colors.background}
@@ -44,8 +43,8 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = Font Awesome:size=10
-font-1 = System San Francisco Regular:size=10
+font-0 = System San Francisco Regular:size=10
+font-1 = Font Awesome:size=10
 
 modules-left = i3 mpd
 modules-center =
@@ -65,7 +64,7 @@ index-sort = true
 wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
-pin-workspaces = true
+pin-workspaces = false
 
 label-mode-padding = 2
 label-mode-foreground = ${colors.background}
@@ -73,30 +72,32 @@ label-mode-background = ${colors.background}
 
 ; focused = Active workspace on focused monitor
 label-focused = %name%
-label-focused-foreground = ${colors.blue}
-label-focused-background = ${colors.background_brighter}
-label-focused-underline = ${colors.blue}
+label-focused-font = 2
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.blue}
+label-focused-underline = ${colors.background}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
+label-unfocused-font = 2
 label-unfocused-foreground = ${colors.secondary}
 label-unfocused-background = ${colors.background}
-label-unfocused-underline = ${colors.background}
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %name%
+label-visible-font = 2
 label-visible-foreground = ${colors.primary}
-label-visible-background = ${colors.background_brighter}
-label-visible-underline = ${colors.primary}
+label-visible-background = ${colors.background}
 label-visible-padding = 2
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %name%
-label-urgent-foreground = ${colors.red}
-label-urgent-background = ${colors.background}
-label-urgent-underline = ${colors.red}
+label-urgent-font = 2
+label-urgent-foreground = ${colors.background}
+label-urgent-background = ${colors.red}
+label-urgent-underline = ${colors.background}
 label-urgent-padding = 2
 
 [module/mpd]
@@ -107,43 +108,30 @@ format-paused = <icon-prev> <icon-stop> <toggle> <icon-next>   <label-song>
 format-stopped =
 
 icon-prev = "  "
+icon-prev-font = 2
 icon-prev-foreground = ${colors.green}
 icon-stop = "  "
+icon-stop-font = 2
 icon-stop-foreground = ${colors.green}
 icon-play = "  "
+icon-play-font = 2
 icon-play-foreground = ${colors.green}
 icon-pause = "  "
+icon-pause-font = 2
 icon-pause-foreground = ${colors.green}
 icon-next = "  "
+icon-next-font = 2
 icon-next-foreground = ${colors.green}
 
 label-song-maxlen = 75
 label-song-ellipsis = true
 label-song-foreground = ${colors.green}
 
-[module/xbacklight]
-type = internal/xbacklight
-
-format = <label> <bar>
-label = BL
-
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #ff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
-
-
-
 [module/cpu]
 type = internal/cpu
 interval = 1
 format-prefix = " "
+format-prefix-font = 2
 format-prefix-foreground = ${colors.secondary}
 label = %percentage:2:2%%
 
@@ -151,6 +139,7 @@ label = %percentage:2:2%%
 type = internal/memory
 interval = 1
 format-prefix = " "
+format-prefix-font = 2
 format-prefix-foreground = ${colors.secondary}
 label = %percentage_used:2:2%%
 
@@ -159,9 +148,10 @@ type = internal/network
 interface = wlp3s0
 interval = 1.0
 
-format-connected-prefix = " " 
+format-connected-prefix = " "
+format-connected-prefix-font = 2
 format-connected-prefix-foreground = ${colors.secondary}
-label-connected = %signal:2:2%%
+label-connected = %signal:2%%
 
 format-disconnected =
 
@@ -171,6 +161,7 @@ interface = wlp3s0
 interval = 1.0
 
 format-connected-prefix = " "
+format-connected-prefix-font = 2
 format-connected-prefix-foreground = ${colors.secondary}
 label-connected = %downspeed:9%
 
@@ -182,6 +173,7 @@ interface = wlp3s0
 interval = 1.0
 
 format-connected-prefix = " "
+format-connected-prefix-font = 2
 format-connected-prefix-foreground = ${colors.secondary}
 label-connected = %upspeed:9%
 
@@ -193,9 +185,9 @@ interface = enp0s25
 interval = 1.0
 
 format-connected-prefix = " "
+format-connected-prefix-font = 2
 format-connected-prefix-foreground = ${colors.secondary}
 label-connected = %local_ip%
-label-connected-foreground = ${colors.primary}
 
 format-disconnected =
 
@@ -204,10 +196,10 @@ type = internal/network
 interface = enp0s25
 interval = 1.0
 
-format-connected =  <label-connected>
-format-connected-foreground = ${colors.secondary}
-label-connected = %downspeed:12:12%
-label-connected-foreground = ${colors.primary}
+format-connected-prefix = " "
+format-connected-prefix-font = 2
+format-connected-prefix-foreground = ${colors.secondary}
+label-connected = %downspeed:9%
 
 format-disconnected =
 
@@ -216,10 +208,10 @@ type = internal/network
 interface = enp0s25
 interval = 1.0
 
-format-connected =  <label-connected>
-format-connected-foreground = ${colors.secondary}
-label-connected = %upspeed:12:12%
-label-connected-foreground = ${colors.primary}
+format-connected-prefix = " "
+format-connected-prefix-font = 2
+format-connected-prefix-foreground = ${colors.secondary}
+label-connected = %upspeed:9%
 
 [module/date]
 type = internal/date
@@ -229,6 +221,7 @@ date = %d-%m-%Y
 date-alt = %d-%m-%Y
 
 format-prefix = " "
+format-prefix-font = 2
 format-prefix-foreground = ${colors.secondary}
 
 label = %date%
@@ -241,19 +234,22 @@ time = %H:%M
 time-alt = %H:%M:%S
 
 format-prefix = " "
+format-prefix-font = 2
 format-prefix-foreground = ${colors.secondary}
 
 label = %time%
 
 [module/volume]
 type = internal/volume
+interval = 0.1
 
-format-volume =  <label-volume>
-format-volume-foreground = ${colors.secondary}
-label-volume = %percentage:2:2%%
-label-volume-foreground = ${colors.primary}
+format-volume-prefix = " "
+format-volume-prefix-font = 2
+format-volume-prefix-foreground = ${colors.secondary}
+label-volume = %percentage:2%%
 
 format-muted-prefix = " "
+format-muted-prefix-font = 2
 format-muted-foreground = ${colors.red}
 label-muted = muted
 
@@ -264,12 +260,13 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-label-charging = %percentage:2:2%%
+label-charging = %percentage:2%%
 
 format-discharging = <ramp-capacity> <label-discharging>
-label-discharging = %percentage:2:2%%
+label-discharging = %percentage:2%%
 
 format-full-prefix = " "
+format-full-prefix-font = 2
 format-full-prefix-foreground = ${colors.secondary}
 
 ramp-capacity-0 = 
@@ -277,6 +274,7 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
+ramp-capacity-font = 2
 ramp-capacity-foreground = ${colors.secondary}
 
 animation-charging-0 = 
@@ -284,6 +282,7 @@ animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
+animation-charging-font = 2
 animation-charging-foreground = ${colors.secondary}
 animation-charging-framerate = 750
 
@@ -296,15 +295,15 @@ format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${colors.red}
 
-label = %temperature:5:5%
-label-warn = %temperature:5:5%
-label-warn-foreground = ${colors.foreground}
+label = %temperature:5%
+label-warn = %temperature:5%
 
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
 ramp-3 = 
 ramp-4 = 
+ramp-font = 2
 ramp-foreground = ${colors.secondary}
 
 [settings]
