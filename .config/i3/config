@@ -1,7 +1,7 @@
 set $mod Mod4
 
 #AUTOSTART STUFF
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/polyscapes/xBAENam.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/CuQSAKD.png
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec_always --no-startup-id numlockx on
 exec_always --no-startup-id xrandr --output VGA-0 --off --output LVDS-0 --primary --dpi 96 --mode 1600x900 --pos 0x0 --rotate normal --output DP-5 --off --output DP-4 --off --output DP-3 --off --output DP-2 --off --output DP-1 --dpi 96 --mode 1280x1024 --pos 1600x0 --rotate normal --output DP-0 --off
@@ -43,8 +43,8 @@ mouse_warping none
 for_window [class="^.*"] border pixel 3
 
 # i3-gaps stuff :)
-gaps inner 4
-gaps outer 3
+gaps inner 10
+gaps outer 5
 smart_borders on
 new_window none
 

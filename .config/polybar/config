@@ -20,10 +20,9 @@ magenta = #8700FF
 cyan = #43A8D0
 white = #BBBBBB
 
-[bar/primary]
-monitor = ${env:MONITOR:LVDS-0}
+[bar/top_primary]
+monitor = ${env:MONITOR}
 width = 100%
-height = 25
 fixed-center = false
 
 background = ${colors.background}
@@ -45,9 +44,40 @@ font-0 = System San Francisco Regular:size=10
 font-1 = Font Awesome:size=10
 font-2 = DejaVu Sans Mono:size=10
 
-modules-left = i3 mpd
+modules-left = i3
 modules-center =
 modules-right = memory cpu wlan wlan_down wlan_up eth eth_down eth_up battery temperature volume date time
+
+wm-restack = i3
+
+[bar/bottom_primary]
+monitor = ${env:MONITOR}
+width = 100%
+fixed-center = false
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.primary}
+
+line-size = 2
+line-color = ${colors.background}
+
+border-size = 1
+border-color = ${colors.background}
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = System San Francisco Regular:size=10
+font-1 = Font Awesome:size=10
+font-2 = DejaVu Sans Mono:size=10
+
+modules-left = mpd
+modules-center =
+modules-right =
 
 tray-position = right
 tray-padding-left = 2
@@ -56,10 +86,9 @@ tray-background = ${colors.background}
 
 wm-restack = i3
 
-[bar/secondary]
+[bar/top_secondary]
 monitor = ${env:MONITOR:DP-1}
 width = 100%
-height = 25
 fixed-center = false
 
 background = ${colors.background}
@@ -79,10 +108,42 @@ module-margin-right = 2
 
 font-0 = System San Francisco Regular:size=10
 font-1 = Font Awesome:size=10
+font-2 = DejaVu Sans Mono:size=10
 
-modules-left = i3 mpd
+modules-left = i3
 modules-center =
-modules-right = volume date time
+modules-right = battery temperature volume time
+
+[bar/bottom_secondary]
+monitor = ${env:MONITOR}
+width = 100%
+fixed-center = false
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.primary}
+
+line-size = 2
+line-color = ${colors.background}
+
+border-size = 1
+border-color = ${colors.background}
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = System San Francisco Regular:size=10
+font-1 = Font Awesome:size=10
+font-2 = DejaVu Sans Mono:size=10
+
+modules-left = mpd
+modules-center =
+modules-right =
+
+wm-restack = i3
 
 [module/i3]
 type = internal/i3
@@ -122,9 +183,9 @@ label-unfocused-margin-right = 1
 ; visible = Active workspace on unfocused monitor
 label-visible = %name%
 label-visible-font = 2
-label-visible-foreground = ${colors.blue}
-label-visible-background = ${colors.background}
-label-visible-underline = ${colors.blue}
+label-visible-foreground = ${colors.background}
+label-visible-background = ${colors.primary}
+label-visible-underline = ${colors.primary}
 label-visible-padding-left = 2
 label-visible-padding-right = 2
 label-visible-margin-left = 1
@@ -165,7 +226,7 @@ icon-pause-font = 2
 icon-next = "  "
 icon-next-font = 2
 
-label-song-maxlen = 75
+label-song-maxlen = 250
 label-song-ellipsis = true
 label-song-foreground = ${colors.primary}
 

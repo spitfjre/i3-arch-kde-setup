@@ -1512,3 +1512,116 @@ Aug 18 15:01 : client: [5] opened from [::1]:44706
 Aug 18 15:01 : exception: Number too large: 120
 Aug 18 15:01 : client: [5] closed
 Aug 18 15:06 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 15:12 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 15:16 : client: [6] opened from [::1]:44732
+Aug 18 15:16 : client: [6] closed
+Aug 18 15:26 : client: [0] closed
+Aug 18 15:26 : client: [7] opened from 127.0.0.1:42202
+Aug 18 15:41 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 17:15 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 18 17:15 : avahi: Service 'Music Player' successfully established.
+Aug 18 17:15 : client: [0] opened from 127.0.0.1:60176
+Aug 18 17:15 : client: [1] opened from 127.0.0.1:60178
+Aug 18 20:02 : client: [0] closed
+Aug 18 20:02 : client: [1] closed
+Aug 18 20:02 : client: [2] opened from 127.0.0.1:32960
+Aug 18 20:02 : client: [3] opened from 127.0.0.1:32962
+Aug 18 23:36 : update: added /test.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_stressed_out.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_lane_boy.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_the_judge.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_doubt.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_fairly_local.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_polarize.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_hometown.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_ride.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_not_today.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_heavydirtysoul.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_tear_in_my_heart.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_we_dont_believe_whats_on_tv.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_message_man.m4a
+Aug 18 23:46 : update: added Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_goner.m4a
+Aug 18 23:46 : client: [4] opened from [::1]:52212
+Aug 18 23:46 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 23:47 : client: [4] closed
+Aug 18 23:50 : client: [5] opened from 127.0.0.1:48978
+Aug 18 23:50 : client: [5] closed
+Aug 19 00:06 : client: [3] closed
+Aug 19 00:06 : client: [2] closed
+Aug 19 00:06 : client: [6] opened from 127.0.0.1:49064
+Aug 19 00:06 : client: [7] opened from 127.0.0.1:49062
+Aug 19 00:07 : client: [7] closed
+Aug 19 00:07 : client: [6] closed
+Aug 19 00:07 : client: [8] opened from 127.0.0.1:49072
+Aug 19 00:07 : client: [9] opened from 127.0.0.1:49070
+Aug 19 00:08 : client: [9] closed
+Aug 19 00:08 : client: [8] closed
+Aug 19 00:08 : client: [10] opened from 127.0.0.1:49076
+Aug 19 00:08 : client: [11] opened from 127.0.0.1:49078
+Aug 19 00:08 : client: [12] opened from 127.0.0.1:49080
+Aug 19 00:08 : client: [12] closed
+Aug 19 00:08 : client: [10] closed
+Aug 19 00:08 : client: [11] closed
+Aug 19 00:08 : client: [13] opened from 127.0.0.1:49082
+Aug 19 00:08 : client: [14] opened from 127.0.0.1:49084
+Aug 19 00:08 : client: [15] opened from 127.0.0.1:49086
+Aug 19 00:09 : client: [14] closed
+Aug 19 00:09 : client: [15] closed
+Aug 19 00:09 : client: [13] closed
+Aug 19 00:09 : client: [16] opened from 127.0.0.1:49096
+Aug 19 00:09 : client: [17] opened from 127.0.0.1:49098
+Aug 19 00:09 : client: [18] opened from 127.0.0.1:49100
+Aug 19 00:10 : client: [17] closed
+Aug 19 00:10 : client: [18] closed
+Aug 19 00:10 : client: [16] closed
+Aug 19 00:10 : client: [19] opened from 127.0.0.1:49126
+Aug 19 00:10 : client: [20] opened from 127.0.0.1:49128
+Aug 19 00:10 : client: [21] opened from 127.0.0.1:49130
+Aug 19 00:10 : client: [22] opened from [::1]:52430
+Aug 19 00:10 : client: [22] closed
+Aug 19 00:11 : client: [19] closed
+Aug 19 00:11 : client: [21] closed
+Aug 19 00:11 : client: [20] closed
+Aug 19 00:11 : client: [23] opened from 127.0.0.1:49134
+Aug 19 00:11 : client: [24] opened from 127.0.0.1:49136
+Aug 19 00:11 : client: [23] closed
+Aug 19 00:11 : client: [24] closed
+Aug 19 00:11 : client: [25] opened from 127.0.0.1:49144
+Aug 19 00:11 : client: [26] opened from 127.0.0.1:49146
+Aug 19 00:11 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_lane_boy.m4a"
+Aug 19 00:12 : client: [26] closed
+Aug 19 00:12 : client: [25] closed
+Aug 19 00:12 : client: [27] opened from 127.0.0.1:49148
+Aug 19 00:12 : client: [28] opened from 127.0.0.1:49150
+Aug 19 00:12 : client: [29] opened from 127.0.0.1:49152
+Aug 19 00:12 : client: [30] opened from [::1]:52452
+Aug 19 00:12 : client: [30] closed
+Aug 19 00:12 : client: [31] opened from [::1]:52454
+Aug 19 00:12 : client: [31] closed
+Aug 19 00:12 : client: [28] closed
+Aug 19 00:12 : client: [27] closed
+Aug 19 00:12 : client: [29] closed
+Aug 19 00:12 : client: [32] opened from 127.0.0.1:49160
+Aug 19 00:12 : client: [33] opened from 127.0.0.1:49158
+Aug 19 00:14 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_doubt.m4a"
+Aug 19 00:15 : client: [32] closed
+Aug 19 00:15 : client: [33] closed
+Aug 19 00:15 : client: [34] opened from 127.0.0.1:49216
+Aug 19 00:15 : client: [35] opened from 127.0.0.1:49218
+Aug 19 00:15 : client: [35] closed
+Aug 19 00:15 : client: [34] closed
+Aug 19 00:15 : client: [36] opened from 127.0.0.1:49220
+Aug 19 00:15 : client: [37] opened from 127.0.0.1:49222
+Aug 19 00:18 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_hometown.m4a"
+Aug 19 00:20 : client: [37] closed
+Aug 19 00:20 : client: [36] closed
+Aug 19 00:20 : client: [38] opened from 127.0.0.1:49240
+Aug 19 00:20 : client: [39] opened from 127.0.0.1:49242
+Aug 19 00:21 : client: [39] closed
+Aug 19 00:21 : client: [38] closed
+Aug 19 00:21 : client: [40] opened from 127.0.0.1:49244
+Aug 19 00:21 : client: [41] opened from 127.0.0.1:49246
+Aug 19 00:21 : client: [41] closed
+Aug 19 00:21 : client: [40] closed
+Aug 19 00:21 : client: [42] opened from 127.0.0.1:49250
+Aug 19 00:21 : client: [43] opened from 127.0.0.1:49252

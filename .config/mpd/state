@@ -1,8 +1,8 @@
 sw_volume: 100
 audio_device_state:1:My PULSE Device
 state: play
-current: 0
-time: 4.179000
+current: 8
+time: 4.144000
 random: 1
 repeat: 1
 single: 0
@@ -11,5 +11,18 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a
+0:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_doubt.m4a
+1:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_fairly_local.m4a
+2:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_goner.m4a
+3:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_heavydirtysoul.m4a
+4:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_hometown.m4a
+5:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_lane_boy.m4a
+6:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_message_man.m4a
+7:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_not_today.m4a
+8:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_polarize.m4a
+9:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_ride.m4a
+10:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_stressed_out.m4a
+11:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_tear_in_my_heart.m4a
+12:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_the_judge.m4a
+13:Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_we_dont_believe_whats_on_tv.m4a
 playlist_end
