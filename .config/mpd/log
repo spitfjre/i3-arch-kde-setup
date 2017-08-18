@@ -590,3 +590,925 @@ Aug 15 11:14 : client: [55] closed
 Aug 15 11:14 : client: [56] opened from 127.0.0.1:49290
 Aug 15 11:14 : client: [56] closed
 Aug 15 11:14 : client: [57] opened from 127.0.0.1:49292
+Aug 15 11:17 : player: played "Metallica/S&M 1999/202-metallica-until_it_sleeps-eos.mp3"
+Aug 15 11:18 : client: [57] closed
+Aug 15 11:18 : client: [58] opened from 127.0.0.1:49296
+Aug 15 11:22 : player: played "Metallica/S&M 1999/203-metallica-for_whom_the_bell_tolls-eos.mp3"
+Aug 15 11:29 : player: played "Metallica/S&M 1999/210-metallica-battery-eos.mp3"
+Aug 15 11:36 : player: played "Metallica/S&M 1999/205-metallica-wherever_i_may_roam-eos.mp3"
+Aug 15 11:44 : player: played "Metallica/S&M 1999/209-metallica-enter_sandman-eos.mp3"
+Aug 15 11:44 : client: [59] opened from [::1]:57056
+Aug 15 11:45 : client: [59] closed
+Aug 15 11:46 : client: [58] closed
+Aug 15 11:46 : client: [60] opened from 127.0.0.1:49568
+Aug 15 13:14 : player: played "Metallica/S&M 1999/208-metallica-one-eos.mp3"
+Aug 15 13:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 15 13:47 : client: [0] opened from 127.0.0.1:58358
+Aug 15 13:47 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 15 13:47 : client: [0] closed
+Aug 15 13:47 : avahi: Service 'Music Player' successfully established.
+Aug 15 13:49 : client: [1] opened from 127.0.0.1:58456
+Aug 15 13:50 : client: [2] opened from [::1]:57014
+Aug 15 13:50 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 15 13:50 : client: [2] closed
+Aug 15 13:52 : client: [1] closed
+Aug 15 13:53 : client: [3] opened from 127.0.0.1:58572
+Aug 15 13:53 : client: [3] closed
+Aug 15 13:53 : client: [4] opened from 127.0.0.1:58574
+Aug 15 13:55 : client: [4] closed
+Aug 15 13:55 : client: [5] opened from 127.0.0.1:58578
+Aug 15 13:57 : client: [5] closed
+Aug 15 13:57 : client: [6] opened from 127.0.0.1:58586
+Aug 15 13:58 : client: [6] closed
+Aug 15 13:58 : client: [7] opened from 127.0.0.1:58592
+Aug 15 13:58 : player: played "Metallica/S&M 1999/208-metallica-one-eos.mp3"
+Aug 15 14:00 : client: [7] closed
+Aug 15 14:00 : client: [8] opened from 127.0.0.1:58594
+Aug 15 14:00 : client: [8] closed
+Aug 15 14:00 : client: [9] opened from 127.0.0.1:58596
+Aug 15 14:00 : client: [9] closed
+Aug 15 14:00 : client: [10] opened from 127.0.0.1:58598
+Aug 15 14:01 : client: [10] closed
+Aug 15 14:01 : client: [11] opened from 127.0.0.1:58600
+Aug 15 14:01 : client: [11] closed
+Aug 15 14:01 : client: [12] opened from 127.0.0.1:58602
+Aug 15 14:02 : client: [12] closed
+Aug 15 14:02 : client: [13] opened from 127.0.0.1:58604
+Aug 15 14:04 : player: played "Metallica/S&M 1999/207-metallica-sad_but_true-eos.mp3"
+Aug 15 14:04 : client: [13] closed
+Aug 15 14:05 : client: [14] opened from 127.0.0.1:58610
+Aug 15 14:05 : client: [14] closed
+Aug 15 14:06 : client: [15] opened from 127.0.0.1:58614
+Aug 15 14:06 : client: [15] closed
+Aug 15 14:06 : client: [16] opened from 127.0.0.1:58616
+Aug 15 14:08 : player: played "Metallica/S&M 1999/204-metallica--human-eos.mp3"
+Aug 15 14:09 : client: [16] closed
+Aug 15 14:09 : client: [17] opened from 127.0.0.1:58618
+Aug 15 14:10 : client: [17] closed
+Aug 15 14:10 : client: [18] opened from 127.0.0.1:58620
+Aug 15 14:11 : client: [18] closed
+Aug 15 14:11 : client: [19] opened from 127.0.0.1:58622
+Aug 15 14:12 : client: [19] closed
+Aug 15 14:12 : client: [20] opened from 127.0.0.1:58624
+Aug 15 14:18 : player: played "Metallica/S&M 1999/206-metallica-outlaw_torn-eos.mp3"
+Aug 15 14:20 : client: [21] opened from [::1]:57136
+Aug 15 14:20 : client: [21] closed
+Aug 15 14:29 : player: played "Metallica/S&M 1999/209-metallica-enter_sandman-eos.mp3"
+Aug 15 15:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 15 15:14 : avahi: Service 'Music Player' successfully established.
+Aug 15 15:14 : client: [0] opened from 127.0.0.1:49596
+Aug 15 15:14 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 15 15:15 : player: played "Metallica/S&M 1999/209-metallica-enter_sandman-eos.mp3"
+Aug 15 20:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 15 20:10 : avahi: Service 'Music Player' successfully established.
+Aug 15 20:10 : client: [0] opened from 127.0.0.1:46182
+Aug 15 20:10 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 15 21:16 : client: [1] opened from [::1]:36382
+Aug 15 21:16 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 15 21:16 : client: [1] closed
+Aug 15 21:22 : player: played "Metallica/S&M 1999/209-metallica-enter_sandman-eos.mp3"
+Aug 15 21:27 : client: [2] opened from 127.0.0.1:46726
+Aug 15 21:27 : client: [2] closed
+Aug 15 21:27 : client: [3] opened from 127.0.0.1:46728
+Aug 15 21:27 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 15 21:27 : client: [3] closed
+Aug 15 21:28 : player: played "Metallica/S&M 1999/207-metallica-sad_but_true-eos.mp3"
+Aug 15 21:33 : player: played "Metallica/S&M 1999/203-metallica-for_whom_the_bell_tolls-eos.mp3"
+Aug 15 21:41 : player: played "Metallica/S&M 1999/209-metallica-enter_sandman-eos.mp3"
+Aug 15 21:48 : player: played "Metallica/S&M 1999/208-metallica-one-eos.mp3"
+Aug 15 21:54 : client: [0] closed
+Aug 15 21:54 : client: [4] opened from 127.0.0.1:46888
+Aug 15 21:58 : player: played "Metallica/S&M 1999/206-metallica-outlaw_torn-eos.mp3"
+Aug 15 21:59 : client: [4] closed
+Aug 15 21:59 : client: [5] opened from 127.0.0.1:46914
+Aug 15 22:00 : client: [5] closed
+Aug 15 22:00 : client: [6] opened from 127.0.0.1:46916
+Aug 15 22:01 : client: [6] closed
+Aug 15 22:01 : client: [7] opened from 127.0.0.1:46918
+Aug 15 22:01 : client: [7] closed
+Aug 15 22:01 : client: [8] opened from 127.0.0.1:46920
+Aug 15 22:01 : client: [8] closed
+Aug 15 22:01 : client: [9] opened from 127.0.0.1:46922
+Aug 15 22:01 : client: [9] closed
+Aug 15 22:01 : client: [10] opened from 127.0.0.1:46924
+Aug 15 22:01 : client: [10] closed
+Aug 15 22:01 : client: [11] opened from 127.0.0.1:46926
+Aug 15 22:05 : player: played "Metallica/S&M 1999/205-metallica-wherever_i_may_roam-eos.mp3"
+Aug 15 22:10 : player: played "Metallica/S&M 1999/204-metallica--human-eos.mp3"
+Aug 15 22:13 : client: [12] opened from [::1]:36782
+Aug 15 22:13 : client: [12] closed
+Aug 15 23:08 : client: [11] closed
+Aug 15 23:08 : client: [13] opened from 127.0.0.1:47346
+Aug 15 23:08 : client: [13] closed
+Aug 15 23:08 : client: [14] opened from 127.0.0.1:47348
+Aug 15 23:08 : client: [14] closed
+Aug 15 23:08 : client: [15] opened from 127.0.0.1:47350
+Aug 15 23:08 : client: [15] closed
+Aug 15 23:08 : client: [16] opened from 127.0.0.1:47352
+Aug 15 23:09 : client: [16] closed
+Aug 15 23:09 : client: [17] opened from 127.0.0.1:47354
+Aug 15 23:09 : client: [17] closed
+Aug 15 23:09 : client: [18] opened from 127.0.0.1:47356
+Aug 15 23:09 : client: [18] closed
+Aug 15 23:09 : client: [19] opened from 127.0.0.1:47358
+Aug 15 23:11 : client: [19] closed
+Aug 15 23:11 : client: [20] opened from 127.0.0.1:47362
+Aug 15 23:11 : client: [20] closed
+Aug 15 23:12 : client: [21] opened from 127.0.0.1:47364
+Aug 15 23:23 : client: [21] closed
+Aug 15 23:23 : client: [22] opened from 127.0.0.1:47496
+Aug 15 23:23 : client: [22] closed
+Aug 15 23:23 : client: [23] opened from 127.0.0.1:47498
+Aug 15 23:23 : client: [23] closed
+Aug 15 23:23 : client: [24] opened from 127.0.0.1:47500
+Aug 15 23:23 : client: [24] closed
+Aug 15 23:23 : client: [25] opened from 127.0.0.1:47504
+Aug 15 23:25 : client: [25] closed
+Aug 15 23:25 : client: [26] opened from 127.0.0.1:47510
+Aug 15 23:25 : client: [26] closed
+Aug 15 23:26 : client: [27] opened from 127.0.0.1:47512
+Aug 15 23:26 : client: [27] closed
+Aug 15 23:26 : client: [28] opened from 127.0.0.1:47514
+Aug 15 23:27 : client: [28] closed
+Aug 15 23:27 : client: [29] opened from 127.0.0.1:47516
+Aug 15 23:27 : client: [29] closed
+Aug 15 23:27 : client: [30] opened from 127.0.0.1:47518
+Aug 15 23:27 : client: [30] closed
+Aug 15 23:27 : client: [31] opened from 127.0.0.1:47522
+Aug 16 00:28 : client: [32] opened from [::1]:38080
+Aug 16 00:28 : player: played "Metallica/S&M 1999/202-metallica-until_it_sleeps-eos.mp3"
+Aug 16 00:29 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 00:29 : client: [32] closed
+Aug 16 00:32 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 00:34 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 00:35 : client: [33] opened from [::1]:38254
+Aug 16 00:35 : client: [33] closed
+Aug 16 01:49 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 10:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 16 10:38 : client: [0] opened from 127.0.0.1:49190
+Aug 16 10:38 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 16 10:38 : avahi: Service 'Music Player' successfully established.
+Aug 16 10:45 : client: [1] opened from [::1]:51878
+Aug 16 10:45 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 10:45 : client: [1] closed
+Aug 16 10:46 : client: [2] opened from [::1]:51880
+Aug 16 10:46 : client: [2] closed
+Aug 16 10:46 : client: [3] opened from [::1]:51882
+Aug 16 10:46 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 10:46 : client: [3] closed
+Aug 16 10:47 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 10:50 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 10:53 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 10:56 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 10:59 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:01 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:04 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:07 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:10 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:12 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:15 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:18 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:21 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:23 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:26 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:29 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:32 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:34 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:37 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:40 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:43 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:45 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:48 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:51 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:54 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:56 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:58 : client: [4] opened from [::1]:52694
+Aug 16 11:58 : player: played "Guild Wars 2 OST (2012-2016)/Heart of Thorns/C/Rata Novus_254756927 - Maclaine.mp3"
+Aug 16 11:58 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 11:59 : client: [4] closed
+Aug 16 12:02 : client: [0] closed
+Aug 16 12:02 : client: [5] opened from 127.0.0.1:50192
+Aug 16 12:02 : client: [5] closed
+Aug 16 12:02 : exception: "default detected output" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Aug 16 12:02 : exception: Failed to open audio output
+Aug 16 12:39 : client: [6] opened from 127.0.0.1:50608
+Aug 16 13:04 : client: [6] closed
+Aug 16 13:04 : client: [7] opened from 127.0.0.1:51072
+Aug 16 13:05 : client: [7] closed
+Aug 16 13:05 : client: [8] opened from 127.0.0.1:51116
+Aug 16 13:06 : avahi: Client Disconnected, will reconnect shortly
+Aug 16 13:06 : client: [8] closed
+Aug 16 13:06 : avahi: Client Disconnected, will reconnect shortly
+Aug 16 13:06 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Aug 16 13:06 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 16 13:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 16 13:06 : client: [0] opened from 127.0.0.1:60024
+Aug 16 13:06 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 16 13:06 : avahi: Service 'Music Player' successfully established.
+Aug 16 13:15 : client: [0] closed
+Aug 16 13:15 : client: [1] opened from 127.0.0.1:60126
+Aug 16 14:28 : client: [1] closed
+Aug 16 14:28 : client: [2] opened from 127.0.0.1:60802
+Aug 16 14:29 : client: [2] closed
+Aug 16 14:29 : client: [3] opened from 127.0.0.1:60810
+Aug 16 14:29 : client: [3] closed
+Aug 16 14:30 : client: [4] opened from 127.0.0.1:60814
+Aug 16 14:30 : client: [4] closed
+Aug 16 14:30 : client: [5] opened from 127.0.0.1:60820
+Aug 16 14:30 : client: [5] closed
+Aug 16 14:30 : client: [6] opened from 127.0.0.1:60822
+Aug 16 14:30 : client: [6] closed
+Aug 16 14:30 : client: [7] opened from 127.0.0.1:60828
+Aug 16 14:31 : client: [7] closed
+Aug 16 14:31 : client: [8] opened from 127.0.0.1:60832
+Aug 16 14:31 : client: [8] closed
+Aug 16 14:31 : client: [9] opened from 127.0.0.1:60838
+Aug 16 14:31 : client: [9] closed
+Aug 16 14:31 : client: [10] opened from 127.0.0.1:60840
+Aug 16 14:32 : client: [10] closed
+Aug 16 14:32 : client: [11] opened from 127.0.0.1:60850
+Aug 16 14:32 : client: [11] closed
+Aug 16 14:32 : client: [12] opened from 127.0.0.1:60852
+Aug 16 14:32 : client: [12] closed
+Aug 16 14:32 : client: [13] opened from 127.0.0.1:60854
+Aug 16 14:32 : client: [13] closed
+Aug 16 14:32 : client: [14] opened from 127.0.0.1:60856
+Aug 16 14:33 : client: [14] closed
+Aug 16 14:33 : client: [15] opened from 127.0.0.1:60860
+Aug 16 14:33 : client: [15] closed
+Aug 16 14:33 : client: [16] opened from 127.0.0.1:60862
+Aug 16 14:33 : client: [16] closed
+Aug 16 14:33 : client: [17] opened from 127.0.0.1:60864
+Aug 16 14:33 : client: [17] closed
+Aug 16 14:33 : client: [18] opened from 127.0.0.1:60868
+Aug 16 14:33 : client: [18] closed
+Aug 16 14:33 : client: [19] opened from 127.0.0.1:60872
+Aug 16 14:34 : client: [19] closed
+Aug 16 14:34 : client: [20] opened from 127.0.0.1:60874
+Aug 16 14:34 : client: [20] closed
+Aug 16 14:34 : client: [21] opened from 127.0.0.1:60880
+Aug 16 14:34 : client: [21] closed
+Aug 16 14:34 : client: [22] opened from 127.0.0.1:60882
+Aug 16 14:35 : client: [22] closed
+Aug 16 14:35 : client: [23] opened from 127.0.0.1:60886
+Aug 16 14:35 : client: [23] closed
+Aug 16 14:35 : client: [24] opened from 127.0.0.1:60890
+Aug 16 15:16 : client: [24] closed
+Aug 16 15:17 : client: [25] opened from 127.0.0.1:32846
+Aug 16 15:17 : client: [25] closed
+Aug 16 15:17 : client: [26] opened from 127.0.0.1:32848
+Aug 16 15:17 : client: [26] closed
+Aug 16 15:17 : client: [27] opened from 127.0.0.1:32850
+Aug 16 15:18 : client: [27] closed
+Aug 16 15:18 : client: [28] opened from 127.0.0.1:32852
+Aug 16 15:21 : client: [28] closed
+Aug 16 15:21 : client: [29] opened from 127.0.0.1:32886
+Aug 16 15:23 : client: [29] closed
+Aug 16 15:23 : client: [30] opened from 127.0.0.1:32890
+Aug 16 15:58 : client: [31] opened from [::1]:48304
+Aug 16 15:58 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 16 15:58 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 15:58 : client: [31] closed
+Aug 16 16:08 : player: played "Metallica/S&M 1999/206-metallica-outlaw_torn-eos.mp3"
+Aug 16 16:15 : player: played "Metallica/S&M 1999/201-metallica-nothing_else_matters-eos.mp3"
+Aug 16 16:19 : player: played "Metallica/S&M 1999/203-metallica-for_whom_the_bell_tolls-eos.mp3"
+Aug 16 16:24 : player: played "Metallica/S&M 1999/204-metallica--human-eos.mp3"
+Aug 16 16:31 : player: played "Metallica/S&M 1999/205-metallica-wherever_i_may_roam-eos.mp3"
+Aug 16 16:39 : player: played "Metallica/S&M 1999/208-metallica-one-eos.mp3"
+Aug 16 16:46 : player: played "Metallica/S&M 1999/209-metallica-enter_sandman-eos.mp3"
+Aug 16 16:51 : client: [32] opened from [::1]:55818
+Aug 16 16:51 : client: [32] closed
+Aug 16 18:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 16 18:52 : client: [0] opened from 127.0.0.1:40876
+Aug 16 18:52 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 16 18:52 : avahi: Service 'Music Player' successfully established.
+Aug 16 19:31 : client: [0] closed
+Aug 16 19:31 : player: played "Metallica/S&M 1999/210-metallica-battery-eos.mp3"
+Aug 16 19:46 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 16 19:46 : avahi: Service 'Music Player' successfully established.
+Aug 16 19:48 : client: [0] opened from 127.0.0.1:50924
+Aug 16 19:48 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 16 19:48 : client: [0] closed
+Aug 16 19:48 : client: [1] opened from 127.0.0.1:50926
+Aug 16 19:53 : client: [2] opened from [::1]:59102
+Aug 16 19:53 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 19:53 : client: [2] closed
+Aug 16 19:55 : player: played "Metallica/S&M 1999/210-metallica-battery-eos.mp3"
+Aug 16 19:56 : exception: "default detected output" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Aug 16 19:56 : exception: Failed to open audio output
+Aug 16 19:56 : client: [1] closed
+Aug 16 19:56 : avahi: Client Disconnected, will reconnect shortly
+Aug 16 19:56 : avahi: Client Disconnected, will reconnect shortly
+Aug 16 19:56 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Aug 16 19:56 : player: played "Metallica/S&M 1999/210-metallica-battery-eos.mp3"
+Aug 16 19:56 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 16 19:56 : client: [0] opened from 127.0.0.1:48754
+Aug 16 19:56 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 16 19:56 : avahi: Service 'Music Player' successfully established.
+Aug 16 19:57 : client: [0] closed
+Aug 16 19:57 : client: [1] opened from 127.0.0.1:48792
+Aug 16 20:03 : client: [1] closed
+Aug 16 20:03 : client: [2] opened from 127.0.0.1:48890
+Aug 16 20:03 : client: [2] closed
+Aug 16 20:03 : client: [3] opened from 127.0.0.1:48906
+Aug 16 20:11 : client: [3] closed
+Aug 16 20:11 : client: [4] opened from 127.0.0.1:48948
+Aug 16 20:28 : client: [5] opened from [::1]:39918
+Aug 16 20:28 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 20:28 : client: [5] closed
+Aug 16 20:28 : client: [6] opened from [::1]:39920
+Aug 16 20:28 : client: [6] closed
+Aug 16 20:28 : client: [7] opened from [::1]:39922
+Aug 16 20:28 : client: [7] closed
+Aug 16 20:28 : client: [8] opened from [::1]:39924
+Aug 16 20:28 : client: [8] closed
+Aug 16 20:28 : client: [9] opened from [::1]:39926
+Aug 16 20:28 : client: [9] closed
+Aug 16 20:28 : client: [10] opened from [::1]:39928
+Aug 16 20:28 : client: [10] closed
+Aug 16 20:28 : client: [11] opened from [::1]:39930
+Aug 16 20:28 : client: [11] closed
+Aug 16 20:28 : client: [12] opened from [::1]:39932
+Aug 16 20:28 : client: [12] closed
+Aug 16 20:28 : client: [13] opened from [::1]:39934
+Aug 16 20:28 : client: [13] closed
+Aug 16 20:28 : client: [14] opened from [::1]:39936
+Aug 16 20:28 : client: [14] closed
+Aug 16 20:28 : client: [15] opened from [::1]:39938
+Aug 16 20:28 : client: [15] closed
+Aug 16 20:28 : client: [16] opened from [::1]:39940
+Aug 16 20:28 : client: [16] closed
+Aug 16 20:28 : client: [17] opened from [::1]:39942
+Aug 16 20:28 : client: [17] closed
+Aug 16 20:28 : client: [18] opened from [::1]:39944
+Aug 16 20:28 : client: [18] closed
+Aug 16 20:28 : client: [19] opened from [::1]:39946
+Aug 16 20:28 : client: [19] closed
+Aug 16 20:29 : client: [20] opened from [::1]:39948
+Aug 16 20:29 : client: [20] closed
+Aug 16 20:29 : client: [21] opened from [::1]:39950
+Aug 16 20:29 : client: [21] closed
+Aug 16 20:29 : client: [22] opened from [::1]:39952
+Aug 16 20:29 : client: [22] closed
+Aug 16 20:29 : client: [23] opened from [::1]:39954
+Aug 16 20:29 : client: [23] closed
+Aug 16 20:29 : client: [24] opened from [::1]:39956
+Aug 16 20:29 : client: [24] closed
+Aug 16 20:37 : client: [25] opened from [::1]:40046
+Aug 16 20:37 : client: [25] closed
+Aug 16 21:43 : client: [4] closed
+Aug 16 21:43 : client: [26] opened from 127.0.0.1:49578
+Aug 16 21:43 : client: [26] closed
+Aug 16 21:43 : client: [27] opened from 127.0.0.1:49580
+Aug 16 21:46 : client: [27] closed
+Aug 16 21:46 : client: [28] opened from 127.0.0.1:49588
+Aug 16 21:47 : client: [28] closed
+Aug 16 21:47 : client: [29] opened from 127.0.0.1:49592
+Aug 16 21:47 : client: [29] closed
+Aug 16 21:47 : client: [30] opened from 127.0.0.1:49594
+Aug 16 21:47 : client: [30] closed
+Aug 16 21:47 : client: [31] opened from 127.0.0.1:49598
+Aug 16 21:47 : client: [31] closed
+Aug 16 21:47 : client: [32] opened from 127.0.0.1:49602
+Aug 16 21:48 : client: [32] closed
+Aug 16 21:48 : client: [33] opened from 127.0.0.1:49604
+Aug 16 21:49 : client: [33] closed
+Aug 16 21:49 : client: [34] opened from 127.0.0.1:49610
+Aug 16 21:49 : client: [35] opened from [::1]:40388
+Aug 16 21:49 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 21:49 : client: [35] closed
+Aug 16 21:49 : client: [36] opened from [::1]:40390
+Aug 16 21:49 : client: [36] closed
+Aug 16 21:49 : client: [34] closed
+Aug 16 21:49 : client: [37] opened from 127.0.0.1:49624
+Aug 16 21:50 : client: [37] closed
+Aug 16 21:50 : client: [38] opened from 127.0.0.1:49626
+Aug 16 21:50 : client: [39] opened from [::1]:40396
+Aug 16 21:50 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 21:50 : client: [39] closed
+Aug 16 21:50 : client: [40] opened from [::1]:40398
+Aug 16 21:50 : client: [40] closed
+Aug 16 21:50 : client: [41] opened from [::1]:40400
+Aug 16 21:50 : client: [41] closed
+Aug 16 21:50 : client: [42] opened from [::1]:40402
+Aug 16 21:50 : client: [42] closed
+Aug 16 21:51 : client: [38] closed
+Aug 16 21:51 : client: [43] opened from 127.0.0.1:49636
+Aug 16 21:54 : client: [43] closed
+Aug 16 21:54 : client: [44] opened from 127.0.0.1:49648
+Aug 16 21:54 : client: [44] closed
+Aug 16 21:54 : client: [45] opened from 127.0.0.1:49650
+Aug 16 21:54 : client: [45] closed
+Aug 16 21:54 : client: [46] opened from 127.0.0.1:49654
+Aug 16 21:54 : client: [46] closed
+Aug 16 21:55 : client: [47] opened from 127.0.0.1:49658
+Aug 16 21:55 : client: [47] closed
+Aug 16 21:55 : client: [48] opened from 127.0.0.1:49662
+Aug 16 22:05 : client: [48] closed
+Aug 16 22:05 : client: [49] opened from 127.0.0.1:49696
+Aug 16 22:08 : client: [49] closed
+Aug 16 22:08 : client: [50] opened from 127.0.0.1:49754
+Aug 16 22:09 : client: [50] closed
+Aug 16 22:09 : client: [51] opened from 127.0.0.1:49756
+Aug 16 22:09 : client: [51] closed
+Aug 16 22:09 : client: [52] opened from 127.0.0.1:49758
+Aug 16 22:10 : client: [52] closed
+Aug 16 22:10 : client: [53] opened from 127.0.0.1:49762
+Aug 16 22:11 : client: [53] closed
+Aug 16 22:11 : client: [54] opened from 127.0.0.1:49768
+Aug 16 22:15 : client: [54] closed
+Aug 16 22:15 : client: [55] opened from 127.0.0.1:49780
+Aug 16 22:16 : client: [55] closed
+Aug 16 22:16 : client: [56] opened from 127.0.0.1:49782
+Aug 16 22:16 : client: [56] closed
+Aug 16 22:16 : client: [57] opened from 127.0.0.1:49784
+Aug 16 22:16 : client: [57] closed
+Aug 16 22:16 : client: [58] opened from 127.0.0.1:49786
+Aug 16 22:16 : client: [58] closed
+Aug 16 22:16 : client: [59] opened from 127.0.0.1:49790
+Aug 16 22:18 : client: [59] closed
+Aug 16 22:18 : client: [60] opened from 127.0.0.1:49796
+Aug 16 22:19 : client: [60] closed
+Aug 16 22:19 : client: [61] opened from 127.0.0.1:49804
+Aug 16 22:20 : client: [61] closed
+Aug 16 22:20 : client: [62] opened from 127.0.0.1:49808
+Aug 16 22:23 : client: [62] closed
+Aug 16 22:23 : client: [63] opened from 127.0.0.1:49822
+Aug 16 22:24 : client: [63] closed
+Aug 16 22:24 : client: [64] opened from 127.0.0.1:49828
+Aug 16 22:24 : client: [64] closed
+Aug 16 22:24 : client: [65] opened from 127.0.0.1:49832
+Aug 16 22:25 : client: [65] closed
+Aug 16 22:25 : client: [66] opened from 127.0.0.1:49836
+Aug 16 22:25 : client: [66] closed
+Aug 16 22:25 : client: [67] opened from 127.0.0.1:49838
+Aug 16 22:26 : client: [67] closed
+Aug 16 22:26 : client: [68] opened from 127.0.0.1:49846
+Aug 16 22:26 : client: [68] closed
+Aug 16 22:26 : client: [69] opened from 127.0.0.1:49848
+Aug 16 22:27 : client: [69] closed
+Aug 16 22:27 : client: [70] opened from 127.0.0.1:49850
+Aug 16 22:27 : client: [71] opened from [::1]:40620
+Aug 16 22:27 : player: played "Metallica/S&M 1999/205-metallica-wherever_i_may_roam-eos.mp3"
+Aug 16 22:27 : client: [71] closed
+Aug 16 22:27 : client: [72] opened from [::1]:40622
+Aug 16 22:27 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 22:27 : client: [72] closed
+Aug 16 22:27 : client: [73] opened from [::1]:40624
+Aug 16 22:27 : player: played "Metallica/S&M 1999/205-metallica-wherever_i_may_roam-eos.mp3"
+Aug 16 22:27 : client: [73] closed
+Aug 16 22:28 : client: [70] closed
+Aug 16 22:28 : client: [74] opened from 127.0.0.1:49858
+Aug 16 22:28 : client: [74] closed
+Aug 16 22:28 : client: [75] opened from 127.0.0.1:49860
+Aug 16 22:28 : client: [75] closed
+Aug 16 22:28 : client: [76] opened from 127.0.0.1:49866
+Aug 16 22:28 : client: [76] closed
+Aug 16 22:28 : client: [77] opened from 127.0.0.1:49868
+Aug 16 22:29 : client: [77] closed
+Aug 16 22:29 : client: [78] opened from 127.0.0.1:49870
+Aug 16 22:29 : client: [78] closed
+Aug 16 22:29 : client: [79] opened from 127.0.0.1:49874
+Aug 16 22:30 : client: [80] opened from [::1]:40644
+Aug 16 22:30 : client: [80] closed
+Aug 16 22:30 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 22:30 : client: [81] opened from [::1]:40648
+Aug 16 22:30 : client: [81] closed
+Aug 16 22:30 : client: [82] opened from [::1]:40652
+Aug 16 22:30 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 22:30 : client: [82] closed
+Aug 16 22:30 : client: [83] opened from [::1]:40654
+Aug 16 22:30 : client: [83] closed
+Aug 16 22:30 : client: [84] opened from [::1]:40664
+Aug 16 22:30 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 22:30 : client: [84] closed
+Aug 16 22:30 : client: [79] closed
+Aug 16 22:30 : client: [85] opened from 127.0.0.1:49898
+Aug 16 22:30 : client: [86] opened from [::1]:40668
+Aug 16 22:30 : client: [86] closed
+Aug 16 22:31 : client: [85] closed
+Aug 16 22:31 : client: [87] opened from 127.0.0.1:49904
+Aug 16 22:31 : client: [88] opened from [::1]:40674
+Aug 16 22:31 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 22:31 : client: [88] closed
+Aug 16 22:31 : client: [89] opened from [::1]:40676
+Aug 16 22:31 : client: [89] closed
+Aug 16 22:32 : client: [87] closed
+Aug 16 22:32 : client: [90] opened from 127.0.0.1:49914
+Aug 16 22:34 : client: [90] closed
+Aug 16 22:34 : client: [91] opened from 127.0.0.1:49924
+Aug 16 22:35 : client: [91] closed
+Aug 16 22:35 : client: [92] opened from 127.0.0.1:49926
+Aug 16 22:36 : client: [92] closed
+Aug 16 22:36 : client: [93] opened from 127.0.0.1:49932
+Aug 16 22:36 : client: [94] opened from [::1]:40702
+Aug 16 22:36 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 22:36 : client: [94] closed
+Aug 16 22:36 : client: [95] opened from [::1]:40704
+Aug 16 22:36 : client: [95] closed
+Aug 16 22:36 : client: [96] opened from [::1]:40706
+Aug 16 22:36 : player: played "Metallica/S&M 1999/205-metallica-wherever_i_may_roam-eos.mp3"
+Aug 16 22:36 : client: [96] closed
+Aug 16 22:36 : client: [97] opened from [::1]:40708
+Aug 16 22:36 : client: [97] closed
+Aug 16 22:36 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 22:36 : client: [98] opened from [::1]:40710
+Aug 16 22:36 : client: [98] closed
+Aug 16 23:06 : client: [93] closed
+Aug 16 23:06 : client: [99] opened from 127.0.0.1:50010
+Aug 16 23:06 : client: [100] opened from 127.0.0.1:50012
+Aug 16 23:07 : client: [99] closed
+Aug 16 23:07 : client: [100] closed
+Aug 16 23:07 : client: [101] opened from 127.0.0.1:50022
+Aug 16 23:07 : client: [102] opened from 127.0.0.1:50020
+Aug 16 23:46 : client: [103] opened from [::1]:41942
+Aug 16 23:46 : player: played "Metallica/S&M 1999/205-metallica-wherever_i_may_roam-eos.mp3"
+Aug 16 23:46 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 16 23:46 : client: [104] opened from [::1]:41944
+Aug 16 23:46 : client: [104] closed
+Aug 16 23:47 : client: [103] closed
+Aug 17 00:57 : client: [101] closed
+Aug 17 00:57 : client: [102] closed
+Aug 17 00:57 : client: [105] opened from 127.0.0.1:51868
+Aug 17 00:57 : client: [106] opened from 127.0.0.1:51870
+Aug 17 00:57 : client: [105] closed
+Aug 17 00:57 : client: [106] closed
+Aug 17 00:57 : client: [107] opened from 127.0.0.1:51872
+Aug 17 00:57 : client: [108] opened from 127.0.0.1:51874
+Aug 17 00:59 : client: [107] closed
+Aug 17 00:59 : client: [108] closed
+Aug 17 00:59 : client: [109] opened from 127.0.0.1:51894
+Aug 17 00:59 : client: [110] opened from 127.0.0.1:51896
+Aug 17 00:59 : client: [109] closed
+Aug 17 00:59 : client: [110] closed
+Aug 17 00:59 : client: [111] opened from 127.0.0.1:51900
+Aug 17 00:59 : client: [112] opened from 127.0.0.1:51902
+Aug 17 01:00 : client: [112] closed
+Aug 17 01:00 : client: [111] closed
+Aug 17 01:00 : client: [113] opened from 127.0.0.1:51906
+Aug 17 01:00 : client: [114] opened from 127.0.0.1:51908
+Aug 17 01:36 : client: [114] closed
+Aug 17 01:36 : client: [113] closed
+Aug 17 01:36 : client: [115] opened from 127.0.0.1:52110
+Aug 17 01:36 : client: [116] opened from 127.0.0.1:52112
+Aug 17 01:36 : client: [115] closed
+Aug 17 01:36 : client: [116] closed
+Aug 17 01:36 : client: [117] opened from 127.0.0.1:52120
+Aug 17 01:36 : client: [118] opened from 127.0.0.1:52122
+Aug 17 01:37 : client: [117] closed
+Aug 17 01:37 : client: [118] closed
+Aug 17 01:37 : client: [119] opened from 127.0.0.1:52140
+Aug 17 01:37 : client: [120] opened from 127.0.0.1:52142
+Aug 17 01:38 : client: [119] closed
+Aug 17 01:38 : client: [120] closed
+Aug 17 01:38 : client: [121] opened from 127.0.0.1:52152
+Aug 17 01:38 : client: [122] opened from 127.0.0.1:52154
+Aug 17 01:38 : client: [121] closed
+Aug 17 01:38 : client: [122] closed
+Aug 17 01:38 : client: [123] opened from 127.0.0.1:52156
+Aug 17 01:38 : client: [124] opened from 127.0.0.1:52158
+Aug 17 01:39 : client: [124] closed
+Aug 17 01:39 : client: [123] closed
+Aug 17 01:39 : client: [125] opened from 127.0.0.1:52178
+Aug 17 01:39 : client: [126] opened from 127.0.0.1:52180
+Aug 17 01:40 : client: [126] closed
+Aug 17 01:40 : client: [125] closed
+Aug 17 01:40 : client: [127] opened from 127.0.0.1:52186
+Aug 17 01:40 : client: [128] opened from 127.0.0.1:52188
+Aug 17 01:40 : client: [128] closed
+Aug 17 01:40 : client: [127] closed
+Aug 17 01:40 : client: [129] opened from 127.0.0.1:52190
+Aug 17 01:40 : client: [130] opened from 127.0.0.1:52192
+Aug 17 01:41 : client: [129] closed
+Aug 17 01:41 : client: [130] closed
+Aug 17 01:41 : client: [131] opened from 127.0.0.1:52196
+Aug 17 01:41 : client: [132] opened from 127.0.0.1:52198
+Aug 17 01:42 : client: [131] closed
+Aug 17 01:42 : client: [132] closed
+Aug 17 01:42 : client: [133] opened from 127.0.0.1:52200
+Aug 17 01:42 : client: [134] opened from 127.0.0.1:52202
+Aug 17 01:42 : client: [134] closed
+Aug 17 01:42 : client: [133] closed
+Aug 17 01:42 : client: [135] opened from 127.0.0.1:52212
+Aug 17 01:42 : client: [136] opened from 127.0.0.1:52214
+Aug 17 01:43 : client: [135] closed
+Aug 17 01:43 : client: [136] closed
+Aug 17 01:43 : client: [137] opened from 127.0.0.1:52216
+Aug 17 01:43 : client: [138] opened from 127.0.0.1:52218
+Aug 17 01:43 : client: [137] closed
+Aug 17 01:43 : client: [138] closed
+Aug 17 01:43 : client: [139] opened from 127.0.0.1:52220
+Aug 17 01:43 : client: [140] opened from 127.0.0.1:52222
+Aug 17 01:43 : client: [140] closed
+Aug 17 01:43 : client: [139] closed
+Aug 17 01:43 : client: [141] opened from 127.0.0.1:52224
+Aug 17 01:43 : client: [142] opened from 127.0.0.1:52226
+Aug 17 01:44 : client: [141] closed
+Aug 17 01:44 : client: [142] closed
+Aug 17 01:44 : client: [143] opened from 127.0.0.1:52228
+Aug 17 01:44 : client: [144] opened from 127.0.0.1:52230
+Aug 17 01:44 : client: [144] closed
+Aug 17 01:44 : client: [143] closed
+Aug 17 01:44 : client: [145] opened from 127.0.0.1:52236
+Aug 17 01:44 : client: [146] opened from 127.0.0.1:52238
+Aug 17 01:45 : client: [146] closed
+Aug 17 01:45 : client: [145] closed
+Aug 17 01:45 : client: [147] opened from 127.0.0.1:52242
+Aug 17 01:45 : client: [148] opened from 127.0.0.1:52244
+Aug 17 01:45 : client: [147] closed
+Aug 17 01:45 : client: [148] closed
+Aug 17 01:45 : client: [149] opened from 127.0.0.1:52250
+Aug 17 01:45 : client: [150] opened from 127.0.0.1:52252
+Aug 17 01:46 : client: [150] closed
+Aug 17 01:46 : client: [149] closed
+Aug 17 01:46 : client: [151] opened from 127.0.0.1:52256
+Aug 17 01:46 : client: [152] opened from 127.0.0.1:52258
+Aug 17 01:46 : client: [153] opened from [::1]:43028
+Aug 17 01:46 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:46 : client: [153] closed
+Aug 17 01:46 : client: [154] opened from [::1]:43030
+Aug 17 01:46 : client: [154] closed
+Aug 17 01:46 : client: [155] opened from [::1]:43032
+Aug 17 01:46 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:46 : client: [155] closed
+Aug 17 01:46 : client: [156] opened from [::1]:43034
+Aug 17 01:46 : client: [156] closed
+Aug 17 01:46 : client: [157] opened from [::1]:43036
+Aug 17 01:46 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:46 : client: [157] closed
+Aug 17 01:46 : client: [158] opened from [::1]:43038
+Aug 17 01:46 : client: [158] closed
+Aug 17 01:46 : client: [159] opened from [::1]:43040
+Aug 17 01:46 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:46 : client: [159] closed
+Aug 17 01:46 : client: [160] opened from [::1]:43042
+Aug 17 01:46 : client: [160] closed
+Aug 17 01:46 : client: [161] opened from [::1]:43044
+Aug 17 01:46 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:46 : client: [161] closed
+Aug 17 01:46 : client: [162] opened from [::1]:43046
+Aug 17 01:46 : client: [162] closed
+Aug 17 01:46 : client: [163] opened from [::1]:43048
+Aug 17 01:46 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:46 : client: [163] closed
+Aug 17 01:46 : client: [164] opened from [::1]:43050
+Aug 17 01:46 : client: [164] closed
+Aug 17 01:46 : client: [165] opened from [::1]:43052
+Aug 17 01:46 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:46 : client: [165] closed
+Aug 17 01:47 : client: [166] opened from [::1]:43112
+Aug 17 01:47 : client: [166] closed
+Aug 17 01:49 : client: [167] opened from [::1]:43232
+Aug 17 01:49 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:49 : client: [167] closed
+Aug 17 01:49 : client: [168] opened from [::1]:43234
+Aug 17 01:49 : client: [168] closed
+Aug 17 01:49 : client: [169] opened from [::1]:43236
+Aug 17 01:49 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 17 01:49 : client: [169] closed
+Aug 17 01:49 : client: [170] opened from [::1]:43238
+Aug 17 01:49 : client: [170] closed
+Aug 17 01:49 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:49 : client: [171] opened from [::1]:43240
+Aug 17 01:49 : client: [171] closed
+Aug 17 01:49 : client: [172] opened from [::1]:43242
+Aug 17 01:49 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:49 : client: [172] closed
+Aug 17 01:49 : client: [173] opened from [::1]:43244
+Aug 17 01:49 : client: [173] closed
+Aug 17 01:49 : client: [174] opened from [::1]:43246
+Aug 17 01:49 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:49 : client: [174] closed
+Aug 17 01:49 : client: [175] opened from [::1]:43248
+Aug 17 01:49 : client: [175] closed
+Aug 17 01:49 : client: [176] opened from [::1]:43250
+Aug 17 01:49 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:49 : client: [176] closed
+Aug 17 01:49 : client: [177] opened from [::1]:43252
+Aug 17 01:49 : client: [177] closed
+Aug 17 01:49 : client: [178] opened from [::1]:43254
+Aug 17 01:49 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:49 : client: [178] closed
+Aug 17 01:49 : client: [179] opened from [::1]:43256
+Aug 17 01:49 : client: [179] closed
+Aug 17 01:49 : client: [180] opened from [::1]:43258
+Aug 17 01:49 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 01:49 : client: [180] closed
+Aug 17 01:49 : client: [181] opened from [::1]:43260
+Aug 17 01:49 : client: [181] closed
+Aug 17 01:53 : client: [151] closed
+Aug 17 01:53 : client: [152] closed
+Aug 17 01:53 : client: [182] opened from 127.0.0.1:52604
+Aug 17 01:53 : client: [183] opened from 127.0.0.1:52606
+Aug 17 01:54 : client: [182] closed
+Aug 17 01:54 : client: [183] closed
+Aug 17 01:54 : client: [184] opened from 127.0.0.1:52612
+Aug 17 01:54 : client: [184] closed
+Aug 17 01:54 : client: [185] opened from 127.0.0.1:52614
+Aug 17 01:55 : client: [185] closed
+Aug 17 01:55 : client: [186] opened from 127.0.0.1:52620
+Aug 17 01:55 : client: [186] closed
+Aug 17 01:55 : client: [187] opened from 127.0.0.1:52622
+Aug 17 01:55 : client: [187] closed
+Aug 17 01:55 : client: [188] opened from 127.0.0.1:52626
+Aug 17 01:56 : client: [188] closed
+Aug 17 01:56 : client: [189] opened from 127.0.0.1:52628
+Aug 17 01:56 : client: [189] closed
+Aug 17 01:56 : client: [190] opened from 127.0.0.1:52632
+Aug 17 01:56 : client: [190] closed
+Aug 17 01:56 : client: [191] opened from 127.0.0.1:52634
+Aug 17 01:56 : client: [191] closed
+Aug 17 01:56 : client: [192] opened from 127.0.0.1:52636
+Aug 17 01:57 : client: [192] closed
+Aug 17 01:57 : client: [193] opened from 127.0.0.1:52640
+Aug 17 01:57 : client: [193] closed
+Aug 17 01:57 : client: [194] opened from 127.0.0.1:52642
+Aug 17 01:58 : client: [194] closed
+Aug 17 01:58 : client: [195] opened from 127.0.0.1:52644
+Aug 17 01:58 : client: [195] closed
+Aug 17 01:58 : client: [196] opened from 127.0.0.1:52646
+Aug 17 01:58 : client: [196] closed
+Aug 17 01:58 : client: [197] opened from 127.0.0.1:52652
+Aug 17 01:59 : client: [197] closed
+Aug 17 01:59 : client: [198] opened from 127.0.0.1:52654
+Aug 17 01:59 : client: [198] closed
+Aug 17 01:59 : client: [199] opened from 127.0.0.1:52658
+Aug 17 02:00 : client: [199] closed
+Aug 17 02:00 : client: [200] opened from 127.0.0.1:52666
+Aug 17 02:00 : client: [200] closed
+Aug 17 02:00 : client: [201] opened from 127.0.0.1:52668
+Aug 17 02:20 : client: [201] closed
+Aug 17 02:20 : client: [202] opened from 127.0.0.1:52956
+Aug 17 02:20 : client: [202] closed
+Aug 17 02:20 : client: [203] opened from 127.0.0.1:52966
+Aug 17 02:21 : client: [203] closed
+Aug 17 02:21 : client: [204] opened from 127.0.0.1:52968
+Aug 17 02:21 : client: [204] closed
+Aug 17 02:21 : client: [205] opened from 127.0.0.1:52972
+Aug 17 02:21 : client: [206] opened from 127.0.0.1:52970
+Aug 17 02:47 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 17 10:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 17 10:43 : client: [0] opened from 127.0.0.1:44718
+Aug 17 10:43 : client: [1] opened from 127.0.0.1:44720
+Aug 17 10:43 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 17 10:43 : avahi: Service 'Music Player' successfully established.
+Aug 17 10:44 : client: [2] opened from [::1]:45458
+Aug 17 10:44 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 10:44 : client: [2] closed
+Aug 17 10:46 : exception: "default detected output" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Aug 17 10:46 : exception: Failed to open audio output
+Aug 17 10:46 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 17 10:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 17 10:51 : client: [0] opened from 127.0.0.1:37432
+Aug 17 10:51 : client: [1] opened from 127.0.0.1:37434
+Aug 17 10:51 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 17 10:51 : avahi: Service 'Music Player' successfully established.
+Aug 17 10:51 : client: [2] opened from [::1]:46428
+Aug 17 10:51 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 10:51 : client: [2] closed
+Aug 17 10:53 : exception: "default detected output" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Aug 17 10:53 : exception: Failed to open audio output
+Aug 17 10:53 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 17 13:25 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 17 13:25 : avahi: Service 'Music Player' successfully established.
+Aug 17 13:25 : client: [0] opened from 127.0.0.1:33804
+Aug 17 13:25 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 17 13:29 : client: [1] opened from [::1]:44034
+Aug 17 13:29 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 13:29 : client: [1] closed
+Aug 17 13:31 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 17 13:38 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 17 13:44 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 17 13:50 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 17 13:57 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 17 14:03 : client: [0] closed
+Aug 17 14:03 : client: [2] opened from 127.0.0.1:34458
+Aug 17 14:03 : client: [2] closed
+Aug 17 14:03 : client: [3] opened from 127.0.0.1:34460
+Aug 17 14:03 : client: [4] opened from 127.0.0.1:34462
+Aug 17 14:03 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 17 14:03 : client: [5] opened from [::1]:44586
+Aug 17 14:03 : client: [5] closed
+Aug 17 15:47 : client: [6] opened from [::1]:45034
+Aug 17 15:47 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 15:47 : client: [6] closed
+Aug 17 15:47 : client: [7] opened from [::1]:45036
+Aug 17 15:47 : client: [7] closed
+Aug 17 15:47 : client: [8] opened from [::1]:45038
+Aug 17 15:47 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 15:47 : client: [8] closed
+Aug 17 15:47 : client: [9] opened from [::1]:45040
+Aug 17 15:47 : client: [9] closed
+Aug 17 15:58 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 17 18:11 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 17 18:11 : client: [0] opened from 127.0.0.1:41406
+Aug 17 18:11 : client: [1] opened from 127.0.0.1:41408
+Aug 17 18:11 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 17 18:11 : avahi: Service 'Music Player' successfully established.
+Aug 17 20:15 : client: [0] closed
+Aug 17 20:15 : client: [1] closed
+Aug 17 20:15 : client: [2] opened from 127.0.0.1:42090
+Aug 17 20:15 : client: [3] opened from 127.0.0.1:42092
+Aug 17 22:08 : client: [4] opened from 127.0.0.1:42550
+Aug 17 22:08 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 22:08 : client: [4] closed
+Aug 17 22:09 : client: [5] opened from 127.0.0.1:42638
+Aug 17 22:09 : client: [5] closed
+Aug 17 22:37 : client: [6] opened from [::1]:49348
+Aug 17 22:37 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 17 22:37 : client: [6] closed
+Aug 17 22:38 : client: [7] opened from [::1]:49350
+Aug 17 22:38 : client: [8] opened from [::1]:49352
+Aug 17 22:38 : client: [8] closed
+Aug 17 22:39 : client: [7] closed
+Aug 18 01:03 : client: [2] closed
+Aug 18 01:03 : client: [3] closed
+Aug 18 01:03 : client: [9] opened from 127.0.0.1:44140
+Aug 18 01:03 : client: [10] opened from 127.0.0.1:44142
+Aug 18 02:30 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 10:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 18 10:42 : client: [0] opened from 127.0.0.1:43182
+Aug 18 10:42 : client: [1] opened from 127.0.0.1:43184
+Aug 18 10:42 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 18 10:42 : client: [0] closed
+Aug 18 10:42 : client: [1] closed
+Aug 18 10:42 : avahi: Service 'Music Player' successfully established.
+Aug 18 10:43 : client: [2] opened from 127.0.0.1:43220
+Aug 18 10:43 : client: [3] opened from 127.0.0.1:43222
+Aug 18 10:43 : client: [4] opened from [::1]:58506
+Aug 18 10:43 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 18 10:43 : client: [4] closed
+Aug 18 10:48 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 10:54 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 11:00 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 11:07 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 11:13 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 11:19 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 11:22 : client: [2] closed
+Aug 18 11:22 : client: [3] closed
+Aug 18 11:22 : client: [5] opened from 127.0.0.1:43414
+Aug 18 11:22 : client: [6] opened from 127.0.0.1:43412
+Aug 18 11:25 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 11:32 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 11:38 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 11:44 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 11:48 : avahi: Client Disconnected, will reconnect shortly
+Aug 18 11:48 : exception: "default detected output" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Aug 18 11:48 : exception: Failed to open audio output
+Aug 18 11:48 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 13:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 18 13:10 : client: [0] opened from 127.0.0.1:59304
+Aug 18 13:10 : client: [1] opened from 127.0.0.1:59306
+Aug 18 13:10 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 18 13:10 : avahi: Service 'Music Player' successfully established.
+Aug 18 13:11 : client: [2] opened from [::1]:37078
+Aug 18 13:11 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 18 13:11 : client: [2] closed
+Aug 18 13:13 : client: [3] opened from [::1]:37286
+Aug 18 13:13 : client: [3] closed
+Aug 18 13:15 : client: [4] opened from 127.0.0.1:59562
+Aug 18 13:15 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 18 13:15 : client: [4] closed
+Aug 18 13:15 : client: [5] opened from 127.0.0.1:59564
+Aug 18 13:15 : client: [5] closed
+Aug 18 14:48 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 14:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 18 14:52 : client: [0] opened from 127.0.0.1:41774
+Aug 18 14:52 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Aug 18 14:52 : avahi: Service 'Music Player' successfully established.
+Aug 18 14:57 : client: [1] opened from [::1]:44536
+Aug 18 14:57 : client: [1] closed
+Aug 18 14:57 : client: [2] opened from [::1]:44538
+Aug 18 14:57 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 18 14:57 : client: [2] closed
+Aug 18 14:57 : client: [3] opened from [::1]:44540
+Aug 18 14:57 : client: [3] closed
+Aug 18 14:57 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 14:58 : client: [4] opened from [::1]:44548
+Aug 18 14:58 : client: [4] closed
+Aug 18 14:59 : client: [0] closed
+Aug 18 14:59 : client: [5] opened from 127.0.0.1:41970
+Aug 18 14:59 : client: [6] opened from [::1]:44552
+Aug 18 14:59 : client: [6] closed
+Aug 18 14:59 : client: [7] opened from [::1]:44554
+Aug 18 14:59 : exception: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Aug 18 14:59 : client: [7] closed
+Aug 18 14:59 : client: [8] opened from [::1]:44556
+Aug 18 14:59 : client: [8] closed
+Aug 18 14:59 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
+Aug 18 15:01 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 18 15:01 : avahi: Service 'Music Player' successfully established.
+Aug 18 15:01 : client: [0] opened from 127.0.0.1:42116
+Aug 18 15:01 : client: [1] opened from [::1]:44698
+Aug 18 15:01 : client: [1] closed
+Aug 18 15:01 : client: [2] opened from [::1]:44700
+Aug 18 15:01 : client: [2] closed
+Aug 18 15:01 : client: [3] opened from [::1]:44702
+Aug 18 15:01 : client: [3] closed
+Aug 18 15:01 : client: [4] opened from [::1]:44704
+Aug 18 15:01 : exception: Number too large: 200
+Aug 18 15:01 : client: [4] closed
+Aug 18 15:01 : client: [5] opened from [::1]:44706
+Aug 18 15:01 : exception: Number too large: 120
+Aug 18 15:01 : client: [5] closed
+Aug 18 15:06 : player: played "Muzzy - Spectrum [Official Music Video] (192kbit_AAC).m4a"
