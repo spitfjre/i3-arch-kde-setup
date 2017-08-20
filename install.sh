@@ -22,6 +22,9 @@ yaourt -S --noconfirm --needed mpd
 yaourt -S --noconfirm --needed mpc
 yaourt -S --noconfirm --needed ncmpc
 
+yaourt -S --noconfirm --needed webstorm
+yaourt -S --noconfirm --needed intellij-idea-ultimate-edition
+yaourt -S --noconfirm --needed visual-studio-code
 yaourt -S --noconfirm --needed jdk
 yaourt -S --noconfirm --needed ipe
 yaourt -S --noconfirm --needed sublime-text-dev

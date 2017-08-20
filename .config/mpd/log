@@ -1625,3 +1625,350 @@ Aug 19 00:21 : client: [41] closed
 Aug 19 00:21 : client: [40] closed
 Aug 19 00:21 : client: [42] opened from 127.0.0.1:49250
 Aug 19 00:21 : client: [43] opened from 127.0.0.1:49252
+Aug 19 00:22 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_polarize.m4a"
+Aug 19 00:26 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_fairly_local.m4a"
+Aug 19 00:26 : client: [44] opened from 127.0.0.1:49340
+Aug 19 00:26 : client: [44] closed
+Aug 19 00:27 : client: [45] opened from [::1]:52656
+Aug 19 00:28 : client: [45] closed
+Aug 19 00:29 : client: [42] closed
+Aug 19 00:29 : client: [43] closed
+Aug 19 00:29 : client: [46] opened from 127.0.0.1:49372
+Aug 19 00:29 : client: [47] opened from 127.0.0.1:49374
+Aug 19 00:29 : client: [47] closed
+Aug 19 00:29 : client: [46] closed
+Aug 19 00:29 : client: [48] opened from 127.0.0.1:49382
+Aug 19 00:29 : client: [49] opened from 127.0.0.1:49384
+Aug 19 00:30 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_message_man.m4a"
+Aug 19 00:31 : client: [48] closed
+Aug 19 00:31 : client: [49] closed
+Aug 19 00:31 : client: [50] opened from 127.0.0.1:49390
+Aug 19 00:31 : client: [51] opened from 127.0.0.1:49392
+Aug 19 00:32 : client: [51] closed
+Aug 19 00:32 : client: [50] closed
+Aug 19 00:32 : client: [52] opened from 127.0.0.1:49458
+Aug 19 00:32 : client: [53] opened from 127.0.0.1:49460
+Aug 19 00:32 : client: [52] closed
+Aug 19 00:32 : client: [53] closed
+Aug 19 00:32 : client: [54] opened from 127.0.0.1:49464
+Aug 19 00:32 : client: [55] opened from 127.0.0.1:49466
+Aug 19 00:33 : client: [55] closed
+Aug 19 00:33 : client: [54] closed
+Aug 19 00:33 : client: [56] opened from 127.0.0.1:49472
+Aug 19 00:33 : client: [57] opened from 127.0.0.1:49474
+Aug 19 00:33 : client: [56] closed
+Aug 19 00:33 : client: [57] closed
+Aug 19 00:33 : client: [58] opened from 127.0.0.1:49476
+Aug 19 00:33 : client: [59] opened from 127.0.0.1:49478
+Aug 19 00:34 : client: [58] closed
+Aug 19 00:34 : client: [59] closed
+Aug 19 00:34 : client: [60] opened from 127.0.0.1:49486
+Aug 19 00:34 : client: [61] opened from 127.0.0.1:49488
+Aug 19 00:35 : client: [60] closed
+Aug 19 00:35 : client: [61] closed
+Aug 19 00:35 : client: [62] opened from 127.0.0.1:49492
+Aug 19 00:35 : client: [63] opened from 127.0.0.1:49494
+Aug 19 00:35 : client: [63] closed
+Aug 19 00:35 : client: [62] closed
+Aug 19 00:35 : client: [64] opened from 127.0.0.1:49496
+Aug 19 00:35 : client: [65] opened from 127.0.0.1:49498
+Aug 19 00:35 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_the_judge.m4a"
+Aug 19 00:35 : client: [64] closed
+Aug 19 00:35 : client: [65] closed
+Aug 19 00:35 : client: [66] opened from 127.0.0.1:49504
+Aug 19 00:35 : client: [67] opened from 127.0.0.1:49506
+Aug 19 00:36 : client: [66] closed
+Aug 19 00:36 : client: [67] closed
+Aug 19 00:36 : client: [68] opened from 127.0.0.1:49508
+Aug 19 00:36 : client: [69] opened from 127.0.0.1:49510
+Aug 19 00:37 : client: [69] closed
+Aug 19 00:37 : client: [68] closed
+Aug 19 00:37 : client: [70] opened from 127.0.0.1:49518
+Aug 19 00:37 : client: [71] opened from 127.0.0.1:49520
+Aug 19 00:37 : client: [71] closed
+Aug 19 00:37 : client: [70] closed
+Aug 19 00:37 : client: [72] opened from 127.0.0.1:49526
+Aug 19 00:37 : client: [73] opened from 127.0.0.1:49528
+Aug 19 00:38 : client: [72] closed
+Aug 19 00:38 : client: [73] closed
+Aug 19 00:38 : client: [74] opened from 127.0.0.1:49530
+Aug 19 00:38 : client: [75] opened from 127.0.0.1:49532
+Aug 19 00:38 : client: [75] closed
+Aug 19 00:38 : client: [74] closed
+Aug 19 00:38 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_we_dont_believe_whats_on_tv.m4a"
+Aug 19 00:39 : client: [76] opened from 127.0.0.1:49534
+Aug 19 00:39 : client: [77] opened from 127.0.0.1:49536
+Aug 19 00:39 : client: [76] closed
+Aug 19 00:39 : client: [77] closed
+Aug 19 00:39 : client: [78] opened from 127.0.0.1:49538
+Aug 19 00:39 : client: [79] opened from 127.0.0.1:49540
+Aug 19 00:39 : client: [78] closed
+Aug 19 00:39 : client: [79] closed
+Aug 19 00:39 : client: [80] opened from 127.0.0.1:49544
+Aug 19 00:39 : client: [81] opened from 127.0.0.1:49546
+Aug 19 00:39 : client: [80] closed
+Aug 19 00:39 : client: [81] closed
+Aug 19 00:39 : client: [82] opened from 127.0.0.1:49548
+Aug 19 00:39 : client: [83] opened from 127.0.0.1:49550
+Aug 19 00:40 : client: [82] closed
+Aug 19 00:40 : client: [83] closed
+Aug 19 00:40 : client: [84] opened from 127.0.0.1:49552
+Aug 19 00:40 : client: [85] opened from 127.0.0.1:49554
+Aug 19 00:40 : client: [84] closed
+Aug 19 00:40 : client: [85] closed
+Aug 19 00:40 : client: [86] opened from 127.0.0.1:49556
+Aug 19 00:40 : client: [87] opened from 127.0.0.1:49558
+Aug 19 00:40 : client: [88] opened from 127.0.0.1:49560
+Aug 19 00:40 : client: [88] closed
+Aug 19 00:40 : client: [89] opened from 127.0.0.1:49562
+Aug 19 00:40 : client: [89] closed
+Aug 19 00:40 : client: [90] opened from 127.0.0.1:49564
+Aug 19 00:40 : client: [90] closed
+Aug 19 00:42 : client: [87] closed
+Aug 19 00:42 : client: [86] closed
+Aug 19 00:42 : client: [91] opened from 127.0.0.1:49600
+Aug 19 00:42 : client: [92] opened from 127.0.0.1:49602
+Aug 19 00:42 : client: [93] opened from [::1]:52902
+Aug 19 00:42 : client: [93] closed
+Aug 19 00:42 : client: [94] opened from [::1]:52904
+Aug 19 00:42 : client: [94] closed
+Aug 19 00:42 : client: [95] opened from [::1]:52906
+Aug 19 00:42 : client: [95] closed
+Aug 19 00:42 : client: [96] opened from [::1]:52908
+Aug 19 00:42 : client: [96] closed
+Aug 19 00:42 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_stressed_out.m4a"
+Aug 19 00:42 : client: [97] opened from [::1]:52910
+Aug 19 00:42 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_doubt.m4a"
+Aug 19 00:42 : client: [97] closed
+Aug 19 00:42 : client: [98] opened from [::1]:52912
+Aug 19 00:42 : client: [98] closed
+Aug 19 00:42 : client: [99] opened from [::1]:52914
+Aug 19 00:42 : client: [99] closed
+Aug 19 00:42 : client: [100] opened from [::1]:52916
+Aug 19 00:42 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_doubt.m4a"
+Aug 19 00:42 : client: [100] closed
+Aug 19 00:42 : client: [92] closed
+Aug 19 00:42 : client: [91] closed
+Aug 19 00:42 : client: [101] opened from 127.0.0.1:49620
+Aug 19 00:42 : client: [102] opened from 127.0.0.1:49622
+Aug 19 00:42 : client: [103] opened from [::1]:52922
+Aug 19 00:42 : client: [103] closed
+Aug 19 00:42 : client: [104] opened from [::1]:52924
+Aug 19 00:42 : client: [104] closed
+Aug 19 00:42 : client: [105] opened from [::1]:52926
+Aug 19 00:42 : client: [105] closed
+Aug 19 00:42 : client: [106] opened from [::1]:52928
+Aug 19 00:42 : client: [106] closed
+Aug 19 00:42 : client: [107] opened from [::1]:52930
+Aug 19 00:42 : client: [107] closed
+Aug 19 00:42 : client: [108] opened from [::1]:52932
+Aug 19 00:42 : client: [108] closed
+Aug 19 00:42 : client: [109] opened from [::1]:52934
+Aug 19 00:42 : client: [109] closed
+Aug 19 00:42 : client: [110] opened from [::1]:52936
+Aug 19 00:42 : client: [110] closed
+Aug 19 00:42 : client: [111] opened from [::1]:52938
+Aug 19 00:42 : client: [111] closed
+Aug 19 00:42 : client: [112] opened from [::1]:52940
+Aug 19 00:42 : client: [112] closed
+Aug 19 00:42 : client: [113] opened from [::1]:52942
+Aug 19 00:42 : client: [113] closed
+Aug 19 00:44 : client: [101] closed
+Aug 19 00:44 : client: [102] closed
+Aug 19 00:44 : client: [114] opened from 127.0.0.1:49664
+Aug 19 00:46 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_ride.m4a"
+Aug 19 00:50 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_goner.m4a"
+Aug 19 00:53 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_tear_in_my_heart.m4a"
+Aug 19 00:57 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_fairly_local.m4a"
+Aug 19 00:58 : client: [115] opened from 127.0.0.1:49794
+Aug 19 00:58 : client: [115] closed
+Aug 19 02:09 : client: [116] opened from 127.0.0.1:50330
+Aug 19 02:09 : client: [116] closed
+Aug 19 02:11 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_message_man.m4a"
+Aug 19 02:15 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_polarize.m4a"
+Aug 19 09:41 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 19 09:41 : client: [0] opened from 127.0.0.1:47732
+Aug 19 09:41 : avahi: Service 'Music Player' successfully established.
+Aug 19 10:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 19 10:38 : client: [0] opened from 127.0.0.1:58770
+Aug 19 10:38 : avahi: Service 'Music Player' successfully established.
+Aug 19 10:39 : client: [1] opened from [::1]:38976
+Aug 19 10:39 : client: [1] closed
+Aug 19 10:43 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_lane_boy.m4a"
+Aug 19 10:47 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_heavydirtysoul.m4a"
+Aug 19 10:51 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_message_man.m4a"
+Aug 19 10:51 : client: [2] opened from [::1]:38998
+Aug 19 10:51 : client: [2] closed
+Aug 19 10:54 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_we_dont_believe_whats_on_tv.m4a"
+Aug 19 10:58 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_stressed_out.m4a"
+Aug 19 11:01 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_tear_in_my_heart.m4a"
+Aug 19 11:04 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_ride.m4a"
+Aug 19 11:08 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_hometown.m4a"
+Aug 19 11:12 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_polarize.m4a"
+Aug 19 11:12 : client: [3] opened from 127.0.0.1:59030
+Aug 19 11:12 : client: [3] closed
+Aug 19 14:46 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_fairly_local.m4a"
+Aug 19 20:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 19 20:20 : client: [0] opened from 127.0.0.1:44986
+Aug 19 20:20 : avahi: Service 'Music Player' successfully established.
+Aug 19 21:37 : client: [1] opened from 127.0.0.1:46140
+Aug 19 21:37 : client: [1] closed
+Aug 19 21:40 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_fairly_local.m4a"
+Aug 19 21:44 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_goner.m4a"
+Aug 19 21:44 : client: [2] opened from [::1]:34808
+Aug 19 21:44 : client: [2] closed
+Aug 19 21:46 : client: [3] opened from [::1]:34812
+Aug 19 21:46 : client: [3] closed
+Aug 19 21:46 : client: [4] opened from [::1]:34814
+Aug 19 21:46 : client: [4] closed
+Aug 19 21:46 : client: [5] opened from [::1]:34816
+Aug 19 21:46 : client: [5] closed
+Aug 19 21:46 : client: [6] opened from [::1]:34818
+Aug 19 21:46 : client: [6] closed
+Aug 19 21:47 : client: [7] opened from [::1]:34820
+Aug 19 21:47 : client: [7] closed
+Aug 19 21:48 : client: [0] closed
+Aug 19 21:48 : client: [8] opened from 127.0.0.1:46200
+Aug 19 21:50 : client: [8] closed
+Aug 19 21:50 : client: [9] opened from 127.0.0.1:46220
+Aug 19 21:50 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_message_man.m4a"
+Aug 19 21:50 : client: [10] opened from [::1]:34850
+Aug 19 21:50 : client: [10] closed
+Aug 19 21:50 : client: [11] opened from [::1]:34852
+Aug 19 21:50 : client: [11] closed
+Aug 19 21:50 : client: [12] opened from [::1]:34854
+Aug 19 21:50 : client: [12] closed
+Aug 19 21:50 : client: [13] opened from [::1]:34856
+Aug 19 21:50 : client: [13] closed
+Aug 19 21:50 : client: [14] opened from [::1]:34858
+Aug 19 21:50 : client: [14] closed
+Aug 19 21:50 : client: [15] opened from [::1]:34860
+Aug 19 21:50 : client: [15] closed
+Aug 19 21:50 : client: [16] opened from [::1]:34862
+Aug 19 21:50 : client: [16] closed
+Aug 19 21:50 : client: [17] opened from [::1]:34864
+Aug 19 21:50 : client: [18] opened from [::1]:34866
+Aug 19 21:50 : client: [18] closed
+Aug 19 21:50 : client: [19] opened from [::1]:34868
+Aug 19 21:50 : client: [19] closed
+Aug 19 21:50 : client: [20] opened from [::1]:34870
+Aug 19 21:50 : client: [20] closed
+Aug 19 21:50 : client: [21] opened from [::1]:34872
+Aug 19 21:50 : client: [21] closed
+Aug 19 21:50 : client: [22] opened from [::1]:34874
+Aug 19 21:50 : client: [22] closed
+Aug 19 21:50 : client: [23] opened from [::1]:34876
+Aug 19 21:50 : client: [23] closed
+Aug 19 21:50 : client: [24] opened from [::1]:34878
+Aug 19 21:50 : client: [24] closed
+Aug 19 21:50 : client: [25] opened from [::1]:34880
+Aug 19 21:50 : client: [25] closed
+Aug 19 21:50 : client: [26] opened from [::1]:34882
+Aug 19 21:50 : client: [26] closed
+Aug 19 21:51 : client: [9] closed
+Aug 19 21:51 : client: [27] opened from 127.0.0.1:46256
+Aug 19 21:51 : client: [27] closed
+Aug 19 21:51 : client: [28] opened from 127.0.0.1:46258
+Aug 19 21:51 : client: [29] opened from [::1]:34888
+Aug 19 21:51 : client: [29] closed
+Aug 19 21:51 : client: [30] opened from [::1]:34890
+Aug 19 21:51 : client: [30] closed
+Aug 19 21:52 : client: [31] opened from [::1]:34892
+Aug 19 21:52 : client: [31] closed
+Aug 19 21:52 : client: [32] opened from [::1]:34894
+Aug 19 21:52 : client: [32] closed
+Aug 19 21:52 : client: [33] opened from [::1]:34896
+Aug 19 21:52 : client: [33] closed
+Aug 19 21:52 : client: [34] opened from [::1]:34898
+Aug 19 21:52 : client: [34] closed
+Aug 19 21:52 : client: [17] closed
+Aug 19 21:52 : client: [35] opened from [::1]:34902
+Aug 19 21:52 : client: [35] closed
+Aug 19 21:52 : client: [36] opened from [::1]:34908
+Aug 19 21:52 : client: [36] closed
+Aug 19 21:53 : client: [37] opened from [::1]:34910
+Aug 19 21:53 : client: [37] closed
+Aug 19 21:55 : client: [38] opened from [::1]:34962
+Aug 19 21:55 : client: [38] closed
+Aug 20 00:51 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_lane_boy.m4a"
+Aug 20 10:19 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 20 10:19 : client: [0] opened from 127.0.0.1:48942
+Aug 20 10:19 : avahi: Service 'Music Player' successfully established.
+Aug 20 10:19 : client: [1] opened from [::1]:46206
+Aug 20 10:19 : client: [1] closed
+Aug 20 10:21 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_lane_boy.m4a"
+Aug 20 10:25 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_goner.m4a"
+Aug 20 10:26 : client: [2] opened from [::1]:46468
+Aug 20 10:26 : client: [2] closed
+Aug 20 12:42 : client: [3] opened from [::1]:47432
+Aug 20 12:42 : client: [3] closed
+Aug 20 12:45 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_message_man.m4a"
+Aug 20 12:47 : client: [4] opened from [::1]:47612
+Aug 20 12:47 : client: [4] closed
+Aug 20 12:47 : client: [5] opened from [::1]:47614
+Aug 20 12:47 : client: [5] closed
+Aug 20 12:47 : client: [6] opened from [::1]:47616
+Aug 20 12:47 : client: [6] closed
+Aug 20 12:51 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_heavydirtysoul.m4a"
+Aug 20 12:54 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_fairly_local.m4a"
+Aug 20 12:58 : client: [7] opened from [::1]:47710
+Aug 20 12:58 : player: played "Twenty_One_Pilots/Blurryface/twenty_one_pilots_-_the_judge.m4a"
+Aug 20 12:59 : client: [7] closed
+Aug 20 13:09 : player: played "Metallica/S&M 1999/206-metallica-outlaw_torn-eos.mp3"
+Aug 20 13:15 : player: played "Metallica/S&M 1999/201-metallica-nothing_else_matters-eos.mp3"
+Aug 20 13:23 : player: played "Metallica/S&M 1999/209-metallica-enter_sandman-eos.mp3"
+Aug 20 13:31 : player: played "Metallica/S&M 1999/208-metallica-one-eos.mp3"
+Aug 20 13:38 : player: played "Metallica/S&M 1999/210-metallica-battery-eos.mp3"
+Aug 20 13:43 : player: played "Metallica/S&M 1999/202-metallica-until_it_sleeps-eos.mp3"
+Aug 20 13:45 : client: [8] opened from [::1]:50128
+Aug 20 13:45 : client: [8] closed
+Aug 20 14:44 : player: played "Metallica/S&M 1999/204-metallica--human-eos.mp3"
+Aug 20 18:19 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 20 18:19 : client: [0] opened from 127.0.0.1:42274
+Aug 20 18:19 : avahi: Service 'Music Player' successfully established.
+Aug 20 18:20 : client: [1] opened from [::1]:59710
+Aug 20 18:20 : client: [1] closed
+Aug 20 18:22 : player: played "Metallica/S&M 1999/204-metallica--human-eos.mp3"
+Aug 20 18:24 : client: [0] closed
+Aug 20 18:24 : exception: "My PULSE Device" [pulse] failed to play: suspended
+Aug 20 18:24 : exception: Failed to open audio output
+Aug 20 18:24 : client: [2] opened from 127.0.0.1:42374
+Aug 20 18:25 : player: played "Metallica/S&M 1999/203-metallica-for_whom_the_bell_tolls-eos.mp3"
+Aug 20 18:25 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 20 18:25 : client: [0] opened from 127.0.0.1:36510
+Aug 20 18:25 : avahi: Service 'Music Player' successfully established.
+Aug 20 18:54 : client: [1] opened from [::1]:47500
+Aug 20 18:54 : client: [1] closed
+Aug 20 18:57 : player: played "Metallica/S&M 1999/203-metallica-for_whom_the_bell_tolls-eos.mp3"
+Aug 20 19:05 : player: played "Metallica/S&M 1999/209-metallica-enter_sandman-eos.mp3"
+Aug 20 19:12 : player: played "Metallica/S&M 1999/210-metallica-battery-eos.mp3"
+Aug 20 23:07 : client: [2] opened from [::1]:59846
+Aug 20 23:07 : client: [2] closed
+Aug 20 23:10 : client: [0] closed
+Aug 20 23:10 : client: [3] opened from 127.0.0.1:50974
+Aug 20 23:11 : client: [3] closed
+Aug 20 23:11 : client: [4] opened from 127.0.0.1:51090
+Aug 20 23:11 : client: [4] closed
+Aug 20 23:11 : client: [5] opened from 127.0.0.1:51214
+Aug 20 23:11 : client: [5] closed
+Aug 20 23:11 : client: [6] opened from 127.0.0.1:51370
+Aug 20 23:11 : client: [6] closed
+Aug 20 23:11 : client: [7] opened from 127.0.0.1:51444
+Aug 20 23:12 : client: [7] closed
+Aug 20 23:12 : client: [8] opened from 127.0.0.1:51780
+Aug 20 23:13 : client: [8] closed
+Aug 20 23:13 : client: [9] opened from 127.0.0.1:52030
+Aug 20 23:13 : client: [9] closed
+Aug 20 23:13 : client: [10] opened from 127.0.0.1:52382
+Aug 20 23:14 : client: [10] closed
+Aug 20 23:14 : client: [11] opened from 127.0.0.1:52748
+Aug 20 23:15 : client: [11] closed
+Aug 20 23:15 : client: [12] opened from 127.0.0.1:53120
+Aug 20 23:15 : client: [12] closed
+Aug 20 23:15 : client: [13] opened from 127.0.0.1:53420
+Aug 20 23:16 : client: [13] closed
+Aug 20 23:16 : client: [14] opened from 127.0.0.1:53560
+Aug 20 23:16 : client: [15] opened from [::1]:35860
+Aug 20 23:16 : client: [15] closed
+Aug 20 23:16 : client: [16] opened from [::1]:35862
+Aug 20 23:16 : client: [16] closed

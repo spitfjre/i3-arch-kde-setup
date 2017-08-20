@@ -40,7 +40,7 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = System San Francisco Regular:size=10
+font-0 = System San Francisco Text:size=10
 font-1 = Font Awesome:size=10
 font-2 = DejaVu Sans Mono:size=10
 
@@ -174,7 +174,7 @@ label-unfocused = %name%
 label-unfocused-font = 2
 label-unfocused-foreground = ${colors.primary}
 label-unfocused-background = ${colors.background}
-label-unfocused-underline = ${colors.primary}
+;label-unfocused-underline = ${colors.primary}
 label-unfocused-padding-left = 2
 label-unfocused-padding-right = 2
 label-unfocused-margin-left = 1
@@ -183,8 +183,8 @@ label-unfocused-margin-right = 1
 ; visible = Active workspace on unfocused monitor
 label-visible = %name%
 label-visible-font = 2
-label-visible-foreground = ${colors.background}
-label-visible-background = ${colors.primary}
+label-visible-foreground = ${colors.primary}
+label-visible-background = ${colors.background}
 label-visible-underline = ${colors.primary}
 label-visible-padding-left = 2
 label-visible-padding-right = 2
@@ -205,13 +205,13 @@ label-urgent-margin-right = 1
 [module/mpd]
 type = internal/mpd
 
-format-playing = <icon-prev> <icon-stop> <toggle> <icon-next>   <label-song>
+format-playing = <icon-prev> <icon-stop> <toggle> <icon-next>   <label-time>   <label-song>
 format-playing-foreground = ${colors.green}
 format-playing-underline = ${colors.green}
-format-paused = <icon-prev> <icon-stop> <toggle> <icon-next>   <label-song>
+format-paused = <icon-prev> <icon-stop> <toggle> <icon-next>   <label-time>   <label-song>
 format-paused-foreground = ${colors.yellow}
 format-paused-underline = ${colors.yellow}
-format-stopped = <icon-prev> <icon-stop> <toggle> <icon-next>   <label-song>
+format-stopped = <icon-prev> <icon-stop> <toggle> <icon-next>
 format-stopped-foreground = ${colors.red}
 format-stopped-underline = ${colors.red}
 
@@ -225,6 +225,10 @@ icon-pause = "  "
 icon-pause-font = 2
 icon-next = "  "
 icon-next-font = 2
+;icon-repeat = "  "
+;icon-repeat-font = 2
+;icon-random = "  "
+;icon-random-font = 2
 
 label-song-maxlen = 250
 label-song-ellipsis = true
@@ -234,7 +238,7 @@ label-song-foreground = ${colors.primary}
 type = internal/cpu
 interval = 1
 
-format-underline = ${colors.cyan}
+;format-underline = ${colors.cyan}
 format-prefix = "  "
 format-prefix-foreground = ${colors.cyan}
 format-prefix-font = 2
@@ -245,7 +249,7 @@ label-font = 3
 type = internal/memory
 interval = 1
 
-format-underline = ${colors.cyan}
+;format-underline = ${colors.cyan}
 format-prefix = "  "
 format-prefix-foreground = ${colors.cyan}
 format-prefix-font = 2
@@ -257,7 +261,7 @@ type = internal/network
 interface = wlp3s0
 interval = 1.0
 
-format-connected-underline = ${colors.cyan}
+;format-connected-underline = ${colors.cyan}
 format-connected-prefix = "  "
 format-connected-prefix-foreground = ${colors.cyan}
 format-connected-prefix-font = 2
@@ -271,7 +275,7 @@ type = internal/network
 interface = wlp3s0
 interval = 1.0
 
-format-connected-underline = ${colors.cyan}
+;format-connected-underline = ${colors.cyan}
 format-connected-prefix = "  "
 format-connected-prefix-foreground = ${colors.cyan}
 format-connected-prefix-font = 2
@@ -285,7 +289,7 @@ type = internal/network
 interface = wlp3s0
 interval = 1.0
 
-format-connected-underline = ${colors.cyan}
+;format-connected-underline = ${colors.cyan}
 format-connected-prefix-foreground = ${colors.cyan}
 format-connected-prefix = "  "
 format-connected-prefix-font = 2
@@ -299,7 +303,7 @@ type = internal/network
 interface = enp0s25
 interval = 1.0
 
-format-connected-underline = ${colors.cyan}
+;format-connected-underline = ${colors.cyan}
 format-connected-prefix = "  "
 format-connected-prefix-foreground = ${colors.cyan}
 format-connected-prefix-font = 2
@@ -313,7 +317,7 @@ type = internal/network
 interface = enp0s25
 interval = 1.0
 
-format-connected-underline = ${colors.cyan}
+;format-connected-underline = ${colors.cyan}
 format-connected-prefix = "  "
 format-connected-prefix-foreground = ${colors.cyan}
 format-connected-prefix-font = 2
@@ -327,7 +331,7 @@ type = internal/network
 interface = enp0s25
 interval = 1.0
 
-format-connected-underline = ${colors.cyan}
+;format-connected-underline = ${colors.cyan}
 format-connected-prefix = "  "
 format-connected-prefix-foreground = ${colors.cyan}
 format-connected-prefix-font = 2
@@ -341,7 +345,7 @@ interval = 5
 date = %d-%m-%Y
 date-alt = %d-%m-%Y
 
-format-underline = ${colors.cyan}
+;format-underline = ${colors.cyan}
 format-foreground = ${colors.primary}
 format-prefix = "  "
 format-prefix-foreground = ${colors.cyan}
@@ -357,7 +361,7 @@ interval = 1
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-underline = ${colors.cyan}
+;format-underline = ${colors.cyan}
 format-foreground = ${colors.primary}
 format-prefix = "  "
 format-prefix-foreground = ${colors.cyan}
