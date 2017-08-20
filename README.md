@@ -1,3 +1,3 @@
 # i3-arch-kde-setup
 
-![alt text](./screenshot/fullscreen.png)
+![alt text](./screenshot/screenshot.png)
