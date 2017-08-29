@@ -11,8 +11,7 @@ yaourt -S --noconfirm --needed w3m
 ranger --copy-config=scope
 yaourt -S --noconfirm --needed feh
 yaourt -S --noconfirm --needed zsh
-yaourt -S --noconfirm --needed zsh-completions
-yaourt -S --noconfirm --needed ssh
+yaourt -S --noconfirm --needed zsh-completionsexi
 yaourt -S --noconfirm --needed light
 yaourt -S --noconfirm --needed arandr
 yaourt -S --noconfirm --needed lxappearance
@@ -20,7 +19,7 @@ yaourt -S --noconfirm --needed numlockx
 yaourt -S --noconfirm --needed i3ipc-python-git
 yaourt -S --noconfirm --needed mpd
 yaourt -S --noconfirm --needed mpc
-yaourt -S --noconfirm --needed ncmpc
+yaourt -S --noconfirm --needed ncmpcpp
 
 yaourt -S --noconfirm --needed webstorm
 yaourt -S --noconfirm --needed intellij-idea-ultimate-edition
@@ -45,13 +44,14 @@ yaourt -S --noconfirm --needed gradle
 yaourt -S --noconfirm --needed nodejs
 yaourt -S --noconfirm --needed npm
 yaourt -S --noconfirm --needed gimp
+yaourt -S --noconfirm --needed python-pip
 yaourt -S --noconfirm --needed ttf-font-awesome
 
 git clone https://github.com/justbuchanan/fontawesome-python.git
 cd fontawesome-python
-pip install fontawesome
+sudo pip install fontawesome
 cd ..
-rm -R fontawesome-python
+sudo rm -R fontawesome-python
 
 yaourt -Rcns --noconfirm --needed lightdm
 yaourt -S --noconfirm --needed sddm-kcm

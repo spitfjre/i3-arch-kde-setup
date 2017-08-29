@@ -13,3 +13,4 @@ cp $repoDir/.tmux.conf $HOME
 cp $repoDir/.xprofile $HOME
 cp $repoDir/.Xresources $HOME
 cp $repoDir/.zshrc $HOME
+cp $repoDir/.ncmpcpp/config $HOME

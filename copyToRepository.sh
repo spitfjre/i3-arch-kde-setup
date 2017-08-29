@@ -30,3 +30,6 @@ fi
 if [ -e $HOME/.zshrc ]
  then cp $HOME/.zshrc $repoDir/
 fi
+if [ -e $HOME/.ncmpcpp/config ]
+ then cp $HOME/.ncmpcpp/config $repoDir/.ncmpcpp/
+fi
