@@ -1,0 +1,25 @@
+[options]
+font = DejaVu Sans Mono for Powerline 8
+
+[colors]
+foreground = #BBBBBB
+foreground_bold = #BBBBBB
+background = #121212
+cursor = #BBBBBB
+
+color0 = #121212
+color1 = #FA2573
+color2 = #98E123
+color3 = #DFD460
+color4 = #1080D0
+color5 = #8700FF
+color6 = #43A8D0
+color7 = #BBBBBB
+color8 = #555555
+color9 = #F6669D
+color10 = #B1E05F
+color11 = #FFF26D
+color12 = #00AFFF
+color13 = #AF87FF
+color14 = #51CEFF
+color15 = #FFFFFF

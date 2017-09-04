@@ -58,6 +58,8 @@ WINDOW_ICONS = {
     'dolphin': fa.icons['files-o'],
     'feh': fa.icons['picture-o'],
     'gimp': fa.icons['paint-brush'],
+    'google-chrome': fa.icons['chrome'],
+    'Google-chrome': fa.icons['chrome'],
     'jetbrains-webstorm': fa.icons['code'],
     'jetbrains-idea': fa.icons['code'],
     'mpv': fa.icons['play-circle'],

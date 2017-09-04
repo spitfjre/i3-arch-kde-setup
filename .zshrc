@@ -1,3 +1,5 @@
+export LANG="en_US.UTF-8"
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -85,6 +87,9 @@ DEFAULT_USER=`whoami`
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export ANDROID_HOME=/home/spitfjre/android-sdk
+export PATH=$PATH:/home/spitfjre/android-sdk/platform-tools
 
 export NVM_DIR="/home/spitfjre/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

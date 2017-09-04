@@ -4,7 +4,7 @@ set $mod Mod4
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/CuQSAKD.png
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec_always --no-startup-id numlockx on
-exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 1920x0 --dpi 96 --rotate normal --output HDMI-0 --off --output DVI-I-1 --primary --mode 1920x1080 --pos 0x0 --dpi 96 --rotate normal --output DVI-I-0 --off --output DP-1 --off --output DP-0 --off
+exec_always --no-startup-id xrandr --output VIRTUAL1 --off --output DP3 --off --output DP2 --off --output DP1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI3 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI2 --off --output HDMI1 --off --output LVDS1 --off --output VGA1 --off
 
 exec --no-startup-id redshift
 exec --no-startup-id slack
@@ -12,7 +12,7 @@ exec --no-startup-id dropbox
 exec --no-startup-id mpd
 
 #Font for window titles
-font pango: Font Awesome, San Francisco Text Medium 10
+font pango: Font Awesome, DejaVu Sans 8
 
 #Colors
 set $back               #121212
@@ -36,15 +36,15 @@ client.background       $white
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 popup_during_fullscreen smart
-bindsym $mod+t exec --no-startup-id alacritty
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+t exec --no-startup-id termite
+bindsym $mod+Return exec --no-startup-id termite
 mouse_warping none
 
 for_window [class="^.*"] border pixel 3
 
 # i3-gaps stuff :)
-gaps inner 10
-gaps outer 5
+gaps inner 12
+gaps outer -2
 smart_borders on
 new_window none
 
@@ -89,7 +89,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 # decrease 
 
 bindsym $mod+Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/screenshots/'
 bindsym $mod+Shift+Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/screenshots/'
-bindsym $mod+Shift+Return exec --no-startup-id alacritty -e ranger
+bindsym $mod+Shift+Return exec --no-startup-id termite -e ranger
 
 bindsym $mod+Escape exec --no-startup-id i3-msg exit
 bindsym $mod+Shift+Escape exec --no-startup-id poweroff

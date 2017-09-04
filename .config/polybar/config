@@ -40,9 +40,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = System San Francisco Text:size=10
-font-1 = Font Awesome:size=10
-font-2 = DejaVu Sans Mono:size=10
+font-0 = DejaVu Sans:size=8
+font-1 = Font Awesome:size=8
+font-2 = DejaVu Sans Mono:size=8
 
 modules-left = i3
 modules-center =
@@ -71,9 +71,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = System San Francisco Regular:size=10
-font-1 = Font Awesome:size=10
-font-2 = DejaVu Sans Mono:size=10
+font-0 = System San Francisco Regular:size=8
+font-1 = Font Awesome:size=8
+font-2 = DejaVu Sans Mono:size=8
 
 modules-left = mpd
 modules-center =
@@ -106,9 +106,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = System San Francisco Regular:size=10
-font-1 = Font Awesome:size=10
-font-2 = DejaVu Sans Mono:size=10
+font-0 = System San Francisco Regular:size=8
+font-1 = Font Awesome:size=8
+font-2 = DejaVu Sans Mono:size=8
 
 modules-left = i3
 modules-center =
@@ -135,9 +135,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = System San Francisco Regular:size=10
-font-1 = Font Awesome:size=10
-font-2 = DejaVu Sans Mono:size=10
+font-0 = System San Francisco Regular:size=8
+font-1 = Font Awesome:size=8
+font-2 = DejaVu Sans Mono:size=8
 
 modules-left = mpd
 modules-center =
@@ -300,7 +300,7 @@ format-disconnected =
 
 [module/eth]
 type = internal/network
-interface = enp5s0
+interface = enp0s25
 interval = 1.0
 
 ;format-connected-underline = ${colors.cyan}
@@ -314,7 +314,7 @@ format-disconnected =
 
 [module/eth_down]
 type = internal/network
-interface = enp5s0
+interface = enp0s25
 interval = 1.0
 
 ;format-connected-underline = ${colors.cyan}
@@ -328,7 +328,7 @@ format-disconnected =
 
 [module/eth_up]
 type = internal/network
-interface = enp5s0
+interface = enp0s25
 interval = 1.0
 
 ;format-connected-underline = ${colors.cyan}
