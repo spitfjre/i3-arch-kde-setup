@@ -5,7 +5,7 @@ yaourt -S --noconfirm --needed i3status
 yaourt -S --noconfirm --needed i3lock-wrapper
 yaourt -S --noconfirm --needed polybar-git
 yaourt -S --noconfirm --needed rofi
-yaourt -S --noconfirm --needed alacritty-git
+yaourt -S --noconfirm --needed termite
 yaourt -S --noconfirm --needed ranger
 yaourt -S --noconfirm --needed w3m
 ranger --copy-config=scope
@@ -20,6 +20,8 @@ yaourt -S --noconfirm --needed i3ipc-python-git
 yaourt -S --noconfirm --needed mpd
 yaourt -S --noconfirm --needed mpc
 yaourt -S --noconfirm --needed ncmpcpp
+yaourt -S --noconfirm --needed pulseaudio-ctl
+yaourt -S --noconfirm --needed xorg-xbacklight
 
 yaourt -S --noconfirm --needed webstorm
 yaourt -S --noconfirm --needed intellij-idea-ultimate-edition
