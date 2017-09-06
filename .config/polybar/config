@@ -40,9 +40,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = DejaVu Sans:size=8
+font-0 = Nunito Sans:size=8
 font-1 = Font Awesome:size=8
-font-2 = DejaVu Sans Mono:size=8
+font-2 = FuraCode Nerd Font Mono:size=8
 
 modules-left = i3
 modules-center =
