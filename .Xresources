@@ -9,7 +9,7 @@ rofi.terminal:	termite
 rofi.lines:		10
 rofi.eh:		1
 rofi.hide-scrollbar: true
-rofi.font:      DejaVu Sans 8
+rofi.font:      Nunito Sans 8
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme

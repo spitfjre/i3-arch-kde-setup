@@ -65,6 +65,8 @@ WINDOW_ICONS = {
     'mpv': fa.icons['play-circle'],
     'slack': fa.icons['slack'],
     'subl3': fa.icons['file-text-o'],
+    'termite': fa.icons['terminal'],
+    'Termite': fa.icons['terminal'],
     'Thunderbird': fa.icons['envelope'],
 }
 
