@@ -48,6 +48,7 @@ yaourt -S --noconfirm --needed npm
 yaourt -S --noconfirm --needed gimp
 yaourt -S --noconfirm --needed python-pip
 yaourt -S --noconfirm --needed ttf-font-awesome
+yaourt -S --noconfirm --needed ttf-fira-code
 
 git clone https://github.com/justbuchanan/fontawesome-python.git
 cd fontawesome-python
