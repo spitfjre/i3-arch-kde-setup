@@ -49,12 +49,19 @@ yaourt -S --noconfirm --needed gimp
 yaourt -S --noconfirm --needed python-pip
 yaourt -S --noconfirm --needed ttf-font-awesome
 yaourt -S --noconfirm --needed ttf-fira-code
+yaourt -S --noconfirm --needed zsh-theme-powerlevel9k
 
 git clone https://github.com/justbuchanan/fontawesome-python.git
 cd fontawesome-python
 sudo pip install fontawesome
 cd ..
 sudo rm -R fontawesome-python
+
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+sudo ./install.sh
+cd ..
+sudo rm -rf fonts
 
 yaourt -Rcns --noconfirm --needed lightdm
 yaourt -S --noconfirm --needed sddm-kcm

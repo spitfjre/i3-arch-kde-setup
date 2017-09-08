@@ -1,7 +1,7 @@
 set $mod Mod4
 
 #AUTOSTART STUFF
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/CuQSAKD.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/arch-wallpaper.png
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec_always --no-startup-id numlockx on
 exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --off --output DVI-I-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-I-0 --off --output DP-1 --off --output DP-0 --off
@@ -12,25 +12,23 @@ exec --no-startup-id dropbox
 exec --no-startup-id mpd
 
 #Font for window titles
-font pango: Font Awesome, Nunito Sans 8
+font pango: Font Awesome, Fira Sans 8
 
 #Colors
-set $back               #121212
-set $primary            #FFFFFF
-set $secondary          #BBBBBB
-set $black              #121212
-set $grey               #444444
-set $white              #BBBBBB
-set $blue               #1080D0
-set $red                #FA2573
-set $green              #98E123
+set $background     #0e1019
+set $foreground     #fffaf4
+set $black          #232323
+set $white          #ffffff
+set $blue           #008df8
+set $red            #ff000f
+set $green          #8ce10b
 
-# class                 border   backgr.  text    indicator child_border
-client.focused          $blue    $primary $black  #2e9ef4   $blue
-client.focused_inactive $black   $primary $black  #484e50   $black
-client.unfocused        $black   $back    $white  #292d2e   $black
-client.urgent           #2f343a  #900000  $white  #900000   #900000
-client.placeholder      #000000  #0c0c0c  $white  #000000   #0c0c0c
+# class                 border  backgr.         text    indicator   child_border
+client.focused          $blue   $background     $black  $black      $blue
+client.focused_inactive $black  $background     $black  $black      $black
+client.unfocused        $black  $background     $black  $black      $black
+client.urgent           $red    $background     $black  $black      $red 
+client.placeholder      $black  $background     $black  $black      $black
 client.background       $white
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -44,7 +42,7 @@ for_window [class="^.*"] border pixel 3
 
 # i3-gaps stuff :)
 gaps inner 12
-gaps outer -2
+gaps outer 0
 smart_borders on
 new_window none
 

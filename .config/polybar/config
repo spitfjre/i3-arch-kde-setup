@@ -8,17 +8,17 @@
 ;=====================================================
 
 [colors]
-background = #121212
-primary = #FFFFFF
+background = #0e1019
+foreground = #fffaf4
 
-black = #121212
-red = #FA2573
-green = #98E123
-yellow = #DFD460
-blue = #1080D0
-magenta = #8700FF
-cyan = #43A8D0
-white = #BBBBBB
+black = #232323
+red = #ff000f
+green = #8ce10b
+yellow = #ffb900
+blue = #008df8
+magenta = #6d43a6
+cyan = #00d8eb
+white = #ffffff
 
 [bar/top_primary]
 monitor = ${env:MONITOR}
@@ -26,7 +26,7 @@ width = 100%
 fixed-center = false
 
 background = ${colors.background}
-foreground = ${colors.primary}
+foreground = ${colors.foreground}
 
 line-size = 2
 line-color = ${colors.background}
@@ -40,9 +40,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = Nunito Sans:size=8
+font-0 = Fira Sans:size=8
 font-1 = Font Awesome:size=8
-font-2 = FuraCode Nerd Font Mono:size=8
+font-2 = Fira Code:size=8
 
 modules-left = i3
 modules-center =
@@ -57,7 +57,7 @@ fixed-center = false
 bottom = true
 
 background = ${colors.background}
-foreground = ${colors.primary}
+foreground = ${colors.foreground}
 
 line-size = 2
 line-color = ${colors.background}
@@ -71,9 +71,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = Nunito Sans:size=8
+font-0 = Fira Sans:size=8
 font-1 = Font Awesome:size=8
-font-2 = FuraCode Nerd Font Mono:size=8
+font-2 = Fira Code:size=8
 
 modules-left = mpd
 modules-center =
@@ -92,7 +92,7 @@ width = 100%
 fixed-center = false
 
 background = ${colors.background}
-foreground = ${colors.primary}
+foreground = ${colors.foreground}
 
 line-size = 2
 line-color = ${colors.background}
@@ -106,9 +106,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = Nunito Sans:size=8
+font-0 = Fira Sans:size=8
 font-1 = Font Awesome:size=8
-font-2 = FuraCode Nerd Font Mono:size=8
+font-2 = Fira Code:size=8
 
 modules-left = i3
 modules-center =
@@ -121,7 +121,7 @@ fixed-center = false
 bottom = true
 
 background = ${colors.background}
-foreground = ${colors.primary}
+foreground = ${colors.foreground}
 
 line-size = 2
 line-color = ${colors.background}
@@ -135,9 +135,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = Nunito Sans:size=8
+font-0 = Fira Sans:size=8
 font-1 = Font Awesome:size=8
-font-2 = FuraCode Nerd Font Mono:size=8
+font-2 = Fira Code:size=8
 
 modules-left = mpd
 modules-center =
@@ -161,7 +161,7 @@ label-mode-background = ${colors.background}
 ; focused = Active workspace on focused monitor
 label-focused = %name%
 label-focused-font = 2
-label-focused-foreground = ${colors.background}
+label-focused-foreground = ${colors.foreground}
 label-focused-background = ${colors.blue}
 label-focused-underline = ${colors.blue}
 label-focused-padding-left = 2
@@ -172,9 +172,9 @@ label-focused-margin-right = 1
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
 label-unfocused-font = 2
-label-unfocused-foreground = ${colors.primary}
+label-unfocused-foreground = ${colors.foreground}
 label-unfocused-background = ${colors.background}
-;label-unfocused-underline = ${colors.primary}
+;label-unfocused-underline = ${colors.foreground}
 label-unfocused-padding-left = 2
 label-unfocused-padding-right = 2
 label-unfocused-margin-left = 1
@@ -183,9 +183,9 @@ label-unfocused-margin-right = 1
 ; visible = Active workspace on unfocused monitor
 label-visible = %name%
 label-visible-font = 2
-label-visible-foreground = ${colors.primary}
+label-visible-foreground = ${colors.foreground}
 label-visible-background = ${colors.background}
-label-visible-underline = ${colors.primary}
+label-visible-underline = ${colors.foreground}
 label-visible-padding-left = 2
 label-visible-padding-right = 2
 label-visible-margin-left = 1
@@ -232,15 +232,15 @@ icon-next-font = 2
 
 label-song-maxlen = 250
 label-song-ellipsis = true
-label-song-foreground = ${colors.primary}
+label-song-foreground = ${colors.foreground}
 
 [module/cpu]
 type = internal/cpu
 interval = 1
 
-;format-underline = ${colors.cyan}
+;format-underline = ${colors.yellow}
 format-prefix = "  "
-format-prefix-foreground = ${colors.cyan}
+format-prefix-foreground = ${colors.yellow}
 format-prefix-font = 2
 label = %percentage:2%%
 label-font = 3
@@ -249,9 +249,9 @@ label-font = 3
 type = internal/memory
 interval = 1
 
-;format-underline = ${colors.cyan}
+;format-underline = ${colors.yellow}
 format-prefix = "  "
-format-prefix-foreground = ${colors.cyan}
+format-prefix-foreground = ${colors.yellow}
 format-prefix-font = 2
 label = %percentage_used:2%%
 label-font = 3
@@ -261,9 +261,9 @@ type = internal/network
 interface = wlp3s0
 interval = 1.0
 
-;format-connected-underline = ${colors.cyan}
+;format-connected-underline = ${colors.yellow}
 format-connected-prefix = "  "
-format-connected-prefix-foreground = ${colors.cyan}
+format-connected-prefix-foreground = ${colors.yellow}
 format-connected-prefix-font = 2
 label-connected = %signal:2%%
 label-connected-font = 3
@@ -275,9 +275,9 @@ type = internal/network
 interface = wlp3s0
 interval = 1.0
 
-;format-connected-underline = ${colors.cyan}
+;format-connected-underline = ${colors.yellow}
 format-connected-prefix = "  "
-format-connected-prefix-foreground = ${colors.cyan}
+format-connected-prefix-foreground = ${colors.yellow}
 format-connected-prefix-font = 2
 label-connected = %downspeed:8%
 label-connected-font = 3
@@ -289,8 +289,8 @@ type = internal/network
 interface = wlp3s0
 interval = 1.0
 
-;format-connected-underline = ${colors.cyan}
-format-connected-prefix-foreground = ${colors.cyan}
+;format-connected-underline = ${colors.yellow}
+format-connected-prefix-foreground = ${colors.yellow}
 format-connected-prefix = "  "
 format-connected-prefix-font = 2
 label-connected = %upspeed:8%
@@ -303,9 +303,9 @@ type = internal/network
 interface = enp5s0
 interval = 1.0
 
-;format-connected-underline = ${colors.cyan}
+;format-connected-underline = ${colors.yellow}
 format-connected-prefix = "  "
-format-connected-prefix-foreground = ${colors.cyan}
+format-connected-prefix-foreground = ${colors.yellow}
 format-connected-prefix-font = 2
 label-connected = %local_ip%
 label-connected-font = 3
@@ -317,9 +317,9 @@ type = internal/network
 interface = enp5s0
 interval = 1.0
 
-;format-connected-underline = ${colors.cyan}
+;format-connected-underline = ${colors.yellow}
 format-connected-prefix = "  "
-format-connected-prefix-foreground = ${colors.cyan}
+format-connected-prefix-foreground = ${colors.yellow}
 format-connected-prefix-font = 2
 label-connected = %downspeed:8%
 label-connected-font = 3
@@ -331,9 +331,9 @@ type = internal/network
 interface = enp5s0
 interval = 1.0
 
-;format-connected-underline = ${colors.cyan}
+;format-connected-underline = ${colors.yellow}
 format-connected-prefix = "  "
-format-connected-prefix-foreground = ${colors.cyan}
+format-connected-prefix-foreground = ${colors.yellow}
 format-connected-prefix-font = 2
 label-connected = %upspeed:8%
 label-connected-font = 3
@@ -345,10 +345,10 @@ interval = 5
 date = %d-%m-%Y
 date-alt = %d-%m-%Y
 
-;format-underline = ${colors.cyan}
-format-foreground = ${colors.primary}
+;format-underline = ${colors.yellow}
+format-foreground = ${colors.foreground}
 format-prefix = "  "
-format-prefix-foreground = ${colors.cyan}
+format-prefix-foreground = ${colors.yellow}
 format-prefix-font = 2
 
 label = %date%
@@ -361,10 +361,10 @@ interval = 1
 time = %H:%M
 time-alt = %H:%M:%S
 
-;format-underline = ${colors.cyan}
-format-foreground = ${colors.primary}
+;format-underline = ${colors.yellow}
+format-foreground = ${colors.foreground}
 format-prefix = "  "
-format-prefix-foreground = ${colors.cyan}
+format-prefix-foreground = ${colors.yellow}
 format-prefix-font = 2
 
 label = %time%
@@ -380,7 +380,7 @@ format-volume-prefix-font = 2
 format-volume-underline = ${colors.green}
 label-volume = %percentage:2%%
 label-volume-font = 3
-label-volume-foreground = ${colors.primary}
+label-volume-foreground = ${colors.foreground}
 
 format-muted-prefix = "  "
 format-muted-prefix-foreground = ${colors.red}
@@ -388,7 +388,7 @@ format-muted-prefix-font = 2
 format-muted-underline = ${colors.red}
 label-muted = %percentage:2%%
 label-muted-font = 3
-label-muted-foreground = ${colors.primary}
+label-muted-foreground = ${colors.foreground}
 
 [module/battery]
 type = internal/battery
@@ -441,10 +441,10 @@ format-warn-foreground = ${colors.red}
 format-warn-underline = ${colors.red}
 
 label = %temperature:2%
-label-foreground = ${colors.primary}
+label-foreground = ${colors.foreground}
 label-font = 3
 label-warn = %temperature:2%
-label-warn-foreground = ${colors.primary}
+label-warn-foreground = ${colors.foreground}
 label-warn-font = 3
 
 ramp-0 = " "
