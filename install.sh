@@ -3,6 +3,8 @@
 yaourt -S --noconfirm --needed i3-gaps 
 yaourt -S --noconfirm --needed i3status
 yaourt -S --noconfirm --needed i3lock-wrapper
+yaourt -S --noconfirm --needed perl-anyevent-i3
+yaourt -S --noconfirm --needed dunst
 yaourt -S --noconfirm --needed polybar-git
 yaourt -S --noconfirm --needed rofi
 yaourt -S --noconfirm --needed termite
@@ -11,7 +13,7 @@ yaourt -S --noconfirm --needed w3m
 ranger --copy-config=scope
 yaourt -S --noconfirm --needed feh
 yaourt -S --noconfirm --needed zsh
-yaourt -S --noconfirm --needed zsh-completionsexi
+yaourt -S --noconfirm --needed zsh-completions
 yaourt -S --noconfirm --needed light
 yaourt -S --noconfirm --needed arandr
 yaourt -S --noconfirm --needed lxappearance
@@ -49,6 +51,9 @@ yaourt -S --noconfirm --needed gimp
 yaourt -S --noconfirm --needed python-pip
 yaourt -S --noconfirm --needed ttf-font-awesome
 yaourt -S --noconfirm --needed ttf-fira-code
+yaourt -S --noconfirm --needed ttf-fira-sans
+yaourt -S --noconfirm --needed ttf-fira-mono
+yaourt -S --noconfirm --needed powerline-fonts-git
 yaourt -S --noconfirm --needed zsh-theme-powerlevel9k
 
 git clone https://github.com/justbuchanan/fontawesome-python.git
@@ -56,12 +61,6 @@ cd fontawesome-python
 sudo pip install fontawesome
 cd ..
 sudo rm -R fontawesome-python
-
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-sudo ./install.sh
-cd ..
-sudo rm -rf fonts
 
 yaourt -Rcns --noconfirm --needed lightdm
 yaourt -S --noconfirm --needed sddm-kcm
