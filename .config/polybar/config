@@ -187,7 +187,7 @@ format-disconnected =
 
 [module/eth]
 type = internal/network
-interface = enp5s0
+interface = enp0s25
 interval = 1.0
 
 format-connected-background = ${colors.foreground}
@@ -256,36 +256,52 @@ format-muted-suffix-background = ${colors.red}
 type    = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 97
+full-at = 100
 
 format-charging          = <animation-charging><label-charging>
 format-discharging       = <ramp-capacity><label-discharging>
-format-prefix            = 
-format-prefix-foreground = ${colors.foreground}
-format-prefix-background = ${colors.background}
-format-suffix            = 
-format-suffix-foreground = ${colors.background}
-format-suffix-background = ${colors.foreground}
+format-charging-prefix               = 
+format-charging-prefix-foreground    = ${colors.foreground}
+format-charging-prefix-background    = ${colors.background}
+format-charging-suffix               = 
+format-charging-suffix-foreground    = ${colors.background}
+format-charging-suffix-background    = ${colors.foreground}
+format-discharging-prefix            = 
+format-discharging-prefix-foreground = ${colors.foreground}
+format-discharging-prefix-background = ${colors.background}
+format-discharging-suffix            = 
+format-discharging-suffix-foreground = ${colors.background}
+format-discharging-suffix-background = ${colors.foreground}
+format-full-prefix                   = "%{B#fffaf4 F#0E1019}  "
+format-full-prefix-foreground        = ${colors.foreground}
+format-full-prefix-background        = ${colors.background}
+format-full-suffix                   = 
+format-full-suffix-foreground        = ${colors.background}
+format-full-suffix-background        = ${colors.foreground}
 
-label-charging    = %percentage:3%%
-label-discharging = %percentage:3%%
-
-format-full-prefix = "  "
-format-full-prefix-foreground = ${colors.green}
+label-charging                 = "%percentage:3%% "
+label-charging-foreground      = ${colors.background}
+label-charging-background      = ${colors.foreground}
+label-discharging              = "%percentage:3%% "
+label-discharging-foreground   = ${colors.background}
+label-discharging-background   = ${colors.foreground}
+label-full                     = "%percentage:3%% "
+label-full-foreground          = ${colors.background}
+label-full-background          = ${colors.foreground}
 
 ramp-capacity-0          = "  "
 ramp-capacity-1          = "  "
 ramp-capacity-2          = "  "
 ramp-capacity-3          = "  "
 ramp-capacity-4          = "  "
-ramp-capacity-foreground = ${colors.red}
+ramp-capacity-foreground = ${colors.background}
 
 animation-charging-0 = "  "
 animation-charging-1 = "  "
 animation-charging-2 = "  "
 animation-charging-3 = "  "
 animation-charging-4 = "  "
-animation-charging-foreground = ${colors.yellow}
+animation-charging-foreground = ${colors.background}
 animation-charging-framerate = 750
 
 [module/temperature]
