@@ -9,10 +9,10 @@ exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 1920x
 exec --no-startup-id redshift
 exec --no-startup-id dropbox
 exec --no-startup-id mpd
-exec --no-startup-id dunst
+exec --no-startup-id twmnd
 
 #Font for window titles
-font pango: Font Awesome 8
+font pango: Fira Sans, Font Awesome 10
 
 #Colors
 set $background     #0e1019

@@ -4,7 +4,7 @@ yaourt -S --noconfirm --needed i3-gaps
 yaourt -S --noconfirm --needed i3status
 yaourt -S --noconfirm --needed i3lock-wrapper
 yaourt -S --noconfirm --needed perl-anyevent-i3
-yaourt -S --noconfirm --needed dunst
+yaourt -S --noconfirm --needed twmn
 yaourt -S --noconfirm --needed polybar-git
 yaourt -S --noconfirm --needed rofi
 yaourt -S --noconfirm --needed termite

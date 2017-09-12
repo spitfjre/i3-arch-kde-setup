@@ -63,7 +63,7 @@ rofi.terminal:			termite
 rofi.lines:				10
 rofi.eh:				1
 rofi.hide-scrollbar: 	true
-rofi.font:      		Inconsolata for Powerline 8
+rofi.font:      		Inconsolata 10
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
