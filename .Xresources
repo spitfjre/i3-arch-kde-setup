@@ -7,7 +7,7 @@ Xft.hintstyle: 	hintfull
 Xft.lcdfilter: 	lcddefault
 
 #define base_foreground #fffaf4
-#define base_background #0E1019
+#define base_background #0e1019
 #define base_color0 #232323
 #define base_color1 #ff000f
 #define base_color2 #8ce10b
@@ -63,7 +63,7 @@ rofi.terminal:			termite
 rofi.lines:				10
 rofi.eh:				1
 rofi.hide-scrollbar: 	true
-rofi.font:      		Fira Mono for Powerline 8
+rofi.font:      		Inconsolata for Powerline 8
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme

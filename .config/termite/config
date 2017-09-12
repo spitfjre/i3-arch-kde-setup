@@ -1,12 +1,12 @@
 [options]
-font = Source Code Pro for Powerline 8
+font = Inconsolata for Powerline 8
 
 [colors]
-background = rgba(14, 16, 25, 0.9)
+background = #0e1019
 cursor = #ff0018
 foreground = #fffaf4
 
-color0 =  #232323
+color0 = #232323
 color1 = #ff000f
 color2 = #8ce10b
 color3 = #ffb900
