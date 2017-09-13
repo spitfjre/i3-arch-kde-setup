@@ -20,10 +20,10 @@ bmagenta = ${xrdb:color13}
 bcyan    = ${xrdb:color14}
 bwhite   = ${xrdb:color15}
 
-[bar/top_primary]
+[bar/top]
 monitor      = ${env:MONITOR}
 width        = 100%
-height       = 15
+height       = 14
 fixed-center = false
 
 border-color       = ${colors.black}
@@ -32,17 +32,27 @@ border-bottom-size = 2
 background = ${colors.black}
 foreground = ${colors.foreground}
 
-font-0 = xos4 Terminess Powerline:size=10;1
-font-1 = Font Awesome:size=10;2
+font-0 = xos4 Terminess Powerline:size=10;2
+font-1 = Font Awesome:size=9;2
 
 modules-left   = i3
 modules-center = 
 modules-right  = mpd memory cpu wlan eth battery temperature volume date
 
-[bar/top_secondary]
+tray-position = right
+tray-detached = false
+tray-maxsize = 14
+tray-transparent = false
+tray-background = ${colors.foreground}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 1
+tray-scale = 1.0
+
+[bar/top_tray]
 monitor      = ${env:MONITOR}
 width        = 100%
-height       = 15
+height       = 14
 fixed-center = false
 
 border-color       = ${colors.black}
@@ -51,12 +61,22 @@ border-bottom-size = 2
 background = ${colors.black}
 foreground = ${colors.foreground}
 
-font-0 = xos4 Terminess Powerline:size=10;1
-font-1 = Font Awesome:size=10;2
+font-0 = xos4 Terminess Powerline:size=10;2
+font-1 = Font Awesome:size=9;2
 
 modules-left   = i3
 modules-center = 
 modules-right  = mpd memory cpu wlan eth battery temperature volume date
+
+tray-position = right
+tray-detached = false
+tray-maxsize = 14
+tray-transparent = false
+tray-background = ${colors.foreground}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 1
+tray-scale = 1.0
 
 [module/i3]
 type 			= internal/i3
@@ -180,7 +200,7 @@ format-disconnected =
 
 [module/eth]
 type = internal/network
-interface = enp0s25
+interface = enp5s0
 interval = 1.0
 
 format-connected-background = ${colors.foreground}
