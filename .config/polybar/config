@@ -1,12 +1,3 @@
-;=====================================================
-;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/jaagr/polybar
-;
-;   The README contains alot of information
-;
-;=====================================================
-
 [colors]
 foreground = ${xrdb:foreground}
 background = ${xrdb:background}
@@ -20,30 +11,33 @@ magenta = ${xrdb:color5}
 cyan    = ${xrdb:color6}
 white   = ${xrdb:color7}
 
+bblack 	= ${xrdb:color8}
+bred     = ${xrdb:color9}
+bgreen   = ${xrdb:color10}
+byellow  = ${xrdb:color11}
+bblue    = ${xrdb:color12}
+bmagenta = ${xrdb:color13}
+bcyan    = ${xrdb:color14}
+bwhite   = ${xrdb:color15}
+
 [bar/top_primary]
 monitor      = ${env:MONITOR}
 width        = 100%
 height       = 15
 fixed-center = false
 
-border-color       = ${colors.foreground}
-border-bottom-size = 1
+border-color       = ${colors.black}
+border-bottom-size = 2
 
-background = ${colors.background}
+background = ${colors.black}
 foreground = ${colors.foreground}
 
-font-0 = Inconsolata:size=10;1
+font-0 = xos4 Terminess Powerline:size=10;1
 font-1 = Font Awesome:size=10;2
-font-2 = Inconsolata for Powerline:size=11;2
 
 modules-left   = i3
 modules-center = 
 modules-right  = mpd memory cpu wlan eth battery temperature volume date
-
-tray-position   = left
-tray-padding    = 5
-tray-scale      = 1
-tray-background = ${colors.background}
 
 [bar/top_secondary]
 monitor      = ${env:MONITOR}
@@ -51,15 +45,14 @@ width        = 100%
 height       = 15
 fixed-center = false
 
-border-color       = ${colors.foreground}
-border-bottom-size = 1
+border-color       = ${colors.black}
+border-bottom-size = 2
 
-background = ${colors.background}
+background = ${colors.black}
 foreground = ${colors.foreground}
 
-font-0 = Inconsolata:size=10;1
+font-0 = xos4 Terminess Powerline:size=10;1
 font-1 = Font Awesome:size=10;2
-font-2 = Inconsolata for Powerline:size=11;2
 
 modules-left   = i3
 modules-center = 
@@ -73,33 +66,33 @@ wrapping-scroll = true
 strip-wsnumbers = false
 pin-workspaces  = true
 
-label-focused 			   =  %name% %{B#0E1019 F#008df8}
+label-focused 			   =  %name% %{B#282A2E F#5F819D}
 label-focused-foreground   = ${colors.background}
 label-focused-background   = ${colors.blue}
-label-unfocused 		   =  %name% %{B#0E1019 F#fffaf4}
+label-unfocused 		   =  %name% %{B#282A2E F#C5C8C6}
 label-unfocused-foreground = ${colors.background}
 label-unfocused-background = ${colors.foreground}
-label-visible 			   =  %name% %{B#0E1019 F#ffb900}
+label-visible 			   =  %name% %{B#282A2E F#DE935F}
 label-visible-foreground   = ${colors.background}
 label-visible-background   = ${colors.yellow}
-label-urgent 			   =  %name% %{B#0E1019 F#ff000f}
+label-urgent 			   =  %name% %{B#282A2E F#A54242}
 label-urgent-foreground    = ${colors.background}
 label-urgent-background    = ${colors.red}
 
-format-prefix            = "  %{B#0E1019 F#8ce10b}"
+format-prefix            = "  %{B#282A2E F#8C9440}"
 format-prefix-foreground = ${colors.background}
 format-prefix-background = ${colors.green}
 
 [module/mpd]
 type = internal/mpd
 
-format-playing            = "%{B#8ce10b F#0E1019}<icon-prev><toggle><icon-next>  <label-song> "
+format-playing            = "<icon-prev><toggle><icon-next>  <label-song> "
 format-playing-foreground = ${colors.background}
 format-playing-background = ${colors.green}
-format-paused             = "%{B#ffb900 F#0E1019}<icon-prev><toggle><icon-next>  <label-song> "
+format-paused             = "<icon-prev><toggle><icon-next>  <label-song> "
 format-paused-foreground  = ${colors.background}
 format-paused-background  = ${colors.yellow}
-format-stopped            = "%{B#ff000f F#0E1019}<icon-prev><toggle><icon-next> "
+format-stopped            = "<icon-prev><toggle><icon-next> "
 format-stopped-foreground = ${colors.background}
 format-stopped-background = ${colors.red}
 
@@ -114,19 +107,19 @@ label-song-padding-right = 1
 
 format-playing-prefix            = 
 format-playing-prefix-foreground = ${colors.green}
-format-playing-prefix-background = ${colors.background}
+format-playing-prefix-background = ${colors.black}
 format-playing-suffix            = 
 format-playing-suffix-foreground = ${colors.background}
 format-playing-suffix-background = ${colors.green}
 format-paused-prefix             = 
 format-paused-prefix-foreground  = ${colors.yellow}
-format-paused-prefix-background  = ${colors.background}
+format-paused-prefix-background  = ${colors.black}
 format-paused-suffix             = 
 format-paused-suffix-foreground  = ${colors.background}
 format-paused-suffix-background  = ${colors.yellow}
 format-stopped-prefix            = 
 format-stopped-prefix-foreground = ${colors.red}
-format-stopped-prefix-background = ${colors.background}
+format-stopped-prefix-background = ${colors.black}
 format-stopped-suffix            = 
 format-stopped-suffix-foreground = ${colors.background}
 format-stopped-suffix-background = ${colors.red}
@@ -143,7 +136,7 @@ label-padding    = 1
 format-background        = ${colors.foreground}
 format-prefix            = 
 format-prefix-foreground = ${colors.foreground}
-format-prefix-background = ${colors.background}
+format-prefix-background = ${colors.black}
 format-suffix            = 
 format-suffix-foreground = ${colors.background}
 format-suffix-background = ${colors.foreground}
@@ -160,7 +153,7 @@ label-padding    = 1
 format-background        = ${colors.foreground}
 format-prefix            = 
 format-prefix-foreground = ${colors.foreground}
-format-prefix-background = ${colors.background}
+format-prefix-background = ${colors.black}
 format-suffix            = 
 format-suffix-foreground = ${colors.background}
 format-suffix-background = ${colors.foreground}
@@ -173,7 +166,7 @@ interval  = 1.0
 format-connected-background = ${colors.foreground}
 format-connected-prefix = 
 format-connected-prefix-foreground = ${colors.foreground}
-format-connected-prefix-background = ${colors.background}
+format-connected-prefix-background = ${colors.black}
 format-connected-suffix            = 
 format-connected-suffix-foreground = ${colors.background}
 format-connected-suffix-background = ${colors.foreground}
@@ -193,7 +186,7 @@ interval = 1.0
 format-connected-background = ${colors.foreground}
 format-connected-prefix = 
 format-connected-prefix-foreground = ${colors.foreground}
-format-connected-prefix-background = ${colors.background}
+format-connected-prefix-background = ${colors.black}
 format-connected-suffix            = 
 format-connected-suffix-foreground = ${colors.background}
 format-connected-suffix-background = ${colors.foreground}
@@ -234,7 +227,7 @@ label-volume-padding    = 1
 format-volume-background        = ${colors.foreground}
 format-volume-prefix            = 
 format-volume-prefix-foreground = ${colors.foreground}
-format-volume-prefix-background = ${colors.background}
+format-volume-prefix-background = ${colors.black}
 format-volume-suffix            = 
 format-volume-suffix-foreground = ${colors.background}
 format-volume-suffix-background = ${colors.foreground}
@@ -247,7 +240,7 @@ label-muted-padding    = 1
 format-muted-background        = ${colors.red}
 format-muted-prefix            = 
 format-muted-prefix-foreground = ${colors.red}
-format-muted-prefix-background = ${colors.background}
+format-muted-prefix-background = ${colors.black}
 format-muted-suffix            = 
 format-muted-suffix-foreground = ${colors.background}
 format-muted-suffix-background = ${colors.red}
@@ -262,19 +255,19 @@ format-charging          = <animation-charging><label-charging>
 format-discharging       = <ramp-capacity><label-discharging>
 format-charging-prefix               = 
 format-charging-prefix-foreground    = ${colors.foreground}
-format-charging-prefix-background    = ${colors.background}
+format-charging-prefix-background    = ${colors.black}
 format-charging-suffix               = 
 format-charging-suffix-foreground    = ${colors.background}
 format-charging-suffix-background    = ${colors.foreground}
 format-discharging-prefix            = 
 format-discharging-prefix-foreground = ${colors.foreground}
-format-discharging-prefix-background = ${colors.background}
+format-discharging-prefix-background = ${colors.black}
 format-discharging-suffix            = 
 format-discharging-suffix-foreground = ${colors.background}
 format-discharging-suffix-background = ${colors.foreground}
 format-full-prefix                   = "%{B#fffaf4 F#0E1019}  "
 format-full-prefix-foreground        = ${colors.foreground}
-format-full-prefix-background        = ${colors.background}
+format-full-prefix-background        = ${colors.black}
 format-full-suffix                   = 
 format-full-suffix-foreground        = ${colors.background}
 format-full-suffix-background        = ${colors.foreground}
@@ -317,13 +310,13 @@ format-warn-foreground        = ${colors.background}
 format-warn-background        = ${colors.red}
 format-prefix                 = 
 format-prefix-foreground      = ${colors.foreground}
-format-prefix-background      = ${colors.background}
+format-prefix-background      = ${colors.black}
 format-suffix                 = 
 format-suffix-foreground      = ${colors.background}
 format-suffix-background      = ${colors.foreground}
 format-warn-prefix            = 
 format-warn-prefix-foreground = ${colors.red}
-format-warn-prefix-background = ${colors.background}
+format-warn-prefix-background = ${colors.black}
 format-warn-suffix            = 
 format-warn-suffix-foreground = ${colors.background}
 format-warn-suffix-background = ${colors.red}

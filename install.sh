@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-yaourt -S --noconfirm --needed i3-gaps 
+yaourt -S --noconfirm --needed i3-gaps-next-git
 yaourt -S --noconfirm --needed i3status
 yaourt -S --noconfirm --needed i3lock-wrapper
 yaourt -S --noconfirm --needed perl-anyevent-i3

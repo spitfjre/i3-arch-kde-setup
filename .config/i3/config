@@ -4,7 +4,7 @@ set $mod Mod4
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/arch-wallpaper.png
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec_always --no-startup-id numlockx on
-exec_always --no-startup-id xrandr --output VIRTUAL1 --off --output DP3 --off --output DP2 --off --output DP1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI3 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI2 --off --output HDMI1 --off --output LVDS1 --off --output VGA1 --off
+exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --off --output DVI-I-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-I-0 --off --output DP-1 --off --output DP-0 --off
 
 exec --no-startup-id redshift
 exec --no-startup-id dropbox
@@ -12,23 +12,26 @@ exec --no-startup-id mpd
 exec --no-startup-id twmnd
 
 #Font for window titles
-font pango: Fira Sans, Font Awesome 10
+font pango: Fira Sans, Font Awesome 9
 
 #Colors
-set $background     #0e1019
-set $foreground     #fffaf4
-set $black          #232323
-set $white          #ffffff
-set $blue           #008df8
-set $red            #ff000f
-set $green          #8ce10b
+set_from_resource   $foreground   foreground
+set_from_resource   $background   background
+set_from_resource   $black        color0
+set_from_resource   $red          color1
+set_from_resource   $green        color2
+set_from_resource   $yellow       color3
+set_from_resource   $blue         color4
+set_from_resource   $magenta      color5
+set_from_resource   $cyan         color6
+set_from_resource   $white        color7
 
-# class                 border  backgr.         text    indicator   child_border
-client.focused          $blue   $background     $black  $black      $blue
-client.focused_inactive $black  $background     $black  $black      $black
-client.unfocused        $black  $background     $black  $black      $black
-client.urgent           $red    $background     $black  $black      $red 
-client.placeholder      $black  $background     $black  $black      $black
+# class                 border  backgr. text    indicator   child_border
+client.focused          $green  $black  $black  $black      $green
+client.focused_inactive $black  $black  $black  $black      $black
+client.unfocused        $black  $black  $black  $black      $black
+client.urgent           $red    $black  $black  $black      $red 
+client.placeholder      $black  $black  $black  $black      $black
 client.background       $white
 
 # Use Mouse+$mod to drag floating windows to their wanted position
