@@ -39,16 +39,6 @@ modules-left   = i3
 modules-center = 
 modules-right  = mpd memory cpu wlan eth battery temperature volume date
 
-tray-position = right
-tray-detached = false
-tray-maxsize = 14
-tray-transparent = false
-tray-background = ${colors.foreground}
-tray-offset-x = 0
-tray-offset-y = 0
-tray-padding = 1
-tray-scale = 1.0
-
 [bar/top_tray]
 monitor      = ${env:MONITOR}
 width        = 100%
@@ -200,7 +190,7 @@ format-disconnected =
 
 [module/eth]
 type = internal/network
-interface = enp5s0
+interface = enp0s25
 interval = 1.0
 
 format-connected-background = ${colors.foreground}
@@ -285,7 +275,7 @@ format-discharging-prefix-background = ${colors.black}
 format-discharging-suffix            = 
 format-discharging-suffix-foreground = ${colors.background}
 format-discharging-suffix-background = ${colors.foreground}
-format-full-prefix                   = "%{B#fffaf4 F#0E1019}  "
+format-full-prefix                   = "%{B#C5C8C6 F#1D1F21}  "
 format-full-prefix-foreground        = ${colors.foreground}
 format-full-prefix-background        = ${colors.black}
 format-full-suffix                   = 
