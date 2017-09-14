@@ -26,18 +26,18 @@ width        = 100%
 height       = 14
 fixed-center = false
 
-border-color       = ${colors.black}
+border-color       = ${colors.bblack}
 border-bottom-size = 2
 
-background = ${colors.black}
+background = ${colors.background}
 foreground = ${colors.foreground}
 
 font-0 = xos4 Terminess Powerline:size=10;2
 font-1 = Font Awesome:size=9;2
 
-modules-left   = i3
+modules-left   = i3 end_indicator_left
 modules-center = 
-modules-right  = mpd memory cpu wlan eth battery temperature volume date
+modules-right  = end_indicator_right mpd memory cpu wlan eth battery temperature volume date
 
 [bar/top_tray]
 monitor      = ${env:MONITOR}
@@ -45,28 +45,36 @@ width        = 100%
 height       = 14
 fixed-center = false
 
-border-color       = ${colors.black}
+border-color       = ${colors.bblack}
 border-bottom-size = 2
 
-background = ${colors.black}
+background = ${colors.background}
 foreground = ${colors.foreground}
 
 font-0 = xos4 Terminess Powerline:size=10;2
 font-1 = Font Awesome:size=9;2
 
-modules-left   = i3
+modules-left   = i3 end_indicator_left
 modules-center = 
-modules-right  = mpd memory cpu wlan eth battery temperature volume date
+modules-right  = end_indicator_right mpd memory cpu wlan eth battery temperature volume date
 
 tray-position = right
 tray-detached = false
 tray-maxsize = 14
 tray-transparent = false
-tray-background = ${colors.foreground}
+tray-background = ${colors.bgreen}
 tray-offset-x = 0
 tray-offset-y = 0
 tray-padding = 1
 tray-scale = 1.0
+
+[module/end_indicator_left]
+type = custom/text
+content  = %{B#373B41 F#1D1F21}%{B#373B41 F#8C9440}  %{B#1D1F21 F#373B41}
+
+[module/end_indicator_right]
+type = custom/text
+content  = %{B#1D1F21 F#373B41}%{B#373B41 F#8C9440}  %{F#1D1F21}%{B#1D1F21 F#B5BD68}
 
 [module/i3]
 type 			= internal/i3
@@ -76,134 +84,135 @@ wrapping-scroll = true
 strip-wsnumbers = false
 pin-workspaces  = true
 
-label-focused 			   =  %name% %{B#282A2E F#5F819D}
+label-focused 			   =  %name% %{B#282A2E F#8C9440}
 label-focused-foreground   = ${colors.background}
-label-focused-background   = ${colors.blue}
-label-unfocused 		   =  %name% %{B#282A2E F#C5C8C6}
+label-focused-background   = ${colors.green}
+label-unfocused 		   =  %name% %{B#282A2E F#B5BD68}
 label-unfocused-foreground = ${colors.background}
-label-unfocused-background = ${colors.foreground}
-label-visible 			   =  %name% %{B#282A2E F#DE935F}
+label-unfocused-background = ${colors.bgreen}
+label-visible 			   =  %name% %{B#282A2E F#8C9440}
 label-visible-foreground   = ${colors.background}
-label-visible-background   = ${colors.yellow}
+label-visible-background   = ${colors.green}
 label-urgent 			   =  %name% %{B#282A2E F#A54242}
 label-urgent-foreground    = ${colors.background}
 label-urgent-background    = ${colors.red}
 
-format-prefix            = "  %{B#282A2E F#8C9440}"
+format-prefix            = "  %{B#282A2E F#B5BD68}"
 format-prefix-foreground = ${colors.background}
-format-prefix-background = ${colors.green}
+format-prefix-background = ${colors.bgreen}
 
 [module/mpd]
 type = internal/mpd
 
-format-playing            = "<icon-prev><toggle><icon-next>  <label-song> "
+format-playing            = " <icon-prev><toggle><icon-next> <label-song>"
 format-playing-foreground = ${colors.background}
-format-playing-background = ${colors.green}
-format-paused             = "<icon-prev><toggle><icon-next>  <label-song> "
+format-playing-background = ${colors.bgreen}
+format-paused             = " <icon-prev><toggle><icon-next> <label-song>"
 format-paused-foreground  = ${colors.background}
-format-paused-background  = ${colors.yellow}
-format-stopped            = "<icon-prev><toggle><icon-next> "
+format-paused-background  = ${colors.byellow}
+format-stopped            = " <icon-prev><toggle><icon-next> "
 format-stopped-foreground = ${colors.background}
-format-stopped-background = ${colors.red}
+format-stopped-background = ${colors.bred}
 
 icon-prev  = " "
 icon-play  = " "
 icon-pause = " "
 icon-next  = " "
 
-label-song-maxlen        = 40
+label-song-maxlen        = 20
 label-song-ellipsis      = true
 label-song-padding-right = 1
+label-song               = %title%
 
 format-playing-prefix            = 
-format-playing-prefix-foreground = ${colors.green}
-format-playing-prefix-background = ${colors.black}
+format-playing-prefix-foreground = ${colors.bgreen}
+format-playing-prefix-background = ${colors.background}
 format-playing-suffix            = 
 format-playing-suffix-foreground = ${colors.background}
-format-playing-suffix-background = ${colors.green}
+format-playing-suffix-background = ${colors.bgreen}
 format-paused-prefix             = 
-format-paused-prefix-foreground  = ${colors.yellow}
-format-paused-prefix-background  = ${colors.black}
+format-paused-prefix-foreground  = ${colors.byellow}
+format-paused-prefix-background  = ${colors.background}
 format-paused-suffix             = 
 format-paused-suffix-foreground  = ${colors.background}
-format-paused-suffix-background  = ${colors.yellow}
+format-paused-suffix-background  = ${colors.byellow}
 format-stopped-prefix            = 
-format-stopped-prefix-foreground = ${colors.red}
-format-stopped-prefix-background = ${colors.black}
+format-stopped-prefix-foreground = ${colors.bred}
+format-stopped-prefix-background = ${colors.background}
 format-stopped-suffix            = 
 format-stopped-suffix-foreground = ${colors.background}
-format-stopped-suffix-background = ${colors.red}
+format-stopped-suffix-background = ${colors.bred}
 
 [module/cpu]
 type     = internal/cpu
 interval = 1
 
 label            =  %percentage:3%%
-label-foreground = ${colors.background}
-label-background = ${colors.foreground}
+label-foreground = ${colors.foreground}
+label-background = ${colors.bblack}
 label-padding    = 1
 
-format-background        = ${colors.foreground}
+format-background        = ${colors.bblack}
 format-prefix            = 
-format-prefix-foreground = ${colors.foreground}
-format-prefix-background = ${colors.black}
+format-prefix-foreground = ${colors.bblack}
+format-prefix-background = ${colors.background}
 format-suffix            = 
 format-suffix-foreground = ${colors.background}
-format-suffix-background = ${colors.foreground}
+format-suffix-background = ${colors.bblack}
 
 [module/memory]
 type     = internal/memory
 interval = 1
 
 label            =  %percentage_used:3%%
-label-foreground = ${colors.background}
-label-background = ${colors.foreground}
+label-foreground = ${colors.foreground}
+label-background = ${colors.black}
 label-padding    = 1
 
-format-background        = ${colors.foreground}
+format-background        = ${colors.black}
 format-prefix            = 
-format-prefix-foreground = ${colors.foreground}
-format-prefix-background = ${colors.black}
+format-prefix-foreground = ${colors.black}
+format-prefix-background = ${colors.background}
 format-suffix            = 
 format-suffix-foreground = ${colors.background}
-format-suffix-background = ${colors.foreground}
+format-suffix-background = ${colors.black}
 
 [module/wlan]
 type      = internal/network
 interface = wlp3s0
 interval  = 1.0
 
-format-connected-background = ${colors.foreground}
+format-connected-background = ${colors.black}
 format-connected-prefix = 
-format-connected-prefix-foreground = ${colors.foreground}
-format-connected-prefix-background = ${colors.black}
+format-connected-prefix-foreground = ${colors.black}
+format-connected-prefix-background = ${colors.background}
 format-connected-suffix            = 
 format-connected-suffix-foreground = ${colors.background}
-format-connected-suffix-background = ${colors.foreground}
+format-connected-suffix-background = ${colors.black}
 
-label-connected            =  %signal:3%% |  %downspeed:8% |  %upspeed:8%
-label-connected-foreground = ${colors.background}
-label-connected-background = ${colors.foreground}
+label-connected            =  %signal:3%%     %downspeed:8%     %upspeed:8%
+label-connected-foreground = ${colors.foreground}
+label-connected-background = ${colors.black}
 label-connected-padding    = 1
 
 format-disconnected =
 
 [module/eth]
 type = internal/network
-interface = enp0s25
+interface = enp5s0
 interval = 1.0
 
-format-connected-background = ${colors.foreground}
+format-connected-background = ${colors.black}
 format-connected-prefix = 
-format-connected-prefix-foreground = ${colors.foreground}
-format-connected-prefix-background = ${colors.black}
+format-connected-prefix-foreground = ${colors.black}
+format-connected-prefix-background = ${colors.background}
 format-connected-suffix            = 
 format-connected-suffix-foreground = ${colors.background}
-format-connected-suffix-background = ${colors.foreground}
+format-connected-suffix-background = ${colors.black}
 
-label-connected            =  %downspeed:8%   %upspeed:8%
-label-connected-foreground = ${colors.background}
-label-connected-background = ${colors.foreground}
+label-connected            =  %downspeed:8%     %upspeed:8%
+label-connected-foreground = ${colors.foreground}
+label-connected-background = ${colors.black}
 label-connected-padding    = 1
 
 format-disconnected =
@@ -219,41 +228,43 @@ date = %d-%m-%Y
 date-alt = %d-%m-%Y
 
 format-prefix            = 
+format-prefix-foreground = ${colors.bgreen}
+format-prefix-background = ${colors.background}
 
-label            =  %date%   %time%
+label            =  %date%     %time%
 label-padding    = 1
 label-foreground = ${colors.background}
-label-background = ${colors.foreground}
+label-background = ${colors.bgreen}
 
 [module/volume]
 type     = internal/volume
 interval = 0.1
 
 label-volume            =  %percentage:3%%
-label-volume-foreground = ${colors.background}
-label-volume-background = ${colors.foreground}
+label-volume-foreground = ${colors.foreground}
+label-volume-background = ${colors.black}
 label-volume-padding    = 1
 
-format-volume-background        = ${colors.foreground}
+format-volume-background        = ${colors.black}
 format-volume-prefix            = 
-format-volume-prefix-foreground = ${colors.foreground}
-format-volume-prefix-background = ${colors.black}
+format-volume-prefix-foreground = ${colors.black}
+format-volume-prefix-background = ${colors.background}
 format-volume-suffix            = 
 format-volume-suffix-foreground = ${colors.background}
-format-volume-suffix-background = ${colors.foreground}
+format-volume-suffix-background = ${colors.black}
 
 label-muted            =  %percentage:3%%
 label-muted-foreground = ${colors.background}
-label-muted-background = ${colors.red}
+label-muted-background = ${colors.bred}
 label-muted-padding    = 1
 
-format-muted-background        = ${colors.red}
+format-muted-background        = ${colors.bred}
 format-muted-prefix            = 
-format-muted-prefix-foreground = ${colors.red}
-format-muted-prefix-background = ${colors.black}
+format-muted-prefix-foreground = ${colors.bred}
+format-muted-prefix-background = ${colors.background}
 format-muted-suffix            = 
 format-muted-suffix-foreground = ${colors.background}
-format-muted-suffix-background = ${colors.red}
+format-muted-suffix-background = ${colors.bred}
 
 [module/battery]
 type    = internal/battery
@@ -313,31 +324,31 @@ thermal-zone     = 0
 warn-temperature = 70
 
 format                        = <ramp><label>
-format-foreground             = ${colors.background}
-format-background             = ${colors.foreground}
+format-foreground             = ${colors.foreground}
+format-background             = ${colors.bblack}
 format-warn                   = <ramp><label-warn>
 format-warn-foreground        = ${colors.background}
-format-warn-background        = ${colors.red}
+format-warn-background        = ${colors.bred}
 format-prefix                 = 
-format-prefix-foreground      = ${colors.foreground}
-format-prefix-background      = ${colors.black}
+format-prefix-foreground      = ${colors.bblack}
+format-prefix-background      = ${colors.background}
 format-suffix                 = 
 format-suffix-foreground      = ${colors.background}
-format-suffix-background      = ${colors.foreground}
+format-suffix-background      = ${colors.bblack}
 format-warn-prefix            = 
-format-warn-prefix-foreground = ${colors.red}
-format-warn-prefix-background = ${colors.black}
+format-warn-prefix-foreground = ${colors.bred}
+format-warn-prefix-background = ${colors.background}
 format-warn-suffix            = 
 format-warn-suffix-foreground = ${colors.background}
-format-warn-suffix-background = ${colors.red}
+format-warn-suffix-background = ${colors.bred}
 
 label                 = %temperature:3%
-label-foreground      = ${colors.background}
-label-background      = ${colors.foreground}
+label-foreground      = ${colors.foreground}
+label-background      = ${colors.bblack}
 label-padding         = 1
 label-warn            = %temperature:3%
 label-warn-foreground = ${colors.background}
-label-warn-background = ${colors.red}
+label-warn-background = ${colors.bred}
 label-warn-padding    = 1
 
 ramp-0 = "  "
