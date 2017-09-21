@@ -37,7 +37,7 @@ font-1 = Font Awesome:size=9;2
 
 modules-left   = i3 end_indicator_left
 modules-center = 
-modules-right  = end_indicator_right mpd memory cpu wlan eth battery temperature volume date
+modules-right  = end_indicator_right mpd battery memory cpu wlan eth temperature volume date
 
 [bar/top_tray]
 monitor      = ${env:MONITOR}
@@ -56,7 +56,7 @@ font-1 = Font Awesome:size=9;2
 
 modules-left   = i3 end_indicator_left
 modules-center = 
-modules-right  = end_indicator_right mpd memory cpu wlan eth battery temperature volume date
+modules-right  = end_indicator_right mpd battery memory cpu wlan eth temperature volume date
 
 tray-position = right
 tray-detached = false
@@ -119,7 +119,7 @@ icon-play  = " "
 icon-pause = " "
 icon-next  = " "
 
-label-song-maxlen        = 20
+label-song-maxlen        = 50
 label-song-ellipsis      = true
 label-song-padding-right = 1
 label-song               = %title%
@@ -275,47 +275,49 @@ full-at = 100
 format-charging          = <animation-charging><label-charging>
 format-discharging       = <ramp-capacity><label-discharging>
 format-charging-prefix               = 
-format-charging-prefix-foreground    = ${colors.foreground}
-format-charging-prefix-background    = ${colors.black}
+format-charging-prefix-foreground    = ${colors.bblack}
+format-charging-prefix-background    = ${colors.background}
 format-charging-suffix               = 
 format-charging-suffix-foreground    = ${colors.background}
-format-charging-suffix-background    = ${colors.foreground}
+format-charging-suffix-background    = ${colors.bblack}
 format-discharging-prefix            = 
-format-discharging-prefix-foreground = ${colors.foreground}
-format-discharging-prefix-background = ${colors.black}
+format-discharging-prefix-foreground = ${colors.bblack}
+format-discharging-prefix-background = ${colors.background}
 format-discharging-suffix            = 
 format-discharging-suffix-foreground = ${colors.background}
-format-discharging-suffix-background = ${colors.foreground}
-format-full-prefix                   = "%{B#C5C8C6 F#1D1F21}  "
-format-full-prefix-foreground        = ${colors.foreground}
-format-full-prefix-background        = ${colors.black}
+format-discharging-suffix-background = ${colors.bblack}
+format-full-prefix                   = "%{B#373B41 F#C5C8C6}  "
+format-full-prefix-foreground        = ${colors.bblack}
+format-full-prefix-background        = ${colors.background}
 format-full-suffix                   = 
 format-full-suffix-foreground        = ${colors.background}
-format-full-suffix-background        = ${colors.foreground}
+format-full-suffix-background        = ${colors.bblack}
 
 label-charging                 = "%percentage:3%% "
-label-charging-foreground      = ${colors.background}
-label-charging-background      = ${colors.foreground}
+label-charging-foreground      = ${colors.foreground}
+label-charging-background      = ${colors.bblack}
 label-discharging              = "%percentage:3%% "
-label-discharging-foreground   = ${colors.background}
-label-discharging-background   = ${colors.foreground}
+label-discharging-foreground   = ${colors.foreground}
+label-discharging-background   = ${colors.bblack}
 label-full                     = "%percentage:3%% "
-label-full-foreground          = ${colors.background}
-label-full-background          = ${colors.foreground}
+label-full-foreground          = ${colors.foreground}
+label-full-background          = ${colors.bblack}
 
 ramp-capacity-0          = "  "
 ramp-capacity-1          = "  "
 ramp-capacity-2          = "  "
 ramp-capacity-3          = "  "
 ramp-capacity-4          = "  "
-ramp-capacity-foreground = ${colors.background}
+ramp-capacity-foreground = ${colors.foreground}
+ramp-capacity-background = ${colors.bblack}
 
 animation-charging-0 = "  "
 animation-charging-1 = "  "
 animation-charging-2 = "  "
 animation-charging-3 = "  "
 animation-charging-4 = "  "
-animation-charging-foreground = ${colors.background}
+animation-charging-foreground = ${colors.foreground}
+animation-charging-background = ${colors.bblack}
 animation-charging-framerate = 750
 
 [module/temperature]
