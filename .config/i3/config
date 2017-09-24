@@ -19,7 +19,7 @@ set_from_resource   $foreground   foreground
 set_from_resource   $background   background
 set_from_resource   $black        color0
 set_from_resource   $red          color1
-set_from_resource   $green        color2
+set_from_resource   $green        color10
 set_from_resource   $yellow       color3
 set_from_resource   $blue         color4
 set_from_resource   $magenta      color5
