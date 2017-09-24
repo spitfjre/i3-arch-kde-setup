@@ -35,7 +35,7 @@ foreground = ${colors.foreground}
 font-0 = xos4 Terminess Powerline:size=10;2
 font-1 = Font Awesome:size=9;2
 
-modules-left   = i3 end_indicator_left
+modules-left   = start_indicator_left i3 end_indicator_left
 modules-center = 
 modules-right  = end_indicator_right mpd battery memory cpu wlan eth temperature volume date
 
@@ -54,7 +54,7 @@ foreground = ${colors.foreground}
 font-0 = xos4 Terminess Powerline:size=10;2
 font-1 = Font Awesome:size=9;2
 
-modules-left   = i3 end_indicator_left
+modules-left   = start_indicator_left i3 end_indicator_left
 modules-center = 
 modules-right  = end_indicator_right mpd battery memory cpu wlan eth temperature volume date
 
@@ -68,13 +68,41 @@ tray-offset-y = 0
 tray-padding = 1
 tray-scale = 1.0
 
+[module/start_indicator_left]
+type = custom/text
+
+content                   = "  "
+content-foreground        = ${colors.background}
+content-background        = ${colors.bgreen}
+content-suffix            = 
+content-suffix-foreground = ${colors.bgreen}
+content-suffix-background = ${colors.background}
+
 [module/end_indicator_left]
 type = custom/text
-content  = %{B#373B41 F#1D1F21}%{B#373B41 F#8C9440}  %{B#1D1F21 F#373B41}
+
+content                   = "%{B#444444}  %{B-}"
+content-foreground        = ${colors.bgreen}
+content-background        = ${colors.bblack}
+content-prefix            = 
+content-prefix-foreground = ${colors.background}
+content-prefix-background = ${colors.bblack}
+content-suffix            = 
+content-suffix-foreground = ${colors.bblack}
+content-suffix-background = ${colors.background}
 
 [module/end_indicator_right]
 type = custom/text
-content  = %{B#1D1F21 F#373B41}%{B#373B41 F#8C9440}  %{F#1D1F21}%{B#1D1F21 F#B5BD68}
+
+content                   = "  "
+content-foreground        = ${colors.bgreen}
+content-background        = ${colors.bblack}
+content-prefix            = 
+content-prefix-foreground = ${colors.bblack}
+content-prefix-background = ${colors.background}
+content-suffix            = 
+content-suffix-foreground = ${colors.background}
+content-suffix-background = ${colors.bblack}
 
 [module/i3]
 type 			= internal/i3
@@ -84,22 +112,18 @@ wrapping-scroll = true
 strip-wsnumbers = false
 pin-workspaces  = true
 
-label-focused 			   =  %name% %{B#282A2E F#8C9440}
+label-focused 			   =  %name% %{B#0e1019 F#8ce10b}%{F-B-}
 label-focused-foreground   = ${colors.background}
 label-focused-background   = ${colors.green}
-label-unfocused 		   =  %name% %{B#282A2E F#B5BD68}
-label-unfocused-foreground = ${colors.background}
-label-unfocused-background = ${colors.bgreen}
-label-visible 			   =  %name% %{B#282A2E F#8C9440}
-label-visible-foreground   = ${colors.background}
-label-visible-background   = ${colors.green}
-label-urgent 			   =  %name% %{B#282A2E F#A54242}
+label-unfocused 		   = %{B#232323 F#0e1019}%{F-B-} %name% %{B#0e1019 F#232323}%{F-B-}
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-background = ${colors.black}
+label-visible 			   = %{B#444444 F#0e1019}%{F-B-} %name% %{B#0e1019 F#444444}%{F-B-}
+label-visible-foreground   = ${colors.foreground}
+label-visible-background   = ${colors.bblack}
+label-urgent 			   =  %name% %{B#0e1019 F#ff000f}%{F-B-}
 label-urgent-foreground    = ${colors.background}
 label-urgent-background    = ${colors.red}
-
-format-prefix            = "  %{B#282A2E F#B5BD68}"
-format-prefix-foreground = ${colors.background}
-format-prefix-background = ${colors.bgreen}
 
 [module/mpd]
 type = internal/mpd
@@ -199,7 +223,7 @@ format-disconnected =
 
 [module/eth]
 type = internal/network
-interface = enp0s25
+interface = enp5s0
 interval = 1.0
 
 format-connected-background = ${colors.black}
@@ -286,7 +310,7 @@ format-discharging-prefix-background = ${colors.background}
 format-discharging-suffix            = 
 format-discharging-suffix-foreground = ${colors.background}
 format-discharging-suffix-background = ${colors.bblack}
-format-full-prefix                   = "%{B#373B41 F#C5C8C6}  "
+format-full-prefix                   = "%{B#444444 F#fffaf4}  %{F-B-}"
 format-full-prefix-foreground        = ${colors.bblack}
 format-full-prefix-background        = ${colors.background}
 format-full-suffix                   = 

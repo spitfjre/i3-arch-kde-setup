@@ -90,8 +90,13 @@ DEFAULT_USER=`whoami`
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias lc='colorls -a'
+
+export JAVA_HOME=/usr/lib/jvm/java-8-jdk
 export ANDROID_HOME=/home/spitfjre/android-sdk
 export PATH=$PATH:/home/spitfjre/android-sdk/platform-tools
+
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 export NVM_DIR="/home/spitfjre/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -34,6 +34,9 @@ yaourt -S --noconfirm --needed jdownloader2
 yaourt -S --noconfirm --needed slack-desktop
 yaourt -S --noconfirm --needed kdeplasma-addons
 yaourt -S --noconfirm --needed htop
+yaourt -S --noconfirm --needed gtop
+yaourt -S --noconfirm --needed ruby
+gem install colorls
 yaourt -S --noconfirm --needed keepassx2
 yaourt -S --noconfirm --needed mpv
 yaourt -S --noconfirm --needed dropbox
