@@ -4,7 +4,7 @@ export LANG="en_US.UTF-8"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/spitfjre/.oh-my-zsh
+export ZSH=/usr/share/oh-my-zsh
 
 POWERLEVEL9K_MODE='awesome-fontconfig'
 
@@ -49,7 +49,7 @@ ZSH_THEME="powerlevel9k"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=/usr/share/zsh-theme-powerlevel9k
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -92,14 +92,11 @@ DEFAULT_USER=`whoami`
 
 alias lc='colorls -a'
 
-export JAVA_HOME=/usr/lib/jvm/java-8-jdk
-export ANDROID_HOME=/home/spitfjre/android-sdk
-export PATH=$PATH:/home/spitfjre/android-sdk/platform-tools
+export JAVA_HOME=/usr/lib/jvm/java-9-jdk
+export ANDROID_HOME=/home/spitfjre/Android/Sdk
+export PATH=$PATH:/home/spitfjre/Android/Sdk/platform-tools
 
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 export NVM_DIR="/home/spitfjre/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-
-source "/home/spitfjre/.oh-my-zsh/custom/themes/powerlevel9k/powerlevel9k.zsh-theme"
