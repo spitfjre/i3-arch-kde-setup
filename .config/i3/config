@@ -18,6 +18,7 @@ font pango: Fira Sans, Font Awesome 9
 set_from_resource   $foreground   foreground
 set_from_resource   $background   background
 set_from_resource   $black        color0
+set_from_resource   $bblack       color8
 set_from_resource   $red          color1
 set_from_resource   $green        color10
 set_from_resource   $yellow       color3
@@ -27,11 +28,11 @@ set_from_resource   $cyan         color6
 set_from_resource   $white        color7
 
 # class                 border  backgr. text    indicator   child_border
-client.focused          $green  $black  $black  $black      $green
-client.focused_inactive $black  $black  $black  $black      $black
-client.unfocused        $black  $black  $black  $black      $black
-client.urgent           $red    $black  $black  $black      $red 
-client.placeholder      $black  $black  $black  $black      $black
+client.focused          $green  $bblack	$bblack $bblack		$green
+client.focused_inactive $bblack $bblack $bblack $bblack     $bblack
+client.unfocused        $bblack $bblack $bblack $bblack     $bblack
+client.urgent           $red    $bblack $bblack $bblack     $red 
+client.placeholder      $bblack $bblack $bblack	$bblack     $bblack
 client.background       $white
 
 # Use Mouse+$mod to drag floating windows to their wanted position

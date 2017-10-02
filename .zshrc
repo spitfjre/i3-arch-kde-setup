@@ -91,6 +91,9 @@ DEFAULT_USER=`whoami`
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias lc='colorls -a'
+alias lsa='ls -A'
+alias update='yaourt -Syu --aur --noconfirm'
+alias manuell_update='yaourt -Syu --aur'
 
 export JAVA_HOME=/usr/lib/jvm/java-8-jdk
 export ANDROID_HOME=/home/spitfjre/android-sdk
