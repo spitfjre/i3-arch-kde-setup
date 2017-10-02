@@ -104,5 +104,4 @@ PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 export NVM_DIR="/home/spitfjre/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-
-source "/home/spitfjre/.oh-my-zsh/custom/themes/powerlevel9k/powerlevel9k.zsh-theme"
+ZLE_RPROMPT_INDENT=0
