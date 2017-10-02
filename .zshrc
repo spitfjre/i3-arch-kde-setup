@@ -91,6 +91,7 @@ DEFAULT_USER=`whoami`
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias lc='colorls -a'
+alias lsa='ls -A'
 
 export JAVA_HOME=/usr/lib/jvm/java-9-jdk
 export ANDROID_HOME=/home/spitfjre/Android/Sdk

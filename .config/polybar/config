@@ -130,9 +130,9 @@ label-focused-foreground   = ${colors.background}
 label-focused-background   = ${colors.bgreen}
 label-unfocused 		   = %{B#444444 F#0e1019}%{F-B-} %name% %{B#0e1019 F#444444}%{F-B-}
 label-unfocused-foreground = ${colors.foreground}
-label-unfocused-background = ${colors.bblack}
-label-visible 			   = %{B#444444 F#0e1019}%{F-B-} %name% %{B#0e1019 F#444444}%{F-B-}
-label-visible-foreground   = ${colors.bgreen}
+label-unfocused-background = ${colors.black}
+label-visible 			   = %{B#232323 F#0e1019}%{F-B-} %name% %{B#0e1019 F#232323}%{F-B-}
+label-visible-foreground   = ${colors.foreground}
 label-visible-background   = ${colors.bblack}
 label-urgent 			   =  %name% %{B#0e1019 F#ff000f}%{F-B-}
 label-urgent-foreground    = ${colors.background}
@@ -141,22 +141,20 @@ label-urgent-background    = ${colors.red}
 [module/mpd]
 type = internal/mpd
 
-format-playing            = <icon-seekb> <icon-prev> <toggle> <icon-next> <icon-seekf>  <label-song>
+format-playing            = <icon-prev> <toggle> <icon-next> <label-song> 
 format-playing-foreground = ${colors.bgreen}
 format-playing-background = ${colors.bblack}
-format-paused             = <icon-seekb> <icon-prev> <toggle> <icon-next> <icon-seekf>  <label-song>
+format-paused             = <icon-prev> <toggle> <icon-next> <label-song> 
 format-paused-foreground  = ${colors.byellow}
 format-paused-background  = ${colors.bblack}
-format-stopped            = <icon-seekb> <icon-prev> <toggle> <icon-next> <icon-seekf>
+format-stopped            = <icon-prev> <toggle> <icon-next>
 format-stopped-foreground = ${colors.bred}
 format-stopped-background = ${colors.bblack}
 
-icon-prev  = ""
+icon-prev  = " "
 icon-play  = ""
 icon-pause = ""
-icon-next  = ""
-icon-seekb = "  -"
-icon-seekf = "- "
+icon-next  = " "
 
 icon-seekb-foreground = ${colors.foreground}
 icon-seekf-foreground = ${colors.foreground}
@@ -222,7 +220,7 @@ format-suffix-background = ${colors.black}
 
 [module/wlan]
 type      = internal/network
-interface = wlp3s0
+interface = wlp0s26u1u5
 interval  = 1.0
 
 format-connected-background = ${colors.black}
