@@ -13,8 +13,7 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER=`whoami`
 
 alias ls='colorls -A'
-alias update='yaourt -Syu --aur --noconfirm'
-alias manuell_update='yaourt -Syu --aur'
+alias syu='yaourt -Syu --aur --noconfirm'
 
 export JAVA_HOME=/usr/lib/jvm/java-8-jdk
 export ANDROID_HOME=/home/spitfjre/android-sdk
