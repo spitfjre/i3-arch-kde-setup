@@ -35,9 +35,9 @@ foreground = ${colors.foreground}
 font-0 = xos4 Terminess Powerline:size=10;2
 font-1 = Font Awesome:size=9;2
 
-modules-left   = start_indicator_left i3 end_indicator_left
+modules-left   = start_indicator_left i3
 modules-center = 
-modules-right  = end_indicator_right mpd music_indicator_right battery memory cpu wlan eth temperature volume date
+modules-right  = mpd music_indicator_right battery memory cpu wlan eth temperature volume date
 
 [bar/top_tray]
 monitor      = ${env:MONITOR}
@@ -54,9 +54,9 @@ foreground = ${colors.foreground}
 font-0 = xos4 Terminess Powerline:size=10;2
 font-1 = Font Awesome:size=9;2
 
-modules-left   = start_indicator_left i3 end_indicator_left
+modules-left   = start_indicator_left i3
 modules-center = 
-modules-right  = end_indicator_right mpd music_indicator_right battery memory cpu wlan eth temperature volume date
+modules-right  = mpd music_indicator_right battery memory cpu wlan eth temperature volume date
 
 tray-position = right
 tray-detached = false
@@ -78,44 +78,18 @@ content-suffix            = 
 content-suffix-foreground = ${colors.bgreen}
 content-suffix-background = ${colors.background}
 
-[module/end_indicator_left]
-type = custom/text
-
-content                   = "%{B#444444}  %{B-}"
-content-foreground        = ${colors.bgreen}
-content-background        = ${colors.bblack}
-content-prefix            = 
-content-prefix-foreground = ${colors.background}
-content-prefix-background = ${colors.bblack}
-content-suffix            = 
-content-suffix-foreground = ${colors.bblack}
-content-suffix-background = ${colors.background}
-
-[module/end_indicator_right]
-type = custom/text
-
-content                   = "  "
-content-foreground        = ${colors.bgreen}
-content-background        = ${colors.bblack}
-content-prefix            = 
-content-prefix-foreground = ${colors.bblack}
-content-prefix-background = ${colors.background}
-content-suffix            = 
-content-suffix-foreground = ${colors.background}
-content-suffix-background = ${colors.bblack}
-
 [module/music_indicator_right]
 type = custom/text
 
 content                   = "  "
-content-foreground        = ${colors.bgreen}
-content-background        = ${colors.bblack}
+content-foreground        = ${colors.background}
+content-background        = ${colors.bgreen}
 content-prefix            = 
-content-prefix-foreground = ${colors.bblack}
+content-prefix-foreground = ${colors.bgreen}
 content-prefix-background = ${colors.background}
 content-suffix            = 
 content-suffix-foreground = ${colors.background}
-content-suffix-background = ${colors.bblack}
+content-suffix-background = ${colors.bgreen}
 
 [module/i3]
 type 			= internal/i3
