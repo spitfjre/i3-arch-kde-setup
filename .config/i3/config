@@ -4,7 +4,7 @@ set $mod Mod4
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/arch-wallpaper.png
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec_always --no-startup-id numlockx on
-exec_always --no-startup-id xrandr --output VGA-0 --off --output LVDS-0 --mode 1600x900 --dpi 96 --pos 0x0 --rotate normal --output DP-5 --off --output DP-4 --off --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --off
+exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --off --output DVI-I-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-I-0 --off --output DP-1 --off --output DP-0 --off
 
 exec --no-startup-id redshift
 exec --no-startup-id dropbox
@@ -12,7 +12,7 @@ exec --no-startup-id mpd
 exec --no-startup-id twmnd
 
 #Font for window titles
-font pango: Fira Sans, Font Awesome 9
+font pango: Fira Sans, Font Awesome 8
 
 #Colors
 set_from_resource   $foreground   foreground
@@ -38,8 +38,8 @@ client.background       $white
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 popup_during_fullscreen smart
-bindsym $mod+t exec --no-startup-id termite
-bindsym $mod+Return exec --no-startup-id termite
+bindsym $mod+t exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id alacritty
 mouse_warping none
 
 for_window [class="^.*"] border pixel 3
@@ -91,7 +91,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 # decrease 
 
 bindsym $mod+Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/screenshots/'
 bindsym $mod+Shift+Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/screenshots/'
-bindsym $mod+Shift+Return exec --no-startup-id termite -e ranger
+bindsym $mod+Shift+Return exec --no-startup-id alacritty -e ranger
 
 bindsym $mod+Escape exec --no-startup-id i3-msg exit
 bindsym $mod+Shift+Escape exec --no-startup-id poweroff

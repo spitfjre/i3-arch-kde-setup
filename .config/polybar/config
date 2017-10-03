@@ -240,7 +240,7 @@ format-disconnected =
 
 [module/eth]
 type = internal/network
-interface = enp0s25
+interface = enp5s0
 interval = 1.0
 
 format-connected-background = ${colors.black}

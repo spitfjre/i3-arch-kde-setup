@@ -7,7 +7,7 @@ yaourt -S --noconfirm --needed perl-anyevent-i3
 yaourt -S --noconfirm --needed twmn-git
 yaourt -S --noconfirm --needed polybar-git
 yaourt -S --noconfirm --needed rofi
-yaourt -S --noconfirm --needed termite-git
+yaourt -S --noconfirm --needed alacritty-git
 yaourt -S --noconfirm --needed ranger
 yaourt -S --noconfirm --needed w3m
 ranger --copy-config=scope
@@ -29,6 +29,7 @@ yaourt -S --noconfirm --needed webstorm
 yaourt -S --noconfirm --needed intellij-idea-ultimate-edition
 yaourt -S --noconfirm --needed visual-studio-code
 yaourt -S --noconfirm --needed jdk
+yaourt -S --noconfirm --needed jdk8
 yaourt -S --noconfirm --needed ipe
 yaourt -S --noconfirm --needed jdownloader2
 yaourt -S --noconfirm --needed slack-desktop
@@ -57,6 +58,7 @@ yaourt -S --noconfirm --needed ttf-fira-code
 yaourt -S --noconfirm --needed ttf-fira-sans
 yaourt -S --noconfirm --needed ttf-fira-mono
 yaourt -S --noconfirm --needed powerline-fonts-git
+yaourt -S --noconfirm --needed oh-my-zsh-git
 yaourt -S --noconfirm --needed zsh-theme-powerlevel9k
 
 git clone https://github.com/justbuchanan/fontawesome-python.git
