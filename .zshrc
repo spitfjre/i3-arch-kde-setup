@@ -12,7 +12,7 @@ source $ZSH/oh-my-zsh.sh
 
 DEFAULT_USER=`whoami`
 
-alias ls='colorls -A'
+alias ls='colorls -A -sd'
 alias syu='yaourt -Syu --aur --noconfirm'
 
 export JAVA_HOME=/usr/lib/jvm/java-8-jdk
