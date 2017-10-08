@@ -12,6 +12,10 @@ source $ZSH/oh-my-zsh.sh
 
 DEFAULT_USER=`whoami`
 
+POWERLEVEL9K_HOME_ICON=' '
+POWERLEVEL9K_HOME_SUB_ICON=' '
+POWERLEVEL9K_FOLDER_ICON=' '
+
 alias ls='colorls -A -sd'
 alias syu='yaourt -Syu --aur --noconfirm'
 
