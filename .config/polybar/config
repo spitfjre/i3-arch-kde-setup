@@ -34,7 +34,7 @@ font-1 = Font Awesome:size=8;2
 
 modules-left   = start_indicator_left i3
 modules-center = 
-modules-right  = mpd mpd_controls battery memory cpu wlan eth temperature volume date
+modules-right  = mpd mpd_controls battery memory cpu wlan eth eth_laptop temperature volume date
 
 [bar/top_tray]
 monitor      = ${env:MONITOR}
@@ -50,7 +50,7 @@ font-1 = Font Awesome:size=8;2
 
 modules-left   = start_indicator_left i3
 modules-center = 
-modules-right  = mpd mpd_controls battery memory cpu wlan eth temperature volume date
+modules-right  = mpd mpd_controls battery memory cpu wlan eth eth_laptop temperature volume date
 
 tray-position = right
 tray-detached = false
@@ -223,6 +223,26 @@ format-disconnected =
 [module/eth]
 type = internal/network
 interface = enp5s0
+interval = 1.0
+
+format-connected-background = ${colors.black}
+format-connected-prefix = 
+format-connected-prefix-foreground = ${colors.black}
+format-connected-prefix-background = ${colors.background}
+format-connected-suffix            = 
+format-connected-suffix-foreground = ${colors.background}
+format-connected-suffix-background = ${colors.black}
+
+label-connected            =  %downspeed:8%     %upspeed:8%
+label-connected-foreground = ${colors.foreground}
+label-connected-background = ${colors.black}
+label-connected-padding    = 1
+
+format-disconnected =
+
+[module/eth_laptop]
+type = internal/network
+interface = enp0s25
 interval = 1.0
 
 format-connected-background = ${colors.black}
