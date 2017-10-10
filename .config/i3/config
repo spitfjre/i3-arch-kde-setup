@@ -28,12 +28,12 @@ set_from_resource   $magenta      color5
 set_from_resource   $cyan         color6
 set_from_resource   $white        color7
 
-# class                 border  backgr. text    indicator   child_border
-client.focused          $green  $bblack	$bblack $bblack		$green
-client.focused_inactive $bblack $bblack $bblack $bblack     $bblack
-client.unfocused        $bblack $bblack $bblack $bblack     $bblack
-client.urgent           $red    $bblack $bblack $bblack     $red 
-client.placeholder      $bblack $bblack $bblack	$bblack     $bblack
+# class                 border  	backgr. 	text    	indicator   	child_border
+client.focused          $green  	$background	$background $background		$green
+client.focused_inactive $background $background $background $background     $background
+client.unfocused        $background $background $background $background     $background
+client.urgent           $red    	$background $background $background     $red 
+client.placeholder      $background $background $background	$background     $background
 client.background       $white
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -46,7 +46,7 @@ mouse_warping none
 for_window [class="^.*"] border pixel 3
 
 # i3-gaps stuff :)
-gaps inner 0
+gaps inner 10
 gaps outer 0
 smart_borders on
 new_window none
