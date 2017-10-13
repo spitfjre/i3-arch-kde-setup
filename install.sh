@@ -13,7 +13,6 @@ yaourt -S --noconfirm --needed w3m
 ranger --copy-config=scope
 yaourt -S --noconfirm --needed feh
 yaourt -S --noconfirm --needed zsh
-yaourt -S --noconfirm --needed zsh-completions
 yaourt -S --noconfirm --needed light
 yaourt -S --noconfirm --needed arandr
 yaourt -S --noconfirm --needed lxappearance
