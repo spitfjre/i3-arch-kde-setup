@@ -7,7 +7,7 @@ yaourt -S --noconfirm --needed perl-anyevent-i3
 yaourt -S --noconfirm --needed twmn-git
 yaourt -S --noconfirm --needed polybar-git
 yaourt -S --noconfirm --needed rofi
-yaourt -S --noconfirm --needed alacritty-git
+yaourt -S --noconfirm --needed termite-git
 yaourt -S --noconfirm --needed ranger
 yaourt -S --noconfirm --needed w3m
 ranger --copy-config=scope

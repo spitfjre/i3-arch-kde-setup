@@ -29,12 +29,12 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = xos4 Terminess Powerline:size=8;2
-font-1 = Font Awesome:size=8;2
+font-0 = xos4 Terminess Powerline:size=9;2
+font-1 = Font Awesome:size=9;2
 
-modules-left   = start_indicator_left i3
-modules-center = 
-modules-right  = mpd mpd_controls battery memory cpu wlan eth eth_laptop temperature volume date
+modules-left   = mpd_controls start_indicator_left i3
+modules-center = mpd_song
+modules-right  = battery memory cpu wlan eth eth_laptop temperature volume date
 
 [bar/top_tray]
 monitor      = ${env:MONITOR}
@@ -45,12 +45,12 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = xos4 Terminess Powerline:size=8;2
-font-1 = Font Awesome:size=8;2
+font-0 = xos4 Terminess Powerline:size=9;2
+font-1 = Font Awesome:size=9;2
 
-modules-left   = start_indicator_left i3
-modules-center = 
-modules-right  = mpd mpd_controls battery memory cpu wlan eth eth_laptop temperature volume date
+modules-left   = mpd_controls start_indicator_left i3
+modules-center = mpd_song
+modules-right  = battery memory cpu wlan eth eth_laptop temperature volume date
 
 tray-position = right
 tray-detached = false
@@ -65,12 +65,9 @@ tray-scale = 1.0
 [module/start_indicator_left]
 type = custom/text
 
-content                   = "  "
-content-foreground        = ${colors.background}
-content-background        = ${colors.bblue}
-content-suffix            = 
-content-suffix-foreground = ${colors.bblue}
-content-suffix-background = ${colors.background}
+content            = 
+content-foreground = ${colors.bblue}
+content-background = ${colors.background}
 
 [module/i3]
 type 			= internal/i3
@@ -80,15 +77,15 @@ wrapping-scroll = true
 strip-wsnumbers = false
 pin-workspaces  = true
 
-label-focused 			   =  %name% %{B#0e1019 F#abe15b}%{F-B-}
+label-focused 			   =  %name% %{B#0e1019 F#8ce10b}%{F-B-}
 label-focused-foreground   = ${colors.background}
-label-focused-background   = ${colors.bgreen}
-label-unfocused 		   = %{B#232323 F#0e1019}%{F-B-} %name% %{B#0e1019 F#232323}%{F-B-}
+label-focused-background   = ${colors.green}
+label-unfocused 		   = %{B#444444 F#0e1019}%{F#fffaf4} %name% %{B#0e1019 F#444444}%{F-B-}
 label-unfocused-foreground = ${colors.foreground}
 label-unfocused-background = ${colors.bblack}
-label-visible 			   = %{B#444444 F#0e1019}%{F-B-} %name% %{B#0e1019 F#444444}%{F-B-}
-label-visible-foreground   = ${colors.foreground}
-label-visible-background   = ${colors.black}
+label-visible 			   = %{B#ffb900 F#0e1019} %name% %{B#0e1019 F#ffb900}%{F-B-}
+label-visible-foreground   = ${colors.background}
+label-visible-background   = ${colors.yellow}
 label-urgent 			   =  %name% %{B#0e1019 F#ff000f}%{F-B-}
 label-urgent-foreground    = ${colors.background}
 label-urgent-background    = ${colors.red}
@@ -96,75 +93,31 @@ label-urgent-background    = ${colors.red}
 [module/mpd_controls]
 type = internal/mpd
 
-format-playing            = <icon-prev> <toggle> <icon-next> 
-format-playing-foreground = ${colors.bgreen}
-format-playing-background = ${colors.bblack}
-format-paused             = <icon-prev> <toggle> <icon-next> 
-format-paused-foreground  = ${colors.byellow}
-format-paused-background  = ${colors.bblack}
-format-stopped            = <icon-prev> <toggle> <icon-next>
-format-stopped-foreground = ${colors.bred}
-format-stopped-background = ${colors.bblack}
+format-online             = <icon-prev> <toggle> <icon-next>
+format-playing-foreground = ${colors.background}
+format-playing-background = ${colors.blue}
+format-paused-foreground  = ${colors.background}
+format-paused-background  = ${colors.blue}
+format-stopped-foreground = ${colors.background}
+format-stopped-background = ${colors.blue}
 
 icon-prev  = " "
 icon-play  = ""
 icon-pause = ""
 icon-next  = " "
 
-format-playing-prefix            = 
-format-playing-prefix-foreground = ${colors.bblack}
-format-playing-prefix-background = ${colors.background}
-format-playing-suffix            = 
-format-playing-suffix-foreground = ${colors.background}
-format-playing-suffix-background = ${colors.bblack}
-format-paused-prefix             = 
-format-paused-prefix-foreground  = ${colors.bblack}
-format-paused-prefix-background  = ${colors.background}
-format-paused-suffix             = 
-format-paused-suffix-foreground  = ${colors.background}
-format-paused-suffix-background  = ${colors.bblack}
-format-stopped-prefix            = 
-format-stopped-prefix-foreground = ${colors.bblack}
-format-stopped-prefix-background = ${colors.background}
-format-stopped-suffix            = 
-format-stopped-suffix-foreground = ${colors.background}
-format-stopped-suffix-background = ${colors.bblack}
-
-[module/mpd]
+[module/mpd_song]
 type = internal/mpd
 
-format-playing            = <label-song> 
-format-playing-background = ${colors.black}
-format-paused             = <label-song> 
-format-paused-background  = ${colors.black}
-format-stopped            = <label-song> 
-format-stopped-background = ${colors.black}
+format-playing = <label-song>
+format-paused  = <label-song>
+format-stopped = <label-song>
 
-label-song-maxlen        = 50
-label-song-ellipsis      = true
-label-song-padding-left = 1
-label-song-padding-right = 1
-label-song               = %title%
-label-song-foreground    = ${colors.foreground}
-
-format-playing-prefix            = 
-format-playing-prefix-foreground = ${colors.black}
-format-playing-prefix-background = ${colors.background}
-format-playing-suffix            = 
-format-playing-suffix-foreground = ${colors.background}
-format-playing-suffix-background = ${colors.black}
-format-paused-prefix             = 
-format-paused-prefix-foreground  = ${colors.black}
-format-paused-prefix-background  = ${colors.background}
-format-paused-suffix             = 
-format-paused-suffix-foreground  = ${colors.background}
-format-paused-suffix-background  = ${colors.black}
-format-stopped-prefix            = 
-format-stopped-prefix-foreground = ${colors.black}
-format-stopped-prefix-background = ${colors.background}
-format-stopped-suffix            = 
-format-stopped-suffix-foreground = ${colors.background}
-format-stopped-suffix-background = ${colors.black}
+label-song-maxlen     = 100
+label-song-ellipsis   = true
+label-song            = %title%
+label-song-foreground = ${colors.foreground}
+label-song-background = ${colors.background}
 
 [module/cpu]
 type     = internal/cpu

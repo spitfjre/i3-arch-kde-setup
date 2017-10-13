@@ -39,8 +39,8 @@ client.background       $white
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 popup_during_fullscreen smart
-bindsym $mod+t exec --no-startup-id alacritty
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+t exec --no-startup-id termite
+bindsym $mod+Return exec --no-startup-id termite
 mouse_warping none
 
 for_window [class="^.*"] border pixel 3
@@ -92,7 +92,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 # decrease 
 
 bindsym $mod+Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/screenshots/'
 bindsym $mod+Shift+Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/screenshots/'
-bindsym $mod+Shift+Return exec --no-startup-id alacritty -e ranger
+bindsym $mod+Shift+Return exec --no-startup-id termite -e ranger
 
 bindsym $mod+Escape exec --no-startup-id i3-msg exit
 bindsym $mod+Shift+Escape exec --no-startup-id poweroff
