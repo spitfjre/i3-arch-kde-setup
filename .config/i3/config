@@ -19,21 +19,20 @@ font pango: Fira Sans, Font Awesome 8
 set_from_resource   $foreground   foreground
 set_from_resource   $background   background
 set_from_resource   $black        color0
-set_from_resource   $bblack       color8
 set_from_resource   $red          color1
-set_from_resource   $green        color10
+set_from_resource   $green        color2
 set_from_resource   $yellow       color3
 set_from_resource   $blue         color4
 set_from_resource   $magenta      color5
 set_from_resource   $cyan         color6
 set_from_resource   $white        color7
 
-# class                 border  	backgr. 	text    	indicator   	child_border
-client.focused          $green  	$background	$background $background		$green
-client.focused_inactive $background $background $background $background     $background
-client.unfocused        $background $background $background $background     $background
-client.urgent           $red    	$background $background $background     $red 
-client.placeholder      $background $background $background	$background     $background
+# class                 border  backgr. text    indicator   child_border
+client.focused          $green  $black	$black  $black		$green
+client.focused_inactive $black  $black  $black  $black      $black
+client.unfocused        $black  $black  $black  $black      $black
+client.urgent           $red    $black  $black  $black      $red 
+client.placeholder      $black  $black  $black	$black      $black
 client.background       $white
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -43,10 +42,10 @@ bindsym $mod+t exec --no-startup-id termite
 bindsym $mod+Return exec --no-startup-id termite
 mouse_warping none
 
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 5
 
 # i3-gaps stuff :)
-gaps inner 10
+gaps inner 5
 gaps outer 0
 smart_borders on
 new_window none
