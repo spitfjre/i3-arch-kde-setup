@@ -6,24 +6,24 @@ Xft.autohint: 	true
 Xft.hintstyle: 	hintfull
 Xft.lcdfilter: 	lcddefault
 
-#define base_foreground #fffaf4
-#define base_background #0e1019
-#define base_color0 #232323
-#define base_color1 #ff000f
-#define base_color2 #8ce10b
-#define base_color3 #ffb900
-#define base_color4 #008df8
-#define base_color5 #6d43a6
-#define base_color6 #00d8eb
-#define base_color7 #ffffff
-#define base_color8 #444444
-#define base_color9 #ff2740
-#define base_color10 #abe15b
-#define base_color11 #ffd242
-#define base_color12 #0092ff
-#define base_color13 #9a5feb
-#define base_color14 #67fff0
-#define base_color15 #ffffff
+#define base_foreground #C5C8C6
+#define base_background #1D1F21
+#define base_color0 #282A2E
+#define base_color1 #A54242
+#define base_color2 #8C9440
+#define base_color3 #DE935F
+#define base_color4 #5F819D
+#define base_color5 #85678F
+#define base_color6 #5E8D87
+#define base_color7 #707880
+#define base_color8 #373B41
+#define base_color9 #CC6666
+#define base_color10 #B5BD68
+#define base_color11 #F0C674
+#define base_color12 #81A2BE
+#define base_color13 #B294BB
+#define base_color14 #8ABEB7
+#define base_color15 #C5C8C6
 
 *foreground: base_foreground
 *background: base_background
@@ -63,7 +63,7 @@ rofi.terminal:			termite
 rofi.lines:				10
 rofi.eh:				1
 rofi.hide-scrollbar: 	true
-rofi.font:      		xos4 Terminess Powerline 9
+rofi.font:      		xos4 Terminess Powerline 8
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
