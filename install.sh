@@ -57,6 +57,7 @@ yaourt -S --noconfirm --needed ttf-fira-code
 yaourt -S --noconfirm --needed ttf-fira-sans
 yaourt -S --noconfirm --needed ttf-fira-mono
 yaourt -S --noconfirm --needed powerline-fonts-git
+yaourt -S --noconfirm --needed siji-git
 yaourt -S --noconfirm --needed oh-my-zsh-git
 yaourt -S --noconfirm --needed zsh-theme-powerlevel9k
 

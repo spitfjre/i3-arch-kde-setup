@@ -24,4 +24,8 @@ PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 export NVM_DIR="/home/spitfjre/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+ZLE_PROMPT_INDENT=0
 ZLE_RPROMPT_INDENT=0
+
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8

@@ -31,6 +31,7 @@ foreground = ${colors.foreground}
 
 font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
+font-2 = Wuncon Siji:size=8;2
 
 modules-left   = i3_start_indicator i3 i3_end_indicator active_working_space_indicator title
 modules-center = 
@@ -47,6 +48,7 @@ foreground = ${colors.foreground}
 
 font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
+font-2 = Wuncon Siji:size=8;2
 
 modules-left   = i3_start_indicator i3 i3_end_indicator active_working_space_indicator title
 modules-center = 
@@ -86,7 +88,7 @@ label-urgent-background    = ${colors.red}
 [module/i3_start_indicator]
 type = custom/text
 
-content            = "  "
+content            = " %{T3}%{T-} "
 content-foreground = ${colors.background}
 content-background = ${colors.bgreen}
 
@@ -100,7 +102,7 @@ content-background = ${colors.bblack}
 [module/active_working_space_indicator]
 type = custom/text
 
-content            = "    "
+content            = " %{T3}%{T-} "
 content-foreground = ${colors.bgreen}
 content-background = ${colors.bblack}
 
@@ -138,10 +140,10 @@ label-song            = " %title% "
 label-song-foreground = ${colors.foreground}
 label-song-background = ${colors.black}
 
-icon-play             = "  "
+icon-play             = " %{T3}%{T-} "
 icon-play-foreground  = ${colors.byellow}
 icon-play-background  = ${colors.black}
-icon-pause            = "  "
+icon-pause            = " %{T3}%{T-} "
 icon-pause-foreground = ${colors.bgreen}
 icon-pause-background = ${colors.black}
 
@@ -168,7 +170,7 @@ format-stopped-suffix-background = ${colors.black}
 type     = internal/cpu
 interval = 1
 
-label            =  %percentage:3%%
+label            = %{T3}%{T-} %percentage:3%%
 label-foreground = ${colors.foreground}
 label-background = ${colors.black}
 label-padding    = 1
@@ -179,7 +181,7 @@ format-background = ${colors.black}
 type     = internal/memory
 interval = 1
 
-label            =  %percentage_used:3%%
+label            = %{T3}%{T-} %percentage_used:3%%
 label-foreground = ${colors.foreground}
 label-background = ${colors.bblack}
 label-padding    = 1
@@ -199,7 +201,7 @@ interval  = 1.0
 
 format-connected-background = ${colors.black}
 
-label-connected            =  %signal:3%%     %downspeed:8%     %upspeed:8%
+label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.foreground}
 label-connected-background = ${colors.black}
 label-connected-padding    = 1
@@ -213,7 +215,7 @@ interval = 1.0
 
 format-connected-background = ${colors.black}
 
-label-connected            =  %downspeed:8%     %upspeed:8%
+label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.foreground}
 label-connected-background = ${colors.black}
 label-connected-padding    = 1
@@ -227,7 +229,7 @@ interval = 1.0
 
 format-connected-background = ${colors.black}
 
-label-connected            =  %downspeed:8%     %upspeed:8%
+label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.foreground}
 label-connected-background = ${colors.black}
 label-connected-padding    = 1
@@ -241,7 +243,7 @@ interval = 1
 date = %d-%m-%Y
 date-alt = %d-%m-%Y
 
-label            =  %date%
+label            = %{T3}%{T-} %date%
 label-padding    = 1
 label-foreground = ${colors.foreground}
 label-background = ${colors.black}
@@ -257,7 +259,7 @@ format-prefix            = 
 format-prefix-foreground = ${colors.bgreen}
 format-prefix-background = ${colors.black}
 
-label            =  %time%
+label            = %{T3}%{T-} %time%
 label-padding    = 1
 label-foreground = ${colors.background}
 label-background = ${colors.bgreen}
@@ -266,7 +268,7 @@ label-background = ${colors.bgreen}
 type     = internal/volume
 interval = 0.1
 
-label-volume            =  %percentage:3%%
+label-volume            = %{T3}%{T-} %percentage:3%%
 label-volume-foreground = ${colors.foreground}
 label-volume-background = ${colors.bblack}
 label-volume-padding    = 1
@@ -279,7 +281,7 @@ format-volume-suffix            = 
 format-volume-suffix-foreground = ${colors.black}
 format-volume-suffix-background = ${colors.bblack}
 
-label-muted            =  %percentage:3%%
+label-muted            = %{T3}%{T-} %percentage:3%%
 label-muted-foreground = ${colors.background}
 label-muted-background = ${colors.red}
 label-muted-padding    = 1
@@ -312,7 +314,7 @@ format-discharging-prefix-background = ${colors.black}
 format-discharging-suffix            = 
 format-discharging-suffix-foreground = ${colors.bblack}
 format-discharging-suffix-background = ${colors.bgreen}
-format-full-prefix                   = "%{B#B5BD68 F#1D1F21}  %{F-B-}"
+format-full-prefix                   = "%{B#B5BD68 F#1D1F21} %{T3}%{T-} %{F-B-}"
 format-full-prefix-foreground        = ${colors.bgreen}
 format-full-prefix-background        = ${colors.black}
 format-full-suffix                   = 
@@ -329,22 +331,32 @@ label-full                     = "%percentage:3%% "
 label-full-foreground          = ${colors.background}
 label-full-background          = ${colors.bgreen}
 
-ramp-capacity-0          = "  "
-ramp-capacity-1          = "  "
-ramp-capacity-2          = "  "
-ramp-capacity-3          = "  "
-ramp-capacity-4          = "  "
+ramp-capacity-0          = " %{T3}%{T-} "
+ramp-capacity-1          = " %{T3}%{T-} "
+ramp-capacity-2          = " %{T3}%{T-} "
+ramp-capacity-3          = " %{T3}%{T-} "
+ramp-capacity-4          = " %{T3}%{T-} "
+ramp-capacity-5          = " %{T3}%{T-} "
+ramp-capacity-6          = " %{T3}%{T-} "
+ramp-capacity-7          = " %{T3}%{T-} "
+ramp-capacity-8          = " %{T3}%{T-} "
+ramp-capacity-9          = " %{T3}%{T-} "
 ramp-capacity-foreground = ${colors.background}
 ramp-capacity-background = ${colors.bgreen}
 
-animation-charging-0 = "  "
-animation-charging-1 = "  "
-animation-charging-2 = "  "
-animation-charging-3 = "  "
-animation-charging-4 = "  "
+animation-charging-0          = " %{T3}%{T-} "
+animation-charging-1          = " %{T3}%{T-} "
+animation-charging-2          = " %{T3}%{T-} "
+animation-charging-3          = " %{T3}%{T-} "
+animation-charging-4          = " %{T3}%{T-} "
+animation-charging-5          = " %{T3}%{T-} "
+animation-charging-6          = " %{T3}%{T-} "
+animation-charging-7          = " %{T3}%{T-} "
+animation-charging-8          = " %{T3}%{T-} "
+animation-charging-9          = " %{T3}%{T-} "
 animation-charging-foreground = ${colors.foreground}
 animation-charging-background = ${colors.bblack}
-animation-charging-framerate = 750
+animation-charging-framerate  = 750
 
 [module/temperature]
 type             = internal/temperature
@@ -377,11 +389,7 @@ label-warn            = "%temperature:3% "
 label-warn-foreground = ${colors.background}
 label-warn-background = ${colors.red}
 
-ramp-0 = "  "
-ramp-1 = "  "
-ramp-2 = "  "
-ramp-3 = "  "
-ramp-4 = "  "
+ramp-0 = " %{T3}%{T-} "
 
 [settings]
 screenchange-reload = true
