@@ -339,8 +339,8 @@ animation-charging-6          = " %{T3}%{T-} "
 animation-charging-7          = " %{T3}%{T-} "
 animation-charging-8          = " %{T3}%{T-} "
 animation-charging-9          = " %{T3}%{T-} "
-animation-charging-foreground = ${colors.foreground}
-animation-charging-background = ${colors.bblack}
+animation-charging-foreground = ${colors.background}
+animation-charging-background = ${colors.bgreen}
 animation-charging-framerate  = 750
 
 [module/temperature]
