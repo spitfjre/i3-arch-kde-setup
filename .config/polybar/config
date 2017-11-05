@@ -1,6 +1,7 @@
 [colors]
-foreground = ${xrdb:foreground}
-background = ${xrdb:background}
+foreground  = ${xrdb:foreground}
+background  = ${xrdb:background}
+transparent = #00000000
 
 black 	= ${xrdb:color0}
 red     = ${xrdb:color1}
@@ -29,11 +30,17 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
+border-top-size    = 10
+border-bottom-size = 0
+border-left-size   = 10
+border-right-size  = 10
+border-color = ${colors.transparent}
+
 font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
 font-2 = Wuncon Siji:size=8;2
 
-modules-left   = i3_start_indicator i3 i3_end_indicator active_working_space_indicator title
+modules-left   = i3_start_indicator i3 i3_end_indicator active_working_space_indicator title title_end_indicator
 modules-center = 
 modules-right  = mpd_end_indicator mpd battery memory cpu temperature wlan eth eth_laptop volume date time
 
@@ -46,11 +53,17 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
+border-top-size    = 10
+border-bottom-size = 0
+border-left-size   = 10
+border-right-size  = 10
+border-color = ${colors.transparent}
+
 font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
 font-2 = Wuncon Siji:size=8;2
 
-modules-left   = i3_start_indicator i3 i3_end_indicator active_working_space_indicator title
+modules-left   = i3_start_indicator i3 i3_end_indicator active_working_space_indicator title title_end_indicator
 modules-center = 
 modules-right  = mpd_end_indicator mpd battery memory cpu temperature wlan eth eth_laptop volume date time
 
@@ -75,12 +88,12 @@ pin-workspaces  = true
 label-focused 			   = %{B#8C9440 F#B5BD68}%{F-B-} %name% %{B#B5BD68 F#8C9440}%{F-B-}
 label-focused-foreground   = ${colors.background}
 label-focused-background   = ${colors.green}
-label-unfocused 		   = %{F#B5BD68}%{F-} %name% %{F#B5BD68}%{F-}
-label-unfocused-foreground = ${colors.background}
-label-unfocused-background = ${colors.bgreen}
-label-visible 			   = %{B#8C9440 F#B5BD68}%{F-B-} %name% %{B#B5BD68 F#8C9440}%{F-B-}
+label-unfocused 		   = %{B#373B41 F#B5BD68}%{F-B-} %name% %{B#B5BD68 F#373B41}%{F-B-}
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-background = ${colors.black}
+label-visible 			   = %{B#B5BD68 F#B5BD68}%{F-B-} %name% %{B#B5BD68 F#B5BD68}%{F-B-}
 label-visible-foreground   = ${colors.background}
-label-visible-background   = ${colors.green}
+label-visible-background   = ${colors.bgreen}
 label-urgent 			   = %{B#A54242 F#B5BD68}%{F-B-} %name% %{B#B5BD68 F#A54242}%{F-B-}
 label-urgent-foreground    = ${colors.background}
 label-urgent-background    = ${colors.red}
@@ -108,22 +121,32 @@ content-background = ${colors.bblack}
 
 content-suffix            = 
 content-suffix-foreground = ${colors.bblack}
-content-suffix-background = ${colors.background}
+content-suffix-background = ${colors.black}
 
 [module/title]
 type = internal/xwindow
 
 format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-padding = 1
+format-background = ${colors.black}
 
-label = %title%
+label = " %title% "
 label-maxlen = 75
+
+format-suffix            = 
+format-suffix-foreground = ${colors.black}
+format-suffix-background = ${colors.bblack}
 
 [module/mpd_end_indicator]
 type = custom/text
 
 content            = 
+content-foreground = ${colors.bblack}
+content-background = ${colors.background}
+
+[module/title_end_indicator]
+type = custom/text
+
+content            = 
 content-foreground = ${colors.bblack}
 content-background = ${colors.background}
 

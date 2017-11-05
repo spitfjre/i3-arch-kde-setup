@@ -69,7 +69,7 @@ rofi.font:      		xos4 Terminess Powerline 8
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: base_background, base_color4,     base_color4
-rofi.color-normal: base_background, base_foreground, base_background, base_color4, base_background
-rofi.color-active: base_background, base_color4,     base_background, base_color4, base_color4
-rofi.color-urgent: base_background, base_foreground, base_background, base_color4, base_foreground
+rofi.color-window: base_background, base_color2,     base_color2
+rofi.color-normal: base_background, base_foreground, base_background, base_color2, base_background
+rofi.color-active: base_background, base_color2,     base_background, base_color2, base_color2
+rofi.color-urgent: base_background, base_foreground, base_background, base_color2, base_foreground

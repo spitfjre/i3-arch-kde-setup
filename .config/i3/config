@@ -9,6 +9,7 @@ exec_always --no-startup-id sh ~/.config/polybar/launch.sh
 
 exec --no-startup-id redshift
 exec --no-startup-id dropbox
+exec --no-startup-id compton
 exec --no-startup-id mpd
 exec --no-startup-id twmnd
 
@@ -18,22 +19,22 @@ font pango: Fira Sans, Font Awesome 8
 #Colors
 set_from_resource   $foreground   foreground
 set_from_resource   $background   background
-set_from_resource   $black        color0
-set_from_resource   $red          color1
-set_from_resource   $green        color2
-set_from_resource   $yellow       color3
-set_from_resource   $blue         color4
-set_from_resource   $magenta      color5
-set_from_resource   $cyan         color6
-set_from_resource   $white        color7
+set_from_resource   $black        color8
+set_from_resource   $red          color9
+set_from_resource   $green        color10
+set_from_resource   $yellow       color11
+set_from_resource   $blue         color12
+set_from_resource   $magenta      color13
+set_from_resource   $cyan         color14
+set_from_resource   $white        color15
 
-# class                 border  backgr. text    indicator   child_border
-client.focused          $green  $black	$black  $black		$green
-client.focused_inactive $black  $black  $black  $black      $black
-client.unfocused        $black  $black  $black  $black      $black
-client.urgent           $red    $black  $black  $black      $red 
-client.placeholder      $black  $black  $black	$black      $black
-client.background       $white
+# class                 border  background 	text    indicator   child_border
+client.focused          $green  $black		$black  $green		$green
+client.focused_inactive $black  $black  	$black  $black      $black
+client.unfocused        $black  $black  	$black  $black      $black
+client.urgent           $red    $black  	$black  $red      $red 
+client.placeholder      $black  $black  	$black	$black      $black
+client.background       $backround
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -46,8 +47,7 @@ for_window [class="^.*"] border pixel 5
 
 # i3-gaps stuff :)
 gaps inner 5
-gaps outer 0
-smart_borders on
+gaps outer 5
 new_window none
 
 #custom app commands (?i) just means case insenitive..
@@ -64,6 +64,7 @@ for_window [window_type="menu"] floating enable
 bindsym $mod+Shift+q kill
 
 bindsym $mod+Tab move workspace to output left
+bindsym $mod+Shift+Tab move workspace to output right
 
 # start rofi (program launcher)
 bindsym $mod+d exec --no-startup-id rofi -monitor -1 -show drun
