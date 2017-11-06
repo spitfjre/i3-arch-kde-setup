@@ -325,9 +325,24 @@ full-at = 100
 
 format-charging          = <animation-charging><label-charging>
 format-discharging       = <ramp-capacity><label-discharging>
-format-full-prefix                   = " %{T3}%{T-} "
-format-full-prefix-foreground        = ${colors.background}
-format-full-prefix-background        = ${colors.bgreen}
+format-charging-prefix               = 
+format-charging-prefix-foreground    = ${colors.bgreen}
+format-charging-prefix-background    = ${colors.black}
+format-charging-suffix               = 
+format-charging-suffix-foreground    = ${colors.bblack}
+format-charging-suffix-background    = ${colors.bgreen}
+format-discharging-prefix            = 
+format-discharging-prefix-foreground = ${colors.bgreen}
+format-discharging-prefix-background = ${colors.black}
+format-discharging-suffix            = 
+format-discharging-suffix-foreground = ${colors.bblack}
+format-discharging-suffix-background = ${colors.bgreen}
+format-full-prefix                   = "%{B#B5BD68 F#1D1F21} %{T3}%{T-} %{F-B-}"
+format-full-prefix-foreground        = ${colors.bgreen}
+format-full-prefix-background        = ${colors.black}
+format-full-suffix                   = 
+format-full-suffix-foreground        = ${colors.bblack}
+format-full-suffix-background        = ${colors.bgreen}
 
 label-charging                 = "%percentage:3%% "
 label-charging-foreground      = ${colors.background}
@@ -362,8 +377,8 @@ animation-charging-6          = " %{T3}%{T-} "
 animation-charging-7          = " %{T3}%{T-} "
 animation-charging-8          = " %{T3}%{T-} "
 animation-charging-9          = " %{T3}%{T-} "
-animation-charging-foreground = ${colors.background}
-animation-charging-background = ${colors.bgreen}
+animation-charging-foreground = ${colors.foreground}
+animation-charging-background = ${colors.bblack}
 animation-charging-framerate  = 750
 
 [module/temperature]
