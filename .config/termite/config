@@ -21,7 +21,7 @@ scrollbar = off
 
 [colors]
 #background = #1D1F21
-background = rgba(29, 31, 33, 0.75)
+background = rgba(29, 31, 33, 0.9)
 cursor = #C3FF00
 foreground = #C5C8C6
 color0 = #282A2E
