@@ -42,7 +42,7 @@ font-2 = Wuncon Siji:size=8;2
 
 modules-left   = i3_start_indicator i3 i3_end_indicator active_working_space_indicator title title_end_indicator
 modules-center = 
-modules-right  = mpd_end_indicator mpd battery memory cpu temperature wlan eth eth_laptop volume date time
+modules-right  = mpd_end_indicator mpd battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
 
 [bar/top_tray]
 monitor      = ${env:MONITOR}
@@ -65,7 +65,7 @@ font-2 = Wuncon Siji:size=8;2
 
 modules-left   = i3_start_indicator i3 i3_end_indicator active_working_space_indicator title title_end_indicator
 modules-center = 
-modules-right  = mpd_end_indicator mpd battery memory cpu temperature wlan eth eth_laptop volume date time
+modules-right  = mpd_end_indicator mpd battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
 
 tray-position    = right
 tray-detached    = false
@@ -130,7 +130,7 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.black}
 
 label = " %title% "
-label-maxlen = 75
+label-maxlen = 50
 
 format-suffix            = 
 format-suffix-foreground = ${colors.black}
@@ -157,7 +157,7 @@ format-playing = <toggle><label-song>
 format-paused  = <toggle><label-song>
 format-stopped = <toggle><label-song>
 
-label-song-maxlen     = 75
+label-song-maxlen     = 50
 label-song-ellipsis   = true
 label-song            = " %title% "
 label-song-foreground = ${colors.foreground}
@@ -217,7 +217,7 @@ format-suffix            = 
 format-suffix-foreground = ${colors.black}
 format-suffix-background = ${colors.bblack}
 
-[module/wlan]
+[module/wlan_0]
 type      = internal/network
 interface = wlp0s26u1u5
 interval  = 1.0
@@ -231,7 +231,21 @@ label-connected-padding    = 1
 
 format-disconnected =
 
-[module/eth]
+[module/wlan_1]
+type      = internal/network
+interface = wlp3s0
+interval  = 1.0
+
+format-connected-background = ${colors.black}
+
+label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
+label-connected-foreground = ${colors.foreground}
+label-connected-background = ${colors.black}
+label-connected-padding    = 1
+
+format-disconnected =
+
+[module/eth_0]
 type = internal/network
 interface = enp5s0
 interval = 1.0
@@ -245,7 +259,7 @@ label-connected-padding    = 1
 
 format-disconnected =
 
-[module/eth_laptop]
+[module/eth_1]
 type = internal/network
 interface = enp0s25
 interval = 1.0
@@ -332,7 +346,7 @@ label-charging-background      = ${colors.bgreen}
 label-discharging              = "%percentage:3%% "
 label-discharging-foreground   = ${colors.background}
 label-discharging-background   = ${colors.bgreen}
-label-full                     = "%percentage:3%% "
+label-full                     = " %{T3}%{T-} %percentage:3%% "
 label-full-foreground          = ${colors.background}
 label-full-background          = ${colors.bgreen}
 
