@@ -13,6 +13,7 @@ cp -r $HOME/.config/polybar/config $repoDir/.config/polybar/
 cp -r $HOME/.config/ranger/rc.conf $repoDir/.config/ranger/
 cp -r $HOME/.config/termite/* $repoDir/.config/termite/
 cp -r $HOME/.config/twmn/* $repoDir/.config/twmn/
+cp -r $HOME/.config/compton.conf $repoDir/.config/compton.conf
 
 cp -r $HOME/Pictures/wallpaper/* $repoDir/wallpaper/
 

@@ -30,12 +30,6 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-border-top-size    = 10
-border-bottom-size = 0
-border-left-size   = 10
-border-right-size  = 10
-border-color = ${colors.transparent}
-
 font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
 font-2 = Wuncon Siji:size=8;2
@@ -52,12 +46,6 @@ fixed-center = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
-
-border-top-size    = 10
-border-bottom-size = 0
-border-left-size   = 10
-border-right-size  = 10
-border-color = ${colors.transparent}
 
 font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
@@ -130,7 +118,7 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.black}
 
 label = " %title% "
-label-maxlen = 50
+label-maxlen = 25
 
 format-suffix            = 
 format-suffix-foreground = ${colors.black}
@@ -157,7 +145,7 @@ format-playing = <toggle><label-song>
 format-paused  = <toggle><label-song>
 format-stopped = <toggle><label-song>
 
-label-song-maxlen     = 50
+label-song-maxlen     = 25
 label-song-ellipsis   = true
 label-song            = " %title% "
 label-song-foreground = ${colors.foreground}

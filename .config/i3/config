@@ -13,6 +13,9 @@ exec --no-startup-id compton
 exec --no-startup-id mpd
 exec --no-startup-id twmnd
 
+#Disable touchpad
+exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
+
 #Font for window titles
 font pango: Fira Sans, Font Awesome 8
 
@@ -41,13 +44,14 @@ floating_modifier $mod
 popup_during_fullscreen smart
 bindsym $mod+t exec --no-startup-id termite
 bindsym $mod+Return exec --no-startup-id termite
+bindsym $mod+Shift+f exec --no-startup-id firefox
 mouse_warping none
 
 for_window [class="^.*"] border pixel 5
 
 # i3-gaps stuff :)
-gaps inner 5
-gaps outer 5
+gaps inner 15
+gaps outer 0
 new_window none
 
 #custom app commands (?i) just means case insenitive..
