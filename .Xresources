@@ -52,6 +52,12 @@ Xft.lcdfilter: 	lcddefault
 *color7:  base_color7
 *color15: base_color15
 
+#define arc_foreground #FFFFFF
+#define arc_background_0 #373D48
+#define arc_background_1 #303651
+#define arc_background_2 #4A5664
+#define arc_blue #5294E2
+
 ! Rofi Settings
 rofi.width:				50
 rofi.padding:			5
@@ -69,7 +75,7 @@ rofi.font:      		xos4 Terminess Powerline 8
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: base_background, base_color2,     base_color2
-rofi.color-normal: base_background, base_foreground, base_background, base_color2, base_background
-rofi.color-active: base_background, base_color2,     base_background, base_color2, base_color2
-rofi.color-urgent: base_background, base_foreground, base_background, base_color2, base_foreground
+rofi.color-window: arc_background_0, arc_blue,     		arc_blue
+rofi.color-normal: arc_background_0, arc_foreground, 	arc_background_0, arc_blue, arc_foreground
+rofi.color-active: arc_background_0, arc_blue,     		arc_background_0, arc_blue, arc_blue
+rofi.color-urgent: arc_background_0, arc_foreground, 	arc_background_0, arc_blue, arc_foreground
