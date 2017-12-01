@@ -20,24 +20,21 @@ exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
 font pango: Fira Sans, Font Awesome 8
 
 #Colors
-set_from_resource   $foreground   foreground
-set_from_resource   $background   background
-set_from_resource   $black        color8
-set_from_resource   $red          color9
-set_from_resource   $green        color10
-set_from_resource   $yellow       color11
-set_from_resource   $blue         color12
-set_from_resource   $magenta      color13
-set_from_resource   $cyan         color14
-set_from_resource   $white        color15
+set_from_resource   $red 	color9
 
-# class                 border  background 	text    indicator   child_border
-client.focused          $green  $black		$black  $green		$green
-client.focused_inactive $black  $black  	$black  $black      $black
-client.unfocused        $black  $black  	$black  $black      $black
-client.urgent           $red    $black  	$black  $red      $red 
-client.placeholder      $black  $black  	$black	$black      $black
-client.background       $backround
+set_from_resource   $arc_foreground 	arc_foreground
+set_from_resource   $arc_background_0 	arc_background_0
+set_from_resource   $arc_background_1   arc_background_1
+set_from_resource   $arc_background_2   arc_background_2
+set_from_resource   $arc_blue        	arc_blue
+
+# class                 border  			background 			text    			indicator   		child_border
+client.focused          $arc_blue  			$arc_background_1	$arc_background_1  	$arc_blue			$arc_blue
+client.focused_inactive $arc_background_1  	$arc_background_1  	$arc_background_1  	$arc_background_1   $arc_background_1
+client.unfocused        $arc_background_1  	$arc_background_1  	$arc_background_1  	$arc_background_1   $arc_background_1
+client.urgent           $red    			$arc_background_1  	$arc_background_1  	$red      			$red 
+client.placeholder      $arc_background_1  	$arc_background_1  	$arc_background_1 	$arc_background_1   $arc_background_1
+client.background       $arc_background_0
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -50,7 +47,7 @@ mouse_warping none
 for_window [class="^.*"] border pixel 5
 
 # i3-gaps stuff :)
-gaps inner 15
+gaps inner 5
 gaps outer 0
 new_window none
 

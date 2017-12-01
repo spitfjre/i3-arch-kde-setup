@@ -1,25 +1,13 @@
 [colors]
-foreground  = ${xrdb:foreground}
-background  = ${xrdb:background}
-transparent = #00000000
-
-black 	= ${xrdb:color0}
 red     = ${xrdb:color1}
 green   = ${xrdb:color2}
 yellow  = ${xrdb:color3}
-blue    = ${xrdb:color4}
-magenta = ${xrdb:color5}
-cyan    = ${xrdb:color6}
-white   = ${xrdb:color7}
 
-bblack 	= ${xrdb:color8}
-bred     = ${xrdb:color9}
-bgreen   = ${xrdb:color10}
-byellow  = ${xrdb:color11}
-bblue    = ${xrdb:color12}
-bmagenta = ${xrdb:color13}
-bcyan    = ${xrdb:color14}
-bwhite   = ${xrdb:color15}
+arc_foreground 	 = ${xrdb:arc_foreground}
+arc_background_0 = ${xrdb:arc_background_0}
+arc_background_1 = ${xrdb:arc_background_1}
+arc_background_2 = ${xrdb:arc_background_2}
+arc_blue    	 = ${xrdb:arc_blue}
 
 [bar/top]
 monitor      = ${env:MONITOR}
@@ -27,14 +15,14 @@ width        = 100%
 height       = 14
 fixed-center = false
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${colors.arc_background_0}
+foreground = ${colors.arc_foreground}
 
 font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
 font-2 = Wuncon Siji:size=8;2
 
-modules-left   = i3_start_indicator i3 i3_end_indicator active_working_space_indicator title title_end_indicator
+modules-left   = left_start_indicator left_end_indicator i3 active_working_space_indicator title title_end_indicator
 modules-center = 
 modules-right  = mpd_end_indicator mpd battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
 
@@ -44,14 +32,14 @@ width        = 100%
 height       = 14
 fixed-center = false
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${colors.arc_background_0}
+foreground = ${colors.arc_foreground}
 
 font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
 font-2 = Wuncon Siji:size=8;2
 
-modules-left   = i3_start_indicator i3 i3_end_indicator active_working_space_indicator title title_end_indicator
+modules-left   = left_start_indicator left_end_indicator i3 active_working_space_indicator title title_end_indicator
 modules-center = 
 modules-right  = mpd_end_indicator mpd battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
 
@@ -59,7 +47,7 @@ tray-position    = right
 tray-detached    = false
 tray-maxsize     = 14
 tray-transparent = false
-tray-background  = ${colors.bgreen}
+tray-background  = ${colors.arc_blue}
 tray-offset-x    = 0
 tray-offset-y    = 0
 tray-padding     = 1
@@ -73,70 +61,74 @@ wrapping-scroll = true
 strip-wsnumbers = false
 pin-workspaces  = true
 
-label-focused 			   = %{B#8C9440 F#B5BD68}%{F-B-} %name% %{B#B5BD68 F#8C9440}%{F-B-}
-label-focused-foreground   = ${colors.background}
-label-focused-background   = ${colors.green}
-label-unfocused 		   = %{B#373B41 F#B5BD68}%{F-B-} %name% %{B#B5BD68 F#373B41}%{F-B-}
-label-unfocused-foreground = ${colors.foreground}
-label-unfocused-background = ${colors.black}
-label-visible 			   = %{B#B5BD68 F#B5BD68}%{F-B-} %name% %{B#B5BD68 F#B5BD68}%{F-B-}
-label-visible-foreground   = ${colors.background}
-label-visible-background   = ${colors.bgreen}
-label-urgent 			   = %{B#A54242 F#B5BD68}%{F-B-} %name% %{B#B5BD68 F#A54242}%{F-B-}
-label-urgent-foreground    = ${colors.background}
+label-focused 			   = "%{B#5294E2 F#303651}%{F-B-} %name% %{B#303651 F#5294E2}%{F-B-}"
+label-focused-foreground   = ${colors.arc_background_0}
+label-focused-background   = ${colors.arc_blue}
+label-unfocused 		   = "  %name%  "
+label-unfocused-foreground = ${colors.arc_foreground}
+label-unfocused-background = ${colors.arc_background_1}
+label-visible 			   = "%{B#5294E2 F#303651}%{F-B-} %name% %{B#303651 F#5294E2}%{F-B-}"
+label-visible-foreground   = ${colors.arc_background_0}
+label-visible-background   = ${colors.arc_blue}
+label-urgent 			   = "%{B#ff000f F#303651}%{F-B-} %name% %{B#303651 F#ff000f}%{F-B-}"
+label-urgent-foreground    = ${colors.arc_background_0}
 label-urgent-background    = ${colors.red}
 
-[module/i3_start_indicator]
+[module/left_start_indicator]
 type = custom/text
 
 content            = " %{T3}%{T-} "
-content-foreground = ${colors.background}
-content-background = ${colors.bgreen}
+content-foreground = ${colors.arc_foreground}
+content-background = ${colors.arc_blue}
 
-[module/i3_end_indicator]
+[module/left_end_indicator]
 type = custom/text
 
-content            = 
-content-foreground = ${colors.bgreen}
-content-background = ${colors.bblack}
+content            = ""
+content-foreground = ${colors.arc_blue}
+content-background = ${colors.arc_background_1}
 
 [module/active_working_space_indicator]
 type = custom/text
 
 content            = " %{T3}%{T-} "
-content-foreground = ${colors.bgreen}
-content-background = ${colors.bblack}
+content-foreground = ${colors.arc_foreground}
+content-background = ${colors.arc_background_2}
+
+content-prefix            = 
+content-prefix-foreground = ${colors.arc_background_1}
+content-prefix-background = ${colors.arc_background_2}
 
 content-suffix            = 
-content-suffix-foreground = ${colors.bblack}
-content-suffix-background = ${colors.black}
+content-suffix-foreground = ${colors.arc_background_2}
+content-suffix-background = ${colors.arc_background_1}
 
 [module/title]
 type = internal/xwindow
 
-format-foreground = ${colors.foreground}
-format-background = ${colors.black}
+format-foreground = ${colors.arc_foreground}
+format-background = ${colors.arc_background_1}
 
 label = " %title% "
 label-maxlen = 25
 
 format-suffix            = 
-format-suffix-foreground = ${colors.black}
-format-suffix-background = ${colors.bblack}
+format-suffix-foreground = ${colors.arc_background_1}
+format-suffix-background = ${colors.arc_background_2}
 
 [module/mpd_end_indicator]
 type = custom/text
 
 content            = 
-content-foreground = ${colors.bblack}
-content-background = ${colors.background}
+content-foreground = ${colors.arc_background_2}
+content-background = ${colors.arc_background_0}
 
 [module/title_end_indicator]
 type = custom/text
 
 content            = 
-content-foreground = ${colors.bblack}
-content-background = ${colors.background}
+content-foreground = ${colors.arc_background_2}
+content-background = ${colors.arc_background_0}
 
 [module/mpd]
 type = internal/mpd
@@ -148,73 +140,73 @@ format-stopped = <toggle><label-song>
 label-song-maxlen     = 25
 label-song-ellipsis   = true
 label-song            = " %title% "
-label-song-foreground = ${colors.foreground}
-label-song-background = ${colors.black}
+label-song-foreground = ${colors.arc_foreground}
+label-song-background = ${colors.arc_background_1}
 
 icon-play             = " %{T3}%{T-} "
-icon-play-foreground  = ${colors.byellow}
-icon-play-background  = ${colors.black}
+icon-play-foreground  = ${colors.yellow}
+icon-play-background  = ${colors.arc_background_1}
 icon-pause            = " %{T3}%{T-} "
-icon-pause-foreground = ${colors.bgreen}
-icon-pause-background = ${colors.black}
+icon-pause-foreground = ${colors.green}
+icon-pause-background = ${colors.arc_background_1}
 
 format-playing-prefix            = 
-format-playing-prefix-foreground = ${colors.black}
-format-playing-prefix-background = ${colors.bblack}
+format-playing-prefix-foreground = ${colors.arc_background_1}
+format-playing-prefix-background = ${colors.arc_background_2}
 format-playing-suffix            = 
-format-playing-suffix-foreground = ${colors.bgreen}
-format-playing-suffix-background = ${colors.black}
+format-playing-suffix-foreground = ${colors.arc_blue}
+format-playing-suffix-background = ${colors.arc_background_1}
 format-paused-prefix             = 
-format-paused-prefix-foreground  = ${colors.black}
-format-paused-prefix-background  = ${colors.bblack}
+format-paused-prefix-foreground  = ${colors.arc_background_1}
+format-paused-prefix-background  = ${colors.arc_background_2}
 format-paused-suffix             = 
-format-paused-suffix-foreground  = ${colors.bgreen}
-format-paused-suffix-background  = ${colors.black}
+format-paused-suffix-foreground  = ${colors.arc_blue}
+format-paused-suffix-background  = ${colors.arc_background_1}
 format-stopped-prefix            = 
-format-stopped-prefix-foreground = ${colors.black}
-format-stopped-prefix-background = ${colors.bblack}
+format-stopped-prefix-foreground = ${colors.arc_background_1}
+format-stopped-prefix-background = ${colors.arc_background_2}
 format-stopped-suffix            = 
-format-stopped-suffix-foreground = ${colors.bgreen}
-format-stopped-suffix-background = ${colors.black}
+format-stopped-suffix-foreground = ${colors.arc_blue}
+format-stopped-suffix-background = ${colors.arc_background_1}
 
 [module/cpu]
 type     = internal/cpu
 interval = 1
 
 label            = %{T3}%{T-} %percentage:3%%
-label-foreground = ${colors.foreground}
-label-background = ${colors.black}
+label-foreground = ${colors.arc_foreground}
+label-background = ${colors.arc_background_1}
 label-padding    = 1
 
-format-background = ${colors.black}
+format-background = ${colors.arc_background_1}
 
 [module/memory]
 type     = internal/memory
 interval = 1
 
 label            = %{T3}%{T-} %percentage_used:3%%
-label-foreground = ${colors.foreground}
-label-background = ${colors.bblack}
+label-foreground = ${colors.arc_foreground}
+label-background = ${colors.arc_background_2}
 label-padding    = 1
 
-format-background        = ${colors.bblack}
+format-background        = ${colors.arc_background_2}
 format-prefix            = 
-format-prefix-foreground = ${colors.bblack}
-format-prefix-background = ${colors.bgreen}
+format-prefix-foreground = ${colors.arc_background_2}
+format-prefix-background = ${colors.arc_blue}
 format-suffix            = 
-format-suffix-foreground = ${colors.black}
-format-suffix-background = ${colors.bblack}
+format-suffix-foreground = ${colors.arc_background_1}
+format-suffix-background = ${colors.arc_background_2}
 
 [module/wlan_0]
 type      = internal/network
 interface = wlp0s26u1u5
 interval  = 1.0
 
-format-connected-background = ${colors.black}
+format-connected-background = ${colors.arc_background_1}
 
 label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
-label-connected-foreground = ${colors.foreground}
-label-connected-background = ${colors.black}
+label-connected-foreground = ${colors.arc_foreground}
+label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
 
 format-disconnected =
@@ -224,11 +216,11 @@ type      = internal/network
 interface = wlp3s0
 interval  = 1.0
 
-format-connected-background = ${colors.black}
+format-connected-background = ${colors.arc_background_1}
 
 label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
-label-connected-foreground = ${colors.foreground}
-label-connected-background = ${colors.black}
+label-connected-foreground = ${colors.arc_foreground}
+label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
 
 format-disconnected =
@@ -238,11 +230,11 @@ type = internal/network
 interface = enp5s0
 interval = 1.0
 
-format-connected-background = ${colors.black}
+format-connected-background = ${colors.arc_background_1}
 
 label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
-label-connected-foreground = ${colors.foreground}
-label-connected-background = ${colors.black}
+label-connected-foreground = ${colors.arc_foreground}
+label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
 
 format-disconnected =
@@ -252,11 +244,11 @@ type = internal/network
 interface = enp0s25
 interval = 1.0
 
-format-connected-background = ${colors.black}
+format-connected-background = ${colors.arc_background_1}
 
 label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
-label-connected-foreground = ${colors.foreground}
-label-connected-background = ${colors.black}
+label-connected-foreground = ${colors.arc_foreground}
+label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
 
 format-disconnected =
@@ -270,8 +262,8 @@ date-alt = %d-%m-%Y
 
 label            = %{T3}%{T-} %date%
 label-padding    = 1
-label-foreground = ${colors.foreground}
-label-background = ${colors.black}
+label-foreground = ${colors.arc_foreground}
+label-background = ${colors.arc_background_1}
 
 [module/time]
 type = internal/date
@@ -281,42 +273,42 @@ time = %H:%M
 time-alt = %H:%M:%S
 
 format-prefix            = 
-format-prefix-foreground = ${colors.bgreen}
-format-prefix-background = ${colors.black}
+format-prefix-foreground = ${colors.arc_blue}
+format-prefix-background = ${colors.arc_background_1}
 
 label            = %{T3}%{T-} %time%
 label-padding    = 1
-label-foreground = ${colors.background}
-label-background = ${colors.bgreen}
+label-foreground = ${colors.arc_foreground}
+label-background = ${colors.arc_blue}
 
 [module/volume]
 type     = internal/volume
 interval = 0.1
 
 label-volume            = %{T3}%{T-} %percentage:3%%
-label-volume-foreground = ${colors.foreground}
-label-volume-background = ${colors.bblack}
+label-volume-foreground = ${colors.arc_foreground}
+label-volume-background = ${colors.arc_background_2}
 label-volume-padding    = 1
 
-format-volume-background        = ${colors.black}
+format-volume-background        = ${colors.arc_background_1}
 format-volume-prefix            = 
-format-volume-prefix-foreground = ${colors.bblack}
-format-volume-prefix-background = ${colors.black}
+format-volume-prefix-foreground = ${colors.arc_background_2}
+format-volume-prefix-background = ${colors.arc_background_1}
 format-volume-suffix            = 
-format-volume-suffix-foreground = ${colors.black}
-format-volume-suffix-background = ${colors.bblack}
+format-volume-suffix-foreground = ${colors.arc_background_1}
+format-volume-suffix-background = ${colors.arc_background_2}
 
 label-muted            = %{T3}%{T-} %percentage:3%%
-label-muted-foreground = ${colors.background}
+label-muted-foreground = ${colors.arc_foreground}
 label-muted-background = ${colors.red}
 label-muted-padding    = 1
 
-format-muted-background        = ${colors.black}
+format-muted-background        = ${colors.arc_background_1}
 format-muted-prefix            = 
 format-muted-prefix-foreground = ${colors.red}
-format-muted-prefix-background = ${colors.black}
+format-muted-prefix-background = ${colors.arc_background_1}
 format-muted-suffix            = 
-format-muted-suffix-foreground = ${colors.black}
+format-muted-suffix-foreground = ${colors.arc_background_1}
 format-muted-suffix-background = ${colors.red}
 
 [module/battery]
@@ -329,14 +321,14 @@ format-charging          = <animation-charging><label-charging>
 format-discharging       = <ramp-capacity><label-discharging>
 
 label-charging                 = "%percentage:3%% "
-label-charging-foreground      = ${colors.background}
-label-charging-background      = ${colors.bgreen}
+label-charging-foreground      = ${colors.arc_foreground}
+label-charging-background      = ${colors.arc_blue}
 label-discharging              = "%percentage:3%% "
-label-discharging-foreground   = ${colors.background}
-label-discharging-background   = ${colors.bgreen}
+label-discharging-foreground   = ${colors.arc_foreground}
+label-discharging-background   = ${colors.arc_blue}
 label-full                     = " %{T3}%{T-} %percentage:3%% "
-label-full-foreground          = ${colors.background}
-label-full-background          = ${colors.bgreen}
+label-full-foreground          = ${colors.arc_foreground}
+label-full-background          = ${colors.arc_blue}
 
 ramp-capacity-0          = " %{T3}%{T-} "
 ramp-capacity-1          = " %{T3}%{T-} "
@@ -348,8 +340,8 @@ ramp-capacity-6          = " %{T3}%{T-} "
 ramp-capacity-7          = " %{T3}%{T-} "
 ramp-capacity-8          = " %{T3}%{T-} "
 ramp-capacity-9          = " %{T3}%{T-} "
-ramp-capacity-foreground = ${colors.background}
-ramp-capacity-background = ${colors.bgreen}
+ramp-capacity-foreground = ${colors.arc_foreground}
+ramp-capacity-background = ${colors.arc_blue}
 
 animation-charging-0          = " %{T3}%{T-} "
 animation-charging-1          = " %{T3}%{T-} "
@@ -361,8 +353,8 @@ animation-charging-6          = " %{T3}%{T-} "
 animation-charging-7          = " %{T3}%{T-} "
 animation-charging-8          = " %{T3}%{T-} "
 animation-charging-9          = " %{T3}%{T-} "
-animation-charging-foreground = ${colors.background}
-animation-charging-background = ${colors.bgreen}
+animation-charging-foreground = ${colors.arc_foreground}
+animation-charging-background = ${colors.arc_blue}
 animation-charging-framerate  = 750
 
 [module/temperature]
@@ -371,29 +363,29 @@ thermal-zone     = 0
 warn-temperature = 70
 
 format                        = <ramp><label>
-format-foreground             = ${colors.foreground}
-format-background             = ${colors.bblack}
+format-foreground             = ${colors.arc_foreground}
+format-background             = ${colors.arc_background_2}
 format-warn                   = <ramp><label-warn>
 format-warn-foreground        = ${colors.background}
 format-warn-background        = ${colors.red}
 format-prefix                 = 
-format-prefix-foreground      = ${colors.bblack}
-format-prefix-background      = ${colors.black}
+format-prefix-foreground      = ${colors.arc_background_2}
+format-prefix-background      = ${colors.arc_background_1}
 format-suffix                 = 
-format-suffix-foreground      = ${colors.black}
-format-suffix-background      = ${colors.bblack}
+format-suffix-foreground      = ${colors.arc_background_1}
+format-suffix-background      = ${colors.arc_background_2}
 format-warn-prefix            = 
 format-warn-prefix-foreground = ${colors.red}
-format-warn-prefix-background = ${colors.black}
+format-warn-prefix-background = ${colors.arc_background_1}
 format-warn-suffix            = 
-format-warn-suffix-foreground = ${colors.black}
+format-warn-suffix-foreground = ${colors.arc_background_1}
 format-warn-suffix-background = ${colors.red}
 
 label                 = "%temperature:3% "
-label-foreground      = ${colors.foreground}
-label-background      = ${colors.bblack}
+label-foreground      = ${colors.arc_foreground}
+label-background      = ${colors.arc_background_2}
 label-warn            = "%temperature:3% "
-label-warn-foreground = ${colors.background}
+label-warn-foreground = ${colors.arc_foreground}
 label-warn-background = ${colors.red}
 
 ramp-0 = " %{T3}%{T-} "

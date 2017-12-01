@@ -6,24 +6,24 @@ Xft.autohint: 	true
 Xft.hintstyle: 	hintfull
 Xft.lcdfilter: 	lcddefault
 
-#define base_foreground #C5C8C6
-#define base_background #1D1F21
-#define base_color0 #282A2E
-#define base_color1 #A54242
-#define base_color2 #8C9440
-#define base_color3 #DE935F
-#define base_color4 #5F819D
-#define base_color5 #85678F
-#define base_color6 #5E8D87
-#define base_color7 #707880
-#define base_color8 #373B41
-#define base_color9 #CC6666
-#define base_color10 #B5BD68
-#define base_color11 #F0C674
-#define base_color12 #81A2BE
-#define base_color13 #B294BB
-#define base_color14 #8ABEB7
-#define base_color15 #C5C8C6
+#define base_foreground #fffaf4
+#define base_background #0e1019
+#define base_color0 #232323
+#define base_color1 #ff000f
+#define base_color2 #8ce10b
+#define base_color3 #ffb900
+#define base_color4 #008df8
+#define base_color5 #6d43a6
+#define base_color6 #00d8eb
+#define base_color7 #ffffff
+#define base_color8 #444444
+#define base_color9 #ff2740
+#define base_color10 #abe15b
+#define base_color11 #ffd242
+#define base_color12 #0092ff
+#define base_color13 #9a5feb
+#define base_color14 #67fff0
+#define base_color15 #ffffff
 
 *foreground: base_foreground
 *background: base_background
@@ -52,11 +52,17 @@ Xft.lcdfilter: 	lcddefault
 *color7:  base_color7
 *color15: base_color15
 
-#define arc_foreground #FFFFFF
-#define arc_background_0 #373D48
-#define arc_background_1 #303651
-#define arc_background_2 #4A5664
-#define arc_blue #5294E2
+#define base_arc_foreground #FFFFFF
+#define base_arc_background_0 #373D48
+#define base_arc_background_1 #303651
+#define base_arc_background_2 #4A5664
+#define base_arc_blue #5294E2
+
+*arc_foreground: 	base_arc_foreground
+*arc_background_0: 	base_arc_background_0
+*arc_background_1: 	base_arc_background_1
+*arc_background_2: 	base_arc_background_2
+*arc_blue: 			base_arc_blue
 
 ! Rofi Settings
 rofi.width:				50
@@ -75,7 +81,7 @@ rofi.font:      		xos4 Terminess Powerline 8
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: arc_background_0, arc_blue,     		arc_blue
-rofi.color-normal: arc_background_0, arc_foreground, 	arc_background_0, arc_blue, arc_foreground
-rofi.color-active: arc_background_0, arc_blue,     		arc_background_0, arc_blue, arc_blue
-rofi.color-urgent: arc_background_0, arc_foreground, 	arc_background_0, arc_blue, arc_foreground
+rofi.color-window: base_arc_background_0, 	base_arc_blue,     		base_arc_blue
+rofi.color-normal: base_arc_background_0, 	base_arc_foreground, 	base_arc_background_0, 	base_arc_blue, 	base_arc_foreground
+rofi.color-active: base_arc_background_0, 	base_arc_blue,     		base_arc_background_0, 	base_arc_blue, 	base_arc_blue
+rofi.color-urgent: base_arc_background_0, 	base_arc_foreground, 	base_arc_background_0, 	base_arc_blue, 	base_arc_foreground
