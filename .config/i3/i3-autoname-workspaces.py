@@ -73,7 +73,8 @@ WINDOW_ICONS = {
     'termite': fa.icons['terminal'],
     'Termite': fa.icons['terminal'],
     'Thunderbird': fa.icons['envelope'],
-    'whatsapp-desktop': fa.icons['whatsapp']
+    'whatsapp-desktop': fa.icons['whatsapp'],
+    'zoom': fa.icons['video-camera']
 }
 
 # This icon is used for any application not in the list above
