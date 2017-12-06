@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+yaourt -S --noconfirm --needed archlinux-keyring
+
 yaourt -S --noconfirm --needed i3-gaps-next-git
 yaourt -S --noconfirm --needed i3status
 yaourt -S --noconfirm --needed i3lock-wrapper
@@ -81,12 +83,7 @@ sudo gpasswd -a spitfjre docker
 sudo newgrp docker
 exit
 
-yaourt -R --noconfirm antergos-kde-setup
-yaourt -R --noconfirm digikam
-yaourt -R --noconfirm marble
-yaourt -R --noconfirm cantata
+yaourt -R --noconfirm antergos-kde-meta
 yaourt -R --noconfirm vlc
 yaourt -R --noconfirm clementine
-yaourt -R --noconfirm playonlinux
 yaourt -R --noconfirm kate
-yaourt -R --noconfirm k3d
