@@ -75,7 +75,7 @@ rofi.terminal:			termite
 rofi.lines:				10
 rofi.eh:				1
 rofi.hide-scrollbar: 	true
-rofi.font:      		xos4 Terminess Powerline 8
+rofi.font:      		xos4 Terminus 8
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme

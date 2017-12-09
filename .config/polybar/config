@@ -18,7 +18,7 @@ fixed-center = false
 background = ${colors.arc_background_0}
 foreground = ${colors.arc_foreground}
 
-font-0 = xos4 Terminess Powerline:size=8;2
+font-0 = xos4 Terminus:size=8;2
 font-1 = Font Awesome:size=7;2
 font-2 = Wuncon Siji:size=8;2
 
@@ -35,7 +35,7 @@ fixed-center = false
 background = ${colors.arc_background_0}
 foreground = ${colors.arc_foreground}
 
-font-0 = xos4 Terminess Powerline:size=8;2
+font-0 = xos4 Terminus:size=8;2
 font-1 = Font Awesome:size=7;2
 font-2 = Wuncon Siji:size=8;2
 
