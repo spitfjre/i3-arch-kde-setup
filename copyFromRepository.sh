@@ -6,6 +6,7 @@ mkdir $HOME/Pictures/wallpaper
 
 cp -rv $repoDir/.config/* $HOME/.config/
 cp -rv $repoDir/wallpaper/* $HOME/Pictures/wallpaper/
+cp -rv $repoDir/.fonts/* $HOME/.fonts/
 
 cp $repoDir/.gtkrc-2.0 $HOME
 cp $repoDir/.tmux.conf $HOME

@@ -16,6 +16,7 @@ cp -r $HOME/.config/twmn/* $repoDir/.config/twmn/
 cp -r $HOME/.config/compton.conf $repoDir/.config/compton.conf
 
 cp -r $HOME/Pictures/wallpaper/* $repoDir/wallpaper/
+cp -r $HOME/.fonts/* $repoDir/.fonts/
 
 if [ -e $HOME/.gtkrc-2.0 ]
  then cp $HOME/.gtkrc-2.0 $repoDir/
