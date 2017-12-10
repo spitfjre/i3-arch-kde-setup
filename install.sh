@@ -62,6 +62,7 @@ yaourt -S --noconfirm --needed powerline-fonts-git
 yaourt -S --noconfirm --needed siji-git
 yaourt -S --noconfirm --needed oh-my-zsh-git
 yaourt -S --noconfirm --needed zsh-theme-powerlevel9k
+yaourt -S --noconfirm --needed arc-kde-git
 
 git clone https://github.com/justbuchanan/fontawesome-python.git
 cd fontawesome-python

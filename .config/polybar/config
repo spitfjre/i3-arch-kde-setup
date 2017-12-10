@@ -24,7 +24,7 @@ font-2 = Wuncon Siji:size=8;2
 
 modules-left   = left_start_indicator left_end_indicator i3 active_working_space_indicator title title_end_indicator
 modules-center = 
-modules-right  = mpd_end_indicator mpd battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
+modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
 
 [bar/top_tray]
 monitor      = ${env:MONITOR}
@@ -41,7 +41,7 @@ font-2 = Wuncon Siji:size=8;2
 
 modules-left   = left_start_indicator left_end_indicator i3 active_working_space_indicator title title_end_indicator
 modules-center = 
-modules-right  = mpd_end_indicator mpd battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
+modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
 
 tray-position    = right
 tray-detached    = false
@@ -67,7 +67,7 @@ label-focused-background   = ${colors.arc_blue}
 label-unfocused 		   = "  %name%  "
 label-unfocused-foreground = ${colors.arc_foreground}
 label-unfocused-background = ${colors.arc_background_1}
-label-visible 			   = "%{B#5294E2 F#303651}%{F-B-} %{F#303651}%name% %{B#303651 F#5294E2}%{F-B-}"
+label-visible 			   = "%{B#4A5664 F#303651}%{F-B-} %name% %{B#303651 F#4A5664}%{F-B-}"
 label-visible-foreground   = ${colors.arc_background_0}
 label-visible-background   = ${colors.arc_blue}
 label-urgent 			   = "%{B#ff000f F#303651}%{F-B-} %name% %{B#303651 F#ff000f}%{F-B-}"
@@ -93,14 +93,14 @@ type = custom/text
 
 content            = " %{T3}%{T-} "
 content-foreground = ${colors.arc_foreground}
-content-background = ${colors.arc_background_2}
+content-background = ${colors.arc_blue}
 
 content-prefix            = 
 content-prefix-foreground = ${colors.arc_background_1}
-content-prefix-background = ${colors.arc_background_2}
+content-prefix-background = ${colors.arc_blue}
 
 content-suffix            = 
-content-suffix-foreground = ${colors.arc_background_2}
+content-suffix-foreground = ${colors.arc_blue}
 content-suffix-background = ${colors.arc_background_1}
 
 [module/title]
@@ -133,41 +133,64 @@ content-background = ${colors.arc_background_0}
 [module/mpd]
 type = internal/mpd
 
-format-playing = <toggle><label-song>
-format-paused  = <toggle><label-song>
-format-stopped = <toggle><label-song>
+format-playing = <label-song>
+format-paused  = <label-song>
+format-stopped = <label-song>
 
 label-song-maxlen     = 25
 label-song-ellipsis   = true
-label-song            = " %title% "
+label-song            = " %artist% - %title% "
 label-song-foreground = ${colors.arc_foreground}
 label-song-background = ${colors.arc_background_1}
-
-icon-play             = " %{T3}%{T-} "
-icon-play-foreground  = ${colors.yellow}
-icon-play-background  = ${colors.arc_background_1}
-icon-pause            = " %{T3}%{T-} "
-icon-pause-foreground = ${colors.green}
-icon-pause-background = ${colors.arc_background_1}
 
 format-playing-prefix            = 
 format-playing-prefix-foreground = ${colors.arc_background_1}
 format-playing-prefix-background = ${colors.arc_background_2}
 format-playing-suffix            = 
-format-playing-suffix-foreground = ${colors.arc_blue}
+format-playing-suffix-foreground = ${colors.arc_background_2}
 format-playing-suffix-background = ${colors.arc_background_1}
 format-paused-prefix             = 
 format-paused-prefix-foreground  = ${colors.arc_background_1}
 format-paused-prefix-background  = ${colors.arc_background_2}
 format-paused-suffix             = 
-format-paused-suffix-foreground  = ${colors.arc_blue}
+format-paused-suffix-foreground  = ${colors.arc_background_2}
 format-paused-suffix-background  = ${colors.arc_background_1}
 format-stopped-prefix            = 
 format-stopped-prefix-foreground = ${colors.arc_background_1}
 format-stopped-prefix-background = ${colors.arc_background_2}
 format-stopped-suffix            = 
-format-stopped-suffix-foreground = ${colors.arc_blue}
+format-stopped-suffix-foreground = ${colors.arc_background_2}
 format-stopped-suffix-background = ${colors.arc_background_1}
+
+[module/mpd_controls]
+type = internal/mpd
+
+format-playing = <icon-prev><toggle><icon-next>
+format-paused  = <icon-prev><toggle><icon-next>
+format-stopped = <icon-prev><toggle><icon-next>
+
+icon-play             = %{T3}%{T-}
+icon-play-foreground  = ${colors.arc_foreground}
+icon-play-background  = ${colors.arc_background_2}
+icon-pause            = %{T3}%{T-}
+icon-pause-foreground = ${colors.arc_foreground}
+icon-pause-background = ${colors.arc_background_2}
+icon-prev             = " %{T3}%{T-}"
+icon-prev-foreground  = ${colors.arc_foreground}
+icon-prev-background  = ${colors.arc_background_2}
+icon-next             = "%{T3}%{T-} "
+icon-next-foreground  = ${colors.arc_foreground}
+icon-next-background  = ${colors.arc_background_2}
+
+format-playing-suffix            = 
+format-playing-suffix-foreground = ${colors.arc_blue}
+format-playing-suffix-background = ${colors.arc_background_2}
+format-paused-suffix             = 
+format-paused-suffix-foreground  = ${colors.arc_blue}
+format-paused-suffix-background  = ${colors.arc_background_2}
+format-stopped-suffix            = 
+format-stopped-suffix-foreground = ${colors.arc_blue}
+format-stopped-suffix-background = ${colors.arc_background_2}
 
 [module/cpu]
 type     = internal/cpu
@@ -366,7 +389,7 @@ format                        = <ramp><label>
 format-foreground             = ${colors.arc_foreground}
 format-background             = ${colors.arc_background_2}
 format-warn                   = <ramp><label-warn>
-format-warn-foreground        = ${colors.background}
+format-warn-foreground        = ${colors.arc_foreground}
 format-warn-background        = ${colors.red}
 format-prefix                 = 
 format-prefix-foreground      = ${colors.arc_background_2}
