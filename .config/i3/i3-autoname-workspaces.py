@@ -64,6 +64,7 @@ WINDOW_ICONS = {
     'google-chrome': fa.icons['chrome'],
     'jetbrains-webstorm': fa.icons['code'],
     'jetbrains-idea': fa.icons['code'],
+    'jetbrains-studio': fa.icons['code'],
     'mpv': fa.icons['play-circle'],
     'slack': fa.icons['slack'],
     'Steam': fa.icons['steam'],
