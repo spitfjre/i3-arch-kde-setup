@@ -31,7 +31,7 @@ font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
 font-2 = Wuncon Siji:size=8;2
 
-modules-left   = left_start_indicator left_end_indicator i3 active_working_space_indicator title title_end_indicator
+modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
 modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
 
@@ -54,7 +54,7 @@ font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
 font-2 = Wuncon Siji:size=8;2
 
-modules-left   = left_start_indicator left_end_indicator i3 active_working_space_indicator title title_end_indicator
+modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
 modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
 
@@ -103,47 +103,23 @@ content            = ""
 content-foreground = ${colors.arc_blue}
 content-background = ${colors.arc_background_1}
 
-[module/active_working_space_indicator]
-type = custom/text
-
-content            = " %{T3}%{T-} "
-content-foreground = ${colors.arc_foreground}
-content-background = ${colors.arc_blue}
-
-content-prefix            = 
-content-prefix-foreground = ${colors.arc_background_1}
-content-prefix-background = ${colors.arc_blue}
-
-content-suffix            = 
-content-suffix-foreground = ${colors.arc_blue}
-content-suffix-background = ${colors.arc_background_1}
-
-[module/title]
-type = internal/xwindow
-
-format-foreground = ${colors.arc_foreground}
-format-background = ${colors.arc_background_1}
-
-label = " %title% "
-label-maxlen = 50
-
-format-suffix            = 
-format-suffix-foreground = ${colors.arc_background_1}
-format-suffix-background = ${colors.arc_background_2}
-
 [module/mpd_end_indicator]
 type = custom/text
 
 content            = 
-content-foreground = ${colors.arc_background_2}
+content-foreground = ${colors.arc_blue}
 content-background = ${colors.arc_background_0}
 
-[module/title_end_indicator]
+[module/i3_end_indicator]
 type = custom/text
 
 content            = 
-content-foreground = ${colors.arc_background_2}
+content-foreground = ${colors.arc_blue}
 content-background = ${colors.arc_background_0}
+
+content-prefix            = 
+content-prefix-foreground = ${colors.arc_background_1}
+content-prefix-background = ${colors.arc_blue}
 
 [module/mpd]
 type = internal/mpd
@@ -152,7 +128,7 @@ format-playing = <label-song>
 format-paused  = <label-song>
 format-stopped = <label-song>
 
-label-song-maxlen     = 50
+label-song-maxlen     = 100
 label-song-ellipsis   = true
 label-song            = " %artist% - %title% "
 label-song-foreground = ${colors.arc_foreground}
@@ -160,19 +136,19 @@ label-song-background = ${colors.arc_background_1}
 
 format-playing-prefix            = 
 format-playing-prefix-foreground = ${colors.arc_background_1}
-format-playing-prefix-background = ${colors.arc_background_2}
+format-playing-prefix-background = ${colors.arc_blue}
 format-playing-suffix            = 
 format-playing-suffix-foreground = ${colors.arc_background_2}
 format-playing-suffix-background = ${colors.arc_background_1}
 format-paused-prefix             = 
 format-paused-prefix-foreground  = ${colors.arc_background_1}
-format-paused-prefix-background  = ${colors.arc_background_2}
+format-paused-prefix-background  = ${colors.arc_blue}
 format-paused-suffix             = 
 format-paused-suffix-foreground  = ${colors.arc_background_2}
 format-paused-suffix-background  = ${colors.arc_background_1}
 format-stopped-prefix            = 
 format-stopped-prefix-foreground = ${colors.arc_background_1}
-format-stopped-prefix-background = ${colors.arc_background_2}
+format-stopped-prefix-background = ${colors.arc_blue}
 format-stopped-suffix            = 
 format-stopped-suffix-foreground = ${colors.arc_background_2}
 format-stopped-suffix-background = ${colors.arc_background_1}
