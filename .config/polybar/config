@@ -1,9 +1,10 @@
 [colors]
-background = ${xrdb:background}
-foreground = ${xrdb:foreground}
-red    	   = ${xrdb:color1}
-green      = ${xrdb:color2}
-yellow     = ${xrdb:color3}
+background  = ${xrdb:background}
+foreground  = ${xrdb:foreground}
+red    	    = ${xrdb:color1}
+green       = ${xrdb:color2}
+yellow      = ${xrdb:color3}
+transparent = #00000000
 
 arc_foreground 	 = ${xrdb:arc_foreground}
 arc_background_0 = ${xrdb:arc_background_0}
@@ -13,23 +14,20 @@ arc_blue    	 = ${xrdb:arc_blue}
 
 [bar/top]
 monitor      = ${env:MONITOR}
-width        = 98%
 height       = 14
-offset-x     = 1%
-offset-y     = 4
 fixed-center = true
 bottom       = false
 
 background = ${colors.arc_background_0}
 foreground = ${colors.arc_foreground}
 
-line-size  = 0
-line-color = #f00
+border-top-size    = 4
+border-bottom-size = 0
+border-left-size   = 15
+border-right-size  = 15
+border-color = ${colors.transparent}
 
-border-size  = 1
-border-color = ${colors.arc_background_0}
-
-font-0 = xos4 Terminus:size=8;2
+font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
 font-2 = Wuncon Siji:size=8;2
 
@@ -37,27 +35,22 @@ modules-left   = left_start_indicator left_end_indicator i3 active_working_space
 modules-center = 
 modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
 
-override-redirect = true
-
 [bar/top_tray]
 monitor      = ${env:MONITOR}
-width        = 98%
 height       = 14
-offset-x     = 1%
-offset-y     = 4
 fixed-center = true
 bottom       = false
 
 background = ${colors.arc_background_0}
 foreground = ${colors.arc_foreground}
 
-line-size  = 0
-line-color = #f00
+border-top-size    = 4
+border-bottom-size = 0
+border-left-size   = 15
+border-right-size  = 15
+border-color = ${colors.transparent}
 
-border-size  = 1
-border-color = ${colors.arc_background_0}
-
-font-0 = xos4 Terminus:size=8;2
+font-0 = xos4 Terminess Powerline:size=8;2
 font-1 = Font Awesome:size=7;2
 font-2 = Wuncon Siji:size=8;2
 
@@ -74,8 +67,6 @@ tray-offset-x    = 0
 tray-offset-y    = 0
 tray-padding     = 1
 tray-scale       = 1.0
-
-override-redirect = true
 
 [module/i3]
 type 			= internal/i3
@@ -134,7 +125,7 @@ format-foreground = ${colors.arc_foreground}
 format-background = ${colors.arc_background_1}
 
 label = " %title% "
-label-maxlen = 100
+label-maxlen = 50
 
 format-suffix            = 
 format-suffix-foreground = ${colors.arc_background_1}
@@ -161,7 +152,7 @@ format-playing = <label-song>
 format-paused  = <label-song>
 format-stopped = <label-song>
 
-label-song-maxlen     = 100
+label-song-maxlen     = 50
 label-song-ellipsis   = true
 label-song            = " %artist% - %title% "
 label-song-foreground = ${colors.arc_foreground}
