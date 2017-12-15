@@ -1,7 +1,7 @@
 set $mod Mod4
 
-#AUTOSTART STUFF
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/1920x1080.png
+# autostart
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper/1920x1080.png
 exec_always --no-startup-id python3 ~/.config/i3/i3-autoname-workspaces.py
 exec_always --no-startup-id numlockx on
 exec_always --no-startup-id sh ~/.config/i3/arandr.sh
@@ -13,53 +13,41 @@ exec --no-startup-id compton
 exec --no-startup-id mpd
 exec --no-startup-id twmnd
 
-#Disable touchpad
+# disable touchpad
 exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
 
-#Font for window titles
-font pango: Fira Sans, Font Awesome 8
+# font for window titles
+font pango: Pragmata Pro 9
 
-#Colors
-set_from_resource   $red 	color9
+# colors
+set_from_resource   $red    color9
+set_from_resource   $arc_foreground     arc_foreground
+set_from_resource   $arc_background_0   arc_background_0
+set_from_resource   $arc_blue           arc_blue
 
-set_from_resource   $arc_foreground 	arc_foreground
-set_from_resource   $arc_background_0 	arc_background_0
-set_from_resource   $arc_background_1   arc_background_1
-set_from_resource   $arc_background_2   arc_background_2
-set_from_resource   $arc_blue        	arc_blue
-
-# class                 border  			background 			text    			indicator   		child_border
-client.focused          $arc_blue  			$arc_background_1	$arc_background_1  	$arc_blue			$arc_blue
-client.focused_inactive $arc_background_1  	$arc_background_1  	$arc_background_1  	$arc_background_1   $arc_background_1
-client.unfocused        $arc_background_1  	$arc_background_1  	$arc_background_1  	$arc_background_1   $arc_background_1
-client.urgent           $red    			$arc_background_1  	$arc_background_1  	$red      			$red 
-client.placeholder      $arc_background_1  	$arc_background_1  	$arc_background_1 	$arc_background_1   $arc_background_1
+# class                 border              background          text                indicator           child_border
+client.focused          $arc_blue           $arc_blue           $arc_foreground     $arc_blue           $arc_background_0
+client.focused_inactive $arc_background_0   $arc_background_0   $arc_foreground     $arc_background_0   $arc_background_0
+client.unfocused        $arc_background_0   $arc_background_0   $arc_foreground     $arc_background_0   $arc_background_0
+client.urgent           $red                $red                $arc_foreground     $red                $red 
+client.placeholder      $arc_background_0   $arc_background_0   $arc_foreground     $arc_background_0   $arc_background_0
 client.background       $arc_background_0
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier       $mod
 popup_during_fullscreen smart
-bindsym $mod+t exec --no-startup-id termite
-bindsym $mod+Return exec --no-startup-id termite
-bindsym $mod+Shift+f exec --no-startup-id firefox
-mouse_warping none
+bindsym $mod+t          exec --no-startup-id termite
+bindsym $mod+Return     exec --no-startup-id termite
+bindsym $mod+Shift+f    exec --no-startup-id firefox
+mouse_warping           none
 
-for_window [class="^.*"] border pixel 5
+for_window [class="^.*"] border normal 1
+for_window [class=".*"]  title_format " >_ %title "
 
-# i3-gaps stuff :)
-gaps inner 5
-gaps outer 0
+# i3-gaps
+gaps inner 12
+gaps outer 18
 new_window none
-
-#custom app commands (?i) just means case insenitive..
-for_window [class="(?i)pavucontrol"] floating enable
-for_window [class="(?i)qemu-system-x86_64"] floating enable
-for_window [window_role="bubble"] floating enable
-for_window [window_role="task_dialog"] floating enable
-for_window [title="Library"] floating enable
-for_window [window_role="Preferences"] floating enable
-for_window [window_type="dialog"] floating enable
-for_window [window_type="menu"] floating enable
 
 # kill focused window
 bindsym $mod+Shift+q kill
