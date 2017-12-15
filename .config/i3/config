@@ -26,7 +26,7 @@ set_from_resource   $arc_background_0   arc_background_0
 set_from_resource   $arc_blue           arc_blue
 
 # class                 border              background          text                indicator           child_border
-client.focused          $arc_blue           $arc_blue           $arc_foreground     $arc_background_0   $arc_background_0
+client.focused          $arc_blue           $arc_blue           $arc_foreground     $arc_blue           $arc_blue
 client.focused_inactive $arc_background_0   $arc_background_0   $arc_foreground     $arc_background_0   $arc_background_0
 client.unfocused        $arc_background_0   $arc_background_0   $arc_foreground     $arc_background_0   $arc_background_0
 client.urgent           $red                $red                $arc_foreground     $red                $red 
