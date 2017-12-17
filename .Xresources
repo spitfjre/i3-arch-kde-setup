@@ -76,7 +76,7 @@ rofi.lines:				10
 rofi.eh:				1
 rofi.hide-scrollbar: 	true
 rofi.separator-style: 	none
-rofi.font:      		Pragmata Pro 9
+rofi.font:      		Iosevka 9
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme

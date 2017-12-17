@@ -14,7 +14,7 @@ arc_blue    	 = ${xrdb:arc_blue}
 
 [bar/top]
 monitor      = ${env:MONITOR}
-height       = 14
+height       = 20
 fixed-center = true
 bottom       = false
 
@@ -27,9 +27,10 @@ border-left-size   = 15
 border-right-size  = 15
 border-color = ${colors.transparent}
 
-font-0 = xos4 Terminess Powerline:size=8;2
-font-1 = Font Awesome:size=7;2
-font-2 = Wuncon Siji:size=8;2
+font-0 = Iosevka:size=9;3
+font-1 = Font Awesome:size=9;2
+font-2 = Font Awesome:size=8;2
+font-3 = Iosevka:size=12;2
 
 modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
@@ -37,7 +38,7 @@ modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperatu
 
 [bar/top_tray]
 monitor      = ${env:MONITOR}
-height       = 14
+height       = 20
 fixed-center = true
 bottom       = false
 
@@ -50,9 +51,10 @@ border-left-size   = 15
 border-right-size  = 15
 border-color = ${colors.transparent}
 
-font-0 = xos4 Terminess Powerline:size=8;2
-font-1 = Font Awesome:size=7;2
-font-2 = Wuncon Siji:size=8;2
+font-0 = Iosevka:size=9;3
+font-1 = Font Awesome:size=9;2
+font-2 = Font Awesome:size=8;2
+font-3 = Iosevka:size=12;2
 
 modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
@@ -65,7 +67,7 @@ tray-transparent = false
 tray-background  = ${colors.arc_blue}
 tray-offset-x    = 0
 tray-offset-y    = 0
-tray-padding     = 1
+tray-padding     = 3
 tray-scale       = 1.0
 
 [module/i3]
@@ -76,48 +78,48 @@ wrapping-scroll = true
 strip-wsnumbers = false
 pin-workspaces  = true
 
-label-focused 			   = "%{B#5294E2 F#303651}%{F-B-} %name% %{B#303651 F#5294E2}%{F-B-}"
+label-focused 			   = "%{B#5294E2 F#303651}%{T4}%{T-}%{F-B-} %name% %{B#303651 F#5294E2}%{T4}%{T-}%{F-B-}"
 label-focused-foreground   = ${colors.arc_background_0}
 label-focused-background   = ${colors.arc_blue}
-label-unfocused 		   = "  %name%  "
+label-unfocused 		   = "%{T4} %{T-} %name% %{T4} %{T-}"
 label-unfocused-foreground = ${colors.arc_foreground}
 label-unfocused-background = ${colors.arc_background_1}
-label-visible 			   = "%{B#4A5664 F#303651}%{F-B-} %name% %{B#303651 F#4A5664}%{F-B-}"
+label-visible 			   = "%{B#4A5664 F#303651}%{T4}%{T-}%{F-B-} %name% %{B#303651 F#4A5664}%{T4}%{T-}%{F-B-}"
 label-visible-foreground   = ${colors.arc_background_0}
 label-visible-background   = ${colors.arc_blue}
-label-urgent 			   = "%{B#ff000f F#303651}%{F-B-} %name% %{B#303651 F#ff000f}%{F-B-}"
+label-urgent 			   = "%{B#ff000f F#303651}%{T4}%{T-}%{F-B-} %name% %{B#303651 F#ff000f}%{T4}%{T-}%{F-B-}"
 label-urgent-foreground    = ${colors.arc_background_0}
 label-urgent-background    = ${colors.red}
 
 [module/left_start_indicator]
 type = custom/text
 
-content            = " %{T3}%{T-} "
+content            = " %{T2}%{T-} "
 content-foreground = ${colors.arc_foreground}
 content-background = ${colors.arc_blue}
 
 [module/left_end_indicator]
 type = custom/text
 
-content            = ""
+content            = %{T4}%{T-}
 content-foreground = ${colors.arc_blue}
 content-background = ${colors.arc_background_1}
 
 [module/mpd_end_indicator]
 type = custom/text
 
-content            = 
+content            = %{T4}%{T-}
 content-foreground = ${colors.arc_blue}
 content-background = ${colors.arc_background_0}
 
 [module/i3_end_indicator]
 type = custom/text
 
-content            = 
+content            = %{T4}%{T-}
 content-foreground = ${colors.arc_blue}
 content-background = ${colors.arc_background_0}
 
-content-prefix            = 
+content-prefix            = %{T4}%{T-}
 content-prefix-foreground = ${colors.arc_background_1}
 content-prefix-background = ${colors.arc_blue}
 
@@ -134,22 +136,22 @@ label-song            = " %artist% - %title% "
 label-song-foreground = ${colors.arc_foreground}
 label-song-background = ${colors.arc_background_1}
 
-format-playing-prefix            = 
+format-playing-prefix            = %{T4}%{T-}
 format-playing-prefix-foreground = ${colors.arc_background_1}
 format-playing-prefix-background = ${colors.arc_blue}
-format-playing-suffix            = 
+format-playing-suffix            = %{T4}%{T-}
 format-playing-suffix-foreground = ${colors.arc_background_2}
 format-playing-suffix-background = ${colors.arc_background_1}
-format-paused-prefix             = 
+format-paused-prefix             = %{T4}%{T-}
 format-paused-prefix-foreground  = ${colors.arc_background_1}
 format-paused-prefix-background  = ${colors.arc_blue}
-format-paused-suffix             = 
+format-paused-suffix             = %{T4}%{T-}
 format-paused-suffix-foreground  = ${colors.arc_background_2}
 format-paused-suffix-background  = ${colors.arc_background_1}
-format-stopped-prefix            = 
+format-stopped-prefix            = %{T4}%{T-}
 format-stopped-prefix-foreground = ${colors.arc_background_1}
 format-stopped-prefix-background = ${colors.arc_blue}
-format-stopped-suffix            = 
+format-stopped-suffix            = %{T4}%{T-}
 format-stopped-suffix-foreground = ${colors.arc_background_2}
 format-stopped-suffix-background = ${colors.arc_background_1}
 
@@ -160,26 +162,26 @@ format-playing = <icon-prev><toggle><icon-next>
 format-paused  = <icon-prev><toggle><icon-next>
 format-stopped = <icon-prev><toggle><icon-next>
 
-icon-play             = %{T3}%{T-}
+icon-play             = %{T3}%{T-}
 icon-play-foreground  = ${colors.arc_foreground}
 icon-play-background  = ${colors.arc_background_2}
-icon-pause            = %{T3}%{T-}
+icon-pause            = %{T3}%{T-}
 icon-pause-foreground = ${colors.arc_foreground}
 icon-pause-background = ${colors.arc_background_2}
-icon-prev             = " %{T3}%{T-}"
+icon-prev             = " %{T3}%{T-} "
 icon-prev-foreground  = ${colors.arc_foreground}
 icon-prev-background  = ${colors.arc_background_2}
-icon-next             = "%{T3}%{T-} "
+icon-next             = " %{T3}%{T-} "
 icon-next-foreground  = ${colors.arc_foreground}
 icon-next-background  = ${colors.arc_background_2}
 
-format-playing-suffix            = 
+format-playing-suffix            = %{T4}%{T-}
 format-playing-suffix-foreground = ${colors.arc_blue}
 format-playing-suffix-background = ${colors.arc_background_2}
-format-paused-suffix             = 
+format-paused-suffix             = %{T4}%{T-}
 format-paused-suffix-foreground  = ${colors.arc_blue}
 format-paused-suffix-background  = ${colors.arc_background_2}
-format-stopped-suffix            = 
+format-stopped-suffix            = %{T4}%{T-}
 format-stopped-suffix-foreground = ${colors.arc_blue}
 format-stopped-suffix-background = ${colors.arc_background_2}
 
@@ -187,7 +189,7 @@ format-stopped-suffix-background = ${colors.arc_background_2}
 type     = internal/cpu
 interval = 1
 
-label            = %{T3}%{T-} %percentage:3%%
+label            = %{T2}%{T-} %percentage:3%%
 label-foreground = ${colors.arc_foreground}
 label-background = ${colors.arc_background_1}
 label-padding    = 1
@@ -198,16 +200,16 @@ format-background = ${colors.arc_background_1}
 type     = internal/memory
 interval = 1
 
-label            = %{T3}%{T-} %percentage_used:3%%
+label            = %{T2}%{T-} %percentage_used:3%%
 label-foreground = ${colors.arc_foreground}
 label-background = ${colors.arc_background_2}
 label-padding    = 1
 
 format-background        = ${colors.arc_background_2}
-format-prefix            = 
+format-prefix            = %{T4}%{T-}
 format-prefix-foreground = ${colors.arc_background_2}
 format-prefix-background = ${colors.arc_blue}
-format-suffix            = 
+format-suffix            = %{T4}%{T-}
 format-suffix-foreground = ${colors.arc_background_1}
 format-suffix-background = ${colors.arc_background_2}
 
@@ -218,7 +220,7 @@ interval  = 1.0
 
 format-connected-background = ${colors.arc_background_1}
 
-label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
+label-connected            = %{T2}%{T-} %downspeed:8% | %{T2}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.arc_foreground}
 label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
@@ -232,7 +234,7 @@ interval  = 1.0
 
 format-connected-background = ${colors.arc_background_1}
 
-label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
+label-connected            = %{T2}%{T-} %downspeed:8% | %{T2}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.arc_foreground}
 label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
@@ -246,7 +248,7 @@ interval = 1.0
 
 format-connected-background = ${colors.arc_background_1}
 
-label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
+label-connected            = %{T2}%{T-} %downspeed:8% | %{T2}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.arc_foreground}
 label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
@@ -260,7 +262,7 @@ interval = 1.0
 
 format-connected-background = ${colors.arc_background_1}
 
-label-connected            = %{T3}%{T-} %downspeed:8%    %{T3}%{T-} %upspeed:8%
+label-connected            = %{T2}%{T-} %downspeed:8% | %{T2}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.arc_foreground}
 label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
@@ -274,7 +276,7 @@ interval = 1
 date = %d-%m-%Y
 date-alt = %d-%m-%Y
 
-label            = %{T3}%{T-} %date%
+label            = %{T2}%{T-} %date%
 label-padding    = 1
 label-foreground = ${colors.arc_foreground}
 label-background = ${colors.arc_background_1}
@@ -286,11 +288,11 @@ interval = 1
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix            = 
+format-prefix            = %{T4}%{T-}
 format-prefix-foreground = ${colors.arc_blue}
 format-prefix-background = ${colors.arc_background_1}
 
-label            = %{T3}%{T-} %time%
+label            = %{T2}%{T-} %time%
 label-padding    = 1
 label-foreground = ${colors.arc_foreground}
 label-background = ${colors.arc_blue}
@@ -299,29 +301,29 @@ label-background = ${colors.arc_blue}
 type     = internal/volume
 interval = 0.1
 
-label-volume            = %{T3}%{T-} %percentage:3%%
+label-volume            = %{T2}%{T-} %percentage:3%%
 label-volume-foreground = ${colors.arc_foreground}
 label-volume-background = ${colors.arc_background_2}
 label-volume-padding    = 1
 
 format-volume-background        = ${colors.arc_background_1}
-format-volume-prefix            = 
+format-volume-prefix            = %{T4}%{T-}
 format-volume-prefix-foreground = ${colors.arc_background_2}
 format-volume-prefix-background = ${colors.arc_background_1}
-format-volume-suffix            = 
+format-volume-suffix            = %{T4}%{T-}
 format-volume-suffix-foreground = ${colors.arc_background_1}
 format-volume-suffix-background = ${colors.arc_background_2}
 
-label-muted            = %{T3}%{T-} %percentage:3%%
+label-muted            = %{T2}%{T-} %percentage:3%%
 label-muted-foreground = ${colors.arc_foreground}
 label-muted-background = ${colors.red}
 label-muted-padding    = 1
 
 format-muted-background        = ${colors.arc_background_1}
-format-muted-prefix            = 
+format-muted-prefix            = %{T4}%{T-}
 format-muted-prefix-foreground = ${colors.red}
 format-muted-prefix-background = ${colors.arc_background_1}
-format-muted-suffix            = 
+format-muted-suffix            = %{T4}%{T-}
 format-muted-suffix-foreground = ${colors.arc_background_1}
 format-muted-suffix-background = ${colors.red}
 
@@ -340,33 +342,23 @@ label-charging-background      = ${colors.arc_blue}
 label-discharging              = "%percentage:3%% "
 label-discharging-foreground   = ${colors.arc_foreground}
 label-discharging-background   = ${colors.arc_blue}
-label-full                     = " %{T3}%{T-} %percentage:3%% "
+label-full                     = " %{T2}%{T-} %percentage:3%% "
 label-full-foreground          = ${colors.arc_foreground}
 label-full-background          = ${colors.arc_blue}
 
-ramp-capacity-0          = " %{T3}%{T-} "
-ramp-capacity-1          = " %{T3}%{T-} "
-ramp-capacity-2          = " %{T3}%{T-} "
-ramp-capacity-3          = " %{T3}%{T-} "
-ramp-capacity-4          = " %{T3}%{T-} "
-ramp-capacity-5          = " %{T3}%{T-} "
-ramp-capacity-6          = " %{T3}%{T-} "
-ramp-capacity-7          = " %{T3}%{T-} "
-ramp-capacity-8          = " %{T3}%{T-} "
-ramp-capacity-9          = " %{T3}%{T-} "
+ramp-capacity-0          = " %{T2}%{T-} "
+ramp-capacity-1          = " %{T2}%{T-} "
+ramp-capacity-2          = " %{T2}%{T-} "
+ramp-capacity-3          = " %{T2}%{T-} "
+ramp-capacity-4          = " %{T2}%{T-} "
 ramp-capacity-foreground = ${colors.arc_foreground}
 ramp-capacity-background = ${colors.arc_blue}
 
-animation-charging-0          = " %{T3}%{T-} "
-animation-charging-1          = " %{T3}%{T-} "
-animation-charging-2          = " %{T3}%{T-} "
-animation-charging-3          = " %{T3}%{T-} "
-animation-charging-4          = " %{T3}%{T-} "
-animation-charging-5          = " %{T3}%{T-} "
-animation-charging-6          = " %{T3}%{T-} "
-animation-charging-7          = " %{T3}%{T-} "
-animation-charging-8          = " %{T3}%{T-} "
-animation-charging-9          = " %{T3}%{T-} "
+animation-charging-0          = " %{T2}%{T-} "
+animation-charging-1          = " %{T2}%{T-} "
+animation-charging-2          = " %{T2}%{T-} "
+animation-charging-3          = " %{T2}%{T-} "
+animation-charging-4          = " %{T2}%{T-} "
 animation-charging-foreground = ${colors.arc_foreground}
 animation-charging-background = ${colors.arc_blue}
 animation-charging-framerate  = 750
@@ -382,16 +374,16 @@ format-background             = ${colors.arc_background_2}
 format-warn                   = <ramp><label-warn>
 format-warn-foreground        = ${colors.arc_foreground}
 format-warn-background        = ${colors.red}
-format-prefix                 = 
+format-prefix                 = %{T4}%{T-}
 format-prefix-foreground      = ${colors.arc_background_2}
 format-prefix-background      = ${colors.arc_background_1}
-format-suffix                 = 
+format-suffix                 = %{T4}%{T-}
 format-suffix-foreground      = ${colors.arc_background_1}
 format-suffix-background      = ${colors.arc_background_2}
-format-warn-prefix            = 
+format-warn-prefix            = %{T4}%{T-}
 format-warn-prefix-foreground = ${colors.red}
 format-warn-prefix-background = ${colors.arc_background_1}
-format-warn-suffix            = 
+format-warn-suffix            = %{T4}%{T-}
 format-warn-suffix-foreground = ${colors.arc_background_1}
 format-warn-suffix-background = ${colors.red}
 
@@ -402,8 +394,7 @@ label-warn            = "%temperature:3% "
 label-warn-foreground = ${colors.arc_foreground}
 label-warn-background = ${colors.red}
 
-ramp-0 = " %{T3}%{T-} "
-
+ramp-0 = " %{T2}%{T-} "
 
 [module/hostname]
 type = custom/script

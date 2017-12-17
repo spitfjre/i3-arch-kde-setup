@@ -31,7 +31,7 @@ def construct_workspace_name(parts):
             new_name += parts['shortname']
 
         if parts['icons']:
-            new_name += '' + parts['icons']
+            new_name += ' ' + parts['icons']
 
     return new_name
 

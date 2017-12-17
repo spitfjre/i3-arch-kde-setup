@@ -55,11 +55,8 @@ yaourt -S --noconfirm --needed npm
 yaourt -S --noconfirm --needed gimp
 yaourt -S --noconfirm --needed python-pip
 yaourt -S --noconfirm --needed ttf-font-awesome
-yaourt -S --noconfirm --needed ttf-fira-code
 yaourt -S --noconfirm --needed ttf-fira-sans
-yaourt -S --noconfirm --needed ttf-fira-mono
-yaourt -S --noconfirm --needed powerline-fonts-git
-yaourt -S --noconfirm --needed siji-git
+yaourt -S --noconfirm --needed ttf-iosevka
 yaourt -S --noconfirm --needed oh-my-zsh-git
 yaourt -S --noconfirm --needed arc-kde-git
 
