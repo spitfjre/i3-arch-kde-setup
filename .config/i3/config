@@ -17,7 +17,7 @@ exec --no-startup-id twmnd
 exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
 
 # font for window titles
-font pango: Iosevka 9
+font pango: Iosevka Term 9
 
 # colors
 set_from_resource   $red    color9

@@ -27,10 +27,10 @@ border-left-size   = 15
 border-right-size  = 15
 border-color = ${colors.transparent}
 
-font-0 = Iosevka:size=9;3
+font-0 = Iosevka Term:size=9;3
 font-1 = Font Awesome:size=9;2
 font-2 = Font Awesome:size=8;2
-font-3 = Iosevka:size=12;2
+font-3 = Iosevka Term:size=12;2
 
 modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
@@ -51,10 +51,10 @@ border-left-size   = 15
 border-right-size  = 15
 border-color = ${colors.transparent}
 
-font-0 = Iosevka:size=9;3
+font-0 = Iosevka Term:size=9;3
 font-1 = Font Awesome:size=9;2
 font-2 = Font Awesome:size=8;2
-font-3 = Iosevka:size=12;2
+font-3 = Iosevka Term:size=12;2
 
 modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
