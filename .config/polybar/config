@@ -14,23 +14,19 @@ arc_blue    	 = ${xrdb:arc_blue}
 
 [bar/top]
 monitor      = ${env:MONITOR}
-height       = 20
+height       = 16
 fixed-center = true
 bottom       = false
 
 background = ${colors.arc_background_0}
 foreground = ${colors.arc_foreground}
 
-border-top-size    = 4
-border-bottom-size = 0
-border-left-size   = 15
-border-right-size  = 15
-border-color = ${colors.transparent}
+border-size  = 1
+border-color = ${colors.arc-_background_0}
 
-font-0 = Iosevka Term:size=9;3
-font-1 = Font Awesome:size=9;2
-font-2 = Font Awesome:size=8;2
-font-3 = Iosevka Term:size=12;2
+font-0 = Iosevka Term:pixelsize=8;2
+font-1 = Font Awesome:pixelsize=9;2
+font-2 = Iosevka Term:pixelsize=9;2
 
 modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
@@ -38,23 +34,19 @@ modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperatu
 
 [bar/top_tray]
 monitor      = ${env:MONITOR}
-height       = 20
+height       = 16
 fixed-center = true
 bottom       = false
 
 background = ${colors.arc_background_0}
 foreground = ${colors.arc_foreground}
 
-border-top-size    = 4
-border-bottom-size = 0
-border-left-size   = 15
-border-right-size  = 15
-border-color = ${colors.transparent}
+border-size  = 1
+border-color = ${colors.arc_background_0}
 
-font-0 = Iosevka Term:size=9;3
-font-1 = Font Awesome:size=9;2
-font-2 = Font Awesome:size=8;2
-font-3 = Iosevka Term:size=12;2
+font-0 = Iosevka Term:pixelsize=8;2
+font-1 = Font Awesome:pixelsize=9;2
+font-2 = Iosevka Term:pixelsize=9;2
 
 modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
@@ -62,12 +54,12 @@ modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperatu
 
 tray-position    = right
 tray-detached    = false
-tray-maxsize     = 14
+tray-maxsize     = 12
 tray-transparent = false
 tray-background  = ${colors.arc_blue}
 tray-offset-x    = 0
 tray-offset-y    = 0
-tray-padding     = 3
+tray-padding     = 0
 tray-scale       = 1.0
 
 [module/i3]
@@ -78,48 +70,48 @@ wrapping-scroll = true
 strip-wsnumbers = false
 pin-workspaces  = true
 
-label-focused 			   = "%{B#5294E2 F#303651}%{T4}%{T-}%{F-B-} %name% %{B#303651 F#5294E2}%{T4}%{T-}%{F-B-}"
+label-focused 			   = "%{B#5294E2 F#303651}%{T3}%{T-}%{F-B-} %name% %{B#303651 F#5294E2}%{T3}%{T-}%{F-B-}"
 label-focused-foreground   = ${colors.arc_background_0}
 label-focused-background   = ${colors.arc_blue}
-label-unfocused 		   = "%{T4} %{T-} %name% %{T4} %{T-}"
+label-unfocused 		   = "%{T3} %{T-} %name% %{T3} %{T-}"
 label-unfocused-foreground = ${colors.arc_foreground}
 label-unfocused-background = ${colors.arc_background_1}
-label-visible 			   = "%{B#4A5664 F#303651}%{T4}%{T-}%{F-B-} %name% %{B#303651 F#4A5664}%{T4}%{T-}%{F-B-}"
+label-visible 			   = "%{B#4A5664 F#303651}%{T3}%{T-}%{F-B-} %name% %{B#303651 F#4A5664}%{T3}%{T-}%{F-B-}"
 label-visible-foreground   = ${colors.arc_background_0}
 label-visible-background   = ${colors.arc_blue}
-label-urgent 			   = "%{B#ff000f F#303651}%{T4}%{T-}%{F-B-} %name% %{B#303651 F#ff000f}%{T4}%{T-}%{F-B-}"
+label-urgent 			   = "%{B#ff000f F#303651}%{T3}%{T-}%{F-B-} %name% %{B#303651 F#ff000f}%{T3}%{T-}%{F-B-}"
 label-urgent-foreground    = ${colors.arc_background_0}
 label-urgent-background    = ${colors.red}
 
 [module/left_start_indicator]
 type = custom/text
 
-content            = " %{T2}%{T-} "
+content            = " %{T2}%{T-} "
 content-foreground = ${colors.arc_foreground}
 content-background = ${colors.arc_blue}
 
 [module/left_end_indicator]
 type = custom/text
 
-content            = %{T4}%{T-}
+content            = %{T3}%{T-}
 content-foreground = ${colors.arc_blue}
 content-background = ${colors.arc_background_1}
 
 [module/mpd_end_indicator]
 type = custom/text
 
-content            = %{T4}%{T-}
+content            = %{T3}%{T-}
 content-foreground = ${colors.arc_blue}
 content-background = ${colors.arc_background_0}
 
 [module/i3_end_indicator]
 type = custom/text
 
-content            = %{T4}%{T-}
+content            = %{T3}%{T-}
 content-foreground = ${colors.arc_blue}
 content-background = ${colors.arc_background_0}
 
-content-prefix            = %{T4}%{T-}
+content-prefix            = %{T3}%{T-}
 content-prefix-foreground = ${colors.arc_background_1}
 content-prefix-background = ${colors.arc_blue}
 
@@ -136,22 +128,22 @@ label-song            = " %artist% - %title% "
 label-song-foreground = ${colors.arc_foreground}
 label-song-background = ${colors.arc_background_1}
 
-format-playing-prefix            = %{T4}%{T-}
+format-playing-prefix            = %{T3}%{T-}
 format-playing-prefix-foreground = ${colors.arc_background_1}
 format-playing-prefix-background = ${colors.arc_blue}
-format-playing-suffix            = %{T4}%{T-}
+format-playing-suffix            = %{T3}%{T-}
 format-playing-suffix-foreground = ${colors.arc_background_2}
 format-playing-suffix-background = ${colors.arc_background_1}
-format-paused-prefix             = %{T4}%{T-}
+format-paused-prefix             = %{T3}%{T-}
 format-paused-prefix-foreground  = ${colors.arc_background_1}
 format-paused-prefix-background  = ${colors.arc_blue}
-format-paused-suffix             = %{T4}%{T-}
+format-paused-suffix             = %{T3}%{T-}
 format-paused-suffix-foreground  = ${colors.arc_background_2}
 format-paused-suffix-background  = ${colors.arc_background_1}
-format-stopped-prefix            = %{T4}%{T-}
+format-stopped-prefix            = %{T3}%{T-}
 format-stopped-prefix-foreground = ${colors.arc_background_1}
 format-stopped-prefix-background = ${colors.arc_blue}
-format-stopped-suffix            = %{T4}%{T-}
+format-stopped-suffix            = %{T3}%{T-}
 format-stopped-suffix-foreground = ${colors.arc_background_2}
 format-stopped-suffix-background = ${colors.arc_background_1}
 
@@ -162,26 +154,26 @@ format-playing = <icon-prev><toggle><icon-next>
 format-paused  = <icon-prev><toggle><icon-next>
 format-stopped = <icon-prev><toggle><icon-next>
 
-icon-play             = %{T3}%{T-}
+icon-play             = 
 icon-play-foreground  = ${colors.arc_foreground}
 icon-play-background  = ${colors.arc_background_2}
-icon-pause            = %{T3}%{T-}
+icon-pause            = 
 icon-pause-foreground = ${colors.arc_foreground}
 icon-pause-background = ${colors.arc_background_2}
-icon-prev             = " %{T3}%{T-} "
+icon-prev             = "  "
 icon-prev-foreground  = ${colors.arc_foreground}
 icon-prev-background  = ${colors.arc_background_2}
-icon-next             = " %{T3}%{T-} "
+icon-next             = "  "
 icon-next-foreground  = ${colors.arc_foreground}
 icon-next-background  = ${colors.arc_background_2}
 
-format-playing-suffix            = %{T4}%{T-}
+format-playing-suffix            = %{T3}%{T-}
 format-playing-suffix-foreground = ${colors.arc_blue}
 format-playing-suffix-background = ${colors.arc_background_2}
-format-paused-suffix             = %{T4}%{T-}
+format-paused-suffix             = %{T3}%{T-}
 format-paused-suffix-foreground  = ${colors.arc_blue}
 format-paused-suffix-background  = ${colors.arc_background_2}
-format-stopped-suffix            = %{T4}%{T-}
+format-stopped-suffix            = %{T3}%{T-}
 format-stopped-suffix-foreground = ${colors.arc_blue}
 format-stopped-suffix-background = ${colors.arc_background_2}
 
@@ -206,10 +198,10 @@ label-background = ${colors.arc_background_2}
 label-padding    = 1
 
 format-background        = ${colors.arc_background_2}
-format-prefix            = %{T4}%{T-}
+format-prefix            = %{T3}%{T-}
 format-prefix-foreground = ${colors.arc_background_2}
 format-prefix-background = ${colors.arc_blue}
-format-suffix            = %{T4}%{T-}
+format-suffix            = %{T3}%{T-}
 format-suffix-foreground = ${colors.arc_background_1}
 format-suffix-background = ${colors.arc_background_2}
 
@@ -288,7 +280,7 @@ interval = 1
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix            = %{T4}%{T-}
+format-prefix            = %{T3}%{T-}
 format-prefix-foreground = ${colors.arc_blue}
 format-prefix-background = ${colors.arc_background_1}
 
@@ -307,10 +299,10 @@ label-volume-background = ${colors.arc_background_2}
 label-volume-padding    = 1
 
 format-volume-background        = ${colors.arc_background_1}
-format-volume-prefix            = %{T4}%{T-}
+format-volume-prefix            = %{T3}%{T-}
 format-volume-prefix-foreground = ${colors.arc_background_2}
 format-volume-prefix-background = ${colors.arc_background_1}
-format-volume-suffix            = %{T4}%{T-}
+format-volume-suffix            = %{T3}%{T-}
 format-volume-suffix-foreground = ${colors.arc_background_1}
 format-volume-suffix-background = ${colors.arc_background_2}
 
@@ -320,10 +312,10 @@ label-muted-background = ${colors.red}
 label-muted-padding    = 1
 
 format-muted-background        = ${colors.arc_background_1}
-format-muted-prefix            = %{T4}%{T-}
+format-muted-prefix            = %{T3}%{T-}
 format-muted-prefix-foreground = ${colors.red}
 format-muted-prefix-background = ${colors.arc_background_1}
-format-muted-suffix            = %{T4}%{T-}
+format-muted-suffix            = %{T3}%{T-}
 format-muted-suffix-foreground = ${colors.arc_background_1}
 format-muted-suffix-background = ${colors.red}
 
@@ -374,16 +366,16 @@ format-background             = ${colors.arc_background_2}
 format-warn                   = <ramp><label-warn>
 format-warn-foreground        = ${colors.arc_foreground}
 format-warn-background        = ${colors.red}
-format-prefix                 = %{T4}%{T-}
+format-prefix                 = %{T3}%{T-}
 format-prefix-foreground      = ${colors.arc_background_2}
 format-prefix-background      = ${colors.arc_background_1}
-format-suffix                 = %{T4}%{T-}
+format-suffix                 = %{T3}%{T-}
 format-suffix-foreground      = ${colors.arc_background_1}
 format-suffix-background      = ${colors.arc_background_2}
-format-warn-prefix            = %{T4}%{T-}
+format-warn-prefix            = %{T3}%{T-}
 format-warn-prefix-foreground = ${colors.red}
 format-warn-prefix-background = ${colors.arc_background_1}
-format-warn-suffix            = %{T4}%{T-}
+format-warn-suffix            = %{T3}%{T-}
 format-warn-suffix-foreground = ${colors.arc_background_1}
 format-warn-suffix-background = ${colors.red}
 

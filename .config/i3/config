@@ -17,7 +17,7 @@ exec --no-startup-id twmnd
 exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
 
 # font for window titles
-font pango: Iosevka Term 9
+font pango: Iosevka Term 8
 
 # colors
 set_from_resource   $red    color9
@@ -36,13 +36,13 @@ client.background       $arc_background_0
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier       $mod
 popup_during_fullscreen smart
-bindsym $mod+t          exec --no-startup-id termite
-bindsym $mod+Return     exec --no-startup-id termite
+bindsym $mod+t          exec --no-startup-id alacritty
+bindsym $mod+Return     exec --no-startup-id alacritty
 bindsym $mod+Shift+f    exec --no-startup-id firefox
 mouse_warping           none
 
 for_window [class="^.*"] border normal 1
-for_window [class=".*"]  title_format " >_ %title "
+for_window [class="^.*"] title_format " <b>>_ %title</b>"
 
 # i3-gaps
 gaps inner 12
@@ -81,7 +81,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 # decrease 
 
 bindsym $mod+Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/screenshots/'
 bindsym $mod+Shift+Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/screenshots/'
-bindsym $mod+Shift+Return exec --no-startup-id termite -e ranger
+bindsym $mod+Shift+Return exec --no-startup-id alacritty -e ranger
 
 bindsym $mod+Escape exec --no-startup-id i3-msg exit
 bindsym $mod+Shift+Escape exec --no-startup-id poweroff

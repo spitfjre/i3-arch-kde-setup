@@ -2,7 +2,7 @@ export LANG="en_US.UTF-8"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=/usr/share/oh-my-zsh
 
-ZSH_THEME="af-magic"
+ZSH_THEME="agnoster"
 
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
@@ -13,8 +13,8 @@ alias ls='colorls -A --sd'
 alias syu='yaourt -Syu --aur --noconfirm'
 
 export JAVA_HOME=/usr/lib/jvm/java-8-jdk
-export ANDROID_HOME=/home/spitfjre/Android/Sdk
-export PATH=$PATH:/home/spitfjre/Android/Sdk/platform-tools
+export ANDROID_HOME=/home/spitfjre/android-sdk
+export PATH=$PATH:/home/spitfjre/android-sdk/platform-tools
 
 export PATH="$PATH:$HOME/.npm-packages/bin"
 

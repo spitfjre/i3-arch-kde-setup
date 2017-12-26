@@ -73,6 +73,7 @@ WINDOW_ICONS = {
     'sublime_text': fa.icons['file-text-o'],
     'termite': fa.icons['terminal'],
     'Termite': fa.icons['terminal'],
+    'thunderbird': fa.icons['envelope'],
     'Thunderbird': fa.icons['envelope'],
     'whatsapp-desktop': fa.icons['whatsapp'],
     'zoom': fa.icons['video-camera']
