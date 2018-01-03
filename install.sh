@@ -30,6 +30,7 @@ yaourt -S --noconfirm --needed xorg-xbacklight
 
 yaourt -S --noconfirm --needed webstorm
 yaourt -S --noconfirm --needed intellij-idea-ultimate-edition
+yaourt -S --noconfirm --needed android-studio
 yaourt -S --noconfirm --needed jdk
 yaourt -S --noconfirm --needed jdk8
 yaourt -S --noconfirm --needed ipe
@@ -44,6 +45,8 @@ yaourt -S --noconfirm --needed keepassx2
 yaourt -S --noconfirm --needed mpv
 yaourt -S --noconfirm --needed dropbox
 yaourt -S --noconfirm --needed chromium
+yaourt -S --noconfirm --needed firefox
+yaourt -S --noconfirm --needed thunderbird
 yaourt -S --noconfirm --needed texmaker
 yaourt -S --noconfirm --needed texlive-most
 yaourt -S --noconfirm --needed texlive-lang

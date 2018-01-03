@@ -22,15 +22,15 @@ background = ${colors.arc_background_0}
 foreground = ${colors.arc_foreground}
 
 border-size  = 1
-border-color = ${colors.arc-_background_0}
+border-color = ${colors.arc_background_0}
 
 font-0 = Iosevka Term:pixelsize=8;2
-font-1 = Font Awesome:pixelsize=9;2
+font-1 = Font Awesome:pixelsize=8;2
 font-2 = Iosevka Term:pixelsize=9;2
 
 modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
-modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
+modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 eth_2 volume date time
 
 [bar/top_tray]
 monitor      = ${env:MONITOR}
@@ -45,12 +45,12 @@ border-size  = 1
 border-color = ${colors.arc_background_0}
 
 font-0 = Iosevka Term:pixelsize=8;2
-font-1 = Font Awesome:pixelsize=9;2
+font-1 = Font Awesome:pixelsize=8;2
 font-2 = Iosevka Term:pixelsize=9;2
 
 modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
-modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 volume date time
+modules-right  = mpd_end_indicator mpd mpd_controls battery memory cpu temperature wlan_0 wlan_1 eth_0 eth_1 eth_2 volume date time
 
 tray-position    = right
 tray-detached    = false
@@ -250,6 +250,20 @@ format-disconnected =
 [module/eth_1]
 type = internal/network
 interface = enp0s25
+interval = 1.0
+
+format-connected-background = ${colors.arc_background_1}
+
+label-connected            = %{T2}%{T-} %downspeed:8% | %{T2}%{T-} %upspeed:8%
+label-connected-foreground = ${colors.arc_foreground}
+label-connected-background = ${colors.arc_background_1}
+label-connected-padding    = 1
+
+format-disconnected =
+
+[module/eth_2]
+type = internal/network
+interface = enp0s31f6
 interval = 1.0
 
 format-connected-background = ${colors.arc_background_1}

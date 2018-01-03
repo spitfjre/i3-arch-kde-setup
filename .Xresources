@@ -57,25 +57,26 @@
 *arc_blue: 			base_arc_blue
 
 ! Rofi Settings
-rofi.width:				50
+rofi.width:				750
 rofi.padding:			5
 rofi.fullscreen: 		false
 rofi.fixed-num-lines: 	true
 rofi.bw:				1
 rofi.location:			0
-rofi.terminal:			termite
+rofi.terminal:			alacritty
 rofi.lines:				10
 rofi.eh:				1
 rofi.hide-scrollbar: 	true
 rofi.separator-style: 	solid
-rofi.font:      		Iosevka Term 8
+rofi.font:      		Iosevka Term 10px
 rofi.show-icons:        false
+rofi.dpi:				96
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: base_arc_background_0, 	base_arc_blue,     		base_arc_blue
-rofi.color-normal: base_arc_background_0, 	base_arc_foreground, 	base_arc_background_0, 	base_arc_blue, 	base_arc_foreground
-rofi.color-active: base_arc_background_0, 	base_arc_blue,     		base_arc_background_0, 	base_arc_blue, 	base_arc_blue
-rofi.color-urgent: base_arc_background_0, 	base_arc_foreground, 	base_arc_background_0, 	base_arc_blue, 	base_arc_foreground
+rofi.color-window: 	base_arc_background_0, 	base_arc_blue,     		base_arc_blue
+rofi.color-normal: 	base_arc_background_0, 	base_arc_foreground, 	base_arc_background_0, 	base_arc_blue, 	base_arc_foreground
+rofi.color-active: 	base_arc_background_0, 	base_arc_blue,     		base_arc_background_0, 	base_arc_blue, 	base_arc_blue
+rofi.color-urgent: 	base_arc_background_0, 	base_arc_foreground, 	base_arc_background_0, 	base_arc_blue, 	base_arc_foreground

@@ -15,7 +15,6 @@ cp -r $HOME/.config/ranger/rc.conf $repoDir/.config/ranger/
 cp -r $HOME/.config/twmn/* $repoDir/.config/twmn/
 
 cp -r $HOME/.config/compton.conf $repoDir/.config/compton.conf
-cp -r $HOME/.config/fontconfig/fonts.conf $repoDir/.config/fontconfig/fonts.conf
 
 cp -r $HOME/Pictures/wallpaper/* $repoDir/wallpaper/
 cp -r $HOME/.fonts/* $repoDir/.fonts/

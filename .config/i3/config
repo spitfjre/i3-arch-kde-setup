@@ -20,7 +20,7 @@ exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
 font pango: Iosevka Term 8
 
 # colors
-set_from_resource   $red    color9
+set_from_resource   $red                color9
 set_from_resource   $arc_foreground     arc_foreground
 set_from_resource   $arc_background_0   arc_background_0
 set_from_resource   $arc_blue           arc_blue
