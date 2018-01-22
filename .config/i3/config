@@ -23,15 +23,17 @@ font pango: Iosevka Term 8
 set_from_resource   $red                color9
 set_from_resource   $arc_foreground     arc_foreground
 set_from_resource   $arc_background_0   arc_background_0
+set_from_resource   $arc_background_1   arc_background_1
+set_from_resource   $arc_background_2   arc_background_2
 set_from_resource   $arc_blue           arc_blue
 
 # class                 border              background          text                indicator           child_border
 client.focused          $arc_blue           $arc_blue           $arc_foreground     $arc_blue           $arc_blue
-client.focused_inactive $arc_background_0   $arc_background_0   $arc_foreground     $arc_background_0   $arc_background_0
-client.unfocused        $arc_background_0   $arc_background_0   $arc_foreground     $arc_background_0   $arc_background_0
+client.focused_inactive $arc_background_2   $arc_background_2   $arc_foreground     $arc_background_2   $arc_background_2
+client.unfocused        $arc_background_2   $arc_background_2   $arc_foreground     $arc_background_2   $arc_background_2
 client.urgent           $red                $red                $arc_foreground     $red                $red 
-client.placeholder      $arc_background_0   $arc_background_0   $arc_foreground     $arc_background_0   $arc_background_0
-client.background       $arc_background_0
+client.placeholder      $arc_background_2   $arc_background_2   $arc_foreground     $arc_background_2   $arc_background_2
+client.background       $arc_background_2
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier       $mod
@@ -41,12 +43,12 @@ bindsym $mod+Return     exec --no-startup-id alacritty
 bindsym $mod+Shift+f    exec --no-startup-id firefox
 mouse_warping           none
 
-for_window [class="^.*"] border normal 1
+for_window [class="^.*"] border pixel 3
 for_window [class="^.*"] title_format " <b>>_ %title</b>"
 
 # i3-gaps
-gaps inner 12
-gaps outer 3
+gaps inner 2
+gaps outer 0
 new_window none
 
 # kill focused window

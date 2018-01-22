@@ -1,9 +1,13 @@
 [colors]
 background  = ${xrdb:background}
 foreground  = ${xrdb:foreground}
+black		= ${xrdb:color0}
 red    	    = ${xrdb:color1}
 green       = ${xrdb:color2}
 yellow      = ${xrdb:color3}
+blue        = ${xrdb:color4}
+magenta     = ${xrdb:color5}
+cyan		= ${xrdb:color6}
 transparent = #00000000
 
 arc_foreground 	 = ${xrdb:arc_foreground}
@@ -18,11 +22,13 @@ height       = 16
 fixed-center = true
 bottom       = false
 
-background = ${colors.arc_background_0}
+background = ${colors.arc_background_2}
 foreground = ${colors.arc_foreground}
 
-border-size  = 1
-border-color = ${colors.arc_background_0}
+border-top-size  = 2
+border-left-size  = 2
+border-right-size  = 2
+border-color = ${colors.black}
 
 font-0 = Iosevka Term:pixelsize=8;2
 font-1 = Font Awesome:pixelsize=8;2
@@ -38,11 +44,13 @@ height       = 16
 fixed-center = true
 bottom       = false
 
-background = ${colors.arc_background_0}
+background = ${colors.arc_background_2}
 foreground = ${colors.arc_foreground}
 
-border-size  = 1
-border-color = ${colors.arc_background_0}
+border-top-size  = 2
+border-left-size  = 2
+border-right-size  = 2
+border-color = ${colors.black}
 
 font-0 = Iosevka Term:pixelsize=8;2
 font-1 = Font Awesome:pixelsize=8;2
@@ -102,14 +110,14 @@ type = custom/text
 
 content            = %{T3}%{T-}
 content-foreground = ${colors.arc_blue}
-content-background = ${colors.arc_background_0}
+content-background = ${colors.arc_background_2}
 
 [module/i3_end_indicator]
 type = custom/text
 
 content            = %{T3}%{T-}
 content-foreground = ${colors.arc_blue}
-content-background = ${colors.arc_background_0}
+content-background = ${colors.arc_background_2}
 
 content-prefix            = %{T3}%{T-}
 content-prefix-foreground = ${colors.arc_background_1}

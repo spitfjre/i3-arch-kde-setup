@@ -76,7 +76,7 @@ rofi.dpi:				96
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: 	base_arc_background_0, 	base_arc_blue,     		base_arc_blue
-rofi.color-normal: 	base_arc_background_0, 	base_arc_foreground, 	base_arc_background_0, 	base_arc_blue, 	base_arc_foreground
-rofi.color-active: 	base_arc_background_0, 	base_arc_blue,     		base_arc_background_0, 	base_arc_blue, 	base_arc_blue
-rofi.color-urgent: 	base_arc_background_0, 	base_arc_foreground, 	base_arc_background_0, 	base_arc_blue, 	base_arc_foreground
+rofi.color-window: 	base_color0, 	base_arc_blue,     		base_arc_blue
+rofi.color-normal: 	base_color0, 	base_arc_foreground, 	base_color0, 	base_arc_blue, 	base_arc_foreground
+rofi.color-active: 	base_color0, 	base_arc_blue,     		base_color0, 	base_arc_blue, 	base_arc_blue
+rofi.color-urgent: 	base_color0, 	base_arc_foreground, 	base_color0, 	base_arc_blue, 	base_arc_foreground

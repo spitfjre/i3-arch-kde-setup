@@ -1,19 +1,18 @@
-# DO NOT EDIT! This file will be overwritten by LXAppearance.
-# Any customization should be done in ~/.gtkrc-2.0.mine instead.
+# File created by KDE Gtk Config
+# Configs for GTK2 programs 
 
-include "/home/spitfjre/.gtkrc-2.0.mine"
-gtk-theme-name="Breeze-Dark"
+include "/usr/share/themes/Numix-Frost/xfce-notify-4.0/gtkrc"
+style "user-font" 
+{
+	font_name="Fira Sans Regular"
+}
+widget_class "*" style "user-font"
+gtk-font-name="Fira Sans Regular 8"
+gtk-theme-name="Numix-Frost"
 gtk-icon-theme-name="Papirus-Dark"
-gtk-font-name="Fira Sans 8"
+gtk-fallback-icon-theme="Papirus-Dark"
 gtk-cursor-theme-name="breeze_cursors"
-gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_ICONS
-gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
-gtk-button-images=0
 gtk-menu-images=1
-gtk-enable-event-sounds=1
-gtk-enable-input-feedback-sounds=1
-gtk-xft-antialias=1
-gtk-xft-hinting=1
-gtk-xft-hintstyle="hintfull"
-gtk-xft-rgba="rgb"
+gtk-button-images=0
+gtk-primary-button-warps-slider=0
