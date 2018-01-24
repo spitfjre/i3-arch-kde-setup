@@ -292,7 +292,7 @@ interval = 1
 date = %d-%m-%Y
 date-alt = %d-%m-%Y
 
-label            = %{T4}%{T-} %{T2}%{T-} %date%
+label            = %{T4}%{T-} %date%
 label-padding    = 1
 label-foreground = ${colors.arc_foreground}
 label-background = ${colors.arc_background_1}
