@@ -30,9 +30,10 @@ border-left-size  = 2
 border-right-size  = 2
 border-color = ${colors.black}
 
-font-0 = Iosevka Term:pixelsize=8;2
-font-1 = Font Awesome:pixelsize=8;2
-font-2 = Iosevka Term:pixelsize=9;2
+font-0 = Iosevka Term:fontformat=truetype:pixelsize=8:antialias=true;2
+font-1 = Iosevka Nerd Font Mono:fontformat=truetype:size=14:antialias=true;3
+font-2 = Iosevka Term::fontformat=truetype:pixelsize=9:antialias=true;2
+font-3 = Material Icons:fontformat=truetype:size=9:antialias=true;3
 
 modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
@@ -52,9 +53,10 @@ border-left-size  = 2
 border-right-size  = 2
 border-color = ${colors.black}
 
-font-0 = Iosevka Term:pixelsize=8;2
-font-1 = Font Awesome:pixelsize=8;2
-font-2 = Iosevka Term:pixelsize=9;2
+font-0 = Iosevka Term:fontformat=truetype:pixelsize=8:antialias=true;2
+font-1 = Iosevka Nerd Font Mono:fontformat=truetype:size=12:antialias=true;3
+font-2 = Iosevka Term::fontformat=truetype:pixelsize=9:antialias=true;2
+font-3 = Material Icons:fontformat=truetype:size=9:antialias=true;3
 
 modules-left   = left_start_indicator left_end_indicator i3 i3_end_indicator
 modules-center = 
@@ -94,7 +96,7 @@ label-urgent-background    = ${colors.red}
 [module/left_start_indicator]
 type = custom/text
 
-content            = " %{T2}%{T-} "
+content            = "  %{T2}%{T-} "
 content-foreground = ${colors.arc_foreground}
 content-background = ${colors.arc_blue}
 
@@ -162,16 +164,16 @@ format-playing = <icon-prev><toggle><icon-next>
 format-paused  = <icon-prev><toggle><icon-next>
 format-stopped = <icon-prev><toggle><icon-next>
 
-icon-play             = 
+icon-play             = %{T4}%{T-}
 icon-play-foreground  = ${colors.arc_foreground}
 icon-play-background  = ${colors.arc_background_2}
-icon-pause            = 
+icon-pause            = %{T4}%{T-}
 icon-pause-foreground = ${colors.arc_foreground}
 icon-pause-background = ${colors.arc_background_2}
-icon-prev             = "  "
+icon-prev             = " %{T4}%{T-}"
 icon-prev-foreground  = ${colors.arc_foreground}
 icon-prev-background  = ${colors.arc_background_2}
-icon-next             = "  "
+icon-next             = "%{T4}%{T-} "
 icon-next-foreground  = ${colors.arc_foreground}
 icon-next-background  = ${colors.arc_background_2}
 
@@ -189,7 +191,7 @@ format-stopped-suffix-background = ${colors.arc_background_2}
 type     = internal/cpu
 interval = 1
 
-label            = %{T2}%{T-} %percentage:3%%
+label            = %{T4}%{T-} %percentage:3%%
 label-foreground = ${colors.arc_foreground}
 label-background = ${colors.arc_background_1}
 label-padding    = 1
@@ -200,7 +202,7 @@ format-background = ${colors.arc_background_1}
 type     = internal/memory
 interval = 1
 
-label            = %{T2}%{T-} %percentage_used:3%%
+label            = %{T4}%{T-} %percentage_used:3%%
 label-foreground = ${colors.arc_foreground}
 label-background = ${colors.arc_background_2}
 label-padding    = 1
@@ -220,7 +222,7 @@ interval  = 1.0
 
 format-connected-background = ${colors.arc_background_1}
 
-label-connected            = %{T2}%{T-} %downspeed:8% | %{T2}%{T-} %upspeed:8%
+label-connected            = %{T4}%{T-} %downspeed:8% | %{T4}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.arc_foreground}
 label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
@@ -234,7 +236,7 @@ interval  = 1.0
 
 format-connected-background = ${colors.arc_background_1}
 
-label-connected            = %{T2}%{T-} %downspeed:8% | %{T2}%{T-} %upspeed:8%
+label-connected            = %{T4}%{T-} %downspeed:8% | %{T4}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.arc_foreground}
 label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
@@ -248,7 +250,7 @@ interval = 1.0
 
 format-connected-background = ${colors.arc_background_1}
 
-label-connected            = %{T2}%{T-} %downspeed:8% | %{T2}%{T-} %upspeed:8%
+label-connected            = %{T4}%{T-} %downspeed:8% | %{T4}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.arc_foreground}
 label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
@@ -262,7 +264,7 @@ interval = 1.0
 
 format-connected-background = ${colors.arc_background_1}
 
-label-connected            = %{T2}%{T-} %downspeed:8% | %{T2}%{T-} %upspeed:8%
+label-connected            = %{T4}%{T-} %downspeed:8% | %{T4}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.arc_foreground}
 label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
@@ -276,7 +278,7 @@ interval = 1.0
 
 format-connected-background = ${colors.arc_background_1}
 
-label-connected            = %{T2}%{T-} %downspeed:8% | %{T2}%{T-} %upspeed:8%
+label-connected            = %{T4}%{T-} %downspeed:8% | %{T4}%{T-} %upspeed:8%
 label-connected-foreground = ${colors.arc_foreground}
 label-connected-background = ${colors.arc_background_1}
 label-connected-padding    = 1
@@ -290,7 +292,7 @@ interval = 1
 date = %d-%m-%Y
 date-alt = %d-%m-%Y
 
-label            = %{T2}%{T-} %date%
+label            = %{T4}%{T-} %{T2}%{T-} %date%
 label-padding    = 1
 label-foreground = ${colors.arc_foreground}
 label-background = ${colors.arc_background_1}
@@ -306,7 +308,7 @@ format-prefix            = %{T3}%{T-}
 format-prefix-foreground = ${colors.arc_blue}
 format-prefix-background = ${colors.arc_background_1}
 
-label            = %{T2}%{T-} %time%
+label            = %{T4}%{T-} %time%
 label-padding    = 1
 label-foreground = ${colors.arc_foreground}
 label-background = ${colors.arc_blue}
@@ -315,7 +317,7 @@ label-background = ${colors.arc_blue}
 type     = internal/volume
 interval = 0.1
 
-label-volume            = %{T2}%{T-} %percentage:3%%
+label-volume            = %{T4}%{T-} %percentage:3%%
 label-volume-foreground = ${colors.arc_foreground}
 label-volume-background = ${colors.arc_background_2}
 label-volume-padding    = 1
@@ -328,7 +330,7 @@ format-volume-suffix            = %{T3}%{T-}
 format-volume-suffix-foreground = ${colors.arc_background_1}
 format-volume-suffix-background = ${colors.arc_background_2}
 
-label-muted            = %{T2}%{T-} %percentage:3%%
+label-muted            = %{T4}%{T-} %percentage:3%%
 label-muted-foreground = ${colors.arc_foreground}
 label-muted-background = ${colors.red}
 label-muted-padding    = 1
@@ -356,23 +358,15 @@ label-charging-background      = ${colors.arc_blue}
 label-discharging              = "%percentage:3%% "
 label-discharging-foreground   = ${colors.arc_foreground}
 label-discharging-background   = ${colors.arc_blue}
-label-full                     = " %{T2}%{T-} %percentage:3%% "
+label-full                     = " %{T4}%{T-} %percentage:3%% "
 label-full-foreground          = ${colors.arc_foreground}
 label-full-background          = ${colors.arc_blue}
 
-ramp-capacity-0          = " %{T2}%{T-} "
-ramp-capacity-1          = " %{T2}%{T-} "
-ramp-capacity-2          = " %{T2}%{T-} "
-ramp-capacity-3          = " %{T2}%{T-} "
-ramp-capacity-4          = " %{T2}%{T-} "
+ramp-capacity-0          = " %{T4}%{T-} "
 ramp-capacity-foreground = ${colors.arc_foreground}
 ramp-capacity-background = ${colors.arc_blue}
 
-animation-charging-0          = " %{T2}%{T-} "
-animation-charging-1          = " %{T2}%{T-} "
-animation-charging-2          = " %{T2}%{T-} "
-animation-charging-3          = " %{T2}%{T-} "
-animation-charging-4          = " %{T2}%{T-} "
+animation-charging-0          = " %{T4}%{T-} "
 animation-charging-foreground = ${colors.arc_foreground}
 animation-charging-background = ${colors.arc_blue}
 animation-charging-framerate  = 750
@@ -408,15 +402,7 @@ label-warn            = "%temperature:3% "
 label-warn-foreground = ${colors.arc_foreground}
 label-warn-background = ${colors.red}
 
-ramp-0 = " %{T2}%{T-} "
-
-[module/hostname]
-type = custom/script
-interval = 256
-format = "<label> "
-format-prefix = " "
-format-prefix-foreground = ${colors.primary}
-exec = echo "$(uname -n)"
+ramp-0 = " %{T4}%{T-} "
 
 [settings]
 screenchange-reload = true
