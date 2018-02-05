@@ -22,13 +22,11 @@ height       = 16
 fixed-center = true
 bottom       = false
 
-background = ${colors.arc_background_2}
+background = ${colors.black}
 foreground = ${colors.arc_foreground}
 
-border-top-size  = 2
-border-left-size  = 2
-border-right-size  = 2
-border-color = ${colors.black}
+border-bottom-size  = 1
+border-color 		= ${colors.black}
 
 font-0 = Iosevka Term:fontformat=truetype:pixelsize=8:antialias=true;2
 font-1 = Iosevka Nerd Font Mono:fontformat=truetype:size=14:antialias=true;3
@@ -45,13 +43,11 @@ height       = 16
 fixed-center = true
 bottom       = false
 
-background = ${colors.arc_background_2}
+background = ${colors.black}
 foreground = ${colors.arc_foreground}
 
-border-top-size  = 2
-border-left-size  = 2
-border-right-size  = 2
-border-color = ${colors.black}
+border-bottom-size  = 1
+border-color 		= ${colors.black}
 
 font-0 = Iosevka Term:fontformat=truetype:pixelsize=8:antialias=true;2
 font-1 = Iosevka Nerd Font Mono:fontformat=truetype:size=12:antialias=true;3
@@ -96,7 +92,7 @@ label-urgent-background    = ${colors.red}
 [module/left_start_indicator]
 type = custom/text
 
-content            = "  %{T2}%{T-} "
+content            = " %{T4}%{T-} "
 content-foreground = ${colors.arc_foreground}
 content-background = ${colors.arc_blue}
 
@@ -112,14 +108,14 @@ type = custom/text
 
 content            = %{T3}%{T-}
 content-foreground = ${colors.arc_blue}
-content-background = ${colors.arc_background_2}
+content-background = ${colors.black}
 
 [module/i3_end_indicator]
 type = custom/text
 
 content            = %{T3}%{T-}
 content-foreground = ${colors.arc_blue}
-content-background = ${colors.arc_background_2}
+content-background = ${colors.black}
 
 content-prefix            = %{T3}%{T-}
 content-prefix-foreground = ${colors.arc_background_1}
@@ -314,7 +310,7 @@ label-foreground = ${colors.arc_foreground}
 label-background = ${colors.arc_blue}
 
 [module/volume]
-type     = internal/volume
+type     = internal/alsa
 interval = 0.1
 
 label-volume            = %{T4}%{T-} %percentage:3%%

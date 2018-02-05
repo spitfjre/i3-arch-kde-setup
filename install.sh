@@ -11,7 +11,8 @@ yaourt -S --noconfirm --needed polybar-git
 yaourt -S --noconfirm --needed rofi
 yaourt -S --noconfirm --needed alacritty-scrollback-terminfo-git
 yaourt -S --noconfirm --needed compton
-yaourt -S --noconfirm --needed ranger
+yaourt -S --noconfirm --needed ranger-git
+yaourt -S --noconfirm --needed tmux
 yaourt -S --noconfirm --needed w3m
 ranger --copy-config=scope
 yaourt -S --noconfirm --needed feh

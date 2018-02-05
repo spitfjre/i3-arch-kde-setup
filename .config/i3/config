@@ -43,11 +43,11 @@ bindsym $mod+Return     exec --no-startup-id alacritty
 bindsym $mod+Shift+f    exec --no-startup-id firefox
 mouse_warping           none
 
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 1
 for_window [class="^.*"] title_format " <b>>_ %title</b>"
 
 # i3-gaps
-gaps inner 2
+gaps inner 0
 gaps outer 0
 new_window none
 
