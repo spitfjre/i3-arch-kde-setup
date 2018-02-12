@@ -44,17 +44,17 @@
 *color7:  base_color7
 *color15: base_color15
 
-#define base_arc_foreground 	#FFFFFF
-#define base_arc_background_0 	#373D48
-#define base_arc_background_1 	#303651
-#define base_arc_background_2 	#4A5664
-#define base_arc_blue 			#5294E2
+#define base_custom_foreground 			#FFFFFF
+#define base_custom_background_dark 	#31363b
+#define base_custom_background_light 	#706f6f
+#define base_custom_primary 			#1ABC9C
+#define base_custom_warn 				#E74C3C
 
-*arc_foreground: 	base_arc_foreground
-*arc_background_0: 	base_arc_background_0
-*arc_background_1: 	base_arc_background_1
-*arc_background_2: 	base_arc_background_2
-*arc_blue: 			base_arc_blue
+*custom_foreground: 		base_custom_foreground
+*custom_background_dark: 	base_custom_background_dark
+*custom_background_light: 	base_custom_background_light
+*custom_primary: 			base_custom_primary
+*custom_warn:				base_custom_warn
 
 ! Rofi Settings
 rofi.width:				750
@@ -76,7 +76,8 @@ rofi.dpi:				96
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: 	base_color0, 	base_arc_blue,     		base_arc_blue
-rofi.color-normal: 	base_color0, 	base_arc_foreground, 	base_color0, 	base_arc_blue, 	base_arc_foreground
-rofi.color-active: 	base_color0, 	base_arc_blue,     		base_color0, 	base_arc_blue, 	base_arc_blue
-rofi.color-urgent: 	base_color0, 	base_arc_foreground, 	base_color0, 	base_arc_blue, 	base_arc_foreground
+! 					background						foreground					background alt					highlight background			highlight foreground
+rofi.color-window: 	base_custom_background_dark, 	base_custom_primary,     	base_custom_primary
+rofi.color-normal: 	base_custom_background_dark, 	base_custom_foreground, 	base_custom_background_dark, 	base_custom_primary, 			base_custom_foreground
+rofi.color-active: 	base_custom_background_dark, 	base_custom_primary,     	base_custom_background_dark, 	base_custom_primary, 			base_custom_primary
+rofi.color-urgent: 	base_custom_background_dark, 	base_custom_foreground, 	base_custom_background_dark, 	base_custom_primary, 			base_custom_foreground
