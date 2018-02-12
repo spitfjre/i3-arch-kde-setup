@@ -20,20 +20,19 @@ exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
 font pango: Iosevka Term 8
 
 # colors
-set_from_resource   $red                color9
-set_from_resource   $arc_foreground     arc_foreground
-set_from_resource   $arc_background_0   arc_background_0
-set_from_resource   $arc_background_1   arc_background_1
-set_from_resource   $arc_background_2   arc_background_2
-set_from_resource   $arc_blue           arc_blue
+set_from_resource   $custom_foreground     		custom_foreground
+set_from_resource   $custom_background_dark   	custom_background_dark
+set_from_resource   $custom_background_light   	custom_background_light
+set_from_resource   $custom_primary           	custom_primary
+set_from_resource   $custom_warn                custom_warn
 
-# class                 border              background          text                indicator           child_border
-client.focused          $arc_blue           $arc_blue           $arc_foreground     $arc_blue           $arc_blue
-client.focused_inactive $arc_background_2   $arc_background_2   $arc_foreground     $arc_background_2   $arc_background_2
-client.unfocused        $arc_background_2   $arc_background_2   $arc_foreground     $arc_background_2   $arc_background_2
-client.urgent           $red                $red                $arc_foreground     $red                $red 
-client.placeholder      $arc_background_2   $arc_background_2   $arc_foreground     $arc_background_2   $arc_background_2
-client.background       $arc_background_2
+# class                 border              		background          		text                indicator           		child_border
+client.focused          $custom_primary     		$custom_primary     		$arc_foreground     $custom_primary     		$custom_primary
+client.focused_inactive $custom_background_dark   	$custom_background_dark   	$arc_foreground     $custom_background_dark   	$custom_background_dark
+client.unfocused        $custom_background_dark   	$custom_background_dark   	$arc_foreground     $custom_background_dark   	$custom_background_dark
+client.urgent           $custom_warn                $custom_warn                $arc_foreground     $custom_warn                $custom_warn 
+client.placeholder      $custom_background_dark   	$custom_background_dark   	$arc_foreground     $custom_background_dark   	$custom_background_dark
+client.background       $custom_background_dark
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier       $mod

@@ -1,20 +1,9 @@
 [colors]
-background  = ${xrdb:background}
-foreground  = ${xrdb:foreground}
-black		= ${xrdb:color0}
-red    	    = ${xrdb:color1}
-green       = ${xrdb:color2}
-yellow      = ${xrdb:color3}
-blue        = ${xrdb:color4}
-magenta     = ${xrdb:color5}
-cyan		= ${xrdb:color6}
-transparent = #00000000
-
-arc_foreground 	 = ${xrdb:arc_foreground}
-arc_background_0 = ${xrdb:arc_background_0}
-arc_background_1 = ${xrdb:arc_background_1}
-arc_background_2 = ${xrdb:arc_background_2}
-arc_blue    	 = ${xrdb:arc_blue}
+custom_foreground 	    = ${xrdb:custom_foreground}
+custom_background_dark 	= ${xrdb:custom_background_dark}
+custom_background_light = ${xrdb:custom_background_light}
+custom_primary    	 	= ${xrdb:custom_primary}
+custom_warn    	 		= ${xrdb:custom_warn}
 
 [bar/top]
 monitor      = ${env:MONITOR}
@@ -22,11 +11,11 @@ height       = 16
 fixed-center = true
 bottom       = false
 
-background = ${colors.black}
-foreground = ${colors.arc_foreground}
+background = ${colors.custom_background_dark}
+foreground = ${colors.custom_foreground}
 
 border-bottom-size  = 1
-border-color 		= ${colors.black}
+border-color 		= ${colors.custom_background_dark}
 
 font-0 = Iosevka Term:fontformat=truetype:pixelsize=8:antialias=true;2
 font-1 = Iosevka Nerd Font Mono:fontformat=truetype:size=14:antialias=true;3
@@ -43,11 +32,11 @@ height       = 16
 fixed-center = true
 bottom       = false
 
-background = ${colors.black}
-foreground = ${colors.arc_foreground}
+background = ${colors.custom_background_dark}
+foreground = ${colors.custom_foreground}
 
 border-bottom-size  = 1
-border-color 		= ${colors.black}
+border-color 		= ${colors.custom_background_dark}
 
 font-0 = Iosevka Term:fontformat=truetype:pixelsize=8:antialias=true;2
 font-1 = Iosevka Nerd Font Mono:fontformat=truetype:size=12:antialias=true;3
@@ -62,7 +51,7 @@ tray-position    = right
 tray-detached    = false
 tray-maxsize     = 12
 tray-transparent = false
-tray-background  = ${colors.arc_blue}
+tray-background  = ${colors.custom_primary}
 tray-offset-x    = 0
 tray-offset-y    = 0
 tray-padding     = 0
@@ -76,50 +65,50 @@ wrapping-scroll = true
 strip-wsnumbers = false
 pin-workspaces  = true
 
-label-focused 			   = "%{B#5294E2 F#303651}%{T3}%{T-}%{F-B-} %name% %{B#303651 F#5294E2}%{T3}%{T-}%{F-B-}"
-label-focused-foreground   = ${colors.arc_background_0}
-label-focused-background   = ${colors.arc_blue}
+label-focused 			   = "%{B#1ABC9C F#31363b}%{T3}%{T-}%{F-B-} %name% %{B#31363b F#1ABC9C}%{T3}%{T-}%{F-B-}"
+label-focused-foreground   = ${colors.custom_background_dark}
+label-focused-background   = ${colors.custom_primary}
 label-unfocused 		   = "%{T3} %{T-} %name% %{T3} %{T-}"
-label-unfocused-foreground = ${colors.arc_foreground}
-label-unfocused-background = ${colors.arc_background_1}
-label-visible 			   = "%{B#4A5664 F#303651}%{T3}%{T-}%{F-B-} %name% %{B#303651 F#4A5664}%{T3}%{T-}%{F-B-}"
-label-visible-foreground   = ${colors.arc_background_0}
-label-visible-background   = ${colors.arc_blue}
-label-urgent 			   = "%{B#ff000f F#303651}%{T3}%{T-}%{F-B-} %name% %{B#303651 F#ff000f}%{T3}%{T-}%{F-B-}"
-label-urgent-foreground    = ${colors.arc_background_0}
-label-urgent-background    = ${colors.red}
+label-unfocused-foreground = ${colors.custom_foreground}
+label-unfocused-background = ${colors.custom_background_dark}
+label-visible 			   = "%{B#706f6f F#31363b}%{T3}%{T-}%{F-B-} %name% %{B#31363b F#706f6f}%{T3}%{T-}%{F-B-}"
+label-visible-foreground   = ${colors.custom_background_dark}
+label-visible-background   = ${colors.custom_primary}
+label-urgent 			   = "%{B#E74C3C F#31363b}%{T3}%{T-}%{F-B-} %name% %{B#31363b F#E74C3C}%{T3}%{T-}%{F-B-}"
+label-urgent-foreground    = ${colors.custom_background_dark}
+label-urgent-background    = ${colors.custom_warn}
 
 [module/left_start_indicator]
 type = custom/text
 
 content            = " %{T4}%{T-} "
-content-foreground = ${colors.arc_foreground}
-content-background = ${colors.arc_blue}
+content-foreground = ${colors.custom_foreground}
+content-background = ${colors.custom_primary}
 
 [module/left_end_indicator]
 type = custom/text
 
 content            = %{T3}%{T-}
-content-foreground = ${colors.arc_blue}
-content-background = ${colors.arc_background_1}
+content-foreground = ${colors.custom_primary}
+content-background = ${colors.custom_background_dark}
 
 [module/mpd_end_indicator]
 type = custom/text
 
 content            = %{T3}%{T-}
-content-foreground = ${colors.arc_blue}
-content-background = ${colors.black}
+content-foreground = ${colors.custom_primary}
+content-background = ${colors.custom_background_dark}
 
 [module/i3_end_indicator]
 type = custom/text
 
 content            = %{T3}%{T-}
-content-foreground = ${colors.arc_blue}
-content-background = ${colors.black}
+content-foreground = ${colors.custom_primary}
+content-background = ${colors.custom_background_dark}
 
 content-prefix            = %{T3}%{T-}
-content-prefix-foreground = ${colors.arc_background_1}
-content-prefix-background = ${colors.arc_blue}
+content-prefix-foreground = ${colors.custom_background_dark}
+content-prefix-background = ${colors.custom_primary}
 
 [module/mpd]
 type = internal/mpd
@@ -131,27 +120,27 @@ format-stopped = <label-song>
 label-song-maxlen     = 100
 label-song-ellipsis   = true
 label-song            = " %artist% - %title% "
-label-song-foreground = ${colors.arc_foreground}
-label-song-background = ${colors.arc_background_1}
+label-song-foreground = ${colors.custom_foreground}
+label-song-background = ${colors.custom_background_dark}
 
 format-playing-prefix            = %{T3}%{T-}
-format-playing-prefix-foreground = ${colors.arc_background_1}
-format-playing-prefix-background = ${colors.arc_blue}
+format-playing-prefix-foreground = ${colors.custom_background_dark}
+format-playing-prefix-background = ${colors.custom_primary}
 format-playing-suffix            = %{T3}%{T-}
-format-playing-suffix-foreground = ${colors.arc_background_2}
-format-playing-suffix-background = ${colors.arc_background_1}
+format-playing-suffix-foreground = ${colors.custom_background_light}
+format-playing-suffix-background = ${colors.custom_background_dark}
 format-paused-prefix             = %{T3}%{T-}
-format-paused-prefix-foreground  = ${colors.arc_background_1}
-format-paused-prefix-background  = ${colors.arc_blue}
+format-paused-prefix-foreground  = ${colors.custom_background_dark}
+format-paused-prefix-background  = ${colors.custom_primary}
 format-paused-suffix             = %{T3}%{T-}
-format-paused-suffix-foreground  = ${colors.arc_background_2}
-format-paused-suffix-background  = ${colors.arc_background_1}
+format-paused-suffix-foreground  = ${colors.custom_background_light}
+format-paused-suffix-background  = ${colors.custom_background_dark}
 format-stopped-prefix            = %{T3}%{T-}
-format-stopped-prefix-foreground = ${colors.arc_background_1}
-format-stopped-prefix-background = ${colors.arc_blue}
+format-stopped-prefix-foreground = ${colors.custom_background_dark}
+format-stopped-prefix-background = ${colors.custom_primary}
 format-stopped-suffix            = %{T3}%{T-}
-format-stopped-suffix-foreground = ${colors.arc_background_2}
-format-stopped-suffix-background = ${colors.arc_background_1}
+format-stopped-suffix-foreground = ${colors.custom_background_light}
+format-stopped-suffix-background = ${colors.custom_background_dark}
 
 [module/mpd_controls]
 type = internal/mpd
@@ -161,66 +150,66 @@ format-paused  = <icon-prev><toggle><icon-next>
 format-stopped = <icon-prev><toggle><icon-next>
 
 icon-play             = %{T4}%{T-}
-icon-play-foreground  = ${colors.arc_foreground}
-icon-play-background  = ${colors.arc_background_2}
+icon-play-foreground  = ${colors.custom_foreground}
+icon-play-background  = ${colors.custom_background_light}
 icon-pause            = %{T4}%{T-}
-icon-pause-foreground = ${colors.arc_foreground}
-icon-pause-background = ${colors.arc_background_2}
+icon-pause-foreground = ${colors.custom_foreground}
+icon-pause-background = ${colors.custom_background_light}
 icon-prev             = " %{T4}%{T-}"
-icon-prev-foreground  = ${colors.arc_foreground}
-icon-prev-background  = ${colors.arc_background_2}
+icon-prev-foreground  = ${colors.custom_foreground}
+icon-prev-background  = ${colors.custom_background_light}
 icon-next             = "%{T4}%{T-} "
-icon-next-foreground  = ${colors.arc_foreground}
-icon-next-background  = ${colors.arc_background_2}
+icon-next-foreground  = ${colors.custom_foreground}
+icon-next-background  = ${colors.custom_background_light}
 
 format-playing-suffix            = %{T3}%{T-}
-format-playing-suffix-foreground = ${colors.arc_blue}
-format-playing-suffix-background = ${colors.arc_background_2}
+format-playing-suffix-foreground = ${colors.custom_primary}
+format-playing-suffix-background = ${colors.custom_background_light}
 format-paused-suffix             = %{T3}%{T-}
-format-paused-suffix-foreground  = ${colors.arc_blue}
-format-paused-suffix-background  = ${colors.arc_background_2}
+format-paused-suffix-foreground  = ${colors.custom_primary}
+format-paused-suffix-background  = ${colors.custom_background_light}
 format-stopped-suffix            = %{T3}%{T-}
-format-stopped-suffix-foreground = ${colors.arc_blue}
-format-stopped-suffix-background = ${colors.arc_background_2}
+format-stopped-suffix-foreground = ${colors.custom_primary}
+format-stopped-suffix-background = ${colors.custom_background_light}
 
 [module/cpu]
 type     = internal/cpu
 interval = 1
 
 label            = %{T4}%{T-} %percentage:3%%
-label-foreground = ${colors.arc_foreground}
-label-background = ${colors.arc_background_1}
+label-foreground = ${colors.custom_foreground}
+label-background = ${colors.custom_background_dark}
 label-padding    = 1
 
-format-background = ${colors.arc_background_1}
+format-background = ${colors.custom_background_dark}
 
 [module/memory]
 type     = internal/memory
 interval = 1
 
 label            = %{T4}%{T-} %percentage_used:3%%
-label-foreground = ${colors.arc_foreground}
-label-background = ${colors.arc_background_2}
+label-foreground = ${colors.custom_foreground}
+label-background = ${colors.custom_background_light}
 label-padding    = 1
 
-format-background        = ${colors.arc_background_2}
+format-background        = ${colors.custom_background_light}
 format-prefix            = %{T3}%{T-}
-format-prefix-foreground = ${colors.arc_background_2}
-format-prefix-background = ${colors.arc_blue}
+format-prefix-foreground = ${colors.custom_background_light}
+format-prefix-background = ${colors.custom_primary}
 format-suffix            = %{T3}%{T-}
-format-suffix-foreground = ${colors.arc_background_1}
-format-suffix-background = ${colors.arc_background_2}
+format-suffix-foreground = ${colors.custom_background_dark}
+format-suffix-background = ${colors.custom_background_light}
 
 [module/wlan_0]
 type      = internal/network
 interface = wlp0s26u1u5
 interval  = 1.0
 
-format-connected-background = ${colors.arc_background_1}
+format-connected-background = ${colors.custom_background_dark}
 
 label-connected            = %{T4}%{T-} %downspeed:8% | %{T4}%{T-} %upspeed:8%
-label-connected-foreground = ${colors.arc_foreground}
-label-connected-background = ${colors.arc_background_1}
+label-connected-foreground = ${colors.custom_foreground}
+label-connected-background = ${colors.custom_background_dark}
 label-connected-padding    = 1
 
 format-disconnected =
@@ -230,11 +219,11 @@ type      = internal/network
 interface = wlp3s0
 interval  = 1.0
 
-format-connected-background = ${colors.arc_background_1}
+format-connected-background = ${colors.custom_background_dark}
 
 label-connected            = %{T4}%{T-} %downspeed:8% | %{T4}%{T-} %upspeed:8%
-label-connected-foreground = ${colors.arc_foreground}
-label-connected-background = ${colors.arc_background_1}
+label-connected-foreground = ${colors.custom_foreground}
+label-connected-background = ${colors.custom_background_dark}
 label-connected-padding    = 1
 
 format-disconnected =
@@ -244,11 +233,11 @@ type = internal/network
 interface = enp5s0
 interval = 1.0
 
-format-connected-background = ${colors.arc_background_1}
+format-connected-background = ${colors.custom_background_dark}
 
 label-connected            = %{T4}%{T-} %downspeed:8% | %{T4}%{T-} %upspeed:8%
-label-connected-foreground = ${colors.arc_foreground}
-label-connected-background = ${colors.arc_background_1}
+label-connected-foreground = ${colors.custom_foreground}
+label-connected-background = ${colors.custom_background_dark}
 label-connected-padding    = 1
 
 format-disconnected =
@@ -258,11 +247,11 @@ type = internal/network
 interface = enp0s25
 interval = 1.0
 
-format-connected-background = ${colors.arc_background_1}
+format-connected-background = ${colors.custom_background_dark}
 
 label-connected            = %{T4}%{T-} %downspeed:8% | %{T4}%{T-} %upspeed:8%
-label-connected-foreground = ${colors.arc_foreground}
-label-connected-background = ${colors.arc_background_1}
+label-connected-foreground = ${colors.custom_foreground}
+label-connected-background = ${colors.custom_background_dark}
 label-connected-padding    = 1
 
 format-disconnected =
@@ -272,11 +261,11 @@ type = internal/network
 interface = enp0s31f6
 interval = 1.0
 
-format-connected-background = ${colors.arc_background_1}
+format-connected-background = ${colors.custom_background_dark}
 
 label-connected            = %{T4}%{T-} %downspeed:8% | %{T4}%{T-} %upspeed:8%
-label-connected-foreground = ${colors.arc_foreground}
-label-connected-background = ${colors.arc_background_1}
+label-connected-foreground = ${colors.custom_foreground}
+label-connected-background = ${colors.custom_background_dark}
 label-connected-padding    = 1
 
 format-disconnected =
@@ -290,8 +279,8 @@ date-alt = %d-%m-%Y
 
 label            = %{T4}%{T-} %date%
 label-padding    = 1
-label-foreground = ${colors.arc_foreground}
-label-background = ${colors.arc_background_1}
+label-foreground = ${colors.custom_foreground}
+label-background = ${colors.custom_background_dark}
 
 [module/time]
 type = internal/date
@@ -301,43 +290,43 @@ time = %H:%M
 time-alt = %H:%M:%S
 
 format-prefix            = %{T3}%{T-}
-format-prefix-foreground = ${colors.arc_blue}
-format-prefix-background = ${colors.arc_background_1}
+format-prefix-foreground = ${colors.custom_primary}
+format-prefix-background = ${colors.custom_background_dark}
 
 label            = %{T4}%{T-} %time%
 label-padding    = 1
-label-foreground = ${colors.arc_foreground}
-label-background = ${colors.arc_blue}
+label-foreground = ${colors.custom_foreground}
+label-background = ${colors.custom_primary}
 
 [module/volume]
 type     = internal/alsa
 interval = 0.1
 
 label-volume            = %{T4}%{T-} %percentage:3%%
-label-volume-foreground = ${colors.arc_foreground}
-label-volume-background = ${colors.arc_background_2}
+label-volume-foreground = ${colors.custom_foreground}
+label-volume-background = ${colors.custom_background_light}
 label-volume-padding    = 1
 
-format-volume-background        = ${colors.arc_background_1}
+format-volume-background        = ${colors.custom_background_dark}
 format-volume-prefix            = %{T3}%{T-}
-format-volume-prefix-foreground = ${colors.arc_background_2}
-format-volume-prefix-background = ${colors.arc_background_1}
+format-volume-prefix-foreground = ${colors.custom_background_light}
+format-volume-prefix-background = ${colors.custom_background_dark}
 format-volume-suffix            = %{T3}%{T-}
-format-volume-suffix-foreground = ${colors.arc_background_1}
-format-volume-suffix-background = ${colors.arc_background_2}
+format-volume-suffix-foreground = ${colors.custom_background_dark}
+format-volume-suffix-background = ${colors.custom_background_light}
 
 label-muted            = %{T4}%{T-} %percentage:3%%
-label-muted-foreground = ${colors.arc_foreground}
-label-muted-background = ${colors.red}
+label-muted-foreground = ${colors.custom_foreground}
+label-muted-background = ${colors.custom_warn}
 label-muted-padding    = 1
 
-format-muted-background        = ${colors.arc_background_1}
+format-muted-background        = ${colors.custom_background_dark}
 format-muted-prefix            = %{T3}%{T-}
-format-muted-prefix-foreground = ${colors.red}
-format-muted-prefix-background = ${colors.arc_background_1}
+format-muted-prefix-foreground = ${colors.custom_warn}
+format-muted-prefix-background = ${colors.custom_background_dark}
 format-muted-suffix            = %{T3}%{T-}
-format-muted-suffix-foreground = ${colors.arc_background_1}
-format-muted-suffix-background = ${colors.red}
+format-muted-suffix-foreground = ${colors.custom_background_dark}
+format-muted-suffix-background = ${colors.custom_warn}
 
 [module/battery]
 type    = internal/battery
@@ -349,22 +338,22 @@ format-charging          = <animation-charging><label-charging>
 format-discharging       = <ramp-capacity><label-discharging>
 
 label-charging                 = "%percentage:3%% "
-label-charging-foreground      = ${colors.arc_foreground}
-label-charging-background      = ${colors.arc_blue}
+label-charging-foreground      = ${colors.custom_foreground}
+label-charging-background      = ${colors.custom_primary}
 label-discharging              = "%percentage:3%% "
-label-discharging-foreground   = ${colors.arc_foreground}
-label-discharging-background   = ${colors.arc_blue}
+label-discharging-foreground   = ${colors.custom_foreground}
+label-discharging-background   = ${colors.custom_primary}
 label-full                     = " %{T4}%{T-} %percentage:3%% "
-label-full-foreground          = ${colors.arc_foreground}
-label-full-background          = ${colors.arc_blue}
+label-full-foreground          = ${colors.custom_foreground}
+label-full-background          = ${colors.custom_primary}
 
 ramp-capacity-0          = " %{T4}%{T-} "
-ramp-capacity-foreground = ${colors.arc_foreground}
-ramp-capacity-background = ${colors.arc_blue}
+ramp-capacity-foreground = ${colors.custom_foreground}
+ramp-capacity-background = ${colors.custom_primary}
 
 animation-charging-0          = " %{T4}%{T-} "
-animation-charging-foreground = ${colors.arc_foreground}
-animation-charging-background = ${colors.arc_blue}
+animation-charging-foreground = ${colors.custom_foreground}
+animation-charging-background = ${colors.custom_primary}
 animation-charging-framerate  = 750
 
 [module/temperature]
@@ -373,30 +362,30 @@ thermal-zone     = 0
 warn-temperature = 70
 
 format                        = <ramp><label>
-format-foreground             = ${colors.arc_foreground}
-format-background             = ${colors.arc_background_2}
+format-foreground             = ${colors.custom_foreground}
+format-background             = ${colors.custom_background_light}
 format-warn                   = <ramp><label-warn>
-format-warn-foreground        = ${colors.arc_foreground}
-format-warn-background        = ${colors.red}
+format-warn-foreground        = ${colors.custom_foreground}
+format-warn-background        = ${colors.custom_warn}
 format-prefix                 = %{T3}%{T-}
-format-prefix-foreground      = ${colors.arc_background_2}
-format-prefix-background      = ${colors.arc_background_1}
+format-prefix-foreground      = ${colors.custom_background_light}
+format-prefix-background      = ${colors.custom_background_dark}
 format-suffix                 = %{T3}%{T-}
-format-suffix-foreground      = ${colors.arc_background_1}
-format-suffix-background      = ${colors.arc_background_2}
+format-suffix-foreground      = ${colors.custom_background_dark}
+format-suffix-background      = ${colors.custom_background_light}
 format-warn-prefix            = %{T3}%{T-}
-format-warn-prefix-foreground = ${colors.red}
-format-warn-prefix-background = ${colors.arc_background_1}
+format-warn-prefix-foreground = ${colors.custom_warn}
+format-warn-prefix-background = ${colors.custom_background_dark}
 format-warn-suffix            = %{T3}%{T-}
-format-warn-suffix-foreground = ${colors.arc_background_1}
-format-warn-suffix-background = ${colors.red}
+format-warn-suffix-foreground = ${colors.custom_background_dark}
+format-warn-suffix-background = ${colors.custom_warn}
 
 label                 = "%temperature:3% "
-label-foreground      = ${colors.arc_foreground}
-label-background      = ${colors.arc_background_2}
+label-foreground      = ${colors.custom_foreground}
+label-background      = ${colors.custom_background_light}
 label-warn            = "%temperature:3% "
-label-warn-foreground = ${colors.arc_foreground}
-label-warn-background = ${colors.red}
+label-warn-foreground = ${colors.custom_foreground}
+label-warn-background = ${colors.custom_warn}
 
 ramp-0 = " %{T4}%{T-} "
 
