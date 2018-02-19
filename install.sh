@@ -40,8 +40,6 @@ yaourt -S --noconfirm --needed slack-desktop
 yaourt -S --noconfirm --needed kdeplasma-addons
 yaourt -S --noconfirm --needed htop
 yaourt -S --noconfirm --needed gtop
-yaourt -S --noconfirm --needed ruby
-gem install colorls
 yaourt -S --noconfirm --needed keepassx2
 yaourt -S --noconfirm --needed mpv
 yaourt -S --noconfirm --needed dropbox
@@ -62,6 +60,7 @@ yaourt -S --noconfirm --needed ttf-font-awesome
 yaourt -S --noconfirm --needed ttf-fira-sans
 yaourt -S --noconfirm --needed oh-my-zsh-git
 yaourt -S --noconfirm --needed arc-kde-git
+yaourt -S --noconfirm --needed adapta-kde-git
 
 git clone https://github.com/justbuchanan/fontawesome-python.git
 cd fontawesome-python
@@ -71,7 +70,7 @@ sudo rm -R fontawesome-python
 
 #curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
 #echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
-sudo pacman -Syu sublime-text
+sudo pacman -Syu --noconfirm --needed sublime-text
 
 yaourt -Rcns --noconfirm lightdm
 yaourt -S --noconfirm --needed sddm-kcm

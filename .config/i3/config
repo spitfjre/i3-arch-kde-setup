@@ -27,12 +27,12 @@ set_from_resource   $custom_primary           	custom_primary
 set_from_resource   $custom_warn                custom_warn
 
 # class                 border              		background          		text                indicator           		child_border
-client.focused          $custom_primary     		$custom_primary     		$arc_foreground     $custom_primary     		$custom_primary
-client.focused_inactive $custom_background_dark   	$custom_background_dark   	$arc_foreground     $custom_background_dark   	$custom_background_dark
-client.unfocused        $custom_background_dark   	$custom_background_dark   	$arc_foreground     $custom_background_dark   	$custom_background_dark
-client.urgent           $custom_warn                $custom_warn                $arc_foreground     $custom_warn                $custom_warn 
-client.placeholder      $custom_background_dark   	$custom_background_dark   	$arc_foreground     $custom_background_dark   	$custom_background_dark
-client.background       $custom_background_dark
+client.focused          $custom_primary     		$custom_primary     		$custom_foreground 	$custom_primary     		$custom_primary
+client.focused_inactive $custom_background_light   	$custom_background_light   	$custom_foreground  $custom_background_light   	$custom_background_light
+client.unfocused        $custom_background_light   	$custom_background_light  	$custom_foreground  $custom_background_light   	$custom_background_light
+client.urgent           $custom_warn                $custom_warn                $custom_foreground  $custom_warn                $custom_warn 
+client.placeholder      $custom_background_light   	$custom_background_light  	$custom_foreground  $custom_background_light   	$custom_background_light
+client.background       $custom_background_light
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier       $mod
@@ -42,7 +42,7 @@ bindsym $mod+Return     exec --no-startup-id alacritty
 bindsym $mod+Shift+f    exec --no-startup-id firefox
 mouse_warping           none
 
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border normal 1
 for_window [class="^.*"] title_format " <b>>_ %title</b>"
 
 # i3-gaps
