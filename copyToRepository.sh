@@ -9,7 +9,6 @@ cp -r $HOME/.config/htop/* $repoDir/.config/htop/
 cp -r $HOME/.config/i3/config $repoDir/.config/i3/
 cp -r $HOME/.config/i3/*.py $repoDir/.config/i3/
 cp -r $HOME/.config/mpd/mpd.conf $repoDir/.config/mpd/
-cp -r $HOME/.config/mupen64plus/* $repoDir/.config/mupen64plus/
 cp -r $HOME/.config/polybar/config $repoDir/.config/polybar/
 cp -r $HOME/.config/ranger/rc.conf $repoDir/.config/ranger/
 cp -r $HOME/.config/twmn/* $repoDir/.config/twmn/
@@ -21,9 +20,6 @@ cp -r $HOME/.fonts/* $repoDir/.fonts/
 
 if [ -e $HOME/.gtkrc-2.0 ]
  then cp $HOME/.gtkrc-2.0 $repoDir/
-fi
-if [ -e $HOME/.tmux.conf ]
- then cp $HOME/.tmux.conf $repoDir/
 fi
 if [ -e $HOME/.xprofile ]
  then cp $HOME/.xprofile $repoDir/

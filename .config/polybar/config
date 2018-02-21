@@ -14,8 +14,8 @@ bottom       = false
 background = ${colors.custom_background_dark}
 foreground = ${colors.custom_foreground}
 
-border-bottom-size  = 1
-border-color 		= ${colors.custom_background_dark}
+border-size  = 1
+border-color = ${colors.custom_background_light}
 
 font-0 = Iosevka Term:fontformat=truetype:pixelsize=8:antialias=true;2
 font-1 = Iosevka Nerd Font Mono:fontformat=truetype:size=14:antialias=true;3
@@ -35,8 +35,8 @@ bottom       = false
 background = ${colors.custom_background_dark}
 foreground = ${colors.custom_foreground}
 
-border-bottom-size  = 1
-border-color 		= ${colors.custom_background_dark}
+border-size  = 1
+border-color = ${colors.custom_background_light}
 
 font-0 = Iosevka Term:fontformat=truetype:pixelsize=8:antialias=true;2
 font-1 = Iosevka Nerd Font Mono:fontformat=truetype:size=12:antialias=true;3

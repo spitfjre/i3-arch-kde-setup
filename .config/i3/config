@@ -46,8 +46,8 @@ for_window [class="^.*"] border normal 1
 for_window [class="^.*"] title_format " <b>>_ %title</b>"
 
 # i3-gaps
-gaps inner 0
-gaps outer 0
+gaps inner 14
+gaps outer 5
 new_window none
 
 # kill focused window
