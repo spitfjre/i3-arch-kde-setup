@@ -44,11 +44,11 @@
 *color7:  base_color7
 *color15: base_color15
 
-#define base_custom_foreground 			#FFFFFF
+#define base_custom_foreground 			#ffffff
 #define base_custom_background_dark 	#31363b
 #define base_custom_background_light 	#706f6f
-#define base_custom_primary 			#1ABC9C
-#define base_custom_warn 				#E74C3C
+#define base_custom_primary 			#1abc9c
+#define base_custom_warn 				#e74c3c
 
 *custom_foreground: 		base_custom_foreground
 *custom_background_dark: 	base_custom_background_dark
