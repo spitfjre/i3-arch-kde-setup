@@ -6,9 +6,11 @@ custom_primary    	 	= ${xrdb:custom_primary}
 custom_warn    	 		= ${xrdb:custom_warn}
 
 [bar/top]
-monitor = ${env:MONITOR}
-height  = 25
-bottom  = false
+monitor      = ${env:MONITOR}
+height       = 25
+bottom       = false
+fixed-center = false
+
 
 background = ${colors.custom_background_dark}
 foreground = ${colors.custom_foreground}
@@ -254,27 +256,37 @@ battery = BAT0
 adapter = AC
 full-at = 100
 
-format-charging          = <animation-charging><label-charging>
-format-discharging       = <ramp-capacity><label-discharging>
+format-charging                      = <label-charging>
+format-charging-prefix               = %{T3}%{T-}
+format-charging-prefix-foreground    = ${colors.custom_primary}
+format-charging-prefix-background    = ${colors.custom_background_dark}
+format-charging-suffix               = "  |  "
+format-charging-suffix-foreground    = ${colors.custom_background_light}
+format-charging-suffix-background    = ${colors.custom_background_dark}
+format-discharging                   = <label-discharging>
+format-discharging-prefix            = %{T3}%{T-}
+format-discharging-prefix-foreground = ${colors.custom_warn}
+format-discharging-prefix-background = ${colors.custom_background_dark}
+format-discharging-suffix            = "  |  "
+format-discharging-suffix-foreground = ${colors.custom_background_light}
+format-discharging-suffix-background = ${colors.custom_background_dark}
+format-full                          = <label-full>
+format-full-prefix                   = %{T3}%{T-}
+format-full-prefix-foreground        = ${colors.custom_primary}
+format-full-prefix-background        = ${colors.custom_background_dark}
+format-full-suffix                   = "  |  "
+format-full-suffix-foreground        = ${colors.custom_background_light}
+format-full-suffix-background        = ${colors.custom_background_dark}
 
-label-charging                 = "%percentage:3%% "
+label-charging                 = " %percentage:3%%"
 label-charging-foreground      = ${colors.custom_foreground}
-label-charging-background      = ${colors.custom_primary}
-label-discharging              = "%percentage:3%% "
+label-charging-background      = ${colors.custom_background_dark}
+label-discharging              = " %percentage:3%%"
 label-discharging-foreground   = ${colors.custom_foreground}
-label-discharging-background   = ${colors.custom_primary}
-label-full                     = " %{T3}%{T-} %percentage:3%% "
+label-discharging-background   = ${colors.custom_background_dark}
+label-full                     = " %percentage:3%%"
 label-full-foreground          = ${colors.custom_foreground}
-label-full-background          = ${colors.custom_primary}
-
-ramp-capacity-0          = " %{T3}%{T-} "
-ramp-capacity-foreground = ${colors.custom_foreground}
-ramp-capacity-background = ${colors.custom_primary}
-
-animation-charging-0          = " %{T3}%{T-} "
-animation-charging-foreground = ${colors.custom_foreground}
-animation-charging-background = ${colors.custom_primary}
-animation-charging-framerate  = 750
+label-full-background          = ${colors.custom_background_dark}
 
 [module/temperature]
 type             = internal/temperature
